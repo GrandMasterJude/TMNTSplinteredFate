@@ -1,0 +1,463 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TMNT Splintered Fate</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#" class="tab active" onclick="showContent('basic-info')">Basic Info</a>
+            <a href="#" class="tab" onclick="showContent('mastery')">Mastery</a>
+            <a href="#" class="tab" onclick="showContent('inspirations')">Inspirations</a>
+            <a href="#" class="tab" onclick="showContent('skills')">Skills</a>
+            <a href="#" class="tab" onclick="showContent('tools')">Tools</a>
+        </div>
+
+        <div class="content">
+            <div id="basic-info" class="tab-content active basic-info">
+                    <div class="basic-leonardo">
+                        <h4>Leonardo</h4>
+                        <ul>
+                            <li>Health: 100</li>
+                            <li>Attack Damage:</li>
+                            <li>Special Attack Damage:</li>
+                            <li>Skill Affinities: Ninja, Utrom</li>
+                        </ul>
+                        <p>Inspirations</p>
+                        <ul>
+                            <li>+1 Special Stock</li>
+                            <li>Final Strike does 35 Master Strike Damage</li>
+                        </ul>
+                    </div>
+                    <div class="basic-donatello">
+                        <h4>Donatello</h4>
+                        <ul>
+                            <li>Health: 140</li>
+                            <li>Attack Damage:</li>
+                            <li>Special Attack Damage:</li>
+                            <li>Skill Affinities: Ooze, Utrom</li>
+                        </ul>
+                        <p>Inspirations</p>
+                        <ul>
+                            <li>+80% Tool Recharge Rate</li>
+                            <li>7 Health at the start of each encounter.</li>
+                        </ul>
+                    </div>
+                    <div class="basic-michaelangelo">
+                        <h4>Michaelango</h4>
+                        <ul>
+                            <li>Health: 110</li>
+                            <li>Attack Damage:</li>
+                            <li>Special Attack Damage:</li>
+                            <li>Skill Affinities: Astral, Water</li>
+                        </ul>
+                        <p>Inspirations</p>
+                        <ul>
+                            <li>+% Attack area </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="basic-raphael">
+                        <h4>Raphael</h4>
+                        <ul>
+                            <li>Health: 120</li>
+                            <li>Attack Damage:</li>
+                            <li>Special Attack Damage:</li>
+                            <li>Skill Affinities: Water, Flame</li>
+                        </ul>
+                        <p>Inspirations</p>
+                        <ul>
+                            <li>+% Crit, +% Crit Damage</li>
+                            <li>+20% Special damage</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="basic-casey">
+                        <h4>Casey Jones</h4>
+                        <ul>
+                            <li>Health:</li>
+                            <li>Attack Damage:</li>
+                            <li>Special Attack Damage:</li>
+                            <li>Skill Affinities:</li>
+                        </ul>
+                        <p>Inspirations</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="basic-jennika">
+                        <h4>Jennika</h4>
+                        <ul>
+                            <li>Health:</li>
+                            <li>Attack Damage:</li>
+                            <li>Special Attack Damage:</li>
+                            <li>Skill Affinities:</li>
+                        </ul>
+                        <p>Inspirations</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div> -->
+                
+            </div>
+    
+            <div id="mastery" class="tab-content mastery">
+                <div class="mastery-leonardo">
+                    <h4>Leonardo</h4>
+                    <ul>
+                        <li>+50% damage to enemies with a Barrier.</li>
+                        <li>+20% damage to Bosses.</li>
+                        <li>+100% Master Strike Damage.</li>
+                        <li>+5% Shuriken Damage for each Ninja power acquired.</li>
+                        <li>Activating your Special grants Light Shell for 2s.</li>
+                        <li>Dash Attack applies Master Strike.</li>
+                        <li>Defeating an enemy with your Special recharges your Tool.</li>
+                        <li>Gain Light Shell for 1s upon Master Strike.</li>
+                        <li>Master Strike applies Guard Break for 3.5s.</li>
+                        <li>Special charges 30% faster.</li>
+                        <li>Special gains all Dash and Dash Attack bonuses.</li>
+                        <li>Special deals 30 Utrom damage.</li>
+                    </ul>
+                </div>
+                <div class="mastery-donatello">
+                    <h4>Donatello</h4>
+                    <ul>
+                        <li>+50% damage to enemies with a Barrier.</li>
+                        <li>+20% damage to Bosses.</li>
+                        <li>+75% Special damage.</li>
+                        <li>+30% damage to Bosses, Mousers, and Super Soldiers.</li>
+                        <li>+30% Dash Attack damage. Gain 1 charge of Dash upon defeating an enemy.</li>
+                        <li>+30% Ooze damage.</li>
+                        <li>+30% Utrom damage.</li>
+                        <li>+15% All damage dealt.</li>
+                        <li>+1 Tool charge(s).</li>
+                        <li>Every other Attack deals 10 Utrom damage.</li>
+                        <li>Special and Tool deals 20 Utrom damage.</li>
+                        <li>Special gains all Dash and Dash Attack bonuses.</li>
+                        <li>Tool charges 30% faster.</li>
+                    </ul>
+                </div>
+                <div class="mastery-michaelangelo">
+                    <h4>Michaelango</h4>
+                    <ul>
+                        <li>+50% damage to enemies with a Barrier.</li>
+                        <li>+20% damage to Bosses.</li>
+                        <li>+40% Multi-Hit damage.</li>
+                        <li>+30% Dash Attack damage. Gain 1 charge of Dash upon defeating an enemy.</li>
+                        <li>+30% Special area size. Special charges 20% faster.</li>
+                        <li>+30% Water damage.</li>
+                        <li>+20% damage dealt and Move Speed for 3s after defeating an enemy.</li>
+                        <li>+15% chance to trigger Elemental Effects.</li>
+                        <li>+10% Multi-Hit chance.</li>
+                        <li>+10% Elemental damage.</li>
+                        <li>+5% damage for each Astral power acquired.</li>
+                        <li>Improve Michaelango's Inspiration: +15% Attack area size. +15% Attack damage.</li>
+                        <li>Reduce damage recieved from projectiles and hazards by 75%.</li>
+                    </ul>
+                </div>
+                <div class="mastery-raphael">
+                    <h4>Raphael</h4>
+                    <ul>
+                        <li>+50% damage to enemies with a Barrier.</li>
+                        <li>+20% damage to Bosses.</li>
+                        <li>+100% Special damage dealt to enemies below 35% health.</li>
+                        <li>+50% Critical Hit damage.</li>
+                        <li>+30% Special damage.</li>
+                        <li>+30% Flame damage.</li>
+                        <li>+30% Water damage.</li>
+                        <li>+20% Attack Critical Hit chance.</li>
+                        <li>+20% Special Critical Hit chance.</li>
+                        <li>+20% damage dealt and Move Speed for 3s after defeating an enemy.</li>
+                        <li>Critical Hits have a 20% chance to deal 10 damage of any type of elemental power obtained.</li>
+                        <li>Instantly defeat enemies below 10% health.</li>
+                    </ul>
+                </div>
+                <!-- <div class="mastery-casey">
+                    <h4>Casey Jones</h4>
+                    <ul>
+                        <li>+50% damage to enemies with a Barrier.</li>
+                        <li>+20% damage to Bosses.</li>
+                    </ul>
+                </div>
+                <div class="mastery-jennika">
+                    <h4>Jennika</h4>
+                    <ul>
+                        <li>+50% damage to enemies with a Barrier.</li>
+                        <li>+20% damage to Bosses.</li>
+                    </ul>
+                </div> -->
+            </div>
+    
+            <div id="inspirations" class="tab-content inspirations">
+                <div>Inspiration</div>
+            </div>
+    
+            <div id="skills" class="tab-content">
+                <details>
+                    <summary>Astral</summary>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+
+
+                </details>
+                <details>
+                    <summary>Ninja</summary>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+
+
+                </details>
+                <details>
+                    <summary>Water</summary>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+
+
+                </details>
+                <details>
+                    <summary>Flame</summary>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+
+
+                </details>
+                <details>
+                    <summary>Utrom</summary>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+
+
+                </details>
+                <details>
+                    <summary>Ooze</summary>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Name</h4>
+                            <p>Description.</p>
+                        </li> 
+                    </ul>
+
+
+                </details>
+            </div>
+    
+            <div id="tools" class="tab-content">
+                <ul>
+                    <li>
+                        <h4>Shuriken</h4>
+                        <p>Throw three Shuriken in a cone. Each Shuriken deals 15// damage.</p>
+                    </li>
+                    <li>
+                        <h4>Turtle Line</h4>
+                        <p>Throw a Turtle Line dealing 30/60/90 Physical damage. On hit, pull yourself towards Bosses, and pull other enemies toward you.</p>
+                    </li>
+                    <li>
+                        <h4>Hardened Shell</h4>
+                        <p>Deal 20/40/60 Physical damage to nearby enemies. For the next 1.4/1.8/2.2s, become immune to all damage.</p>
+                    </li>
+                    <li>
+                        <h4>Taunt</h4>
+                        <p>Taunt nearby enemies for 8s. Taunted enemies take 60/80/100 damage and are stunned for 0.5s when hit.</p>
+                    </li>
+                    <li>
+                        <h4>Fireball</h4>
+                        <p>Fire 3 seeking fireballs towards nearby enemies. Each fireball deals 70// Flame damage in an area upon impact.</p>
+                    </li>
+                    <li>
+                        <h4>Ooze Shuriken</h4>
+                        <p>Throw 2 Ooze Shuriken at the nearest enemy. Each Shuriken deals 25// Ooze damage.</p>
+                    </li>
+                    <li>
+                        <h4>Shuriken Storm</h4>
+                        <p>Throw 8// Shuriken at nearby targets. Each Shuriken deals 30// Physical damage.</p>
+                    </li>
+                    <li>
+                        <h4>Smoke Bomb</h4>
+                        <p>Teleport forwards, dealing 50// Physical damage to nearby enemies where you end up. Immediately triggers Dodge effects.</p>
+                    </li>
+                    <li>
+                        <h4>Unstable Canister</h4>
+                        <p>Deal 60// Ooze damage and apply 3 stack(s) of Ooze to all nearby enemies.</p>
+                    </li>
+                    <li>
+                        <h4>Utrom Rod</h4>
+                        <p>A nearby enemu is struck by lightning 4// times for 25// Utrom damage.</p>
+                    </li>
+                    <li>
+                        <h4>Utrom Shuriken</h4>
+                        <p>Throw two Electric Shuriken at teh nearest enemy. Each Shuriken deals 25// Utrom damage.</p>
+                    </li>
+                    <li>
+                        <h4>Meteor Storm</h4>
+                        <p>Call upon a meteor storm that lasts 6.5/8/9.5?s. Meteors will fall towards enemies and deal 60// Flame damage upon impact.</p>
+                    </li>
+                    <li>
+                        <h4>Water Sweep</h4>
+                        <p>Deal 80// Water damage to nearby enemies. Enemies hit are knocked back.</p>
+                    </li>
+                    <li>
+                        <h4>Ride the Wave</h4>
+                        <p>+40% Move Speed for 6s. During that time, deal 15// Water damage per second to nearby enemies.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</html>
+
+<!-- Frostfire // WATER/FLAME
+Inferno* + Frost
+*inferno not always needed - can have Fireball or meteorite tools also will work
+Shatter // WATER/UTROM 
+Pressure Nozzle + Splash Damage + Frost + Shocking
+Bright Spring // WATER/A-LIGHT 
+Dilution + Light Attack
+Solution to Pollution // WATER/OOZE
+Frost + Potency*
+*any skill with ooze symbol can replace Potency
+Spontaneous Combustion // FLAME/OOZE  
+Inferno + Goo’dbye
+Dark Flame // FLAME/A-DARK 
+Inferno + Nightfall
+Tempered Shuriken // FLAME/NINJA  
+Furious Attacks + Precision + Quick Feet + Extended Assault + Throwing Arts: Chakram
+Light Hammer // UTROM/A-LIGHT  
+Techno Organic Interface + Revival
+Revolution // UTROM/NINJA  
+Utrom Dash + Quick Feet + First Strike + Chain Lightning
+Secret of the Ooze UTROM/OOZE =
+Techno Organic Interface + Special Spice + Shelf Life
+Slippery // NINJA/OOZE
+Adrenaline + Heightened Senses + Ooze Abilities + Goo’dbye
+Finisher // NINJA/A-DARK 
+Extended Assault + Shuriken Breaker + Nightfall + Dark Embrace -->

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.navbar {
+    display: flex;
+    background-color: #333;
+    min-height: 3rem;
+    overflow: hidden;
+}
+.navbar a {
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+.tab.active {
+    background-color: #4CAF50;
+}
+
+body ul {
+    list-style: none;
+    padding: 0;
+}
+
+body ul li {
+    margin-bottom: 0.3rem;
+}
+
+body h3 {
+    background-color: powderblue;
+}
+
+.tab-content.active.basic-info,
+.tab-content.active.mastery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.basic-leonardo,
+.basic-donatello,
+.basic-michaelangelo,
+.basic-raphael,
+.mastery-leonardo,
+.mastery-donatello,
+.mastery-michaelangelo,
+.mastery-raphael {
+    margin-left: 1rem;
+    min-width: 25rem;
+    text-align: left;
+}
+
+.mastery-leonardo ul,
+.mastery-donatello ul,
+.mastery-michaelangelo ul,
+.mastery-raphael ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tools {
+    text-align: left;
+}
+
+#tools h4 {
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+#tools p {
+    margin: 0.4rem;
+}
