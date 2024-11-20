@@ -10,6 +10,8 @@
             <a href="#" class="tab" onclick="showContent('inspirations')">Inspirations</a>
             <a href="#" class="tab" onclick="showContent('skills')">Skills</a>
             <a href="#" class="tab" onclick="showContent('tools')">Tools</a>
+            <a href="#" class="tab" onclick="showContent('upgrades')">Upgrades</a>
+            <a href="#" class="tab" onclick="showContent('artifacts')">Artifacts</a>
         </div>
 
         <div class="content">
@@ -24,8 +26,8 @@
                         </ul>
                         <p>Inspirations</p>
                         <ul>
-                            <li>+1 Special Stock</li>
-                            <li>Final Strike does 35 Master Strike Damage</li>
+                            <li>Final Strike triggers a Master Strike</li>
+                            <li>+1 Special charge(s).</li>
                         </ul>
                     </div>
                     <div class="basic-donatello">
@@ -38,8 +40,8 @@
                         </ul>
                         <p>Inspirations</p>
                         <ul>
-                            <li>+80% Tool Recharge Rate</li>
-                            <li>7 Health at the start of each encounter.</li>
+                            <li>Restore XX health upon starting an encounter.</li>
+                            <li>Tool charges 80% faster.</li>
                         </ul>
                     </div>
                     <div class="basic-michaelangelo">
@@ -52,8 +54,8 @@
                         </ul>
                         <p>Inspirations</p>
                         <ul>
-                            <li>+% Attack area </li>
-                            <li></li>
+                            <li>+15% Attack area size. +15% Attack damage. </li>
+                            <li>+10% Multi-Hit chance.</li>
                         </ul>
                     </div>
                     <div class="basic-raphael">
@@ -66,8 +68,8 @@
                         </ul>
                         <p>Inspirations</p>
                         <ul>
-                            <li>+% Crit, +% Crit Damage</li>
-                            <li>+20% Special damage</li>
+                            <li>+15% Special Critical Hit chance</li>
+                            <li>+6% Attack Critical Hit chance. +6% Attack Critical Hit damage.</li>
                         </ul>
                     </div>
                     <!-- <div class="basic-casey">
@@ -194,178 +196,536 @@
     
             <div id="skills" class="tab-content">
                 <details>
-                    <summary>Astral</summary>
+                    <summary>Astral Dark</summary>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Cloak of Shadow</h4>
+                            <p>Special or Tool grants Dark Shell for 1.8/2.4/3.2s, dealing 10/25/40 Dark damage and applying 1 stack of Darkness to nearby enemies.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Nightfall</h4>
+                            <p>Final Strike applies 1 stack of Darkness for 3/4/5s and deals 10/15/25 Dark damage.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Call of the Void</h4>
+                            <p>Deal 10/15/20 Dark damage and pull in nearby enemies upon defeating an enemy affected by Darkness.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Core Collapse</h4>
+                            <p>Stun nearby enemies for 0.5/1/1.5s upon defeating an enemy affected by Darkness.</p>
                         </li> 
                     </ul>
-
-
+                    <ul>
+                        <li>
+                            <h4>Dark Attacks</h4>
+                            <p>+25/40/60% Attack damage against enemies affected by Darkness.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Dark Embrace</h4>
+                            <p>+3/4/5% damage dealt and +5/7/10% Move Speed for each Astral Dark power obtained.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Dark Star</h4>
+                            <p>Remove all of your Splinter's Revives. Gain +30% damage, plus 20% for each Splinter's Revive removed.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Dragon's Claw</h4>
+                            <p>+10% increased damage dealt. Gain an additional 10/15/20% whenever you select Dragon Coins in the Room Rewards screen.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Eternal Darkness</h4>
+                            <p>+50/80/100% duration of Negative Effects you Apply to enemies.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Gift of the Dragon</h4>
+                            <p>Gain 80 Dragon coins and 200 Scrap.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Lingering Darkness</h4>
+                            <p>Darkness deals 10/15/25 Dark damage per second to affected enemies.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Nightfall</h4>
+                            <p>Final Strike applies 1 stack of Darkness for 3/4/5s and deals 10/15/25 Dark damage.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Shifting Shadow</h4>
+                            <p>Dash deals 15/25/35 Dark damage, increased by 300% to targets affected by Darkness.</p>
+                        </li> 
+                    </ul>
+                </details>
+                <details>
+                    <summary>Astral Light</summary>
+                    <ul>
+                        <li>
+                            <h4>Light Attacks</h4>
+                            <p>Attack damage increased by 4/7/10% of Max Health.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Shimmering Shield</h4>
+                            <p>Gain Light Shell for 1.2/1.8/2.4s at the start of your Dash.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Astral Insight</h4>
+                            <p>Light Shell increases damage dealt by 30/40/60%.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Daybreak</h4>
+                            <p>Attacks apply 1/2/3 stack(s) of Blinding Light for 3/4/5s. Each stack reduces damage dealt by 5%. Max of 5 Stacks.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Radiant Warrior</h4>
+                            <p>Special and Tool grants Light Shell 1.2/1.8/2.3s</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Eternal Light</h4>
+                            <p>+40/60/80% Positive Effect duration.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Light Embrace</h4>
+                            <p>Reduce damage received by 2/2.5/3% for each Astral Light power obtained.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Ancestral Guardian</h4>
+                            <p>Gain Light Shell for 15/20/25s at the start of combat.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Illumination</h4>
+                            <p>Light Shell reflects projectiles. Reflected projectiles deal 30/45/60% of your Max Health as Light damage.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Revvival</h4>
+                            <p>Gain 1 Splinter's Revival(s). +30 Max Health.</p>
+                        </li> 
+                    </ul>
                 </details>
                 <details>
                     <summary>Ninja</summary>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Adrenaline</h4>
+                            <p>Gain a stack of Adrenaline upon defeating an enemy. Adrenaline increases Physical damage by 5/10/15%. 5 stacks max.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Extended Assault</h4>
+                            <p>Throw 1/2/3 Shuriken forward at the start of your Dash.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Quick Feet</h4>
+                            <p>+1 Dash charge(s).</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Shinobi Supremacy</h4>
+                            <p>+10/15/20% Dodge chance.</p>
                         </li> 
                     </ul>
-
-
+                    <ul>
+                        <li>
+                            <h4>Ninjutsu Tactics</h4>
+                            <p>+15/25/35% Global Critical Hit chance for 2/2.5/3s upon a Dodge.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Shuriken Attacks</h4>
+                            <p>Attacks have a 30/60/90% chance to throw a Shuriken forward.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Throwing Mastery</h4>
+                            <p>+40/65/90% Shuriken damage.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Quick Hands</h4>
+                            <p>+1/2/3 Shuriken thrown.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Shuriken Breaker</h4>
+                            <p>Shuriken apply Guard Break to enemy targets for 2s. Guard Break increases damage recieved by 15/25/35%</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Art of Darkness</h4>
+                            <p>Adrenaline now also increases Elemental damage by 10/15/20%.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>First Strike</h4>
+                            <p>+30/45/60% damage dealt for 1s after a Dash.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Heightened Senses</h4>
+                            <p>Gain 1/2/3 stack(s) of Adrenaline upon a Final Strike.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Throwing Arts: Chakram</h4>
+                            <p>Shuriken now boomerang, returning to your current position. -30/-5/+20% Shuriken damage.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Throwing Arts: Ricohet</h4>
+                            <p>Shuriken now ricohet, bouncing off enemies. -20/+10/+40% Shuriken damage.</p>
+                        </li> 
+                    </ul>
                 </details>
                 <details>
                     <summary>Water</summary>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Dilution</h4>
+                            <p>+20/30/40% Attack and Special damage area.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Pressure Nozzle</h4>
+                            <p>+15/20/30% damage dealt against Bosses.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Still Waters</h4>
+                            <p>***If you have not used your Attack for at least 2s gain +30/55/80% damage. Still Waters is lost upon Attack</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Torrential Strike</h4>
+                            <p>Final Strike grants a stack of Torrent for 4s. Torrent increases Multi-Hit chance by 5/7/10%. Max 5 stacks.</p>
                         </li> 
                     </ul>
-
+                    <ul>
+                        <li>
+                            <h4>Water Attacks</h4>
+                            <p>Attacks deal 15/20/25 Water damage.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Water Abilities</h4>
+                            <p>Special and Tool has a 60/80/100% chance to deal 30/45/60 Water damage.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Water Dash</h4>
+                            <p>Deal 35/45/55 Water damage to nearby enemies at the end of the Dash.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Frost</h4>
+                            <p>Water damage applies Frost for 2.5s, slowing the enemy 20/35/50%.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Freeze</h4>
+                            <p>Apply Frost to nearby enemies every 5/4/3s.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Splash Damage</h4>
+                            <p>30/45/60% of Water damage is also dealt to nearby enemies.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>When It Rains</h4>
+                            <p>Multi-Hits deal 24/38/52 Water damage.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Flash Freeze</h4>
+                            <p>Frost Stuns enemies for 0.8/1.2/1.6s when first applied. Stun does not affect Bosses.</p>
+                        </li> 
+                    </ul>
 
                 </details>
                 <details>
                     <summary>Flame</summary>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Flame Abilities</h4>
+                            <p>Special and Tool deals 15/25/40 Flame damage.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Flame Dash</h4>
+                            <p>Deal 30/50/70 Flame damage to nearby enemies at the start of a Dash.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Flame Strike</h4>
+                            <p>Final Strike causes an explosion, dealing 20/30/40 Flame damage to nearby enemies.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Furious Attacks</h4>
+                            <p>+20/35/50% Attack Critical Hit chance.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Rage</h4>
+                            <p>Deal 40/70/100% increased damage while below 50% Health.</p>
                         </li> 
                     </ul>
-
-
+                    <ul>
+                        <li>
+                            <h4>Rapid Fire</h4>
+                            <p>+20/35/50% damage dealt and +25/40/55% Move Speed for 25/35/45s after the start of combat.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Blazing Inferno</h4>
+                            <p>+2/3/4s Inferno duration.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Focus Fire</h4>
+                            <p>+15/20/30% Flame damage against Bosses.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Incendiary Strikes</h4>
+                            <p>Deal 50/75/100 Flame damage when scoring a Critical Hit.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Inferno</h4>
+                            <p>Apply Inferno to enemies hit by Flame damamge for 3s. Inferno deals 15/20/25 Flame damage per second.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Precision</h4>
+                            <p>+60/120/180% Critical Hit damage..</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Preheated</h4>
+                            <p>+15/30/60% Global Critical Hit chance against targets affected by Inferno.</p>
+                        </li> 
+                    </ul>
                 </details>
                 <details>
                     <summary>Utrom</summary>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Utrom Abilites</h4>
+                            <p>Special and Tool deals 20/30/40 Utrom damage.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Utrom Attacks</h4>
+                            <p>Attacks have a 30/45/60% chance to deal 10/20/30 Utrom damage.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Utrom Dash</h4>
+                            <p>Dash deals 10/20/30 Utrom damage to 2 enemies near where you end up.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Utrom Strike</h4>
+                            <p>Final Strike calls lightning to hit 2 nearby enemies for 10/20/30 Utrom damage.</p>
                         </li> 
                     </ul>
-
-
+                    <ul>
+                        <li>
+                            <h4>Chain Lightning</h4>
+                            <p>Utrom damage will strike again and chain out two nearby enemies for 7/14/21 Utrom damage.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Electrifying</h4>
+                            <p>Utrom damage applies Electrified to enemies for 3s. Electrified deals 7/14/21 Utrom damage per second. Max of 3 stacks.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Quick Study</h4>
+                            <p>Static Charge fills 75/125/200% faster.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Shocking</h4>
+                            <p>Gain Static Charge. Once full, your Special triggers a shockwave which deals 20/40/60 Utrom damage and Stuns enemies for 0.8/1/1.2s</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Stormy Weather</h4>
+                            <p>Periodically deal 7/15/25 Utrom damage to 1/2/3 nearby enemies.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Techno-Organic Interface</h4>
+                            <p>+10/20/30% Max Health. +30/40/50% Move Speed.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Alternating Current</h4>
+                            <p>Electrified additionally increases damage received by 30/50/70%.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Biomechanical Speed</h4>
+                            <p>Special can be used freely for 2/3/4s upon exhausting Static Charge.</p>
+                        </li> 
+                    </ul>
                 </details>
                 <details>
                     <summary>Ooze</summary>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Ooze Abilities</h4>
+                            <p>Special and Tool applies 1/2/3 stack(s) of Ooze.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Ooze Attacks</h4>
+                            <p>Attacks have a 25/33/50% chance to apply 1 stack of Ooze.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Ooze Dash</h4>
+                            <p>Apply 1/2/3 stack(s) of Ooze to enemies hit by your Dash.</p>
                         </li> 
                     </ul>
                     <ul>
                         <li>
-                            <h4>Name</h4>
-                            <p>Description.</p>
+                            <h4>Ooze Strike</h4>
+                            <p>Final Strike applies 2/4/6 stack(s) of Ooze.</p>
                         </li> 
                     </ul>
-
-
+                    <ul>
+                        <li>
+                            <h4>Catalytic Consequence</h4>
+                            <p>Deal +15/25/40 damage with your Dash Attack for each Stack of Ooze on the enemy.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Chunky Mixture</h4>
+                            <p>Ooze can now stack up to 6/8/10 time(s).</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Goo</h4>
+                            <p>+60/120/180% Ooze damage per second.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Goo'dBye</h4>
+                            <p>Enemies affected by Ooze now explode on defeat, dealing 50/100/150 Ooze damage to nearby enemies.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Living Ingredients</h4>
+                            <p>When Ooze expires, it is reapllied to 1/2/3 nearby unaffected enemies.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Potency</h4>
+                            <p>Ooze is now applied with an additional 1/2/3 stack(s).</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Shelf Life</h4>
+                            <p>Boosts last for an additional 2/4/6 rooms.</p>
+                        </li> 
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Unfortunate Odor</h4>
+                            <p>Deal 10/45/90 Ooze damage and Stun enemies for 1s when applying Ooze. Bosses are not stunned.</p>
+                        </li> 
+                    </ul>
                 </details>
             </div>
     
@@ -428,6 +788,13 @@
                         <p>+40% Move Speed for 6s. During that time, deal 15// Water damage per second to nearby enemies.</p>
                     </li>
                 </ul>
+            </div>
+            <div id="upgrades" class="tab-content upgrades">
+                <h3>Dragon Coins</h3>
+                <h3>Dreamer Coins</h3>
+            </div>
+            <div id="artifacts" class="tab-content artifacts">
+                <h3>Artifacts</h3>
             </div>
         </div>
     </body>
