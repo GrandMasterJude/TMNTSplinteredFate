@@ -59,11 +59,11 @@ body ul li {
 
 .basic-leonardo,
 .basic-donatello,
-.basic-michaelangelo,
+.basic-michelangelo,
 .basic-raphael,
 .mastery-leonardo,
 .mastery-donatello,
-.mastery-michaelangelo,
+.mastery-michelangelo,
 .mastery-raphael {
     margin-left: 1rem;
     min-width: 25rem;
@@ -72,7 +72,7 @@ body ul li {
 
 .mastery-leonardo ul,
 .mastery-donatello ul,
-.mastery-michaelangelo ul,
+.mastery-michelangelo ul,
 .mastery-raphael ul {
     list-style: none;
     padding: 0;
