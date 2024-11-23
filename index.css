@@ -51,14 +51,33 @@ body ul li {
     margin-bottom: 0.3rem;
 }
 
-body span.no-wrap {
+body .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body .no-wrap {
     white-space: nowrap;
+}
+
+.basic-info-container,
+.mastery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1150px) {
+.basic-info-container,
+.mastery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 }
 
 .tab-content.active.basic-info,
 .tab-content.active.mastery {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .basic-leonardo,
@@ -122,7 +141,7 @@ body span.no-wrap {
 
 #inspirations td p {
     margin: 0;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 #upgrades th {
@@ -137,7 +156,7 @@ body span.no-wrap {
 
 #upgrades td p {
     margin: 0;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .table-wrapper {
