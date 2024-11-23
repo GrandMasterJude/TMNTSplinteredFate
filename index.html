@@ -4,6 +4,21 @@
         <title>TMNT Splintered Fate</title>
     </head>
     <body>
+        <div class="hamburger" onclick="toggleMobileMenu()">
+            ☰ Menu
+        </div>
+    
+        <div class="mobile-menu">
+            <a href="#" onclick="showContent('basic-info')">Basic Info</a>
+            <a href="#" onclick="showContent('mastery')">Mastery</a>
+            <a href="#" onclick="showContent('inspirations')">Inpirations</a>
+            <a href="#" onclick="showContent('skills')">Skills</a>
+            <a href="#" onclick="showContent('tools')">Tools</a>
+            <a href="#" onclick="showContent('upgrades')">Upgrades</a>
+            <a href="#" onclick="showContent('artifacts')">Artifacts</a>
+            <a href="#" onclick="showContent('status-effects')">Status Effects</a>
+            <a href="#" onclick="showContent('boosts')">Boosts</a>
+        </div>
         <div class="navbar">
             <a href="#" class="tab active" onclick="showContent('basic-info')">Basic Info</a>
             <a href="#" class="tab" onclick="showContent('mastery')">Mastery</a>
@@ -12,68 +27,87 @@
             <a href="#" class="tab" onclick="showContent('tools')">Tools</a>
             <a href="#" class="tab" onclick="showContent('upgrades')">Upgrades</a>
             <a href="#" class="tab" onclick="showContent('artifacts')">Artifacts</a>
+            <a href="#" class="tab" onclick="showContent('status-effects')">Status Effects</a>
+            <a href="#" class="tab" onclick="showContent('boosts')">Boosts</a>
         </div>
 
         <div class="content">
             <div id="basic-info" class="tab-content active basic-info">
+                <div class="basic-michelangelo">
+                    <h3>Michelangelo</h3>
+                    <ul>
+                        <li>Health: 110</li>
+                        <li>Attack Damage: 7, 14, 16 16 16 23</li>
+                        <li>Dash Attack Damage: 7 7 7 14</li>
+                        <li>Special Attack Damage: 37 37 37 37</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Inpsiration 1</h4>
+                            <p>+15% / 20% / 25% / 30% Attack area size. +15% / 20% / 25% / 30% Attack damage.</p>
+                        </li>
+                        <li>
+                            <h4>Inpsiration 1</h4>
+                            <p>+10% / 15% / 20% / 25% Multi-Hit chance.</p>
+                        </li>
+                    </ul>
+                </div>
                     <div class="basic-leonardo">
-                        <h4>Leonardo</h4>
+                        <h3>Leonardo</h3>
                         <ul>
                             <li>Health: 100</li>
-                            <li>Attack Damage: 25, 25, 40 + (35 Master Strike damage)</li>
+                            <li>Attack Damage: 25, 25, 40 + Master Strike damage</li>
                             <li>Dash Attack Damage: 25</li>
                             <li>Special Attack Damage: 65</li>
-                            <li>Skill Affinities: Ninja, Utrom</li>
                         </ul>
-                        <p>Inspirations</p>
                         <ul>
-                            <li>Final Strike triggers a Master Strike</li>
-                            <li>+1 Special charge(s).</li>
-                        </ul>
-                    </div>
-                    <div class="basic-donatello">
-                        <h4>Donatello</h4>
-                        <ul>
-                            <li>Health: 140</li>
-                            <li>Attack Damage: 20, 20, 30</li>
-                            <li>Dash Attack Damage: 25</li>
-                            <li>Special Attack Damage: 30 30 30 30 30</li>
-                            <li>Skill Affinities: Ooze, Utrom</li>
-                        </ul>
-                        <p>Inspirations</p>
-                        <ul>
-                            <li>Restore 5 health upon starting an encounter.</li>
-                            <li>Tool charges 80% faster.</li>
-                        </ul>
-                    </div>
-                    <div class="basic-michelangelo">
-                        <h4>Michelangelo</h4>
-                        <ul>
-                            <li>Health: 110</li>
-                            <li>Attack Damage: 7, 14, 16 16 16 23</li>
-                            <li>Dash Attack Damage: 7 7 7 14</li>
-                            <li>Special Attack Damage: 37 37 37 37</li>
-                            <li>Skill Affinities: Astral, Water</li>
-                        </ul>
-                        <p>Inspirations</p>
-                        <ul>
-                            <li>+15% Attack area size. +15% Attack damage. </li>
-                            <li>+10% Multi-Hit chance.</li>
+                            <li>
+                                <h4>Inspiration 1</h4>
+                                <p>Final Strike triggers a Master Strike, Master Strike deals 35 / 40 / 45 / 50 Physical damage.</p>
+                            </li>
+                            <li>
+                                <h4>Inspiration 2</h4>
+                                <p>+1 / 2 / 3 Special charge(s).</p>
+                            </li>
                         </ul>
                     </div>
                     <div class="basic-raphael">
-                        <h4>Raphael</h4>
+                        <h3>Raphael</h3>
                         <ul>
                             <li>Health: 120</li>
                             <li>Attack Damage: 24, 30, 28 35</li>
                             <li>Dash Attack Damage: 24</li>
                             <li>Special Attack Damage: 25 25 25 25 25 25 25</li>
-                            <li>Skill Affinities: Water, Flame</li>
                         </ul>
-                        <p>Inspirations</p>
                         <ul>
-                            <li>+15% Special Critical Hit chance</li>
-                            <li>+6% Attack Critical Hit chance. +6% Attack Critical Hit damage.</li>
+                            <li>
+                                <h4>Inspiration 1</h4>
+                                <p>+15% / 20% / 25% / 30% Special Critical Hit chance.</p>
+                            </li>
+                            <li>
+                                <h4>Inspiration 2</h4>
+                                <p>+6% / 9% / 12% / 15% Attack Critical Hit chance. +6% / 9% / 12% / 15% Attack Critical Hit damage.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="basic-donatello">
+                        <h3>Donatello</h3>
+                        <ul>
+                            <li>Health: 140</li>
+                            <li>Attack Damage: 20, 20, 30</li>
+                            <li>Dash Attack Damage: 25</li>
+                            <li>Special Attack Damage: 30 30 30 30 30</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h4>Inspiration 1</h4>
+                                <p>Restore 5 / 6 / 7 / 8 health upon starting an encounter.</p>
+                                <p class="note">This is affected by the Savor the Flavor upgrade.</p>
+                            </li>
+                            <li>
+                                <h4>Inspiration 2</h4>
+                                <p>Tool charges 80% / 100% / 120% faster.</p>
+                            </li>
                         </ul>
                     </div>
                     <!-- <div class="basic-casey">
@@ -108,74 +142,130 @@
             </div>
     
             <div id="mastery" class="tab-content mastery">
-                <div class="mastery-leonardo">
-                    <h4>Leonardo</h4>
-                    <ul>
-                        <li>+50% damage to enemies with a Barrier.</li>
-                        <li>+20% damage to Bosses.</li>
-                        <li>+100% Master Strike Damage.</li>
-                        <li>+5% Shuriken Damage for each Ninja power acquired.</li>
-                        <li>Activating your Special grants Light Shell for 2s.</li>
-                        <li>Dash Attack applies Master Strike.</li>
-                        <li>Defeating an enemy with your Special recharges your Tool.</li>
-                        <li>Gain Light Shell for 1s upon Master Strike.</li>
-                        <li>Master Strike applies Guard Break for 3.5s.</li>
-                        <li>Special charges 30% faster.</li>
-                        <li>Special gains all Dash and Dash Attack bonuses.</li>
-                        <li>Special deals 30 Utrom damage.</li>
-                    </ul>
-                </div>
-                <div class="mastery-donatello">
-                    <h4>Donatello</h4>
-                    <ul>
-                        <li>+50% damage to enemies with a Barrier.</li>
-                        <li>+20% damage to Bosses.</li>
-                        <li>+75% Special damage.</li>
-                        <li>+30% damage to Bosses, Mousers, and Super Soldiers.</li>
-                        <li>+30% Dash Attack damage. Gain 1 charge of Dash upon defeating an enemy.</li>
-                        <li>+30% Ooze damage.</li>
-                        <li>+30% Utrom damage.</li>
-                        <li>+15% All damage dealt.</li>
-                        <li>+1 Tool charge(s).</li>
-                        <li>Every other Attack deals 10 Utrom damage.</li>
-                        <li>Special and Tool deals 20 Utrom damage.</li>
-                        <li>Special gains all Dash and Dash Attack bonuses.</li>
-                        <li>Tool charges 30% faster.</li>
-                    </ul>
-                </div>
                 <div class="mastery-michelangelo">
                     <h4>Michelangelo</h4>
                     <ul>
-                        <li>+50% damage to enemies with a Barrier.</li>
-                        <li>+20% damage to Bosses.</li>
-                        <li>+40% Multi-Hit damage.</li>
-                        <li>+30% Dash Attack damage. Gain 1 charge of Dash upon defeating an enemy.</li>
-                        <li>+30% Special area size. Special charges 20% faster.</li>
-                        <li>+30% Water damage.</li>
-                        <li>+20% damage dealt and Move Speed for 3s after defeating an enemy.</li>
-                        <li>+15% chance to trigger Elemental Effects.</li>
-                        <li>+10% Multi-Hit chance.</li>
+                        <li>-35% Dash Cooldown.</li>
+
+                        <li>+5% damage dealt for each Astral power acquired.</li>
+
                         <li>+10% Elemental damage.</li>
-                        <li>+5% damage for each Astral power acquired.</li>
+
+                        <li>+10% Multi-Hit chance.</li>
+
+                        <li>+15% chance to trigger Elemental Effects.</li>
+
+                        <li>+20% Damage dealt and Move Speed for 3s after defeating an enemy.</li>
+
+                        <li>+20% damage to Bosses.</li>
+
+                        <li>+30% Dash Attack damage. Gain 1 charge of Dash upon defeating an enemy.</li>
+
+                        <li>+30% Special area size. Special charges 20% faster.</li>
+
+                        <li>+30% Water damage.</li>
+
+                        <li>+40% Multi-Hit damage.</li>
+
+                        <li>+50% damage to enemies with a Barrier.</li>
+
                         <li>Improve Michelangelo's Inspiration: +15% Attack area size. +15% Attack damage.</li>
-                        <li>Reduce damage recieved from projectiles and hazards by 75%.</li>
+                    </ul>
+                </div>
+                <div class="mastery-leonardo">
+                    <h4>Leonardo</h4>
+                    <ul>
+                        <li>+5% Shuriken damage for each Ninja power acquired.</li>
+
+                        <li>+10% Utrom damage for each Utrom power acquired.</li>
+
+                        <li>+20% damage to Bosses.</li>
+
+                        <li>+30% Dash Attack damage. Gain 1 charge of Dash upon defeating an enemy.</li>
+
+                        <li>+50% damage to enemies with a Barrier.</li>
+
+                        <li>+100% Master Strike damage.</li>
+
+                        <li>Activating your Special grants Light Shell for 2s.</li>
+
+                        <li>Dash Attack applies Master Strike.</li>
+
+                        <li>Defeating an enemy with your Special recharges your Tool.</li>
+
+                        <li>Gain Light Shell for 1s upon a Master Strike.</li>
+
+                        <li>Master Strike applies Guard Break for 3.5s</li>
+
+                        <li>Special charges 30% faster.</li>
+
+                        <li>Special deals 30 Utrom damage.</li>
+
+                        <li>Special gains all Dash and Dash Attack bonuses.</li>
                     </ul>
                 </div>
                 <div class="mastery-raphael">
                     <h4>Raphael</h4>
                     <ul>
-                        <li>+50% damage to enemies with a Barrier.</li>
-                        <li>+20% damage to Bosses.</li>
-                        <li>+100% Special damage dealt to enemies below 35% health.</li>
-                        <li>+50% Critical Hit damage.</li>
-                        <li>+30% Special damage.</li>
-                        <li>+30% Flame damage.</li>
-                        <li>+30% Water damage.</li>
+                        <li>+3% Critical Hit damage for the rest of the encounter upon defeating an enemy.</li>
+
                         <li>+20% Attack Critical Hit chance.</li>
+
+                        <li>+20% damage to Bosses.</li>
+
                         <li>+20% Special Critical Hit chance.</li>
-                        <li>+20% damage dealt and Move Speed for 3s after defeating an enemy.</li>
+
+                        <li>+30% Dash Attack damage. Gain 1 charge of Dash upon defeating an enemy.</li>
+
+                        <li>+30% Flame damage.</li>
+
+                        <li>+30% Special damage</li>
+
+                        <li>+30% Water damage</li>
+
+                        <li>+50% Critical Hit damage.</li>
+
+                        <li>+50% damage to enemies with a Barrier.</li>
+
+                        <li>+100% Special damage to dealt to enemies below 35% health.</li>
+
                         <li>Critical Hits have a 20% chance to deal 10 damage of any type of elemental power obtained.</li>
+
+                        <li>Critical Hits have a 40% chance to Multi-Crit, dealing 300% increased damage.</li>
+
                         <li>Instantly defeat enemies below 10% health.</li>
+                    </ul>
+                </div>
+                <div class="mastery-donatello">
+                    <h4>Donatello</h4>
+                    <ul>
+                        <li>+1 Tool charge(s).</li>
+
+                        <li>+15% all damage dealt.</li>
+
+                        <li>+20% damage to Bosses.</li>
+
+                        <li>+30% damage to Bosses, Mousers, and Super Soldiers.</li>
+
+                        <li>+30% Dash Attack damage. Gain 1 charge of Dash upon defeating an enemy.</li>
+
+                        <li>+30% Ooze damage.</li>
+
+                        <li>+30% Utrom damage.</li>
+
+                        <li>+50% damage to enemies with a Barrier.</li>
+
+                        <li>+75% Special damage.</li>
+
+                        <li>Activating your Special or Tool makes your next attack a Final Strike.</li>
+
+                        <li>Every other Attack deals 10 Utrom damage.</li>
+
+                        <li>Tool charges 30% faster.</li>
+
+                        <li>Special and Tool deals 20 Utrom damage.</li>
+
+                        <li>Special gains all Dash and Dash Attack bonuses.</li>
                     </ul>
                 </div>
                 <!-- <div class="mastery-casey">
@@ -223,11 +313,11 @@
                       <tr>
                         <th scope="row">Leonardo Inspiration 2</th>
                         <td>
-                            <p>Cost:</p>
+                            <p>Cost:</p>d
                             <p>Grants +1 Special charge.</p>
                         </td>
                         <td>
-                            <p>Cost: 1200 3B</p>
+                            <p>Cost: 1200 3LB</p>
                             <p>Grants +2 Special charge.</p>
                         </td>
                       </tr>
@@ -237,7 +327,7 @@
                           <p>Restore 1 Health upon starting an ecounter</p>
                       </td>
                       <td>
-                          <p>Cost:</p>
+                          <p>Cost: DB</p>
                           <p>Restore 2 Health upon starting an ecounter</p>
                       </td>
                       <td>
@@ -262,11 +352,11 @@
                         <p>+5% Attack area size. +5% Attack damage.</p>
                     </td>
                     <td>
-                        <p>Cost: 600 2B</p>
+                        <p>Cost: 600 2MB</p>
                         <p>+10% Attack area size. +10% Attack damage.</p>
                     </td>
                     <td>
-                        <p>Cost:</p>
+                        <p>Cost: 1000 4MB</p>
                         <p>+15% Attack area size. +15% Attack damage.</p>
                     </td>
                   </tr>
@@ -277,11 +367,11 @@
                         <p>+5% Multi-Hit chance.</p>
                     </td>
                     <td>
-                        <p>Cost: 600 2B</p>
+                        <p>Cost: 600 2MB</p>
                         <p>+10% Multi-Hit chance.</p>
                     </td>
                     <td>
-                        <p>Cost:</p>
+                        <p>Cost: 1000 4MB</p>
                         <p>+15% Multi-Hit chance.</p>
                     </td>
                   </tr>
@@ -291,11 +381,11 @@
                       <p>+5% Special Critical Hit chance.</p>
                   </td>
                   <td>
-                      <p>Cost: 600 2B</p>
+                      <p>Cost: 600 2RB</p>
                       <p>+10% Special Critical Hit chance.</p>
                   </td>
                   <td>
-                      <p>Cost:</p>
+                      <p>Cost: 1000 4RB</p>
                       <p>+15% Special Critical Hit chance.</p>
                   </td>
                 </tr>
@@ -319,559 +409,399 @@
             </div>
     
             <div id="skills" class="tab-content">
-                <details>
+                <details class="skill-astral-d">
                     <summary>Astral Dark</summary>
-                    <ul>
-                        <li>
-                            <h4>Cloak of Shadow</h4>
-                            <p>Special or Tool grants Dark Shell for 1.8/2.4/3.2s, dealing 10/25/40 Dark damage and applying 1 stack of Darkness to nearby enemies.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Nightfall</h4>
-                            <p>Final Strike applies 1 stack of Darkness for 3/4/5s and deals 10/15/25 Dark damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Call of the Void</h4>
-                            <p>Deal 10/15/20 Dark damage and pull in nearby enemies upon defeating an enemy affected by Darkness.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Core Collapse</h4>
-                            <p>Stun nearby enemies for 0.5/1/1.5s upon defeating an enemy affected by Darkness.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Dark Attacks</h4>
-                            <p>+25/40/60% Attack damage against enemies affected by Darkness.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Dark Embrace</h4>
-                            <p>+3/4/5% damage dealt and +5/7/10% Move Speed for each Astral Dark power obtained.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Dark Star</h4>
-                            <p>Remove all of your Splinter's Revives. Gain +30% damage, plus 20% for each Splinter's Revive removed.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Dragon's Claw</h4>
-                            <p>+10% increased damage dealt. Gain an additional 10/15/20% whenever you select Dragon Coins in the Room Rewards screen.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Eternal Darkness</h4>
-                            <p>+50/80/100% duration of Negative Effects you Apply to enemies.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Gift of the Dragon</h4>
-                            <p>Gain 80 Dragon coins and 200 Scrap.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Lingering Darkness</h4>
-                            <p>Darkness deals 10/15/25 Dark damage per second to affected enemies.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Nightfall</h4>
-                            <p>Final Strike applies 1 stack of Darkness for 3/4/5s and deals 10/15/25 Dark damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Shifting Shadow</h4>
-                            <p>Dash deals 15/25/35 Dark damage, increased by 300% to targets affected by Darkness.</p>
-                        </li> 
-                    </ul>
-                </details>
-                <details>
-                    <summary>Astral Light</summary>
-                    <ul>
-                        <li>
-                            <h4>Light Attacks</h4>
-                            <p>Attack damage increased by 4/7/10% of Max Health.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Shimmering Shield</h4>
-                            <p>Gain Light Shell for 1.2/1.8/2.4s at the start of your Dash.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Astral Insight</h4>
-                            <p>Light Shell increases damage dealt by 30/40/60%.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Daybreak</h4>
-                            <p>Attacks apply 1/2/3 stack(s) of Blinding Light for 3/4/5s. Each stack reduces damage dealt by 5%. Max of 5 Stacks.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Radiant Warrior</h4>
-                            <p>Special and Tool grants Light Shell 1.2/1.8/2.3s</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Eternal Light</h4>
-                            <p>+40/60/80% Positive Effect duration.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Light Embrace</h4>
-                            <p>Reduce damage received by 2/2.5/3% for each Astral Light power obtained.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Ancestral Guardian</h4>
-                            <p>Gain Light Shell for 15/20/25s at the start of combat.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Illumination</h4>
-                            <p>Light Shell reflects projectiles. Reflected projectiles deal 30/45/60% of your Max Health as Light damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Revvival</h4>
-                            <p>Gain 1 Splinter's Revival(s). +30 Max Health.</p>
-                        </li> 
-                    </ul>
-                </details>
-                <details>
-                    <summary>Ninja</summary>
-                    <ul>
-                        <li>
-                            <h4>Adrenaline</h4>
-                            <p>Gain a stack of Adrenaline upon defeating an enemy. Adrenaline increases Physical damage by 5/10/15%. 5 stacks max.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Extended Assault</h4>
-                            <p>Throw 1/2/3 Shuriken forward at the start of your Dash.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Quick Feet</h4>
-                            <p>+1 Dash charge(s).</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Shinobi Supremacy</h4>
-                            <p>+10/15/20% Dodge chance.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Ninjutsu Tactics</h4>
-                            <p>+15/25/35% Global Critical Hit chance for 2/2.5/3s upon a Dodge.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Shuriken Attacks</h4>
-                            <p>Attacks have a 30/60/90% chance to throw a Shuriken forward.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Throwing Mastery</h4>
-                            <p>+40/65/90% Shuriken damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Quick Hands</h4>
-                            <p>+1/2/3 Shuriken thrown.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Shuriken Breaker</h4>
-                            <p>Shuriken apply Guard Break to enemy targets for 2s. Guard Break increases damage recieved by 15/25/35%</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Art of Darkness</h4>
-                            <p>Adrenaline now also increases Elemental damage by 10/15/20%.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>First Strike</h4>
-                            <p>+30/45/60% damage dealt for 1s after a Dash.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Heightened Senses</h4>
-                            <p>Gain 1/2/3 stack(s) of Adrenaline upon a Final Strike.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Throwing Arts: Chakram</h4>
-                            <p>Shuriken now boomerang, returning to your current position. -30/-5/+20% Shuriken damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Throwing Arts: Ricohet</h4>
-                            <p>Shuriken now ricohet, bouncing off enemies. -20/+10/+40% Shuriken damage.</p>
-                        </li> 
-                    </ul>
-                </details>
-                <details>
-                    <summary>Water</summary>
-                    <ul>
-                        <li>
-                            <h4>Dilution</h4>
-                            <p>+20/30/40% Attack and Special damage area.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Pressure Nozzle</h4>
-                            <p>+15/20/30% damage dealt against Bosses.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Still Waters</h4>
-                            <p>***If you have not used your Attack for at least 2s gain +30/55/80% damage. Still Waters is lost upon Attack</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Torrential Strike</h4>
-                            <p>Final Strike grants a stack of Torrent for 4s. Torrent increases Multi-Hit chance by 5/7/10%. Max 5 stacks.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Water Attacks</h4>
-                            <p>Attacks deal 15/20/25 Water damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Water Abilities</h4>
-                            <p>Special and Tool has a 60/80/100% chance to deal 30/45/60 Water damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Water Dash</h4>
-                            <p>Deal 35/45/55 Water damage to nearby enemies at the end of the Dash.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Frost</h4>
-                            <p>Water damage applies Frost for 2.5s, slowing the enemy 20/35/50%.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Freeze</h4>
-                            <p>Apply Frost to nearby enemies every 5/4/3s.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Splash Damage</h4>
-                            <p>30/45/60% of Water damage is also dealt to nearby enemies.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>When It Rains</h4>
-                            <p>Multi-Hits deal 24/38/52 Water damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Flash Freeze</h4>
-                            <p>Frost Stuns enemies for 0.8/1.2/1.6s when first applied. Stun does not affect Bosses.</p>
-                        </li> 
-                    </ul>
+                    <h4>Cloak of Shadow</h4>
+                    <p>Special or Tool grants Dark Shell for 1.8s / 2.4s / 3.2s, dealing 10 / 25 / 40 Dark damage and applying 1 stack of Darkness to neaby enemies</p>
+
+                    <h4>Nightfall</h4>
+                    <p>Final Strike applies 1 stack of Darkness for 3 / 4 / 5s and deals 10 / 15 / 25 Dark damage.</p>
+
+
+                    <h4>Call of the Void</h4>
+                    <p>Deal 10 Dark damage and pull in nearby enemies upon defeating an enmy affected by Darkness.</p>
+
+                    <h4>Core Collapse</h4>
+                    <p>Stun nearby enemies for 0.5s / 1s / 1.5s upon defeating an enemy affected by Darkness</p>
+                    
+                    <h4>Dark Attakcs</h4>
+                    <p>+25% / 40% / 60% % Attack damage against enemies affected by Darkness.</p>
+
+                    <h4>Dark Embrace</h4>
+                    <p>+3% / 4% / ?? % damage dealt and +5% / 7% / ?? % Move Speed for each Astral Dark power obtained.</p>
+
+                    <h4>Dark Star</h4>
+                    <p>Remove all of your Splinter's Revives. Gain +30% damage, plus 20% for each Splinter's Revive removed.</p>
+
+                    <h4>Dragon's Claw</h4>
+                    <p>+10% increased damage dealt. Gain an additional 10% / 15% / 20% whenever you select Dragon Coins in the Room Rewards screen.</p>
+
+                    <h4>Eternal Darkness</h4>
+                    <p>+50% / 80% / 100% % duration of Negative Effects you apply to enemies.</p>
+
+                    <h4>Gift of the Dragon</h4>
+                    <p>Gain 80 Dragon coins and 200 Scrap.</p>
+
+                    <h4>Lingering Darkness</h4>
+                    <p>Darkness deals 10 / 15 / 25 Dark damage per second to affected enemies.</p>
+                    
+                    <h4>Shifting Shadow</h4>
+                    <p>Dash deals 15 / 25 / ?? Dark damage, increased by 300% to targets affected by Darkness.</p>
+                    
+
+                
+                    <h4>*DARK FLAME*</h4>
+                    <p>+40% Flame Damage against targets affected by Darkness.</p>
 
                 </details>
-                <details>
+                <details class="skill-astral-l">
+                    <summary>Astral Light</summary>
+                    <h4>Light Attacks</h4>
+                    <p>Attack damage increased by 4 / 7 / 10% of Max Health.</p>
+
+                    <h4>Shimmering Shield</h4>
+                    <p>Grant Light Shell for 1.2 / 1.8 / 2.4s at the start of your Dash.</p>
+
+
+                    <h4>Ancestral Guardian</h4>
+                    <p>Gain Light Shell for 15s / 20s / 25s after the start of combat.</p>
+
+                    <h4>Astral Insight</h4>
+                    <p>Increase damage by 30% / 40% / 60% while Light Shell is active.</p>
+
+                    <h4>Daybreak</h4>
+                    <p>Attacks apply 1 / 2 / 3 stack(s) of Blinding Light for 3s / 4s / 5s. Each stack reduces damage dealt by 5%. Max 5 Stacks.</p>
+
+                    <h4>Eternal Light</h4>
+                    <p>+40% / 60% / 80% Positive Effect duration.</p>
+
+                    <h4>Illumination</h4>
+                    <p>Light Shell reflects projectiles. Reflected projectiles deal 30% / 45% / 60% of your Max Health as Light damage.</p>
+
+                    <h4>Light Embrace</h4>
+                    <p>Reduve damage received by 2% / 2.5% / 3% for each Astral Light power obtained.</p>
+
+                    <h4>Radiant Warrior</h4>
+                    <p>Special and Tool grants Light Shell for 1.2s / 1.8s / 2.4s</p>
+
+                    <h4>Revival</h4>
+                    <p>Gain 1 Splinter's Revive(s). +30 / 60 / 90? Max Health.</p>
+
+                    <h4>Revved Up</h4>
+                    <p>Gain +10% / 15% / 20% chance of dodging enemy attacks when they are affected by Blinding Light.</p>
+
+
+
+                    <h4>*BRIGHT SPRING* (Water & Light)</h4>
+                    <p>Attacks restore 2 health.</p>
+
+                    <h4>*LIGHT HAMMER* (Utrom & Light)</h4>
+                    <p>Utrom damage is increased by 10% of your Max Health.</p>
+                </details>
+                <details class="skill-flame">
                     <summary>Flame</summary>
-                    <ul>
-                        <li>
-                            <h4>Flame Abilities</h4>
-                            <p>Special and Tool deals 15/25/40 Flame damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Flame Dash</h4>
-                            <p>Deal 30/50/70 Flame damage to nearby enemies at the start of a Dash.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Flame Strike</h4>
-                            <p>Final Strike causes an explosion, dealing 20/30/40 Flame damage to nearby enemies.</p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Furious Attacks</h4>
-                            <p>+20/35/50% Attack Critical Hit chance.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Rage</h4>
-                            <p>Deal 40/70/100% increased damage while below 50% Health.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Rapid Fire</h4>
-                            <p>+20/35/50% damage dealt and +25/40/55% Move Speed for 25/35/45s after the start of combat.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Blazing Inferno</h4>
-                            <p>+2/3/4s Inferno duration.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Focus Fire</h4>
-                            <p>+15/20/30% Flame damage against Bosses.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Incendiary Strikes</h4>
-                            <p>Deal 50/75/100 Flame damage when scoring a Critical Hit.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Inferno</h4>
-                            <p>Apply Inferno to enemies hit by Flame damamge for 3s. Inferno deals 15/20/25 Flame damage per second.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Precision</h4>
-                            <p>+60/120/180% Critical Hit damage..</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Preheated</h4>
-                            <p>+15/30/60% Global Critical Hit chance against targets affected by Inferno.</p>
-                        </li> 
-                    </ul>
+
+                    <div class="initial">
+
+                        <h4>Blazing Inferno</h4>
+                        <p>+2s / 3s / 4s Inferno duration.</p>
+
+                        <h4>Flame Abilities (Ability Icon)</h4>
+                        <p>Special and Tool deals 15 / 25 / 40 Flame damage.</p>
+
+                        <h4>Flame Dash (Dash Icon)</h4>
+                        <p>Deal 30 / 50 / 70 Flame damage to nearby enemies at the start of a Dash.</p>
+    
+                        <h4>Flame Strike (Strike Icon)</h4>
+                        <p>Final Strike causes an explosion, dealing 20 / 30 / 40 Flame damage to nearby enemies.</p>
+
+                        <h4>Focus Fire</h4>
+                        <p>+15% / 20% / 30% Flame damage against Bosses.</p>
+
+                        <h4>Furious Attacks</h4>
+                        <p>+20% / 35% / 50% Attack Critical Hit chance.</p>
+
+                        <h4>Incendiary Strikes</h4>
+                        <p>Deal 50 / 75 / 100 Flame damage when scoring a Critical Hit.</p>
+
+                        <h4>Inferno</h4>
+                        <p>Apply Inferno to enemies hit by Flame damage for 3s. Inferno deals 15 / 20 / 25 Flame damage per second.</p>
+    
+                        <h4>Precision</h4>
+                        <p>+60% / 120% / 180% Critical Hit damage.</p>
+
+
+                        <h4>Rage</h4>
+                        <p>Deal 40% / 70% / 100% increased damage while below 50% Health.</p>
+    
+                        <h4>Rapid Fire</h4>
+                        <p>+20% / 35% / 50% damage dealt and +25% / 40% / 55% Move Speed for 25s /35s / 45s after the start of combat.</p>
+  
+                        <h4>Trailblazer</h4>
+                        <p>+15s duration of Rapid Fire. Whilst Rapid Fire is active defeating an enemy grants +1 / 2 / 3s duration and +5 / 10 / 15% damage.</p>
+
+
+
+
+                        <h4>*DARK FLAME* (Dark & Flame)</h4>
+                        <p>+40% Flame Damage against targets affected by Darkness.</p>
+
+                        <h4>*SPONTANEOUS COMBUSTION* ()</h4>
+                        <p>Gain a 30% chance to deal 100 Flame damage when applying Ooze.</p>   
+                    </div>
+
                 </details>
-                <details>
-                    <summary>Utrom</summary>
-                    <ul>
-                        <li>
-                            <h4>Utrom Abilites</h4>
-                            <p>Special and Tool deals 20/30/40 Utrom damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Utrom Attacks</h4>
-                            <p>Attacks have a 30/45/60% chance to deal 10/20/30 Utrom damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Utrom Dash</h4>
-                            <p>Dash deals 10/20/30 Utrom damage to 2 enemies near where you end up.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Utrom Strike</h4>
-                            <p>Final Strike calls lightning to hit 2 nearby enemies for 10/20/30 Utrom damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Chain Lightning</h4>
-                            <p>Utrom damage will strike again and chain out two nearby enemies for 7/14/21 Utrom damage.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Electrifying</h4>
-                            <p>Utrom damage applies Electrified to enemies for 3s. Electrified deals 7/14/21 Utrom damage per second. Max of 3 stacks.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Quick Study</h4>
-                            <p>Static Charge fills 75/125/200% faster.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Shocking</h4>
-                            <p>Gain Static Charge. Once full, your Special triggers a shockwave which deals 20/40/60 Utrom damage and Stuns enemies for 0.8/1/1.2s</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Stormy Weather</h4>
-                            <p>Periodically deal 7/15/25 Utrom damage to 1/2/3 nearby enemies.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Techno-Organic Interface</h4>
-                            <p>+10/20/30% Max Health. +30/40/50% Move Speed.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Alternating Current</h4>
-                            <p>Electrified additionally increases damage received by 30/50/70%.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Biomechanical Speed</h4>
-                            <p>Special can be used freely for 2/3/4s upon exhausting Static Charge.</p>
-                        </li> 
-                    </ul>
+                <details class="skill-ninja">
+                    <summary>Ninja</summary>
+                    <h4>Adrenaline</h4>
+                    <p>Gain a stack of Adrenaline upon defeating an enemy. Adrenaline increases Physical damage by 5% / 10% / 15%. 5 stacks max.</p>
+
+                    <h4>Art of Darkness</h4>
+                    <p>Adrenaline now also increases Elemental damage by 10% / 15% / 20%.</p>
+
+                    <h4>Extended Assault</h4>
+                    <p>Throw 1 Shuriken forward at the start of your Dash.</p>
+
+                    <h4>First Strike</h4>
+                    <p>+30% / 45% / 60% damage dealt for 1s after a Dash.</p>
+
+                    <h4>Ninjutsu Tactics</h4>
+                    <p>+15% / 25% / 25% Global Critical Hit chance for 2s / 2.5s / 3s upon Dodge.</p>
+
+                    <h4>Quick Feet</h4>
+                    <p>+1 Dash charge(s).</p>
+
+                    <h4>Shinobi Supremacy</h4>
+                    <p>+10% / 15% / 20% Dodge chance.</p>
+
+                    <h4>Shuriken Attacks</h4>
+                    <p>Attacks have a 30% / 60% / 100% chance to throw a Shuriken forward.</p>
+
+                    <h4>Shuriken Breaker</h4>
+                    <p>Shuriken apply Guard Break to enemy targets for 2s. Guard Break increases damage received by 15%.</p>
+
+                    <h4>Shuriken Engineer</h4>
+                    <p>Shuriken have a 30% / 60% / 100% chance of triggering Tool bonuses.</p>
+
+                    <h4>Throwing Arts: Chakram</h4>
+                    <p>Shuriken now boomerang, returning to your current position. -30% Shuriken Damage.</p>
+
+                    <h4>Throwing Arts: Ricochet</h4>
+                    <p>Shuriken now ricohet, bouncing off of enemies. -20% / +10% / +40% Shuriken damage.</p>
+
+                    <h4>Throwing Mastery</h4>
+                    <p>+40% / 65% /  Shuriken damage.</p>
+
+
+
+                    <h4>*REVOLUTION*</h4>
+                    <p>Dash Attack's damage is increased by 1% of the enemies' Max Health.</p>
                 </details>
-                <details>
+                <details class="skill-ooze">
                     <summary>Ooze</summary>
-                    <ul>
-                        <li>
-                            <h4>Ooze Abilities</h4>
-                            <p>Special and Tool applies 1/2/3 stack(s) of Ooze.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Ooze Attacks</h4>
-                            <p>Attacks have a 25/33/50% chance to apply 1 stack of Ooze.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Ooze Dash</h4>
-                            <p>Apply 1/2/3 stack(s) of Ooze to enemies hit by your Dash.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Ooze Strike</h4>
-                            <p>Final Strike applies 2/4/6 stack(s) of Ooze.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Catalytic Consequence</h4>
-                            <p>Deal +15/25/40 damage with your Dash Attack for each Stack of Ooze on the enemy.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Chunky Mixture</h4>
-                            <p>Ooze can now stack up to 6/8/10 time(s).</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Goo</h4>
-                            <p>+60/120/180% Ooze damage per second.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Goo'dBye</h4>
-                            <p>Enemies affected by Ooze now explode on defeat, dealing 50/100/150 Ooze damage to nearby enemies.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Living Ingredients</h4>
-                            <p>When Ooze expires, it is reapllied to 1/2/3 nearby unaffected enemies.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Potency</h4>
-                            <p>Ooze is now applied with an additional 1/2/3 stack(s).</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Shelf Life</h4>
-                            <p>Boosts last for an additional 2/4/6 rooms.</p>
-                        </li> 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Unfortunate Odor</h4>
-                            <p>Deal 10/45/90 Ooze damage and Stun enemies for 1s when applying Ooze. Bosses are not stunned.</p>
-                        </li> 
-                    </ul>
+                    <h4>Catalytic Consequence</h4>
+                    <p>Deal +?? / 25 / 35 damage with your Dash Attack for each Stack of Ooze on the enemy.</p>
+
+                    <h4>Chunky Mixture</h4>
+                    <p>Ooze can now stack up to 6 / 8 / 10 time(s).</p>
+
+                    <h4>Goo</h4>
+                    <p>+60% / +120% / +180% Ooze damage per second.</p>
+
+                    <h4>Goo'dbye</h4>
+                    <p>Enemies affected by Ooze now explode on defeat, dealing 50 / 100 / 150 Ooze damage to nearby enemies.</p>
+
+                    <h4>Living Ingredients</h4>
+                    <p>When Ooze expires, it is reapplied to 1 / 2 / 3 nearby unaffected enemies.</p>
+
+                    <h4>Ooze Abilities</h4>
+                    <p>Special and Tool applies 1 / 2 / 3 stack(s) of Ooze.</p>
+
+                    <h4>Ooze Attack</h4>
+                    <p>Attacks hace a 25% / 33% / 50% chance to apply 1 stack of Ooze.</p>
+
+                    <h4>Ooze Dash</h4>
+                    <p>Apply 1 / 2 / 3 stack(s) of Ooze to enemies hit by your Dash.</p>
+
+                    <h4>Ooze Strike</h4>
+                    <p>Final Strike applies 2 / 4 / 6 stack(s) of Ooze.</p>
+
+                    <h4>Potency</h4>
+                    <p>Ooze is now applied with an additional 1 / 2 / 3 stack(s).</p>
+
+                    <h4>Shelf Life</h4>
+                    <p>Boosts last for an additional 2 / 4 / 6 rooms.</p>
+
+                    <h4>Special Spice</h4>
+                    <p>50% / 75% / 100% increased effectiveness of Boosts.</p>
+
+                </details>
+                <details class="skill-utrom">
+                    <summary>Utrom</summary>
+
+                    <h4>Aftershock</h4>
+                    <p>After releasing your Static Charge hit nearby enemies for 10 / 15 / 20 Utrom daamage per second for 5s / 6s / 7s.</p>
+
+                    <h4>Biomechanical Speed</h4>
+                    <p>Special can be used freely for 2s upon exhausting Static Charge.</p>
+
+                    <h4>Chain Lightning</h4>
+                    <p>Utrom damage will strike again and chain out to two nearby enemies for 7 / 14 / 21 Utrom damage..</p>
+
+                    <h4>Electrifying</h4>
+                    <p>Utrom damage applies Electrifed to enemies for 3s. Electrified deals 7 / 15 / 22  Utrom damage per second. Max of 3 stacks.</p>
+
+                    <h4>Quick Study</h4>
+                    <p>Static Charge fills 75% / 125% /  faster.</p>
+
+                    <h4>Shocking</h4>
+                    <p>Gain Static Charge. Once full, your Special triggers a shockwave which deals 20 / 40 / 60 Utrom damage and Stuns enemies for 0.8s / 1s / 1.2s.</p>
+
+                    <h4>Stormy Weather</h4>
+                    <p>Periodically deal 7 / 15 / 25 Utrom damage to 1 / 2 / 3 nearby enemies.</p>
+
+                    <h4>Techno-Organic Interface</h4>
+                    <p>+10 / 20 / 30% Max Healt. +30 / 40 / 50% Move Speed.</p>
+
+                    <h4>Utrom Abilities (Ability Icon)</h4>
+                    <p>Special and Tools deal 20 / 30 / 40 Utrom damage.</p>
+
+                    <h4>Utrom Attacks</h4>
+                    <p>Attacks have a 30% / 45% / 60% chance to deal 10/20/30 Utrom damage.</p>
+
+                    <h4>Utrom Dash (Dash Icon)</h4>
+                    <p>Dash deals 10 / 20 / 30 Utrom damage to 2 enemies near where you end up.</p>
+
+                    <h4>Utrom Strike (Strike Icon)</h4>
+                    <p>Final Strike calls lightning to hit 2 nearby enemies for 10 / 20 / 30 Utrom damage.</p>
+
+
+
+                    <h4>*REVOLUTION*</h4>
+                    <p>Dash Attack's damage is increased by 1% of the enemies' Max Health.</p>
+
+                    <h4>*SHATTER*</h4>
+                    <p>Deal 200 Water and Utrom damage when applying a Stun effect to an enemy. Enemies are no longer Stunned.</p>
+
+                </details>
+                <details class="skill-water">
+                    <summary>Water</summary>
+
+                    <div class="initial"></div>
+
+                    <h4>Dilution</h4>
+                    <p>+20% / 30% / 40% Attack and Special damage area.</p>
+
+                    <h4>Flash Freeze</h4>
+                    <p>Frost Stuns enemies for 0.7s /  /  when first applied. Stun does not affect bosses.</p>
+
+                    <h4>Freeze</h4>
+                    <p>Apply Frost to nearby enemies every 5s / 4s / 3s.</p>
+
+                    <h4>Frost</h4>
+                    <p>Water damage applies Forst for 2.5s, slowing the enemy by 20% / 35% / 50%.</p>
+
+                    <h4>Heavy Rain</h4>
+                    <p>Deal +40% / +60 / +80 increased Water damage. The increase is doubled during heavy rain.</p>
+
+                    <h4>High Tide</h4>
+                    <p>While Still Waters is active, Final Strike causes +70 / 100 / 130 Water damage and you have +15% Movement Speed.</p>
+
+                    <h4>Pressure Nozzle</h4>
+                    <p>+15% / 20% / 30% damage dealt against Bosses.</p>
+
+                    <h4>Splash Damage</h4>
+                    <p>30% / 45% / 60% of Water damage is also dealt to nearby enemies.</p>
+
+                    <h4>Still Waters</h4>
+                    <p>If you have not used your Attack for at least 2s gain +80% / 100% / 120% damage and your next attack is a Final Strike. Still Waters is lost upon Attack.</p>
+
+                    <h4>Torrential Strike (Strike Icon)</h4>
+                    <p>Final Strike grants a stack of Torrent for 4s. torrent increases Multi-Hit chance by 5% / 7% / 10%. Max 5 stacks</p>
+
+                    <h4>Torrential Rain</h4>
+                    <p>Whenever you use Special or Tool, gain a Torrent Stack. Your attacks deal +4 / 7 / 10 Water damage per torrent stack.</p>
+
+                    <h4>Water Abilities (Ability Icon)</h4>
+                    <p>Special and Tool has a 60% / 80% / 100% chance to deal 30 / 45 / 60 Water damage.</p>
+
+                    <h4>Water Attacks</h4>
+                    <p>Attacks deal 15 / 20 / 25 Water damage.</p>
+
+                    <h4>Water Dash (Dash Icon)</h4>
+                    <p>Deal 35 / 45 /  Water damage to nearby enemies at the end of a Dash.</p>
+
+                    <h4>When It Rains</h4>
+                    <p>Mulit-Hits deal 24 / 38 / 52 Water damge.</p>
+
+
+
+                    <h4>*FROSTFIRE*</h4>
+                    <p>Dealing Flame or Water damage with your Attack, Special, or Tool deals 30% damage of the opposite element.</p>
+
                 </details>
             </div>
     
             <div id="tools" class="tab-content">
                 <ul>
                     <li>
-                        <h4>Shuriken</h4>
-                        <p>Throw three Shuriken in a cone. Each Shuriken deals 15// damage.</p>
-                    </li>
-                    <li>
-                        <h4>Turtle Line</h4>
-                        <p>Throw a Turtle Line dealing 30/60/90 Physical damage. On hit, pull yourself towards Bosses, and pull other enemies toward you.</p>
+                        <h4>Fireball</h4>
+                        <p>Fire 3 seeking fireballs towards nearby enemies. Each fireball deals 40? / 70 / 100 Flame damage in an area upon impact.</p>
                     </li>
                     <li>
                         <h4>Hardened Shell</h4>
-                        <p>Deal 20/40/60 Physical damage to nearby enemies. For the next 1.4/1.8/2.2s, become immune to all damage.</p>
+                        <p>Deal 20 / 40 / 60 Physical damage to nearby enemies. For the next 1.4s / 1.8s/ 2.2s, become immune to all damage.</p>
+                    </li>
+                    <li>
+                        <h4>Meteor Storm</h4>
+                        <p>Call upon a meteor storm that lasts /  / 8s. Meteors will fall towards enemies and deal /  / 80 Flame damage upon impact.</p>
+                    </li>
+                    <li>Ooze Shuriken</li>
+
+                    <li>
+                        <h4>Ride the Wave</h4>
+                        <p>+30 / 40% / 50% ove Speed for 5s. During that time, deal 40 / 50 / 60 Water damage per second to nearby enemies.</p>
+                    </li>
+                    <li>
+                        <h4>Shuriken (Tool Icon)</h4>
+                        <p>Throw three Shuriken in a cone. Each Shuriken deals 15 / 30 / 45 damage.</p>
+                    </li>
+                    <li>
+                        <h4>Shuriken Storm</h4>
+                        <p>Throw 8 / 9 / 10 Shuriken at nearby targets. Each Shuriken deals 30 / / 45 Physical damage.</p>
+                    </li>
+                    <li>
+                        <h4>Smoke Bomb</h4>
+                        <p>Teleport forwards, dealing 30 / 50 / 70 Physical damage to nearby enemies where you end up. Immediately triggers Dodge effects.</p>
                     </li>
                     <li>
                         <h4>Taunt</h4>
-                        <p>Taunt nearby enemies for 8s. Taunted enemies take 60/80/100 damage and are stunned for 0.5s when hit.</p>
+                        <p>Taunt nearby enemies for 8s. Taunted enemies take 60 / 90 / 120 damage and are stunned for 0.5s when hit.</p>
                     </li>
                     <li>
+                        <h4>Turtle Line (Tool Icon)</h4>
+                        <p>Throw a Turtle Line dealing 30 / 60 / 90 Physical damage. On hit, pull yourself towards Bosses, and pull other enemies towards you.</p>
+                    </li>
+                    <li>
+                        <h4>Unstable Canister</h4>
+                        <p>Deal 30 / 60 / 90 Ooze damage and apply 2 / 3 / 4 stack(s) of Ooze to all nearby enemies.</p>
+                    </li>
+                    <li>
+                        <h4>Utrom Rod</h4>
+                        <p>A nearby enemy is struck by lightning / 4 / 5 times for / 25 / 35 Utrom damage.</p>
+                    </li>
+                    <li>
+                        <h4>Utrom Shuriken</h4>
+                        <p>Throw two Electric Shuriken at the nearest enemy. Each Shuriken deals 25 / 30 / 35 Utrom damage.</p>
+                    </li>
+                    <li>
+                        <h4>Water Sweep</h4>
+                        <p>Deal 60 / 80 /  Water damage to nearby enemies. Enemies hit are knocked back.</p>
+                    </li>
+
+
+
+                    <!-- <li>
                         <h4>Fireball</h4>
                         <p>Fire 3 seeking fireballs towards nearby enemies. Each fireball deals 70// Flame damage in an area upon impact.</p>
                     </li>
@@ -910,12 +840,497 @@
                     <li>
                         <h4>Ride the Wave</h4>
                         <p>+40% Move Speed for 6s. During that time, deal 15// Water damage per second to nearby enemies.</p>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div id="upgrades" class="tab-content upgrades">
                 <h3>Dragon Coins</h3>
-                <div class="table-wrapper">
+                <div class="table-wrapper upgrade-astral-rejuvenation">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Astral Rejuvenation</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>Splinter's Revive restores 10% additional Health.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>Splinter's Revive restores 20% additional Health.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>Splinter's Revive restores 30% additional Health.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-attack-damage">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">Level 5</th>
+                                <th scope="col">level 6</th>
+                                <th scope="col">Level 7</th>
+                                <th scope="col">Level 8</th>
+                                <th scope="col">level 9</th>
+                                <th scope="col">Level 10</th>
+                                <th scope="col">Level 11</th>
+                                <th scope="col">level 12</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Attack Damage</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+10% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+20% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+30% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+40% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+50% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+60% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+70% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+80% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+90% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+100% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 950 2S</p>
+                                    <p>+110% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+120% Attack damage.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-confidence">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Confidence</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>Clearing a room without taking damage grants +1% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>Clearing a room without taking damage grants +2% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1250 3B</p>
+                                    <p>Clearing a room without taking damage grants +3% Special damage.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-critical-chance">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">Level 5</th>
+                                <th scope="col">level 6</th>
+                                <th scope="col">Level 7</th>
+                                <th scope="col">Level 8</th>
+                                <th scope="col">level 9</th>
+                                <th scope="col">Level 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Critical Chance</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+2% Attack Critical Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+4% Attack Critical Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+6% Attack Critical Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+8% Attack Critical Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+10% Attack Critical Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+12% Attack Critical Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+14% Attack Critical Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+16% Attack Critical Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+18% Attack Critical Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+20% Attack Critical Hit chance.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-critical-damage">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">Level 5</th>
+                                <th scope="col">level 6</th>
+                                <th scope="col">Level 7</th>
+                                <th scope="col">Level 8</th>
+                                <th scope="col">level 9</th>
+                                <th scope="col">level 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Critical Damage</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+5% Critical Damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+10% Critical Damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+15% Critical Damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+20% Critical Damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+25% Critical Damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+30% Critical Damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+35% Critical Damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+40% Critical Damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1250</p>
+                                    <p>+45% Critical Damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1500</p>
+                                    <p>+50% Critical Damage.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-dash-charge">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Dash Charge</th>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+1 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+2 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1500 4G</p>
+                                    <p>+3 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-enduring-effects">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Enduring Effects</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+10% duration of Negative Effects you apply.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+20% duration of Negative Effects you apply.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 300 1G</p>
+                                    <p>+30% duration of Negative Effects you apply.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-fast-abilities">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Fast Abilities</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>Special charges 10% faster.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>Special charges 20% faster.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 180</p>
+                                    <p>Special charges 30% faster.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>Special charges 40% faster.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>Special charges 50% faster.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-fast-attacks">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Fast Attacks</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+10% Dash Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+20% Dash Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+30% Dash Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 200</p>
+                                    <p>+40% Dash Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+50% Dash Attack damage.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-focused-forces">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Focused Forces</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+5% Elemental damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+10% Elemental damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+15% Elemental damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 185</p>
+                                    <p>+20% Elemental damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+25% Elemental damage.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-hammertime">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Hammertime</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+4% Dodge chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+8% Dodge chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 900 2LB</p>
+                                    <p>+12% Dodge chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+16% Dodge chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+20% Dodge chance.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-health">
                     <table>
                         <thead>
                         <tr>
@@ -1054,7 +1469,8 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="table-wrapper">
+
+                <div class="table-wrapper upgrade-mechanical-genius">
                     <table>
                         <thead>
                             <tr>
@@ -1062,28 +1478,314 @@
                                 <th scope="col">Level 1</th>
                                 <th scope="col">Level 2</th>
                                 <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">Dash Charge</th>
+                                <th scope="row">Mechanical Genius</th>
                                 <td>
-                                    <p>Cost:</p>
-                                    <p>+1 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
+                                    <p>Cost: </p>
+                                    <p>Tool charges 10% faster.</p>
                                 </td>
                                 <td>
                                     <p>Cost:</p>
-                                    <p>+2 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
+                                    <p>Tool charges 20% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 4G</p>
-                                    <p>+3 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
+                                    <p>Cost: </p>
+                                    <p>Tool charges 30% faster.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700 4G</p>
+                                    <p>Tool charges 40% faster.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1050 6G</p>
+                                    <p>Tool charges 50% faster.</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="table-wrapper">
+
+                <div class="table-wrapper upgrade-multi-hit">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Multi-Hit</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+2% Multi-Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+4% Multi-Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 180</p>
+                                    <p>+6% Multi-Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+8% Multi-Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+10% Multi-Hit chance.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-pizza-entree">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Pizza Entree</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+3% health restored upon entering the Shop. Does not stack with Savor the Flavor.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+6% health restored upon entering the Shop. Does not stack with Savor the Flavor.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 900 2MB</p>
+                                    <p>+9% health restored upon entering the Shop. Does not stack with Savor the Flavor.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+12% health restored upon entering the Shop. Does not stack with Savor the Flavor.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+15% health restored upon entering the Shop. Does not stack with Savor the Flavor.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-reliable-allies">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Reliable Allies</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>Support units are twice more likely to spawn during an encounter. Support units fain +20% Max Health.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>Support units are twice more likely to spawn during an encounter. Support units fain +40% Max Health.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 900 2DB</p>
+                                    <p>Support units are twice more likely to spawn during an encounter. Support units fain +60% Max Health.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1500 4DB</p>
+                                    <p>Support units are twice more likely to spawn during an encounter. Support units fain +80% Max Health.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 2200</p>
+                                    <p>Support units are twice more likely to spawn during an encounter. Support units fain +100% Max Health.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-savor-the-flavor">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Savor the Flavor</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>Health recovery is 20% more effective.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>Health recovery is 40% more effective.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>Health recovery is 60% more effective.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>Health recovery is 80% more effective.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>Health recovery is 100% more effective.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-slice-of-life">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Slice of Life</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>4% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>8% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>12% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>16% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>20% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-special-daamge">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">Level 5</th>
+                                <th scope="col">level 6</th>
+                                <th scope="col">Level 7</th>
+                                <th scope="col">Level 8</th>
+                                <th scope="col">level 9</th>
+                                <th scope="col">Level 10</th>
+                                <th scope="col">Level 11</th>
+                                <th scope="col">level 12</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Special Damage</th>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+10% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+20% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+30% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+40% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+50% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+60% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+70% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+80% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+90% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+100% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 280 1S</p>
+                                    <p>+110% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+120% Special damage.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-splinters-revive">
                     <table>
                         <thead>
                             <tr>
@@ -1112,7 +1814,48 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="table-wrapper">
+
+                <div class="table-wrapper upgrade-stronger-stuff">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Stronger Stuff</th>
+                                <td>
+                                    <p>Cost: 80</p>
+                                    <p>+5% Negative Effect damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 120</p>
+                                    <p>+10% Negative Effect damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+15% Negative Effect damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost:</p>
+                                    <p>+10% Negative Effect damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: </p>
+                                    <p>+15% Negative Effect damage.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper upgrade-swiftness">
                     <table>
                         <thead>
                             <tr>
@@ -1141,7 +1884,8 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="table-wrapper">
+
+                <div class="table-wrapper upgrade-tool-damage">
                     <table>
                         <thead>
                             <tr>
@@ -1149,544 +1893,57 @@
                                 <th scope="col">Level 1</th>
                                 <th scope="col">Level 2</th>
                                 <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Savor the Flavor</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Slice of Life</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Astral Rejuvenation</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Attack Damage</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Critical Chance</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Focused Forces</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Special Damage</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">Level 5</th>
+                                <th scope="col">level 6</th>
+                                <th scope="col">Level 7</th>
+                                <th scope="col">Level 8</th>
+                                <th scope="col">level 9</th>
+                                <th scope="col">Level 10</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">Tool Damage</th>
                                 <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
+                                    <p>Cost: </p>
+                                    <p>+15% Tool Damage.</p>
                                 </td>
                                 <td>
                                     <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
+                                    <p>+30% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
+                                    <p>Cost: </p>
+                                    <p>+45% Tool Damage.</p>
                                 </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Mechanical Genius</th>
                                 <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
+                                    <p>Cost: </p>
+                                    <p>+60% Tool Damage.</p>
                                 </td>
                                 <td>
                                     <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
+                                    <p>+75% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
+                                    <p>Cost: </p>
+                                    <p>+90% Tool Damage.</p>
                                 </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Stronger Stuff</th>
                                 <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
+                                    <p>Cost: </p>
+                                    <p>+105% Tool Damage.</p>
                                 </td>
                                 <td>
                                     <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
+                                    <p>+120% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Enduring Effects</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
+                                    <p>Cost: 1000 2A</p>
+                                    <p>+135% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Fast Attacks</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Multi-Hit</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Fast Abilities</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Hammertime</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Pizza Entree</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Reliable Allies</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Critical Damage</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Level 1</th>
-                                <th scope="col">Level 2</th>
-                                <th scope="col">level 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Confidence</th>
-                                <td>
-                                    <p>Cost: 50</p>
-                                    <p>+2%</p>
-                                </td>
-                                <td>
-                                    <p>Cost:</p>
-                                    <p>+5% Move Speed.</p>
-                                </td>
-                                <td>
-                                    <p>Cost: 5000 1K</p>
-                                    <p>+5% Move Speed.</p>
+                                    <p>Cost: 1500</p>
+                                    <p>+150% Tool Damage.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -1737,7 +1994,7 @@
                             <tr>
                                 <th scope="row">Double Trouble</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -1745,7 +2002,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -1766,7 +2023,7 @@
                             <tr>
                                 <th scope="row">Critical Chance</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -1774,7 +2031,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -1795,7 +2052,7 @@
                             <tr>
                                 <th scope="row">Do Over</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -1803,7 +2060,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -1824,7 +2081,7 @@
                             <tr>
                                 <th scope="row">Lucky Spoils</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -1832,7 +2089,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -1853,7 +2110,7 @@
                             <tr>
                                 <th scope="row">Polish</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -1861,7 +2118,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -1882,7 +2139,7 @@
                             <tr>
                                 <th scope="row">Double Double</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -1890,7 +2147,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -1911,7 +2168,7 @@
                             <tr>
                                 <th scope="row">Running Start</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -1919,7 +2176,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -1940,7 +2197,7 @@
                             <tr>
                                 <th scope="row">Pantheon's Blessing</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -1948,7 +2205,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -1969,7 +2226,7 @@
                             <tr>
                                 <th scope="row">Scrappy Bosses</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -1977,7 +2234,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -1998,7 +2255,7 @@
                             <tr>
                                 <th scope="row">Scrap King</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -2006,7 +2263,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -2027,7 +2284,7 @@
                             <tr>
                                 <th scope="row">Scavenger</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -2035,7 +2292,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -2056,7 +2313,7 @@
                             <tr>
                                 <th scope="row">Recycling</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -2064,7 +2321,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -2085,7 +2342,7 @@
                             <tr>
                                 <th scope="row">Mouse Scrap</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -2093,7 +2350,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -2114,7 +2371,7 @@
                             <tr>
                                 <th scope="row">Busted Coin Slot</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -2122,7 +2379,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -2143,7 +2400,7 @@
                             <tr>
                                 <th scope="row">Fortune Favors the Bold</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -2151,7 +2408,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -2172,7 +2429,7 @@
                             <tr>
                                 <th scope="row">Dojo</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -2180,7 +2437,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: </p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -2201,7 +2458,7 @@
                             <tr>
                                 <th scope="row">Arcade Fixer</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: </p>
                                     <p>+2%</p>
                                 </td>
                                 <td>
@@ -2209,7 +2466,7 @@
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost:</p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                             </tr>
@@ -2219,21 +2476,580 @@
 
             </div>
             <div id="artifacts" class="tab-content artifacts">
-                <h3>Artifacts</h3>
-                Manhole Cover
-                Foot Clan Medallion
-                Broken Ooze Canister
-                Sword of Tengu
-                Tessen
-                Mystical Seal of Protection
-                Stockgen ID card
-                Turnstone
-                Battle Shell Fuzzy Dice
-                Insulated Pizza Box
-                Heart of Tengu
-                Astral Charm
-                War Staff
+                <div class="table-wrapper artifact-manhole-cover">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Manhole Cover</th>
+                                <td>
+                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Water powers. Guarantees your next Power Selection is of the Water category.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper artifact-foot-clan">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Foot Clan Medallion</th>
+                                <td>
+                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Flame powers. Guarantees your next Power Selection is of the Flame category.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper artifact-broken-ooze">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Broken Ooze Canister</th>
+                                <td>
+                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Ooze powers. Guarantees your next Power Selection is of the Ooze category.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper artifact-sword-of-tengu">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sword of Tengu</th>
+                                <td>
+                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Utrom powers. Guarantees your next Power Selection is of the Utrom category.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper artifact-tessen">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tessen</th>
+                                <td>
+                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Ninja powers. Guarantees your next Power Selection is of the Ninja category.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper artifact-mystical-seal">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400 1A</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700 </p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mystical Seal of Protection</th>
+                                <td>
+                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Astral powers. Guarantees your next Power Selection is of the Astral category.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper artifact-stockgen-id">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Stockgen ID Card</th>
+                                <td>
+                                    <p>+10 / 12.5 / 15 / 17.5 / 20% chance of gaining Bonus Scrap when defeating MOUSERs or Super Foot Soldiers.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper artifact-turnstone">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000 4G</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1500 6G</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Turnstone</th>
+                                <td>
+                                    <p>+10 / 12.5 / 15 / 17.5 / 20% / 22.5% chance to gain bonus Dragon Coins or Dreamer Coins upon defeating an veteran of champion enemy.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper artifact-fuzzy-dice">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                                <th scope="col">Level 6</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400 1G</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700 2G</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000 4G</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1500 6G</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Battle Shell Fuzzy Dice</th>
+                                <td>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance during any Turtle Upgrade selections. Granted by an ally in Streets.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400 1G</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700 2G</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000 4G</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Insulated Pizza Box</th>
+                                <td>
+                                    <p>Boosts last for an additional 2 / 3 / 4 / 5 / 6 rooms. Granted by an ally in Docks.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1500 6G</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Heart of Tengu</th>
+                                <td>
+                                    <p>+??? / ??? / ??? / ??? / 15 / +17.5% Dodge chance. Increase duration of Invulnerablity upon a Dash.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 250</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 400 1G</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 700 2G</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000 4G</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Astral Charm</th>
+                                <td>
+                                    <p>+3s / 3.5s / 4s Invulnerability duration upon consuming a Splinter's Revive.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Level 1</th>
+                                <th scope="col">Level 2</th>
+                                <th scope="col">level 3</th>
+                                <th scope="col">Level 4</th>
+                                <th scope="col">level 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <p></p>
+                                </td>
+                                <td>
+                                    <p>Cost: 500 1A</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1000 4A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">War Staff</th>
+                                <td>
+                                    <p>+100% damage taken from all sources. +60% / 80% / 100% currencies granted by Bosses.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
+            <div id="status-effects" class="tab-content status-effects">
+                <h4>Adrenaline</h4>
+                <p></p>
+
+                <h4>Dark Shell</h4>
+                <p>Deal 10 Dark damage per second to nearby enemies. Every second, apply 1 stack of Darkness to unaffected enemies.</p>
+
+                <h4>Guard Break</h4>
+                <p>+15% damage received.</p>
+
+                <h4>Light Shell</h4>
+                <p></p>
+
+                <h4>Torrent</h4>
+                <p></p>
+
+
+            </div>
+            <div id="boosts" class="tab-content boosts">
+                <h4>Attack Damage</h4>
+                <p>+50% Attack damage. Lasts 4 rooms.</p>
+
+                <h4>Barrier Damage</h4>
+                <p>+30% damage to enemies with a Barrier. Lasts 4 rooms.</p>
+
+                <h4>Bonus Damage</h4>
+                <p>+30% Damage dealt. Lasts 4 rooms.</p>
+
+                <h4>Critical Chance</h4>
+                <p>+30% Global Critical Hit chance. Lasts 4 rooms.</p>
+
+                <h4>Dash Attack Damage</h4>
+                <p>+100% Dash Attack damage. Lasts 4 rooms.</p>
+
+                <h4>Move Speed</h4>
+                <p>+40% Move Speed. Lasts 4 rooms.</p>
+
+                <h4>Special Charge</h4>
+                <p>Special charges 50% faster. Lasts 4 rooms.</p>
+
+                <h4>Special Damage</h4>
+                <p>+100% Special damage. Lasts 4 rooms.</p>
+
+                <h4>Tool Damage</h4>
+                <p>+100% Tool damage. Lasts 4 rooms.</p>
+
+            </div>
+
         </div>
     </body>
     <script type="text/javascript" src="index.js"></script>

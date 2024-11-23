@@ -51,6 +51,9 @@ body ul li {
     margin-bottom: 0.3rem;
 }
 
+body span.no-wrap {
+    white-space: nowrap;
+}
 
 .tab-content.active.basic-info,
 .tab-content.active.mastery {
@@ -90,6 +93,7 @@ body ul li {
     margin-bottom: 0.5rem;
 }
 
+#basic-info h3,
 #basic-info h4,
 #skills h4,
 #tools h4 {
@@ -146,3 +150,44 @@ body ul li {
     background-color: #ffffff;
   }
   
+
+
+
+.hamburger {
+    display: none;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    cursor: pointer;
+}
+.mobile-menu {
+    display: none;
+    background-color: #333;
+}
+.mobile-menu a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.mobile-menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+  @media screen and (max-width: 1150px) {
+    .navbar {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .mobile-menu {
+        display: none;
+    }
+    .mobile-menu.show {
+        display: block;
+    }
+}
