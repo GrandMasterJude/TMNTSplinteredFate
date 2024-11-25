@@ -35,7 +35,7 @@
             <div id="basic-info" class="tab-content active basic-info">
                 <div class="basic-info-container">
                     <div class="basic-michelangelo">
-                        <h3>Michelangelo</h3>
+                        <img src="assets/TMNT-Name-Mikey.png" />
                         <ul>
                             <li>Health: 110</li>
                             <li>Attack Damage: 7, 14, 16 16 16 23</li>
@@ -54,7 +54,7 @@
                         </ul>
                     </div>
                         <div class="basic-leonardo">
-                            <h3>Leonardo</h3>
+                            <img src="assets/TMNT-Name-Leo.png" />
                             <ul>
                                 <li>Health: 100</li>
                                 <li>Attack Damage: 25, 25, 40 + Master Strike damage</li>
@@ -73,7 +73,7 @@
                             </ul>
                         </div>
                         <div class="basic-raphael">
-                            <h3>Raphael</h3>
+                            <img src="assets/TMNT-Name-Raph.png" />
                             <ul>
                                 <li>Health: 120</li>
                                 <li>Attack Damage: 24, 30, 28 35</li>
@@ -92,7 +92,7 @@
                             </ul>
                         </div>
                         <div class="basic-donatello">
-                            <h3>Donatello</h3>
+                            <img src="assets/TMNT-Name-Don.png" />
                             <ul>
                                 <li>Health: 140</li>
                                 <li>Attack Damage: 20, 20, 30</li>
@@ -139,6 +139,26 @@
                             <li></li>
                         </ul>
                     </div> -->
+
+                    <div>
+                        <p>How the math in the game works isn't necessaryily intuitive. If you find yourself wondering why your damage numbers aren't adding up the way you think, this might help explain it.</p>
+
+                        <h4>Damage Formulas</h4>
+                        <p><span>Attack:</span> Base Damage + Upgrade Bonus + Crit Bonus = Total damage</p>
+                        <p>So for example, Raphael's basic attack deals 24 damge. When he does a Critical Hit it will do 49 damage</p>
+                        <p>24 base damage + 25 crit damage (24 base * 1.06) *Raph gets the extra 6% from his inspiration.</p>
+                        <p>After he buys some upgrades and has +50% attack though, his first attack will do 36 damage but his crits will only do 61.</p>
+                        <p>Your total damage with the attack upgrade doesn't get multiplied by 1.06 like you might assume.</p>
+                        <p>24 base damage + 12 upgrade damage + 25 crit damage (24 base * 1.06 crit)</p>
+
+                        <h4>Dash Attacks</h4>
+                        <p>The Fast Attack upgrade that increases your Dash Attack damage is it's own column in the formula. So a dash attack calculation looks like:</p>
+                        <p>base damage + attack upgrade damage + dash upgrade damage + possible crit damage = Total damage.</p>
+
+                        <h4>Other Bonuses</h4>
+                        <p>I believe every other bonus from powers and boosts is also it's own column in the equation.</p>
+                        
+                    </div>
                 </div>
 
 
@@ -148,7 +168,7 @@
             <div id="mastery" class="tab-content mastery">
                 <div class="mastery-container">
                     <div class="mastery-michelangelo">
-                        <h4>Michelangelo</h4>
+                        <img src="assets/TMNT-Name-Mikey.png" />
                         <ul>
                             <li>-35% Dash Cooldown.</li>
 
@@ -180,7 +200,7 @@
                         </ul>
                     </div>
                     <div class="mastery-leonardo">
-                        <h4>Leonardo</h4>
+                        <img src="assets/TMNT-Name-Leo.png" />
                         <ul>
                             <li>+5% Shuriken damage for each Ninja power acquired.</li>
 
@@ -212,7 +232,7 @@
                         </ul>
                     </div>
                     <div class="mastery-raphael">
-                        <h4>Raphael</h4>
+                        <img src="assets/TMNT-Name-Raph.png" />
                         <ul>
                             <li>+3% Critical Hit damage for the rest of the encounter upon defeating an enemy.</li>
 
@@ -244,7 +264,7 @@
                         </ul>
                     </div>
                     <div class="mastery-donatello">
-                        <h4>Donatello</h4>
+                        <img src="assets/TMNT-Name-Don.png" />
                         <ul>
                             <li>+1 Tool charge(s).</li>
 
@@ -306,109 +326,109 @@
                       <tr>
                         <th scope="row">Leonardo Inspiration 1</th>
                         <td>
-                            <p>Cost:</p>
+                            <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                             <p>+5 Master Strike damage.</p>
                         </td>
                         <td>
-                            <p>Cost:</p>
+                            <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                             <p>+10 Master Strike damage.</p>
                         </td>
                         <td>
-                            <p>Cost:</p>
+                            <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                             <p>+15 Master Strike damage.</p>
                         </td>
                       </tr>
                       <tr>
                         <th scope="row">Leonardo Inspiration 2</th>
                         <td>
-                            <p>Cost:</p>d
+                            <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                             <p>Grants +1 Special charge.</p>
                         </td>
                         <td>
-                            <p>Cost: 1200 3LB</p>
+                            <p>Cost: 1200 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 3LB</p>
                             <p>Grants +2 Special charge.</p>
                         </td>
                       </tr>
                       <th scope="row">Donatello Inspiration 1</th>
                       <td>
-                          <p>Cost:</p>
+                          <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                           <p>Restore 1 Health upon starting an ecounter</p>
                       </td>
                       <td>
-                          <p>Cost: DB</p>
+                          <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 2DB</p>
                           <p>Restore 2 Health upon starting an ecounter</p>
                       </td>
                       <td>
-                          <p>Cost: 1000 4B</p>
+                          <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 4B</p>
                           <p>Restore 3 Health upon starting an ecounter</p>
                       </td>
                     </tr>
                     <tr>
                       <th scope="row">Donatello Inspiration 2</th>
                       <td>
-                          <p>Cost:</p>
+                          <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                           <p>Tool charges 20% faster.</p>
                       </td>
                       <td>
-                          <p>Cost: 1200 3B</p>
+                          <p>Cost: ?? 1200 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 3B</p>
                           <p>Tool charges 40% faster.</p>
                       </td>
                     </tr>
                     <th scope="row">Michelangelo Inspiration 1</th>
                     <td>
-                        <p>Cost:</p>
+                        <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                         <p>+5% Attack area size. +5% Attack damage.</p>
                     </td>
                     <td>
-                        <p>Cost: 600 2MB</p>
+                        <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 2MB</p>
                         <p>+10% Attack area size. +10% Attack damage.</p>
                     </td>
                     <td>
-                        <p>Cost: 1000 4MB</p>
+                        <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 4MB</p>
                         <p>+15% Attack area size. +15% Attack damage.</p>
                     </td>
                   </tr>
                   <tr>
                     <th scope="row">Michelangelo Inspiration 2</th>
                     <td>
-                        <p>Cost:</p>
+                        <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                         <p>+5% Multi-Hit chance.</p>
                     </td>
                     <td>
-                        <p>Cost: 600 2MB</p>
+                        <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 2MB</p>
                         <p>+10% Multi-Hit chance.</p>
                     </td>
                     <td>
-                        <p>Cost: 1000 4MB</p>
+                        <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 4MB</p>
                         <p>+15% Multi-Hit chance.</p>
                     </td>
                   </tr>
                   <th scope="row">Raphael Inspiration 1</th>
                   <td>
-                      <p>Cost:</p>
+                      <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                       <p>+5% Special Critical Hit chance.</p>
                   </td>
                   <td>
-                      <p>Cost: 600 2RB</p>
+                      <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 2RB</p>
                       <p>+10% Special Critical Hit chance.</p>
                   </td>
                   <td>
-                      <p>Cost: 1000 4RB</p>
+                      <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 4RB</p>
                       <p>+15% Special Critical Hit chance.</p>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">Raphael Inspiration 2</th>
                   <td>
-                      <p>Cost:</p>
+                      <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                       <p>+3% Attack Critical Hit chance. +3% Critical Damage.</p>
                   </td>
                   <td>
-                      <p>Cost:</p>
+                      <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                       <p>+6% Attack Critical Hit chance. +6% Critical Damage.</p>
                   </td>
                   <td>
-                      <p>Cost:</p>
+                      <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                       <p>+9% Attack Critical Hit chance. +9% Critical Damage.</p>
                   </td>
                 </tr>
@@ -427,7 +447,7 @@
 
 
                     <h4>Call of the Void</h4>
-                    <p>Deal 10 Dark damage and pull in nearby enemies upon defeating an enmy affected by Darkness.</p>
+                    <p>Deal 10 / ?? / ?? Dark damage and pull in nearby enemies upon defeating an enmy affected by Darkness.</p>
 
                     <h4>Core Collapse</h4>
                     <p>Stun nearby enemies for 0.5s / 1s / 1.5s upon defeating an enemy affected by Darkness</p>
@@ -445,7 +465,7 @@
                     <p>+10% increased damage dealt. Gain an additional 10% / 15% / 20% whenever you select Dragon Coins in the Room Rewards screen.</p>
 
                     <h4>Eternal Darkness</h4>
-                    <p>+50% / 80% / 100% % duration of Negative Effects you apply to enemies.</p>
+                    <p>+50% / 80% / 100% duration of Negative Effects you apply to enemies.</p>
 
                     <h4>Gift of the Dragon</h4>
                     <p>Gain 80 Dragon coins and 200 Scrap.</p>
@@ -538,6 +558,8 @@
                         <h4>Precision</h4>
                         <p>+60% / 120% / 180% Critical Hit damage.</p>
 
+                        <h4>Preheated</h4>
+                        <p>+15% / ?? / ?? Global Critical Hit chance against targets affected by Inferno.</p>
 
                         <h4>Rage</h4>
                         <p>Deal 40% / 70% / 100% increased damage while below 50% Health.</p>
@@ -598,7 +620,7 @@
                     <p>Shuriken now ricohet, bouncing off of enemies. -20% / +10% / +40% Shuriken damage.</p>
 
                     <h4>Throwing Mastery</h4>
-                    <p>+40% / 65% /  Shuriken damage.</p>
+                    <p>+40% / 65% / ??  Shuriken damage.</p>
 
 
 
@@ -701,7 +723,7 @@
                     <p>+20% / 30% / 40% Attack and Special damage area.</p>
 
                     <h4>Flash Freeze</h4>
-                    <p>Frost Stuns enemies for 0.7s /  /  when first applied. Stun does not affect bosses.</p>
+                    <p>Frost Stuns enemies for 0.7s / 1.2s / 1.5s when first applied. Stun does not affect bosses.</p>
 
                     <h4>Freeze</h4>
                     <p>Apply Frost to nearby enemies every 5s / 4s / 3s.</p>
@@ -737,7 +759,7 @@
                     <p>Attacks deal 15 / 20 / 25 Water damage.</p>
 
                     <h4>Water Dash (Dash Icon)</h4>
-                    <p>Deal 35 / 45 /  Water damage to nearby enemies at the end of a Dash.</p>
+                    <p>Deal 35 / 45 / ?? Water damage to nearby enemies at the end of a Dash.</p>
 
                     <h4>When It Rains</h4>
                     <p>Mulit-Hits deal 24 / 38 / 52 Water damge.</p>
@@ -762,7 +784,7 @@
                     </li>
                     <li>
                         <h4>Meteor Storm</h4>
-                        <p>Call upon a meteor storm that lasts /  / 8s. Meteors will fall towards enemies and deal /  / 80 Flame damage upon impact.</p>
+                        <p>Call upon a meteor storm that lasts ?? / 6.5s / 8s. Meteors will fall towards enemies and deal ?? / 60 / 80 Flame damage upon impact.</p>
                     </li>
                     <li>Ooze Shuriken</li>
 
@@ -776,7 +798,7 @@
                     </li>
                     <li>
                         <h4>Shuriken Storm</h4>
-                        <p>Throw 8 / 9 / 10 Shuriken at nearby targets. Each Shuriken deals 30 / / 45 Physical damage.</p>
+                        <p>Throw 8 / 9 / 10 Shuriken at nearby targets. Each Shuriken deals 30 / ?? / 45 Physical damage.</p>
                     </li>
                     <li>
                         <h4>Smoke Bomb</h4>
@@ -804,55 +826,12 @@
                     </li>
                     <li>
                         <h4>Water Sweep</h4>
-                        <p>Deal 60 / 80 /  Water damage to nearby enemies. Enemies hit are knocked back.</p>
+                        <p>Deal 60 / 80 / 120  Water damage to nearby enemies. Enemies hit are knocked back.</p>
                     </li>
-
-
-
-                    <!-- <li>
-                        <h4>Fireball</h4>
-                        <p>Fire 3 seeking fireballs towards nearby enemies. Each fireball deals 70// Flame damage in an area upon impact.</p>
-                    </li>
-                    <li>
-                        <h4>Ooze Shuriken</h4>
-                        <p>Throw 2 Ooze Shuriken at the nearest enemy. Each Shuriken deals 25// Ooze damage.</p>
-                    </li>
-                    <li>
-                        <h4>Shuriken Storm</h4>
-                        <p>Throw 8// Shuriken at nearby targets. Each Shuriken deals 30// Physical damage.</p>
-                    </li>
-                    <li>
-                        <h4>Smoke Bomb</h4>
-                        <p>Teleport forwards, dealing 50// Physical damage to nearby enemies where you end up. Immediately triggers Dodge effects.</p>
-                    </li>
-                    <li>
-                        <h4>Unstable Canister</h4>
-                        <p>Deal 60// Ooze damage and apply 3 stack(s) of Ooze to all nearby enemies.</p>
-                    </li>
-                    <li>
-                        <h4>Utrom Rod</h4>
-                        <p>A nearby enemu is struck by lightning 4// times for 25// Utrom damage.</p>
-                    </li>
-                    <li>
-                        <h4>Utrom Shuriken</h4>
-                        <p>Throw two Electric Shuriken at teh nearest enemy. Each Shuriken deals 25// Utrom damage.</p>
-                    </li>
-                    <li>
-                        <h4>Meteor Storm</h4>
-                        <p>Call upon a meteor storm that lasts 6.5/8/9.5?s. Meteors will fall towards enemies and deal 60// Flame damage upon impact.</p>
-                    </li>
-                    <li>
-                        <h4>Water Sweep</h4>
-                        <p>Deal 80// Water damage to nearby enemies. Enemies hit are knocked back.</p>
-                    </li>
-                    <li>
-                        <h4>Ride the Wave</h4>
-                        <p>+40% Move Speed for 6s. During that time, deal 15// Water damage per second to nearby enemies.</p>
-                    </li> -->
                 </ul>
             </div>
             <div id="upgrades" class="tab-content upgrades">
-                <h3>Dragon Coins</h3>
+                <h3><img class="coin-large" src="assets/TMNT-DragonCoin.png"/> Dragon Coins</h3>
                 <div class="table-wrapper upgrade-astral-rejuvenation">
                     <table>
                         <thead>
@@ -867,15 +846,15 @@
                             <tr>
                                 <th scope="row">Astral Rejuvenation</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Splinter's Revive restores 10% additional Health.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Splinter's Revive restores 20% additional Health.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Splinter's Revive restores 30% additional Health.</p>
                                 </td>
                             </tr>
@@ -906,51 +885,51 @@
                             <tr>
                                 <th scope="row">Attack Damage</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+10% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+20% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+30% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+40% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+50% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+60% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+70% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+80% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+90% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+100% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 950 2S</p>
+                                    <p>Cost: 950 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 2S</p>
                                     <p>+110% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+120% Attack damage.</p>
                                 </td>
                             </tr>
@@ -972,15 +951,15 @@
                             <tr>
                                 <th scope="row">Confidence</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Clearing a room without taking damage grants +1% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Clearing a room without taking damage grants +2% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1250 3B</p>
+                                    <p>Cost: 1250 <img class="coin" src="assets/TMNT-DragonCoin.png"/> 3B</p>
                                     <p>Clearing a room without taking damage grants +3% Special damage.</p>
                                 </td>
                             </tr>
@@ -1009,43 +988,43 @@
                             <tr>
                                 <th scope="row">Critical Chance</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+2% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+4% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+6% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+8% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+10% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+12% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+14% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+16% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+18% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+20% Attack Critical Hit chance.</p>
                                 </td>
                             </tr>
@@ -1074,43 +1053,43 @@
                             <tr>
                                 <th scope="row">Critical Damage</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+5% Critical Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+10% Critical Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+15% Critical Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+20% Critical Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ??<img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+25% Critical Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+30% Critical Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+35% Critical Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+40% Critical Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1250</p>
+                                    <p>Cost: 1250 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+45% Critical Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+50% Critical Damage.</p>
                                 </td>
                             </tr>
@@ -1132,15 +1111,15 @@
                             <tr>
                                 <th scope="row">Dash Charge</th>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+1 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+2 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 4G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 4G</p>
                                     <p>+3 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
                                 </td>
                             </tr>
@@ -1162,15 +1141,15 @@
                             <tr>
                                 <th scope="row">Enduring Effects</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+10% duration of Negative Effects you apply.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+20% duration of Negative Effects you apply.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 300 1G</p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 1G</p>
                                     <p>+30% duration of Negative Effects you apply.</p>
                                 </td>
                             </tr>
@@ -1194,23 +1173,23 @@
                             <tr>
                                 <th scope="row">Fast Abilities</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Special charges 10% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Special charges 20% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 180</p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Special charges 30% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Special charges 40% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Special charges 50% faster.</p>
                                 </td>
                             </tr>
@@ -1228,30 +1207,55 @@
                                 <th scope="col">level 3</th>
                                 <th scope="col">Level 4</th>
                                 <th scope="col">level 5</th>
+                                <th scope="col">Level 6</th>
+                                <th scope="col">Level 7</th>
+                                <th scope="col">level 8</th>
+                                <th scope="col">Level 9</th>
+                                <th scope="col">level 10</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">Fast Attacks</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+10% Dash Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+20% Dash Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+30% Dash Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 200</p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+40% Dash Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 1LB</p>
                                     <p>+50% Dash Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 2LB</p>
+                                    <p>+60% Dash Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 650 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 3LB</p>
+                                    <p>+70% Dash Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 950 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 4LB</p>
+                                    <p>+80% Dash Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1250 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
+                                    <p>+90% Dash Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
+                                    <p>+100% Dash Attack damage.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -1274,23 +1278,23 @@
                             <tr>
                                 <th scope="row">Focused Forces</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+5% Elemental damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+10% Elemental damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+15% Elemental damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 185</p>
+                                    <p>Cost: 185 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+20% Elemental damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+25% Elemental damage.</p>
                                 </td>
                             </tr>
@@ -1314,23 +1318,23 @@
                             <tr>
                                 <th scope="row">Hammertime</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+4% Dodge chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+8% Dodge chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 900 2LB</p>
+                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 2LB</p>
                                     <p>+12% Dodge chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+16% Dodge chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+20% Dodge chance.</p>
                                 </td>
                             </tr>
@@ -1374,103 +1378,103 @@
                         <tr>
                             <th scope="row">Health</th>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+10% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+20% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+30% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+40% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+50% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+60% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+70% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+80% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+90% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+100% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+110% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+120% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+130% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+140% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+150% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+160% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+170% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+180% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+190% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost: 1200</p>
+                                <p>Cost: 1200 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+200% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+210% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+220% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+230% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+240% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost:</p>
+                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                 <p>+250% Max Health.</p>
                             </td>
                         </tr>
@@ -1494,23 +1498,23 @@
                             <tr>
                                 <th scope="row">Mechanical Genius</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Tool charges 10% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Tool charges 20% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Tool charges 30% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 4G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 4G</p>
                                     <p>Tool charges 40% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1050 6G</p>
+                                    <p>Cost: 1050 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 6G</p>
                                     <p>Tool charges 50% faster.</p>
                                 </td>
                             </tr>
@@ -1534,24 +1538,40 @@
                             <tr>
                                 <th scope="row">Multi-Hit</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+2% Multi-Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+4% Multi-Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 180</p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+6% Multi-Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+8% Multi-Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 1MB</p>
                                     <p>+10% Multi-Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 2MB</p>
+                                    <p>+12% Multi-Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 650 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 3MB</p>
+                                    <p>+14% Multi-Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 950 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 4MB</p>
+                                    <p>+16% Multi-Hit chance.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1250 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
+                                    <p>+18% Multi-Hit chance.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -1614,23 +1634,23 @@
                             <tr>
                                 <th scope="row">Reliable Allies</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Support units are twice more likely to spawn during an encounter. Support units fain +20% Max Health.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Support units are twice more likely to spawn during an encounter. Support units fain +40% Max Health.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 900 2DB</p>
+                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 2DB</p>
                                     <p>Support units are twice more likely to spawn during an encounter. Support units fain +60% Max Health.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 4DB</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 4DB</p>
                                     <p>Support units are twice more likely to spawn during an encounter. Support units fain +80% Max Health.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 2200</p>
+                                    <p>Cost: 2200 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Support units are twice more likely to spawn during an encounter. Support units fain +100% Max Health.</p>
                                 </td>
                             </tr>
@@ -1654,23 +1674,23 @@
                             <tr>
                                 <th scope="row">Savor the Flavor</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Health recovery is 20% more effective.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Health recovery is 40% more effective.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Health recovery is 60% more effective.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Health recovery is 80% more effective.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Health recovery is 100% more effective.</p>
                                 </td>
                             </tr>
@@ -1694,23 +1714,23 @@
                             <tr>
                                 <th scope="row">Slice of Life</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>4% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>8% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>12% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>16% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>20% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                                 </td>
                             </tr>
@@ -1741,51 +1761,51 @@
                             <tr>
                                 <th scope="row">Special Damage</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+10% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+20% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+30% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+40% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+50% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+60% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+70% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+80% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+90% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+100% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 280 1S</p>
+                                    <p>Cost: 280 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 1S</p>
                                     <p>+110% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+120% Special damage.</p>
                                 </td>
                             </tr>
@@ -1807,15 +1827,15 @@
                             <tr>
                                 <th scope="row">Splinter's Revive</th>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Start each run with 1 Splinter's Revive(s). Splinter's Revive restores 25% of your Max Health when your Health is depleted.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>Start each run with 2 Splinter's Revive(s). Splinter's Revive restores 25% of your Max Health when your Health is depleted.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 5000 1K</p>
+                                    <p>Cost: 5000 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 1K</p>
                                     <p>Start each run with 3 Splinter's Revive(s). Splinter's Revive restores 25% of your Max Health when your Health is depleted.</p>
                                 </td>
                             </tr>
@@ -1839,23 +1859,23 @@
                             <tr>
                                 <th scope="row">Stronger Stuff</th>
                                 <td>
-                                    <p>Cost: 80</p>
+                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+5% Negative Effect damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 120</p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+10% Negative Effect damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+15% Negative Effect damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+10% Negative Effect damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+15% Negative Effect damage.</p>
                                 </td>
                             </tr>
@@ -1884,43 +1904,43 @@
                             <tr>
                                 <th scope="row">Swiftness</th>
                                 <td>
-                                    <p>Cost: 50</p>
+                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+5% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 100</p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+10% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 160</p>
+                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+15% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 200</p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+20% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 260</p>
+                                    <p>Cost: 260 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+25% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 330</p>
+                                    <p>Cost: 330 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+30% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+35% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 470</p>
+                                    <p>Cost: 470 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+40% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 770 3S</p>
+                                    <p>Cost: 770 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 3S</p>
                                     <p>+45% Move Speed.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1070</p>
+                                    <p>Cost: 1070 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+50% Move Speed.</p>
                                 </td>
                             </tr>
@@ -1949,43 +1969,43 @@
                             <tr>
                                 <th scope="row">Tool Damage</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+15% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+30% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+45% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+60% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+75% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+90% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+105% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+120% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 2A</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 2A</p>
                                     <p>+135% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+150% Tool Damage.</p>
                                 </td>
                             </tr>
@@ -1993,7 +2013,7 @@
                     </table>
                 </div>
 
-                <h3>Dreamer Coins</h3>
+                <h3><img class="coin-large" src="assets/TMNT-DreamerCoin.png"/> Dreamer Coins</h3>
                 <div class="table-wrapper upgrade-perchance">
                     <table>
                         <thead>
@@ -2016,39 +2036,39 @@
                             <tr>
                                 <th scope="row">Perchance</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+2% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+4% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+6% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+8% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+10% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+12% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+14% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 705 1A</p>
+                                    <p>Cost: 705 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1A</p>
                                     <p>+16% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost:?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+18% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                             </tr>
@@ -2069,23 +2089,23 @@
                             <tr>
                                 <th scope="row">Double Trouble</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>3% Double Select chance during any Turtle Power selection.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>6% Double Select chance during any Turtle Power selection.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 390 3K</p>
+                                    <p>Cost: 390 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 3K</p>
                                     <p>9% Double Select chance during any Turtle Power selection.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/> </p>
                                     <p>12% Double Select chance during any Turtle Power selection.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>15% Double Select chance during any Turtle Power selection.</p>
                                 </td>
 
@@ -2107,15 +2127,15 @@
                             <tr>
                                 <th scope="row">Do Over</th>
                                 <td>
-                                    <p>Cost: 100</p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>Start each run with 1 Lucky Dice. Lucky Dice can be used to rereoll Room Rewards or Shop offers.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>Start each run with 2 Lucky Dice. Lucky Dice can be used to rereoll Room Rewards or Shop offers.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>Start each run with 3 Lucky Dice. Lucky Dice can be used to rereoll Room Rewards or Shop offers.</p>
                                 </td>
                             </tr>
@@ -2136,15 +2156,15 @@
                             <tr>
                                 <th scope="row">Lucky Spoils</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>Chance to gain up to 1 Lucky Dice from Bosses.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>Chance to gain up to 2 Lucky Dice from Bosses.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>Chance to gain up to 3 Lucky Dice from Bosses.</p>
                                 </td>
                             </tr>
@@ -2172,43 +2192,43 @@
                             <tr>
                                 <th scope="row">Polish</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>2% chance that Turtle Powers are offered at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>4% chance that Turtle Powers are offered at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>6% chance that Turtle Powers are offered at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>8% chance that Turtle Powers are offered at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>10% chance that Turtle Powers are offered at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>12% chance that Turtle Powers are offered at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>14% chance that Turtle Powers are offered at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>16% chance that Turtle Powers are offered at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1070</p>
+                                    <p>Cost: 1070 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>18% chance that Turtle Powers are offered at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>20% chance that Turtle Powers are offered at level 2.</p>
                                 </td>
                             </tr>
@@ -2229,15 +2249,15 @@
                             <tr>
                                 <th scope="row">Double Double</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>10% chance that a Double Select will offer Turtle Powers at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 500 2S</p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2S</p>
                                     <p>20% chance that a Double Select will offer Turtle Powers at level 2.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>30% chance that a Double Select will offer Turtle Powers at level 2.</p>
                                 </td>
                             </tr>
@@ -2265,43 +2285,43 @@
                             <tr>
                                 <th scope="row">Running Start</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+25 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+50 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+75 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+100 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+125 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+150 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+175 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+200 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+225 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+250 Scrap upon starting a run.</p>
                                 </td>
                             </tr>
@@ -2324,23 +2344,23 @@
                             <tr>
                                 <th scope="row">Pantheon's Blessing</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+10% Dragon and Dreamer Coins from Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+20% Dragon and Dreamer Coins from Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+30% Dragon and Dreamer Coins from Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+40% Dragon and Dreamer Coins from Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+50% Dragon and Dreamer Coins from Room Rewards.</p>
                                 </td>
                             </tr>
@@ -2363,23 +2383,23 @@
                             <tr>
                                 <th scope="row">Scrappy Bosses</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+20% Scrap granted by Bosses.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+40% Scrap granted by Bosses.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+60% Scrap granted by Bosses.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+80% Scrap granted by Bosses.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+100% Scrap granted by Bosses.</p>
                                 </td>
                             </tr>
@@ -2400,15 +2420,15 @@
                             <tr>
                                 <th scope="row">Scrap King</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+10% Scrap from Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 180</p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+20% Scrap from Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+30% Scrap from Room Rewards.</p>
                                 </td>
                             </tr>
@@ -2429,15 +2449,15 @@
                             <tr>
                                 <th scope="row">Scavenger</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+100% Scrap gained from destroying crates.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+200% Scrap gained from destroying crates.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+300% Scrap gained from destroying crates.</p>
                                 </td>
                             </tr>
@@ -2460,23 +2480,23 @@
                             <tr>
                                 <th scope="row">Recycling</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+5% chance for Bonus Currency Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+10% chance for Bonus Currency Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+15% chance for Bonus Currency Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+20% chance for Bonus Currency Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+25% chance for Bonus Currency Room Rewards.</p>
                                 </td>
                             </tr>
@@ -2497,15 +2517,15 @@
                             <tr>
                                 <th scope="row">Mouse Scrap</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+15% chance for a MOUSER to drop triple Scrap upon defeat.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+30% chance for a MOUSER to drop triple Scrap upon defeat.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+45% chance for a MOUSER to drop triple Scrap upon defeat.</p>
                                 </td>
                             </tr>
@@ -2524,7 +2544,7 @@
                             <tr>
                                 <th scope="row">Busted Coin Slot</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>Dragon Coins are always granted as Bonus Curency Room Rewareds for Masteries and Inspirations.</p>
                                 </td>
                             </tr>
@@ -2545,15 +2565,15 @@
                             <tr>
                                 <th scope="row">Fortune Favors the Bold</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+1 Dragon and Dreamer Coins upon defeating Veteran and Champion enemies.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+2 Dragon and Dreamer Coins upon defeating Veteran and Champion enemies.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+3 Dragon and Dreamer Coins upon defeating Veteran and Champion enemies.</p>
                                 </td>
                             </tr>
@@ -2575,19 +2595,19 @@
                             <tr>
                                 <th scope="row">Dojo</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>Gain 25% chance to upgrade your Turtle Power to a Mastery in the entry room in Rooftops.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>Gain 50% chance to upgrade your Turtle Power to a Mastery in the entry room in Rooftops.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>Gain 75% chance to upgrade your Turtle Power to a Mastery in the entry room in Rooftops.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 2000 6G</p>
+                                    <p>Cost: 2000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                     <p>Gain 100% chance to upgrade your Turtle Power to a Mastery in the entry room in Rooftops.</p>
                                 </td>
                             </tr>
@@ -2607,11 +2627,11 @@
                             <tr>
                                 <th scope="row">Arcade Fixer</th>
                                 <td>
-                                    <p>Cost: </p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+25% chance that a Bonus Currency will apply to all Room Reward options.</p>
                                 </td>
                                 <td>
-                                    <p>Cost:</p>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                     <p>+50% chance that a Bonus Currency will apply to all Room Reward options.</p>
                                 </td>
                             </tr>
@@ -2641,24 +2661,24 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    <img src="" class="artifact-image">
+                                    <img src="assets/TMNT-Manhole.png" class="artifact-image">
                                     <p>Manhole Cover</p>
                                 </th>
                                 <td colspan="6">
@@ -2688,28 +2708,28 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1A</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4A</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    <img src="" class="artifact-image">
+                                    <img src="assets/TMNT-Foot-Medalion.png" class="artifact-image">
                                     <p>Foot Clan Medallion</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Flame powers. Guarantees your next Power Selection is of the Flame category.</p>
+                                    <p>+10 / 12.5 / 15 / 17.5 / 20% / 22.5% Double Select chance when selecting Flame powers. Guarantees your next Power Selection is of the Flame category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -2735,24 +2755,24 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    <img src="" class="artifact-image">
+                                    <img src="assets/TMNT-Broken-Ooze.png" class="artifact-image">
                                     <p>Broken Ooze Canister</p>
                                 </th>
                                 <td colspan="6">
@@ -2782,24 +2802,24 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    <img src="" class="artifact-image">
+                                    <img src="assets/TMNT-Sword-of-Tengu.png" class="artifact-image">
                                     <p>Sword of Tengu</p>
                                 </th>
                                 <td colspan="6">
@@ -2829,19 +2849,19 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                 </td>
                             </tr>
                             <tr>
@@ -2876,19 +2896,19 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                 </td>
                             </tr>
                             <tr>
@@ -2923,19 +2943,19 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                 </td>
                             </tr>
                             <tr>
@@ -2970,24 +2990,24 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 v</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    <img src="" class="artifact-image">
+                                    <img src="assets/TMNT-Turnstone.png" class="artifact-image">
                                     <p>Turnstone</p>
                                 </th>
                                 <td colspan="6">
@@ -3018,19 +3038,19 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                 </td>
                             </tr>
                             <tr>
@@ -3065,19 +3085,19 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                 </td>
                             </tr>
                             <tr>
@@ -3086,7 +3106,7 @@
                                     <p>Insulated Pizza Box</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>Boosts last for an additional 2 / 3 / 4 / 5 / 6 rooms. Granted by an ally in Docks.</p>
+                                    <p>Boosts last for an additional 2 / 3 / 4 / 5 / 6 / 7 rooms. Granted by an ally in Docks.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3112,19 +3132,19 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1500 6G</p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6G</p>
                                 </td>
                             </tr>
                             <tr>
@@ -3159,16 +3179,16 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 250</p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.png"/></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 400 1G</p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 700 2G</p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 2G</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4G</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
                             </tr>
                             <tr>
@@ -3177,7 +3197,7 @@
                                     <p>Astral Charm</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+3s / 3.5s / 4s Invulnerability duration upon consuming a Splinter's Revive.</p>
+                                    <p>+3s / 3.5s / 4s / 4.5s / 5s Invulnerability duration upon consuming a Splinter's Revive.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3200,10 +3220,10 @@
                                     <p></p>
                                 </td>
                                 <td>
-                                    <p>Cost: 500 1A</p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 1A</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 1000 4A</p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4A</p>
                                 </td>
                             </tr>
                             <tr>
@@ -3235,7 +3255,6 @@
 
                 <h4>Torrent</h4>
                 <p></p>
-
 
             </div>
             <div id="boosts" class="tab-content boosts">
@@ -3269,6 +3288,10 @@
             </div>
 
         </div>
+        <footer>
+            <p>All images copyright Viacom.</p>
+            <p>This is just a fansite. Thanks to Super Evil Mega Corp for making a great game.</p>
+        </footer>
     </body>
     <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css"/>
