@@ -169,12 +169,28 @@ body .no-wrap {
     overflow-x: scroll;
 }
 
- tbody > tr:nth-of-type(even) {
+tbody > tr:nth-of-type(even) {
     background-color: #ffffff;
-  }
+}
   
+#artifacts table {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
 
+#artifacts table th {
+    padding-right: 3rem;
+}
 
+#artifacts thead {
+    text-align: left;
+    text-decoration: underline;
+}
+
+#artifacts .artifact-image {
+    height: 100px;
+    width: 100px;
+}
 
 .hamburger {
     display: none;
