@@ -93,7 +93,7 @@ footer {
 .basic-donatello-content {
     background: no-repeat url("assets/TMNT-Background.png");
     background-size: 100% 100%;
-    color: white;
+    color: black;
     margin: 0 5rem 3rem 0;
     padding: 2rem 4rem;
 }
