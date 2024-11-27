@@ -93,10 +93,18 @@ footer {
 .basic-donatello-content {
     background: no-repeat url("assets/TMNT-Background.png");
     background-size: 100% 100%;
-    color: black;
+    color: white;
     margin: 0 5rem 3rem 0;
     padding: 2rem 4rem;
 }
+
+/* .power-wrapper {
+    background: no-repeat url("assets/TMNT-Background.png");
+    background-size: 100% 100%;
+    color: white;
+    margin: 0 2rem 2rem 0;
+    padding: 2rem 4rem;
+} */
 
 .basic-leonardo,
 .basic-donatello,
@@ -141,13 +149,14 @@ footer {
 
 #powers,
 #tools {
+    margin-left: 1rem;
     text-align: left;
 }
 
 #powers summary {
     /* list-style: none; */
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 #basic-info h4,

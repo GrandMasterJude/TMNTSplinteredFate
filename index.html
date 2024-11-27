@@ -45,11 +45,11 @@
                             </ul>
                             <ul>
                                 <li>
-                                    <h4>Inpsiration 1</h4>
+                                    <h4>Inspiration 1</h4>
                                     <p class="wrap"><span class="no-wrap">+15% / 20% / 25% / 30% Attack area size. </span><span class="no-wrap">+15% / 20% / 25% / 30% Attack damage.</span></p>
                                 </li>
                                 <li>
-                                    <h4>Inpsiration 1</h4>
+                                    <h4>Inspiration 1</h4>
                                     <p>+10% / 15% / 20% / 25% Multi-Hit chance.</p>
                                 </li>
                             </ul>
@@ -149,7 +149,7 @@
                     <div>
                         <p>How the math in the game works isn't necessaryily intuitive. If you find yourself wondering why your damage numbers aren't adding up the way you think, this might help explain it.</p>
 
-                        <h4>Damage Formulas</h4>
+                        <h4 id="damage-formula">Damage Formulas</h4>
                         <p><span>Attack:</span> Base Damage + Upgrade Bonus + Crit Bonus = Total damage</p>
                         <p>So for example, Raphael's basic attack deals 24 damge. When he does a Critical Hit it will do 49 damage</p>
                         <p>24 base damage + 25 crit damage (24 base * 1.06) *Raph gets the extra 6% from his inspiration.</p>
@@ -491,10 +491,10 @@
                 <details class="skill-astral-l">
                     <summary>Astral Light</summary>
                     <h4>Light Attacks</h4>
-                    <p>Attack damage increased by 4 / 7 / 10% of Max Health.</p>
+                    <p>Attack damage increased by 4% / 7% / 10% of Max Health.</p>
 
                     <h4>Shimmering Shield</h4>
-                    <p>Grant Light Shell for 1.2 / 1.8 / 2.4s at the start of your Dash.</p>
+                    <p>Grant Light Shell for 1.2s / 1.8s / 2.4s at the start of your Dash.</p>
 
 
                     <h4>Ancestral Guardian</h4>
@@ -513,13 +513,13 @@
                     <p>Light Shell reflects projectiles. Reflected projectiles deal 30% / 45% / 60% of your Max Health as Light damage.</p>
 
                     <h4>Light Embrace</h4>
-                    <p>Reduve damage received by 2% / 2.5% / 3% for each Astral Light power obtained.</p>
+                    <p>Reduce damage received by 2% / 2.5% / 3% for each Astral Light power obtained.</p>
 
                     <h4>Radiant Warrior</h4>
                     <p>Special and Tool grants Light Shell for 1.2s / 1.8s / 2.4s</p>
 
                     <h4>Revival</h4>
-                    <p>Gain 1 Splinter's Revive(s). +30 / 60 / 90? Max Health.</p>
+                    <p>Gain 1 Splinter's Revive(s). +30 / 60 Max Health.</p>
 
                     <h4>Revved Up</h4>
                     <p>Gain +10% / 15% / 20% chance of dodging enemy attacks when they are affected by Blinding Light.</p>
@@ -540,10 +540,10 @@
                         <h4>Blazing Inferno</h4>
                         <p>+2s / 3s / 4s Inferno duration.</p>
 
-                        <h4>Flame Abilities (Ability Icon)</h4>
+                        <h4>Flame Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.png"/></h4>
                         <p>Special and Tool deals 15 / 25 / 40 Flame damage.</p>
 
-                        <h4>Flame Dash (Dash Icon)</h4>
+                        <h4>Flame Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.png"/></h4>
                         <p>Deal 30 / 50 / 70 Flame damage to nearby enemies at the start of a Dash.</p>
     
                         <h4>Flame Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.png"/></h4>
@@ -589,13 +589,13 @@
                 </details>
                 <details class="skill-ninja">
                     <summary>Ninja</summary>
-                    <h4>Adrenaline</h4>
+                    <h4 data-one>Adrenaline</h4>
                     <p>Gain a stack of Adrenaline upon defeating an enemy. Adrenaline increases Physical damage by 5% / 10% / 15%. 5 stacks max.</p>
 
                     <h4>Art of Darkness</h4>
                     <p>Adrenaline now also increases Elemental damage by 10% / 15% / 20%.</p>
 
-                    <h4>Extended Assault</h4>
+                    <h4 data-one>Extended Assault</h4>
                     <p>Throw 1 Shuriken forward at the start of your Dash.</p>
 
                     <h4>First Strike</h4>
@@ -604,23 +604,26 @@
                     <h4>Ninjutsu Tactics</h4>
                     <p>+15% / 25% / 25% Global Critical Hit chance for 2s / 2.5s / 3s upon Dodge.</p>
 
-                    <h4>Quick Feet</h4>
+                    <h4 data-one>Quick Feet</h4>
                     <p>+1 Dash charge(s).</p>
 
-                    <h4>Shinobi Supremacy</h4>
+                    <h4 data-one>Quick Hands</h4>
+                    <p>+1 / 2 / 3 Shuriken thrown.</p>
+
+                    <h4 data-one>Shinobi Supremacy</h4>
                     <p>+10% / 15% / 20% Dodge chance.</p>
 
-                    <h4>Shuriken Attacks</h4>
+                    <h4 data-one>Shuriken Attacks</h4>
                     <p>Attacks have a 30% / 60% / 100% chance to throw a Shuriken forward.</p>
 
                     <h4>Shuriken Breaker</h4>
-                    <p>Shuriken apply Guard Break to enemy targets for 2s. Guard Break increases damage received by 15%.</p>
+                    <p>Shuriken apply Guard Break to enemy targets for 2s. Guard Break increases damage received by 15% / 25% / ??.</p>
 
                     <h4>Shuriken Engineer</h4>
                     <p>Shuriken have a 30% / 60% / 100% chance of triggering Tool bonuses.</p>
 
                     <h4>Throwing Arts: Chakram</h4>
-                    <p>Shuriken now boomerang, returning to your current position. -30% Shuriken Damage.</p>
+                    <p>Shuriken now boomerang, returning to your current position. -30% / -5% / 20% Shuriken Damage.</p>
 
                     <h4>Throwing Arts: Ricochet</h4>
                     <p>Shuriken now ricohet, bouncing off of enemies. -20% / +10% / +40% Shuriken damage.</p>
@@ -650,16 +653,16 @@
                     <h4>Living Ingredients</h4>
                     <p>When Ooze expires, it is reapplied to 1 / 2 / 3 nearby unaffected enemies.</p>
 
-                    <h4>Ooze Abilities</h4>
+                    <h4>Ooze Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.png"/></h4>
                     <p>Special and Tool applies 1 / 2 / 3 stack(s) of Ooze.</p>
 
                     <h4>Ooze Attack</h4>
                     <p>Attacks hace a 25% / 33% / 50% chance to apply 1 stack of Ooze.</p>
 
-                    <h4>Ooze Dash</h4>
+                    <h4>Ooze Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.png"/></h4>
                     <p>Apply 1 / 2 / 3 stack(s) of Ooze to enemies hit by your Dash.</p>
 
-                    <h4>Ooze Strike</h4>
+                    <h4>Ooze Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.png"/></h4>
                     <p>Final Strike applies 2 / 4 / 6 stack(s) of Ooze.</p>
 
                     <h4>Potency</h4>
@@ -675,11 +678,15 @@
                 <details class="skill-utrom">
                     <summary>Utrom</summary>
 
-                    <h4>Aftershock</h4>
-                    <p>After releasing your Static Charge hit nearby enemies for 10 / 15 / 20 Utrom daamage per second for 5s / 6s / 7s.</p>
+                    <div class="power-wrapper">
+                        <h4>Aftershock</h4>
+                        <p>After releasing your Static Charge hit nearby enemies for 10 / 15 / 20 Utrom daamage per second for 5s / 6s / 7s.</p>
+                    </div>
 
-                    <h4>Biomechanical Speed</h4>
-                    <p>Special can be used freely for 2s upon exhausting Static Charge.</p>
+                    <div class="power-wrapper">
+                        <h4>Biomechanical Speed</h4>
+                        <p>Special can be used freely for 2s upon exhausting Static Charge.</p>
+                    </div>
 
                     <h4>Chain Lightning</h4>
                     <p>Utrom damage will strike again and chain out to two nearby enemies for 7 / 14 / 21 Utrom damage..</p>
@@ -699,13 +706,13 @@
                     <h4>Techno-Organic Interface</h4>
                     <p>+10 / 20 / 30% Max Healt. +30 / 40 / 50% Move Speed.</p>
 
-                    <h4>Utrom Abilities (Ability Icon)</h4>
+                    <h4>Utrom Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.png"/></h4>
                     <p>Special and Tools deal 20 / 30 / 40 Utrom damage.</p>
 
                     <h4>Utrom Attacks</h4>
-                    <p>Attacks have a 30% / 45% / 60% chance to deal 10/20/30 Utrom damage.</p>
+                    <p>Attacks have a 30% / 45% / 60% chance to deal 10 / 20 / 30 Utrom damage.</p>
 
-                    <h4>Utrom Dash (Dash Icon)</h4>
+                    <h4>Utrom Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.png"/></h4>
                     <p>Dash deals 10 / 20 / 30 Utrom damage to 2 enemies near where you end up.</p>
 
                     <h4>Utrom Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.png"/></h4>
@@ -758,14 +765,14 @@
                     <h4>Torrential Rain</h4>
                     <p>Whenever you use Special or Tool, gain a Torrent Stack. Your attacks deal +4 / 7 / 10 Water damage per torrent stack.</p>
 
-                    <h4>Water Abilities (Ability Icon)</h4>
+                    <h4>Water Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.png"/></h4>
                     <p>Special and Tool has a 60% / 80% / 100% chance to deal 30 / 45 / 60 Water damage.</p>
 
                     <h4>Water Attacks</h4>
                     <p>Attacks deal 15 / 20 / 25 Water damage.</p>
 
-                    <h4>Water Dash (Dash Icon)</h4>
-                    <p>Deal 35 / 45 / ?? Water damage to nearby enemies at the end of a Dash.</p>
+                    <h4>Water Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.png"/></h4>
+                    <p>Deal 35 / 45 / 60 Water damage to nearby enemies at the end of a Dash.</p>
 
                     <h4>When It Rains</h4>
                     <p>Mulit-Hits deal 24 / 38 / 52 Water damge.</p>
@@ -781,57 +788,57 @@
             <div id="tools" class="tab-content">
                 <ul>
                     <li>
-                        <h4>Fireball</h4>
+                        <h4>Fireball<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>Fire 3 seeking fireballs towards nearby enemies. Each fireball deals 40? / 70 / 100 Flame damage in an area upon impact.</p>
                     </li>
                     <li>
-                        <h4>Hardened Shell</h4>
+                        <h4>Hardened Shell<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>Deal 20 / 40 / 60 Physical damage to nearby enemies. For the next 1.4s / 1.8s/ 2.2s, become immune to all damage.</p>
                     </li>
                     <li>
-                        <h4>Meteor Storm</h4>
+                        <h4>Meteor Storm<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>Call upon a meteor storm that lasts ?? / 6.5s / 8s. Meteors will fall towards enemies and deal ?? / 60 / 80 Flame damage upon impact.</p>
                     </li>
-                    <li>Ooze Shuriken</li>
+                    <li>Ooze Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></li>
 
                     <li>
-                        <h4>Ride the Wave</h4>
+                        <h4>Ride the Wave<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>+30 / 40% / 50% ove Speed for 5s. During that time, deal 40 / 50 / 60 Water damage per second to nearby enemies.</p>
                     </li>
                     <li>
-                        <h4>Shuriken (Tool Icon)</h4>
+                        <h4>Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>Throw three Shuriken in a cone. Each Shuriken deals 15 / 30 / 45 damage.</p>
                     </li>
                     <li>
-                        <h4>Shuriken Storm</h4>
-                        <p>Throw 8 / 9 / 10 Shuriken at nearby targets. Each Shuriken deals 30 / ?? / 45 Physical damage.</p>
+                        <h4>Shuriken Storm<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
+                        <p>Throw 8 / 9 / 10 Shuriken at nearby targets. Each Shuriken deals 15 / 30 / 45 Physical damage.</p>
                     </li>
                     <li>
-                        <h4>Smoke Bomb</h4>
+                        <h4>Smoke Bomb<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>Teleport forwards, dealing 30 / 50 / 70 Physical damage to nearby enemies where you end up. Immediately triggers Dodge effects.</p>
                     </li>
                     <li>
-                        <h4>Taunt</h4>
+                        <h4>Taunt<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>Taunt nearby enemies for 8s. Taunted enemies take 60 / 90 / 120 damage and are stunned for 0.5s when hit.</p>
                     </li>
                     <li>
-                        <h4>Turtle Line (Tool Icon)</h4>
+                        <h4>Turtle Line<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>Throw a Turtle Line dealing 30 / 60 / 90 Physical damage. On hit, pull yourself towards Bosses, and pull other enemies towards you.</p>
                     </li>
                     <li>
-                        <h4>Unstable Canister</h4>
+                        <h4>Unstable Canister<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>Deal 30 / 60 / 90 Ooze damage and apply 2 / 3 / 4 stack(s) of Ooze to all nearby enemies.</p>
                     </li>
                     <li>
-                        <h4>Utrom Rod</h4>
+                        <h4>Utrom Rod<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>A nearby enemy is struck by lightning / 4 / 5 times for / 25 / 35 Utrom damage.</p>
                     </li>
                     <li>
-                        <h4>Utrom Shuriken</h4>
+                        <h4>Utrom Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>Throw two Electric Shuriken at the nearest enemy. Each Shuriken deals 25 / 30 / 35 Utrom damage.</p>
                     </li>
                     <li>
-                        <h4>Water Sweep</h4>
+                        <h4>Water Sweep<img class="icon-power" src="assets/TMNT-Icon-Tool.png"/></h4>
                         <p>Deal 60 / 80 / 120  Water damage to nearby enemies. Enemies hit are knocked back.</p>
                     </li>
                 </ul>
@@ -1336,7 +1343,7 @@
                                     <p>+12% Dodge chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
+                                    <p>Cost: 1400 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 4LB</p>
                                     <p>+16% Dodge chance.</p>
                                 </td>
                                 <td>
@@ -1579,6 +1586,10 @@
                                     <p>Cost: 1250 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+18% Multi-Hit chance.</p>
                                 </td>
+                                <td>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
+                                    <p>+20% Multi-Hit chance.</p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -1807,12 +1818,24 @@
                                     <p>+100% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 280 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need 1 <img class="coin" src="assets/TMNT-Shredder.png"/></p>
+                                    <p>Cost: 280 <img class="coin" src="assets/TMNT-DragonCoin.png"/> need: 1 <img class="coin" src="assets/TMNT-Shredder.png"/></p>
                                     <p>+110% Special damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
+                                    <p>Cost: 320 <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
                                     <p>+120% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
+                                    <p>+130% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
+                                    <p>+140% Special damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.png"/></p>
+                                    <p>+150% Special damage.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -2019,7 +2042,7 @@
                     </table>
                 </div>
 
-                <h3><img class="coin-large" src="assets/TMNT-DreamerCoin.png"/> Dreamer Coins</h3>
+                <h3 id="dreamer-upgrades"><img class="coin-large" src="assets/TMNT-DreamerCoin.png"/> Dreamer Coins</h3>
                 <div class="table-wrapper upgrade-perchance">
                     <table>
                         <thead>
@@ -2688,7 +2711,7 @@
                                     <p>Manhole Cover</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Water powers. Guarantees your next Power Selection is of the Water category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Water powers. Guarantees your next Power Selection is of the Water category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -2735,7 +2758,7 @@
                                     <p>Foot Clan Medallion</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10 / 12.5 / 15 / 17.5 / 20% / 22.5% Double Select chance when selecting Flame powers. Guarantees your next Power Selection is of the Flame category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Flame powers. Guarantees your next Power Selection is of the Flame category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -2782,7 +2805,7 @@
                                     <p>Broken Ooze Canister</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Ooze powers. Guarantees your next Power Selection is of the Ooze category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Ooze powers. Guarantees your next Power Selection is of the Ooze category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -2829,7 +2852,7 @@
                                     <p>Sword of Tengu</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Utrom powers. Guarantees your next Power Selection is of the Utrom category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Utrom powers. Guarantees your next Power Selection is of the Utrom category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -2876,7 +2899,7 @@
                                     <p>Tessen</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Ninja powers. Guarantees your next Power Selection is of the Ninja category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Ninja powers. Guarantees your next Power Selection is of the Ninja category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -2923,7 +2946,7 @@
                                     <p>Mystical Seal of Protection</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10 / 12.5 / 15 / 17.5 / 20% Double Select chance when selecting Astral powers. Guarantees your next Power Selection is of the Astral category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Astral powers. Guarantees your next Power Selection is of the Astral category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -2970,7 +2993,7 @@
                                     <p>Stockgen ID Card</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10 / 12.5 / 15 / 17.5 / 20% chance of gaining Bonus Scrap when defeating MOUSERs or Super Foot Soldiers.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% chance of gaining Bonus Scrap when defeating MOUSERs or Super Foot Soldiers.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3017,7 +3040,7 @@
                                     <p>Turnstone</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10 / 12.5 / 15 / 17.5 / 20% / 22.5% chance to gain bonus Dragon Coins or Dreamer Coins upon defeating an veteran of champion enemy.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% chance to gain bonus Dragon Coins or Dreamer Coins upon defeating an veteran of champion enemy.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3159,7 +3182,7 @@
                                     <p>Heart of Tengu</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+??? / ??? / ??? / ??? / 15 / +17.5% Dodge chance. Increase duration of Invulnerablity upon a Dash.</p>
+                                    <p>+5% / 7.5% / 10% / 12.5% / 15% / +17.5% Dodge chance. Increase duration of Invulnerablity upon a Dash.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3196,6 +3219,9 @@
                                 <td>
                                     <p>Cost: 1000 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 4G</p>
                                 </td>
+                                <td>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DreamerCoin.png"/> need 6A</p>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">
@@ -3203,7 +3229,7 @@
                                     <p>Astral Charm</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+3s / 3.5s / 4s / 4.5s / 5s Invulnerability duration upon consuming a Splinter's Revive.</p>
+                                    <p>+3s / 3.5s / 4s / 4.5s / 5s / 5.5s Invulnerability duration upon consuming a Splinter's Revive.</p>
                                 </td>
                             </tr>
                         </tbody>
