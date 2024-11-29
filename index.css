@@ -91,7 +91,7 @@ footer {
 .basic-leonardo-content,
 .basic-raphael-content,
 .basic-donatello-content {
-    background: no-repeat url("assets/TMNT-Background.png");
+    background: no-repeat url("assets/TMNT-Background.webp");
     background-size: 100% 100%;
     color: white;
     margin: 0 5rem 3rem 0;
@@ -99,7 +99,7 @@ footer {
 }
 
 /* .power-wrapper {
-    background: no-repeat url("assets/TMNT-Background.png");
+    background: no-repeat url("assets/TMNT-Background.webp");
     background-size: 100% 100%;
     color: white;
     margin: 0 2rem 2rem 0;
@@ -116,7 +116,7 @@ footer {
 } */
 
 .power-wrapper h4 {
-    margin: 0;
+    margin: 2rem 0 0 0;
 }
 
 .basic-leonardo,
@@ -138,26 +138,36 @@ footer {
 }
 
 #mastery ul li {
-    color: white;
+    display: flex;
+    align-items: center;
     margin-bottom: 1rem;
-    padding: 0.5rem 2rem;
+}
+
+#mastery ul li img {
+    margin-right: 1rem;
+}
+
+#mastery ul li p {
+    color: white;
+    margin: 0;
+    padding: 0.5rem 1rem;
     border-radius: 3rem;
     width: fit-content;
 }
 
-#mastery .mastery-michelangelo ul li {
+#mastery .mastery-michelangelo ul li p {
     background-color: orange;
 }
 
-#mastery .mastery-leonardo ul li {
+#mastery .mastery-leonardo ul li p {
     background-color: royalblue;
 }
 
-#mastery .mastery-raphael ul li {
+#mastery .mastery-raphael ul li p {
     background-color: red;
 }
 
-#mastery .mastery-donatello ul li {
+#mastery .mastery-donatello ul li p {
     background-color: purple;
 }
 
@@ -323,7 +333,7 @@ img.coin-large {
     .basic-leonardo-content,
     .basic-raphael-content,
     .basic-donatello-content {
-        /* background: no-repeat url("assets/TMNT-Background.png");
+        /* background: no-repeat url("assets/TMNT-Background.webp");
         background-size: 100% 100%;
         color: white; */
         margin: 0 0 3rem 0;
