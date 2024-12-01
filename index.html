@@ -42,6 +42,7 @@
                                 <li>Attack Damage: 7, 14, 16 16 16 23</li>
                                 <li>Dash Attack Damage: 7 7 7 14</li>
                                 <li>Special Attack Damage: 37 37 37 37</li>
+                                <li>Special Charge Rate:  per attack.</li>
                             </ul>
                             <ul>
                                 <li>
@@ -63,6 +64,7 @@
                                     <li>Attack Damage: 25, 25, 40 + Master Strike damage</li>
                                     <li>Dash Attack Damage: 25</li>
                                     <li>Special Attack Damage: 65</li>
+                                    <li>Special Charge Rate:  per attack.</li>
                                 </ul>
                                 <ul>
                                     <li>
@@ -87,6 +89,7 @@
                                     <li>Attack Damage: 24, 30, 28 35</li>
                                     <li>Dash Attack Damage: 24</li>
                                     <li>Special Attack Damage: 25 25 25 25 25 25 25</li>
+                                    <li>Special Charge Rate:  per attack.</li>
                                 </ul>
                                 <ul>
                                     <li>
@@ -108,6 +111,7 @@
                                     <li>Attack Damage: 20, 20, 30</li>
                                     <li>Dash Attack Damage: 25</li>
                                     <li>Special Attack Damage: 30 30 30 30 30</li>
+                                    <li>Special Charge Rate:  per attack.</li>
                                 </ul>
                                 <ul>
                                     <li>
@@ -696,6 +700,11 @@
                             <p>Gain a 30% chance to deal 100 Flame damage when applying Ooze.</p> 
                         </div>
 
+                        <div class="power-wrapper">
+                            <h4>*TEMPERED SHURIKEN* (Ninja & Flame)</h4>
+                            <p>+40% Critical Hit chance with Shuriken.</p> 
+                        </div>
+
                 </details>
                 <details class="skill-ninja">
                     <summary>Ninja</summary>
@@ -771,8 +780,13 @@
                     </div>
 
                     <div class="power-wrapper">
-                        <h4>*REVOLUTION*</h4>
+                        <h4>*REVOLUTION* (Utrom & Ninja)</h4>
                         <p>Dash Attack's damage is increased by 1% of the enemies' Max Health.</p>
+                    </div>
+
+                    <div class="power-wrapper">
+                        <h4>*SLIPPERY* (Ooze & Ninja)</h4>
+                        <p>Gain 30% Move Speed, charge Tool and Special 30% faster, and reduce Dash cooldown by 30% while at maximum Adrenaline.</p>
                     </div>
                 </details>
                 <details class="skill-ooze">
@@ -780,7 +794,7 @@
 
                     <div class="power-wrapper">
                         <h4>Catalytic Consequence</h4>
-                        <p>Deal +?? / 25 / 35 damage with your Dash Attack for each Stack of Ooze on the enemy.</p>
+                        <p>Deal +15 / 25 / 35 damage with your Dash Attack for each Stack of Ooze on the enemy.</p>
                     </div>
 
                     <div class="power-wrapper">
@@ -846,6 +860,11 @@
                     <div class="power-wrapper">
                         <h4>*SECRET OF THE OOZE* (Utrom & Ooze)</h4>
                         <p>Reduce damage received by 30%</p>
+                    </div>
+
+                    <div class="power-wrapper">
+                        <h4>*SPONTANEOUS COMBUSTION* (Flame & Ooze)</h4>
+                        <p>Gain a 30% chance to deal 100 Flame damage when applying Ooze.</p>
                     </div>
 
                 </details>
@@ -1022,61 +1041,87 @@
             <div id="tools" class="tab-content">
                 <ul>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Fireball<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Fire 3 seeking fireballs towards nearby enemies. Each fireball deals 40? / 70 / 100 Flame damage in an area upon impact.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Hardened Shell<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Deal 20 / 40 / 60 Physical damage to nearby enemies. For the next 1.4s / 1.8s/ 2.2s, become immune to all damage.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Meteor Storm<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Call upon a meteor storm that lasts ?? / 6.5s / 8s. Meteors will fall towards enemies and deal ?? / 60 / 80 Flame damage upon impact.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Ooze Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Throw 2 Ooze Shuiken at the nearest enemy. Each Shuriken deals ?? / 25 / 35 Ooze damage.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
-                        
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Ride the Wave<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>+30 / 40% / 50% ove Speed for 5s. During that time, deal 40 / 50 / 60 Water damage per second to nearby enemies.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Throw three Shuriken in a cone. Each Shuriken deals 15 / 30 / 45 damage.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Shuriken Storm<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Throw 8 / 9? / 10 Shuriken at nearby targets. Each Shuriken deals 15 / 30 / 45 Physical damage.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Smoke Bomb<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Teleport forwards, dealing 30 / 50 / 70 Physical damage to nearby enemies where you end up. Immediately triggers Dodge effects.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
                         <h4>Taunt<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Taunt nearby enemies for 8s. Taunted enemies take 60 / 90 / 120 damage and are stunned for 0.5s when hit.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Turtle Line<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Throw a Turtle Line dealing 30 / 60 / 90 Physical damage. On hit, pull yourself towards Bosses, and pull other enemies towards you.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Unstable Canister<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Deal 30 / 60 / 90 Ooze damage and apply 2 / 3 / 4 stack(s) of Ooze to all nearby enemies.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Utrom Rod<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>A nearby enemy is struck by lightning / 4 / 5 times for / 25 / 35 Utrom damage.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Utrom Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Throw two Electric Shuriken at the nearest enemy. Each Shuriken deals 25 / 30 / 35 Utrom damage.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                     <li>
+                        <img src="assets/TMNT-Manhole.webp" class="tool-image">
                         <h4>Water Sweep<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Deal 60 / 80 / 120  Water damage to nearby enemies. Enemies hit are knocked back.</p>
+                        <p>Charge Rate: per attack.</p>
                     </li>
                 </ul>
             </div>
@@ -1096,11 +1141,11 @@
                             <tr>
                                 <th scope="row">Astral Rejuvenation</th>
                                 <td>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1K</p>
                                     <p>Splinter's Revive restores 10% additional Health.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1S</p>
                                     <p>Splinter's Revive restores 20% additional Health.</p>
                                 </td>
                                 <td>
@@ -1147,7 +1192,7 @@
                                     <p>+30% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>+40% Attack damage.</p>
                                 </td>
                                 <td>
@@ -1175,12 +1220,28 @@
                                     <p>+100% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 950 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> 2S</p>
+                                    <p>Cost: 950 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2S</p>
                                     <p>+110% Attack damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 1200 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1A</p>
                                     <p>+120% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>+130% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2A</p>
+                                    <p>+140% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1700 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>+150% Attack damage.</p>
+                                </td>
+                                <td>
+                                    <p>Cost: 1900 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4A</p>
+                                    <p>+160% Attack damage.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -1242,7 +1303,7 @@
                                     <p>+2% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>+4% Attack Critical Hit chance.</p>
                                 </td>
                                 <td>
@@ -1361,7 +1422,7 @@
                             <tr>
                                 <th scope="row">Dash Charge</th>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 15 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>+1 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
                                 </td>
                                 <td>
@@ -1395,7 +1456,7 @@
                                     <p>+10% duration of Negative Effects you apply.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>+20% duration of Negative Effects you apply.</p>
                                 </td>
                                 <td>
@@ -1431,11 +1492,11 @@
                             <tr>
                                 <th scope="row">Fast Abilities</th>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1DC</p>
                                     <p>Special charges 5% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>Special charges 10% faster.</p>
                                 </td>
                                 <td>
@@ -1459,15 +1520,15 @@
                                     <p>Special charges 35% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4DB</p>
+                                    <p>Cost: 950 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4DB</p>
                                     <p>Special charges 40% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 1250 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>Special charges 45% faster.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 1500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>Special charges 50% faster.</p>
                                 </td>
                             </tr>
@@ -1700,7 +1761,7 @@
                                 <p>+60% Max Health.</p>
                             </td>
                             <td>
-                                <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                <p>Cost: 110 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                 <p>+70% Max Health.</p>
                             </td>
                             <td>
@@ -1980,15 +2041,15 @@
                                     <p>Health recovery is 20% more effective.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1K</p>
                                     <p>Health recovery is 40% more effective.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>Health recovery is 60% more effective.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2K</p>
                                     <p>Health recovery is 80% more effective.</p>
                                 </td>
                                 <td>
@@ -2016,11 +2077,11 @@
                             <tr>
                                 <th scope="row">Slice of Life</th>
                                 <td>
-                                    <p>Cost: 125 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 125 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1K</p>
                                     <p>4% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>8% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                                 </td>
                                 <td>
@@ -2154,7 +2215,7 @@
                             <tr>
                                 <th scope="row">Splinter's Revive</th>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 25 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>Start each run with 1 Splinter's Revive(s). Splinter's Revive restores 25% of your Max Health when your Health is depleted.</p>
                                 </td>
                                 <td>
@@ -2304,11 +2365,11 @@
                                     <p>+30% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 75 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
                                     <p>+45% Tool Damage.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2K</p>
                                     <p>+60% Tool Damage.</p>
                                 </td>
                                 <td>
@@ -2367,7 +2428,7 @@
                                     <p>+2% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 70 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
                                     <p>+4% chance to draw Turtle Powers in Room Rewards.</p>
                                 </td>
                                 <td>
@@ -2620,19 +2681,19 @@
                                     <p>+25 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
                                     <p>+50 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 90 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
                                     <p>+75 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
                                     <p>+100 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
                                     <p>+125 Scrap upon starting a run.</p>
                                 </td>
                                 <td>
@@ -2675,7 +2736,7 @@
                             <tr>
                                 <th scope="row">Pantheon's Blessing</th>
                                 <td>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1K</p>
                                     <p>+10% Dragon and Dreamer Coins from Room Rewards.</p>
                                 </td>
                                 <td>
@@ -2683,11 +2744,11 @@
                                     <p>+20% Dragon and Dreamer Coins from Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 4K</p>
                                     <p>+30% Dragon and Dreamer Coins from Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1S</p>
                                     <p>+40% Dragon and Dreamer Coins from Room Rewards.</p>
                                 </td>
                                 <td>
@@ -2718,11 +2779,11 @@
                                     <p>+20% Scrap granted by Bosses.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
                                     <p>+40% Scrap granted by Bosses.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 360 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1K</p>
                                     <p>+60% Scrap granted by Bosses.</p>
                                 </td>
                                 <td>
@@ -2792,11 +2853,11 @@
                                     <p>+100% Scrap gained from destroying crates.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 2K</p>
                                     <p>+200% Scrap gained from destroying crates.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1S</p>
                                     <p>+300% Scrap gained from destroying crates.</p>
                                 </td>
                             </tr>
@@ -2823,7 +2884,7 @@
                                     <p>+5% chance for Bonus Currency Room Rewards.</p>
                                 </td>
                                 <td>
-                                    <p>Cost: ?? <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 220 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
                                     <p>+10% chance for Bonus Currency Room Rewards.</p>
                                 </td>
                                 <td>
@@ -3017,11 +3078,11 @@
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    <img src="assets/TMNT-Manhole.webp" class="artifact-image">
+                                    <img src="assets/TMNT-Manhole-Cover.webp" class="artifact-image">
                                     <p>Manhole Cover</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Water powers. Guarantees your next Power Selection is of the Water category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Water powers.</br>Guarantees your next Power Selection is of the Water category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3068,7 +3129,7 @@
                                     <p>Foot Clan Medallion</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Flame powers. Guarantees your next Power Selection is of the Flame category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Flame powers.</br>Guarantees your next Power Selection is of the Flame category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3115,7 +3176,7 @@
                                     <p>Broken Ooze Canister</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Ooze powers. Guarantees your next Power Selection is of the Ooze category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Ooze powers.</br>Guarantees your next Power Selection is of the Ooze category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3162,7 +3223,7 @@
                                     <p>Sword of Tengu</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Utrom powers. Guarantees your next Power Selection is of the Utrom category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Utrom powers.</br>Guarantees your next Power Selection is of the Utrom category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3209,7 +3270,7 @@
                                     <p>Tessen</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Ninja powers. Guarantees your next Power Selection is of the Ninja category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Ninja powers.</br>Guarantees your next Power Selection is of the Ninja category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3256,7 +3317,7 @@
                                     <p>Mystical Seal of Protection</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Astral powers. Guarantees your next Power Selection is of the Astral category.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance when selecting Astral powers.</br>Guarantees your next Power Selection is of the Astral category.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -3397,13 +3458,13 @@
                                     <p>Battle Shell Fuzzy Dice</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance during any Turtle Upgrade selections. Granted by an ally in Streets.</p>
+                                    <p>+10% / 12.5% / 15% / 17.5% / 20% / 22.5% Double Select chance during any Turtle Upgrade selections.</br>Granted by an ally in Streets.</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="table-wrapper">
+                <div class="table-wrapper artifact-pizza-box">
                     <table>
                         <thead>
                             <tr>
@@ -3444,13 +3505,13 @@
                                     <p>Insulated Pizza Box</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>Boosts last for an additional 2 / 3 / 4 / 5 / 6 / 7 rooms. Granted by an ally in Docks.</p>
+                                    <p>Boosts last for an additional 2 / 3 / 4 / 5 / 6 / 7 rooms.</br>Granted by an ally in Docks.</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="table-wrapper">
+                <div class="table-wrapper artifact-heart-of-tengu">
                     <table>
                         <thead>
                             <tr>
@@ -3491,13 +3552,13 @@
                                     <p>Heart of Tengu</p>
                                 </th>
                                 <td colspan="6">
-                                    <p>+5% / 7.5% / 10% / 12.5% / 15% / +17.5% Dodge chance. Increase duration of Invulnerablity upon a Dash.</p>
+                                    <p>+5% / 7.5% / 10% / 12.5% / 15% / +17.5% Dodge chance.</br>Increase duration of Invulnerablity upon a Dash.</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="table-wrapper">
+                <div class="table-wrapper artifact-astral-charm">
                     <table>
                         <thead>
                             <tr>
@@ -3544,7 +3605,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="table-wrapper">
+                <div class="table-wrapper artifact-war-staff">
                     <table>
                         <thead>
                             <tr>
@@ -3585,6 +3646,9 @@
                 <h4>Adrenaline</h4>
                 <p>+5% Physical damage dealt. Max of 5 stacks. Stacks are lost upon taking damage.</p>
 
+                <h4>Blinding Light</h4>
+                <p></p>
+
                 <h4>Darkness</h4>
                 <p>Each stack increases damage received by 5% Max of 5 stacks.</p>
 
@@ -3601,6 +3665,9 @@
                 <h4>Guard Break</h4>
                 <p>+15% damage received.</p>
 
+                <h4>Inferno</h4>
+                <p></p>
+
                 <h4>Light Shell</h4>
                 <p>Grants immunity to projectile attacks.</p>
                 <p>Granted by some Astral Light Powers and Leonardo Masteries.</p>
@@ -3615,33 +3682,53 @@
 
             </div>
             <div id="boosts" class="tab-content boosts">
-                <h4>Attack Damage</h4>
-                <p>+50% Attack damage. Lasts 4 rooms.</p>
 
-                <h4>Barrier Damage</h4>
-                <p>+30% damage to enemies with a Barrier. Lasts 4 rooms.</p>
+                <div class="boost-wrapper">
+                    <img src="assets/TMNT-Manhole.webp" class="boost-image">
+                    <h4>Attack Damage</h4>
+                    <p>+50% Attack damage. Lasts 4 rooms.</p>
+                </div>
 
-                <h4>Bonus Damage</h4>
-                <p>+30% Damage dealt. Lasts 4 rooms.</p>
-
-                <h4>Critical Chance</h4>
-                <p>+30% Global Critical Hit chance. Lasts 4 rooms.</p>
-
-                <h4>Dash Attack Damage</h4>
-                <p>+100% Dash Attack damage. Lasts 4 rooms.</p>
-
-                <h4>Move Speed</h4>
-                <p>+40% Move Speed. Lasts 4 rooms.</p>
-
-                <h4>Special Charge</h4>
-                <p>Special charges 50% faster. Lasts 4 rooms.</p>
-
-                <h4>Special Damage</h4>
-                <p>+100% Special damage. Lasts 4 rooms.</p>
-
-                <h4>Tool Damage</h4>
-                <p>+100% Tool damage. Lasts 4 rooms.</p>
-
+                <div class="boost-wrapper">
+                    <img src="assets/TMNT-Manhole.webp" class="boost-image">
+                    <h4>Barrier Damage</h4>
+                    <p>+30% damage to enemies with a Barrier. Lasts 4 rooms.</p>
+                </div>
+                <div class="boost-wrapper">
+                    <img src="assets/TMNT-Manhole.webp" class="boost-image">
+                    <h4>Bonus Damage</h4>
+                    <p>+30% Damage dealt. Lasts 4 rooms.</p>
+                </div>
+                <div class="boost-wrapper">
+                    <img src="assets/TMNT-Manhole.webp" class="boost-image">
+                    <h4>Critical Chance</h4>
+                    <p>+30% Global Critical Hit chance. Lasts 4 rooms.</p>
+                </div>
+                <div class="boost-wrapper">
+                    <img src="assets/TMNT-Manhole.webp" class="boost-image">
+                    <h4>Dash Attack Damage</h4>
+                    <p>+100% Dash Attack damage. Lasts 4 rooms.</p>
+                </div>
+                <div class="boost-wrapper">
+                    <img src="assets/TMNT-Manhole.webp" class="boost-image">
+                    <h4>Move Speed</h4>
+                    <p>+40% Move Speed. Lasts 4 rooms.</p>
+                </div>
+                <div class="boost-wrapper">
+                    <img src="assets/TMNT-Manhole.webp" class="boost-image">
+                    <h4>Special Charge</h4>
+                    <p>Special charges 50% faster. Lasts 4 rooms.</p>
+                </div>
+                <div class="boost-wrapper">
+                    <img src="assets/TMNT-Manhole.webp" class="boost-image">
+                    <h4>Special Damage</h4>
+                    <p>+100% Special damage. Lasts 4 rooms.</p>
+                </div>
+                <div class="boost-wrapper">
+                    <img src="assets/TMNT-Manhole.webp" class="boost-image">
+                    <h4>Tool Damage</h4>
+                    <p>+100% Tool damage. Lasts 4 rooms.</p>
+                </div>
             </div>
 
         </div>
@@ -3656,27 +3743,27 @@
 
 <!-- Frostfire // WATER/FLAME
 Inferno* + Frost
-*inferno not always needed - can have Fireball or meteorite tools also will work
+    *inferno not always needed - can have Fireball or meteorite tools also will work
 Shatter // WATER/UTROM 
-Pressure Nozzle + Splash Damage + Frost + Shocking
+    Pressure Nozzle + Splash Damage + Frost + Shocking
 Bright Spring // WATER/A-LIGHT 
-Dilution + Light Attack
+    Dilution + Light Attack
 Solution to Pollution // WATER/OOZE
-Frost + Potency*
-*any skill with ooze symbol can replace Potency
+    Frost + Potency*
+    *any skill with ooze symbol can replace Potency
 Spontaneous Combustion // FLAME/OOZE  
-Inferno + Goo’dbye
+    Inferno + Goo’dbye
 Dark Flame // FLAME/A-DARK 
-Inferno + Nightfall
+    Inferno + Nightfall
 Tempered Shuriken // FLAME/NINJA  
-Furious Attacks + Precision + Quick Feet + Extended Assault + Throwing Arts: Chakram
+    Furious Attacks + Precision + Extended Assault + Throwing Arts: Chakram
 Light Hammer // UTROM/A-LIGHT  
-Techno Organic Interface + Revival
+    Techno Organic Interface + Revival
 Revolution // UTROM/NINJA  
-Utrom Dash + Quick Feet + First Strike + Chain Lightning
+    Utrom Dash + Quick Feet + First Strike + Chain Lightning
 Secret of the Ooze UTROM/OOZE =
-Techno Organic Interface + Special Spice + Shelf Life
+    Techno Organic Interface + Special Spice + Shelf Life
 Slippery // NINJA/OOZE
-Adrenaline + Heightened Senses + Ooze Abilities + Goo’dbye
+    Adrenaline + Heightened Senses + Ooze Abilities + Goo’dbye
 Finisher // NINJA/A-DARK 
-Extended Assault + Shuriken Breaker + Nightfall + Dark Embrace -->
+    Extended Assault + Shuriken Breaker + Nightfall + Dark Embrace -->

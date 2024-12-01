@@ -84,7 +84,7 @@ footer {
 }
 
 .mastery-container img {
-    height: 4rem;
+    height: 3rem;
 }
 
 .basic-michelangelo-content,
@@ -156,19 +156,19 @@ footer {
 }
 
 #mastery .mastery-michelangelo ul li p {
-    background-color: orange;
+    background-color: #EB8248;
 }
 
 #mastery .mastery-leonardo ul li p {
-    background-color: royalblue;
+    background-color: #1F61B8;
 }
 
 #mastery .mastery-raphael ul li p {
-    background-color: red;
+    background-color: #C02D2A;
 }
 
 #mastery .mastery-donatello ul li p {
-    background-color: purple;
+    background-color: #9622C4;
 }
 
 #powers,
@@ -196,7 +196,7 @@ footer {
 }
 
 #inspirations th {
-    padding-left: 2rem;
+    padding: 0 2rem;
     text-align: left;
 }
 
@@ -230,16 +230,23 @@ footer {
     /* white-space: nowrap; */
 }
 
+#upgrades th,
+#upgrades td,
+#artifacts th,
+#artifacts td {
+    border: 1px solid rgb(160 160 160);
+}
+
 .table-wrapper {
     margin-bottom: 3rem;
     max-width: 95vw;
     overflow-x: scroll;
 }
 
-tbody > tr:nth-of-type(even) {
+/* tbody > tr:nth-of-type(even) {
     background-color: #ffffff;
-}
-  
+} */
+
 #artifacts table {
     font-size: 1.25rem;
     margin-bottom: 3rem;
@@ -257,6 +264,10 @@ tbody > tr:nth-of-type(even) {
 #artifacts .artifact-image {
     height: 100px;
     width: 100px;
+}
+
+tr th:first-of-type {
+    border: none !important;
 }
 
 .hamburger {
@@ -302,6 +313,12 @@ img.coin-large {
     position: relative;
     top: 0.25rem;
     width: 1.75rem;
+}
+
+#boosts .boost-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
 }
 
 @media screen and (max-width: 1150px) {
