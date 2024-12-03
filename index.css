@@ -206,7 +206,7 @@ footer {
     align-items: center;
     display: flex;
     flex-basis: 100%;
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin: 0 0 1rem 0;
 }
 
@@ -411,7 +411,6 @@ tr th:first-of-type {
 .mobile-menu a {
     display: block;
     color: white;
-    font-size: 2.5rem;
     padding: 14px 16px;
     text-decoration: none;
     text-align: center;
