@@ -17,6 +17,10 @@ body .mobile-yep {
     display: none;
 }
 
+body .tiny-mobile-yep {
+    display: none;
+}
+
 .navbar {
     display: flex;
     background-color: #333;
@@ -71,9 +75,9 @@ body .wrap {
     flex-wrap: wrap;
 }
 
-/* body .no-wrap {
+body .no-wrap {
     white-space: nowrap;
-} */
+}
 
 footer {
     font-size: 0.75rem;
@@ -384,7 +388,51 @@ footer {
 
 #artifacts .artifact-image {
     height: 100px;
-    /* width: 100px; */
+}
+
+#artifacts .artifact {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 16rem 1fr;
+    border: 2px solid darkgray;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+#artifacts .artifact-header {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+    text-align: center;
+}
+
+#artifacts .artifact-details-container {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+#artifacts .artifact-cost-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+#artifacts .artifact-cost-container .level {
+    line-height: 1rem;
+}
+
+#artifacts .artifact-cost-container .cost {
+    margin: 0 1rem 1rem 0;
+}
+
+#artifacts .artifact-image {
+    align-self: center;
+    margin: 0 0 1rem 0;
 }
 
 tr th:first-of-type {
@@ -423,7 +471,12 @@ tr th:first-of-type {
 img.coin {
     position: relative;
     top: 0.25rem;
-    width: 1.25rem;
+    width: 1.75rem;
+}
+
+img.coin.band {
+    top: 0.125rem;
+    width: 2.25rem;
 }
 
 img.coin.karai {
@@ -453,7 +506,7 @@ img.coin-large {
     height: 5rem;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
     body .content {
         padding: 0.75rem;
     }
@@ -525,13 +578,42 @@ img.coin-large {
         margin: 0 0 2rem 0;
     }
 
+    #artifacts .artifact {
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    #artifacts .artifact-header {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        justify-self: center;
+    }
+    
+    #artifacts .artifact-details-container {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+    
+    #artifacts .artifact-cost-container {
+        flex-direction: column;
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+
     #boosts .boost-wrapper {
         flex-direction: column;
-        margin: 0 0 2rem 0;
+        gap: 0.5rem;
+        margin: 0 0 3rem 0;
     }
 
     #boosts .boost-wrapper h4 {
         margin: 0;
     }
     
+}
+
+@media screen and (max-width: 550px) {
+    body .tiny-mobile-yep {
+        display: inline-block;
+    }
 }
