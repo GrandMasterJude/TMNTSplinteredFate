@@ -299,7 +299,6 @@ footer {
 
 #powers,
 #tools {
-    margin-left: 1rem;
     text-align: left;
 }
 
@@ -318,6 +317,71 @@ footer {
 #powers p,
 #tools p {
     margin: 0.4rem;
+}
+
+#powers .section-title {
+    position: relative;
+    bottom: 2.25rem;
+    background-color: #f1f1f1;
+    margin: 0 0 -3rem 0;
+    padding: 0.25rem 2rem 0.25rem 1rem;
+    width: fit-content;
+}
+
+#powers .border-astral-d {
+    border: 2px solid darkgray;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+    width: fit-content;
+}
+
+#powers .border-astral-l {
+    border: 2px solid darkgray;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+    width: fit-content;
+}
+
+#powers .border-flame {
+    border: 2px solid orange;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+    width: fit-content;
+}
+
+#powers .border-ninja {
+    border: 2px solid green;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+    width: fit-content;
+}
+
+#powers .border-ooze {
+    border: 2px solid purple;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+    width: fit-content;
+}
+
+#powers .border-utrom {
+    border: 2px solid lightblue;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+    width: fit-content;
+}
+
+#powers .border-water {
+    border: 2px solid blue;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+    width: fit-content;
 }
 
 #inspirations th {
@@ -361,6 +425,8 @@ footer {
 #artifacts td {
     border: 1px solid rgb(160 160 160);
 }
+
+ 
 
 .table-wrapper {
     margin-bottom: 3rem;

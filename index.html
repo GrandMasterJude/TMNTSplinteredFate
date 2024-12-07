@@ -39,10 +39,10 @@
                         <div class="basic-michelangelo-content">
                             <ul class="basic-content border-m">
                                 <li>Health: 110</li>
-                                <li>Attack Damage: <br class="mobile-yep">7, 14, 16 16 16 23</li>
+                                <li>Attack Damage: <br class="mobile-yep">7, 14, 16 16 23</li>
                                 <li>Dash Attack Damage: <br class="mobile-yep">7 7 7 14</li>
                                 <li>Special Attack Damage: <br class="mobile-yep">37 37 37 37</li>
-                                <li>Special Charge Rate:<br class="mobile-yep">  per attack.</li>
+                                <li>Special Charge Rate:<br class="mobile-yep">15% per attack.</li>
                             </ul>
                             <ul>
                                 <li class="basic-insp border-m">
@@ -64,7 +64,7 @@
                                     <li>Attack Damage: <br class="mobile-yep">25, 25, 40 + Master Strike damage</li>
                                     <li>Dash Attack Damage: 25</li>
                                     <li>Special Attack Damage: 65</li>
-                                    <li>Special Charge Rate: <br class="mobile-yep"> per attack.</li>
+                                    <li>Special Charge Rate: <br class="mobile-yep">20% per attack.</li>
                                 </ul>
                                 <ul>
                                     <li class="basic-insp border-l">
@@ -89,7 +89,7 @@
                                     <li>Attack Damage: <br class="mobile-yep">24, 30, 28 35</li>
                                     <li>Dash Attack Damage: 24</li>
                                     <li>Special Attack Damage: <br class="mobile-yep">25 25 25 25 25 25 25</li>
-                                    <li>Special Charge Rate: <br class="mobile-yep"> per attack.</li>
+                                    <li>Special Charge Rate: <br class="mobile-yep">18% per attack.</li>
                                 </ul>
                                 <ul>
                                     <li class="basic-insp border-r">
@@ -111,7 +111,7 @@
                                     <li>Attack Damage: <br class="mobile-yep">20, 20, 30</li>
                                     <li>Dash Attack Damage: 25</li>
                                     <li>Special Attack Damage: <br class="mobile-yep">30 30 30 30 30</li>
-                                    <li>Special Charge Rate: <br class="mobile-yep"> per attack.</li>
+                                    <li>Special Charge Rate: <br class="mobile-yep">20% per attack.</li>
                                 </ul>
                                 <ul>
                                     <li class="basic-insp border-d">
@@ -549,65 +549,131 @@
             <div id="powers" class="tab-content">
                 <details class="power-astral-d">
                     <summary>Astral Dark</summary>
-                    <div class="power-wrapper" data-one>
+
+                    <div class="border-astral-d power-astral-d-initial">
+                        <p class="section-title">Initial Offerings</p>
+                        <div class="power-wrapper" data-one>
+                            <h4>Cloak of Shadow</h4>
+                            <p>Special or Tool grants Dark Shell for 1.8s / 2.4s / 3.2s, dealing 10 / 25 / 40 Dark damage and applying 1 stack of Darkness to neaby enemies</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Nightfall</h4>
+                            <p>Final Strike applies 1 stack of Darkness for 3 / 4 / 5s and deals 10 / 15 / 25 Dark damage.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-astral-d power-astral-d-secondary">
+                        <p class="section-title">Secondary Offerings</p>
+                        <div class="power-wrapper">
+                            <h4>Call of the Void</h4>
+                            <p>Deal 10 / 15 / 20 Dark damage and pull in nearby enemies upon defeating an enemy affected by Darkness.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Core Collapse</h4>
+                            <p>Stun nearby enemies for 0.5s / 1s / 1.5s upon defeating an enemy affected by Darkness</p>
+                        </div>
+                        
+                        <div class="power-wrapper">
+                            <h4>Dark Attakcs</h4>
+                            <p>+25% / 40% / 60% Attack damage against enemies affected by Darkness.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Dark Embrace</h4>
+                            <p>+3% / 4% / 5% damage dealt and +5% / 7% / 10% Move Speed for each Astral Dark power obtained.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Dark Star</h4>
+                            <p>Remove all of your Splinter's Revives. Gain +30% damage, plus 20% for each Splinter's Revive removed.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Dragon's Claw</h4>
+                            <p>+10% increased damage dealt. Gain an additional 10% / 15% / 20% whenever you select Dragon Coins in the Room Rewards screen.</p>
+                        </div>
+
+                        <div class="power-wrapper">
+                            <h4>Eternal Darkness</h4>
+                            <p>+50% / 80% / 100% duration of Negative Effects you apply to enemies.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Gift of the Dragon</h4>
+                            <p>Gain 80 Dragon coins and 200 Scrap.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Lingering Darkness</h4>
+                            <p>Darkness deals 10 / 15 / 25 Dark damage per second to affected enemies.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Shifting Shadow</h4>
+                            <p>Dash deals 15 / 25 / 35 Dark damage, increased by 300% to targets affected by Darkness.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Cloak of Shadow</h4>
                         <p>Special or Tool grants Dark Shell for 1.8s / 2.4s / 3.2s, dealing 10 / 25 / 40 Dark damage and applying 1 stack of Darkness to neaby enemies</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Nightfall</h4>
                         <p>Final Strike applies 1 stack of Darkness for 3 / 4 / 5s and deals 10 / 15 / 25 Dark damage.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Call of the Void</h4>
                         <p>Deal 10 / 15 / 20 Dark damage and pull in nearby enemies upon defeating an enemy affected by Darkness.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Core Collapse</h4>
                         <p>Stun nearby enemies for 0.5s / 1s / 1.5s upon defeating an enemy affected by Darkness</p>
-                    </div>
+                    </div> -->
                     
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Dark Attakcs</h4>
                         <p>+25% / 40% / 60% Attack damage against enemies affected by Darkness.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Dark Embrace</h4>
                         <p>+3% / 4% / 5% damage dealt and +5% / 7% / 10% Move Speed for each Astral Dark power obtained.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Dark Star</h4>
                         <p>Remove all of your Splinter's Revives. Gain +30% damage, plus 20% for each Splinter's Revive removed.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Dragon's Claw</h4>
                         <p>+10% increased damage dealt. Gain an additional 10% / 15% / 20% whenever you select Dragon Coins in the Room Rewards screen.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Eternal Darkness</h4>
                         <p>+50% / 80% / 100% duration of Negative Effects you apply to enemies.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Gift of the Dragon</h4>
                         <p>Gain 80 Dragon coins and 200 Scrap.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Lingering Darkness</h4>
                         <p>Darkness deals 10 / 15 / 25 Dark damage per second to affected enemies.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Shifting Shadow</h4>
                         <p>Dash deals 15 / 25 / 35 Dark damage, increased by 300% to targets affected by Darkness.</p>
-                    </div>
+                    </div> -->
 
                     <div class="power-wrapper">
                         <h4>*DARK FLAME* (Dark & Flame)</h4>
@@ -623,59 +689,128 @@
                 <details class="power-astral-l">
                     <summary>Astral Light</summary>
 
-                    <div class="power-wrapper" data-one>
+                    <div class="border-astral-l power-astral-l-initial">
+                        <p class="section-title">Initial Offerings</p>
+                        <div class="power-wrapper" data-one>
+                            <h4>Light Attacks</h4>
+                            <p>Attack damage increased by 4% / 7% / 10% of Max Health.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Shimmering Shield</h4>
+                            <p>Grant Light Shell for 1.2s / 1.8s / 2.4s at the start of your Dash.</p> 
+                        </div>
+                    </div>
+
+                    <div class="border-astral-l power-astral-l-secondary">
+                        <p class="section-title">Secondary Offerings</p>
+                        <div class="power-wrapper">
+                            <h4>Ancestral Guardian</h4>
+                            <p>Gain Light Shell for 15s / 20s / 25s after the start of combat.</p>
+                        </div>
+
+                        <div class="power-wrapper">
+                            <h4>Daybreak</h4>
+                            <p>Attacks apply 1 / 2 / 3 stack(s) of Blinding Light for 3s / 4s / 5s. Each stack reduces damage dealt by 5%. Max 5 Stacks.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Eternal Light</h4>
+                            <p>+40% / 60% / 80% Positive Effect duration.</p>
+                        </div>
+
+                        <div class="power-wrapper">
+                            <h4>Light Embrace</h4>
+                            <p>Reduce damage received by 2% / 2.5% / 3% for each Astral Light power obtained.</p>    
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Radiant Warrior</h4>
+                            <p>Special and Tool grants Light Shell for 1.2s / 1.8s / 2.4s</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Revival</h4>
+                            <p>Gain 1 Splinter's Revive(s). +30 / 60 Max Health.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-astral-l power-astral-l-shell">
+                        <p class="section-title">After Light Shell</p>
+                        <div class="power-wrapper">
+                            <h4>Astral Insight</h4>
+                            <p>Increase damage by 30% / 40% / 60% while Light Shell is active.</p>
+                        </div>
+
+                        <div class="power-wrapper">
+                            <h4>Illumination</h4>
+                            <p>Light Shell reflects projectiles. Reflected projectiles deal 30% / 45% / 60% of your Max Health as Light damage.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="border-astral-l power-astral-l-initial">
+                        <p class="section-title">After Daybreak</p>
+                        <div class="power-wrapper">
+                            <h4>Revved Up</h4>
+                            <p>Gain +10% / 15% / 20% chance of dodging enemy attacks when they are affected by Blinding Light.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Light Attacks</h4>
                         <p>Attack damage increased by 4% / 7% / 10% of Max Health.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Shimmering Shield</h4>
                         <p>Grant Light Shell for 1.2s / 1.8s / 2.4s at the start of your Dash.</p> 
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Ancestral Guardian</h4>
                         <p>Gain Light Shell for 15s / 20s / 25s after the start of combat.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Astral Insight</h4>
                         <p>Increase damage by 30% / 40% / 60% while Light Shell is active.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Daybreak</h4>
                         <p>Attacks apply 1 / 2 / 3 stack(s) of Blinding Light for 3s / 4s / 5s. Each stack reduces damage dealt by 5%. Max 5 Stacks.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Eternal Light</h4>
                         <p>+40% / 60% / 80% Positive Effect duration.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Illumination</h4>
                         <p>Light Shell reflects projectiles. Reflected projectiles deal 30% / 45% / 60% of your Max Health as Light damage.</p>
-                    </div>
-                    <div class="power-wrapper">
+                    </div> -->
+                    <!-- <div class="power-wrapper">
                         <h4>Light Embrace</h4>
                         <p>Reduce damage received by 2% / 2.5% / 3% for each Astral Light power obtained.</p>    
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Radiant Warrior</h4>
                         <p>Special and Tool grants Light Shell for 1.2s / 1.8s / 2.4s</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Revival</h4>
                         <p>Gain 1 Splinter's Revive(s). +30 / 60 Max Health.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Revved Up</h4>
                         <p>Gain +10% / 15% / 20% chance of dodging enemy attacks when they are affected by Blinding Light.</p>
-                    </div>
+                    </div> -->
 
                     <div class="power-wrapper">
                         <h4>*BRIGHT SPRING* (Water & Light)</h4>
@@ -689,70 +824,133 @@
                 </details>
                 <details class="power-flame">
                     <summary>Flame</summary>
-                        <div class="power-wrapper">
+                        <div class="border-flame power-flame-initial">
+                            <p class="section-title">Initial Offerings</p>
+                            <div class="power-wrapper" data-one>
+                                <h4>Flame Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                                <p>Special and Tool deals 15 / 25 / 40 Flame damage.</p>
+                            </div>
+    
+                            <div class="power-wrapper" data-one>
+                                <h4>Flame Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
+                                <p>Deal 30 / 50 / 70 Flame damage to nearby enemies at the start of a Dash.</p>
+                            </div>
+    
+                            <div class="power-wrapper" data-one>
+                                <h4>Flame Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
+                                <p>Final Strike causes an explosion, dealing 20 / 30 / 40 Flame damage to nearby enemies.</p>
+                            </div>
+                            <div class="power-wrapper" data-one>
+                                <h4>Furious Attacks</h4>
+                                <p>+20% / 35% / 50% Attack Critical Hit chance.</p>
+                            </div>
+                            <div class="power-wrapper" data-one>
+                                <h4>Rage</h4>
+                                <p>Deal 40% / 70% / 100% increased damage while below 50% Health.</p>
+                            </div>
+    
+                            <div class="power-wrapper" data-one>
+                                <h4>Rapid Fire</h4>
+                                <p>+20% / 35% / 50% damage dealt and +25% / 40% / 55% Move Speed for 25s /35s / 45s after the start of combat.</p>
+                            </div>
+                        </div>
+                        <div class="border-flame power-flame-fire">
+                            <p class="section-title">After Dealing Flame damage</p>
+                            <div class="power-wrapper">
+                                <h4>Focus Fire</h4>
+                                <p>+15% / 20% / 30% Flame damage against Bosses.</p>
+                            </div>
+
+                            <div class="power-wrapper">
+                                <h4>Inferno</h4>
+                                <p>Apply Inferno to enemies hit by Flame damage for 3s. Inferno deals 15 / 20 / 25 Flame damage per second.</p>
+                            </div>
+
+                        </div>
+                        <div class="border-flame power-flame-inferno">
+                            <p class="section-title">After Inferno</p>
+                            <div class="power-wrapper">
+                                <h4>Blazing Inferno</h4>
+                                <p>+2s / 3s / 4s Inferno duration.</p>
+                            </div>
+                            <div class="power-wrapper">
+                                <h4>Preheated</h4>
+                                <p>+15% / 30% / 60% Global Critical Hit chance against targets affected by Inferno.</p>
+                            </div>
+
+                        </div>
+                        <div class="border-flame power-flame-fire">
+                            <p class="section-title">After Rapid Fire</p>
+                            <div class="power-wrapper">
+                                <h4>Trailblazer</h4>
+                                <p>+15s duration of Rapid Fire. Whilst Rapid Fire is active defeating an enemy grants +1 / 2 / 3s duration and +5 / 10 / 15% damage.</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="power-wrapper">
                             <h4>Blazing Inferno</h4>
                             <p>+2s / 3s / 4s Inferno duration.</p>
-                        </div>
+                        </div> -->
     
-                        <div class="power-wrapper" data-one>
+                        <!-- <div class="power-wrapper" data-one>
                             <h4>Flame Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
                             <p>Special and Tool deals 15 / 25 / 40 Flame damage.</p>
-                        </div>
+                        </div> -->
 
-                        <div class="power-wrapper" data-one>
+                        <!-- <div class="power-wrapper" data-one>
                             <h4>Flame Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
                             <p>Deal 30 / 50 / 70 Flame damage to nearby enemies at the start of a Dash.</p>
-                        </div>
+                        </div> -->
 
-                        <div class="power-wrapper" data-one>
+                        <!-- <div class="power-wrapper" data-one>
                             <h4>Flame Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
                             <p>Final Strike causes an explosion, dealing 20 / 30 / 40 Flame damage to nearby enemies.</p>
-                        </div>
+                        </div> -->
 
-                        <div class="power-wrapper">
+                        <!-- <div class="power-wrapper">
                             <h4>Focus Fire</h4>
                             <p>+15% / 20% / 30% Flame damage against Bosses.</p>
-                        </div>
+                        </div> -->
 
-                        <div class="power-wrapper" data-one>
+                        <!-- <div class="power-wrapper" data-one>
                             <h4>Furious Attacks</h4>
                             <p>+20% / 35% / 50% Attack Critical Hit chance.</p>
-                        </div>
+                        </div> -->
 
                         <div class="power-wrapper">
                             <h4>Incendiary Strikes</h4>
                             <p>Deal 50 / 75 / 100 Flame damage when scoring a Critical Hit.</p>
                         </div>
 
-                        <div class="power-wrapper">
+                        <!-- <div class="power-wrapper">
                             <h4>Inferno</h4>
                             <p>Apply Inferno to enemies hit by Flame damage for 3s. Inferno deals 15 / 20 / 25 Flame damage per second.</p>
-                        </div>
+                        </div> -->
 
                         <div class="power-wrapper">
                             <h4>Precision</h4>
                             <p>+60% / 120% / 180% Critical Hit damage.</p>
                         </div>
 
-                        <div class="power-wrapper">
+                        <!-- <div class="power-wrapper">
                             <h4>Preheated</h4>
                             <p>+15% / 30% / 60% Global Critical Hit chance against targets affected by Inferno.</p>
-                        </div>
+                        </div> -->
 
-                        <div class="power-wrapper" data-one>
+                        <!-- <div class="power-wrapper" data-one>
                             <h4>Rage</h4>
                             <p>Deal 40% / 70% / 100% increased damage while below 50% Health.</p>
-                        </div>
+                        </div> -->
 
-                        <div class="power-wrapper" data-one>
+                        <!-- <div class="power-wrapper" data-one>
                             <h4>Rapid Fire</h4>
                             <p>+20% / 35% / 50% damage dealt and +25% / 40% / 55% Move Speed for 25s /35s / 45s after the start of combat.</p>
-                        </div>
+                        </div> -->
 
-                        <div class="power-wrapper">
+                        <!-- <div class="power-wrapper">
                             <h4>Trailblazer</h4>
                             <p>+15s duration of Rapid Fire. Whilst Rapid Fire is active defeating an enemy grants +1 / 2 / 3s duration and +5 / 10 / 15% damage.</p>
-                        </div>
+                        </div> -->
 
                         <div class="power-wrapper">
                             <h4>*DARK FLAME* (Dark & Flame)</h4>
@@ -777,81 +975,176 @@
                 </details>
                 <details class="power-ninja">
                     <summary>Ninja</summary>
+                    <div class="border-ninja power-ninja-initial">
+                        <p class="section-title">Initial Offerings</p>
+                        <div class="power-wrapper" data-one>
+                            <h4>Adrenaline</h4>
+                            <p>Gain a stack of Adrenaline upon defeating an enemy. Adrenaline increases Physical damage by 5% / 10% / 15%. 5 stacks max.</p>
+                        </div>
 
-                    <div class="power-wrapper" data-one>
+                        <div class="power-wrapper" data-one>
+                            <h4>Extended Assault</h4>
+                            <p>Throw 1 / 2 / 3 Shuriken forward at the start of your Dash.</p>
+                        </div>
+
+                        <div class="power-wrapper" data-one>
+                            <h4>Quick Feet</h4>
+                            <p>+1 Dash charge(s).</p>
+                        </div>
+
+                        <div class="power-wrapper" data-one>
+                            <h4>Quick Hands</h4>
+                            <p>+1 / 2 / 3 Shuriken thrown.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Shinobi Supremacy</h4>
+                            <p>+10% / 15% / 20% Dodge chance.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Shuriken Attacks</h4>
+                            <p>Attacks have a 30% / 60% / 100% chance to throw a Shuriken forward.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-ninja power-ninja-adrenaline">
+                        <p class="section-title">After Adrenaline</p>
+                        <div class="power-wrapper">
+                            <h4>Art of Darkness</h4>
+                            <p>Adrenaline now also increases Elemental damage by 10% / 15% / 20%.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="border-ninja power-ninja-adrenaline">
+                        <p class="section-title">After Throwing Shuriken</p>
+                        <div class="power-wrapper">
+                            <h4>Shuriken Breaker</h4>
+                            <p>Shuriken apply Guard Break to enemy targets for 2s. Guard Break increases damage received by 15% / 25% / 35%.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Shuriken Engineer</h4>
+                            <p>Shuriken have a 30% / 60% / 100% chance of triggering Tool bonuses.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Throwing Arts: Chakram</h4>
+                            <p>Shuriken now boomerang, returning to your current position. -30% / -5% / 20% Shuriken Damage.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Throwing Arts: Ricochet</h4>
+                            <p>Shuriken now ricohet, bouncing off of enemies. -20% / +10% / +40% Shuriken damage.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Throwing Mastery</h4>
+                            <p>+40% / 65% / 90%  Shuriken damage.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="border-ninja power-ninja-dodge">
+                        <p class="section-title">After Quick Feet</p>
+                        <div class="power-wrapper">
+                            <h4>First Strike</h4>
+                            <p>+30% / 45% / 60% damage dealt for 1s after a Dash.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="border-ninja power-ninja-dodge">
+                        <p class="section-title">After Shinobi Supremacy</p>
+                        <div class="power-wrapper">
+                            <h4>Ninjutsu Tactics</h4>
+                            <p>+15% / 25% / 25% Global Critical Hit chance for 2s / 2.5s / 3s upon Dodge.</p>
+                        </div>
+
+                    </div>
+                    <div class="border-ninja power-ninja-dodge">
+                        <p class="section-title">After Shuriken Breaker and Dealing Dark damage</p>
+                        <div class="power-wrapper">
+                            <h4>*FINISHER* (Astral Dark & Ninja)</h4>
+                            <p>Attacks and Specials instantly defeat enemies affected by Guard Break that are below 25% health.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Adrenaline</h4>
                         <p>Gain a stack of Adrenaline upon defeating an enemy. Adrenaline increases Physical damage by 5% / 10% / 15%. 5 stacks max.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Art of Darkness</h4>
                         <p>Adrenaline now also increases Elemental damage by 10% / 15% / 20%.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Extended Assault</h4>
                         <p>Throw 1 / 2 / 3 Shuriken forward at the start of your Dash.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>First Strike</h4>
                         <p>+30% / 45% / 60% damage dealt for 1s after a Dash.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Ninjutsu Tactics</h4>
                         <p>+15% / 25% / 25% Global Critical Hit chance for 2s / 2.5s / 3s upon Dodge.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Quick Feet</h4>
                         <p>+1 Dash charge(s).</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Quick Hands</h4>
                         <p>+1 / 2 / 3 Shuriken thrown.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Shinobi Supremacy</h4>
                         <p>+10% / 15% / 20% Dodge chance.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Shuriken Attacks</h4>
                         <p>Attacks have a 30% / 60% / 100% chance to throw a Shuriken forward.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Shuriken Breaker</h4>
                         <p>Shuriken apply Guard Break to enemy targets for 2s. Guard Break increases damage received by 15% / 25% / 35%.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Shuriken Engineer</h4>
                         <p>Shuriken have a 30% / 60% / 100% chance of triggering Tool bonuses.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Throwing Arts: Chakram</h4>
                         <p>Shuriken now boomerang, returning to your current position. -30% / -5% / 20% Shuriken Damage.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Throwing Arts: Ricochet</h4>
                         <p>Shuriken now ricohet, bouncing off of enemies. -20% / +10% / +40% Shuriken damage.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Throwing Mastery</h4>
                         <p>+40% / 65% / 90%  Shuriken damage.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>*FINISHER* (Astral Dark & Ninja)</h4>
                         <p>Attacks and Specials instantly defeat enemies affected by Guard Break that are below 25% health.</p>
-                    </div>
+                    </div> -->
 
                     <div class="power-wrapper">
                         <h4>*REVOLUTION* (Utrom & Ninja)</h4>
@@ -870,71 +1163,144 @@
                 </details>
                 <details class="power-ooze">
                     <summary>Ooze</summary>
+                    <div class="border-ooze power-ooze-initial">
+                        <p class="section-title">Initial Offerings</p>
+                        <div class="power-wrapper" data-one>
+                            <h4>Ooze Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                            <p>Special and Tool applies 1 / 2 / 3 stack(s) of Ooze.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Ooze Attack</h4>
+                            <p>Attacks hace a 25% / 33% / 50% chance to apply 1 stack of Ooze.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Ooze Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
+                            <p>Apply 1 / 2 / 3 stack(s) of Ooze to enemies hit by your Dash.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Ooze Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
+                            <p>Final Strike applies 2 / 4 / 6 stack(s) of Ooze.</p>
+                        </div>
 
-                    <div class="power-wrapper">
+                        <div class="power-wrapper" data-one>
+                            <h4>Shelf Life</h4>
+                            <p>Boosts last for an additional 2 / 4 / 6 rooms.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Special Spice</h4>
+                            <p>50% / 75% / 100% increased effectiveness of Boosts.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-ooze power-ooze-stacks">
+                        <p class="section-title">After Applying Ooze Stacks</p>
+                        <div class="power-wrapper">
+                            <h4>Catalytic Consequence</h4>
+                            <p>Deal +15 / 25 / 35 damage with your Dash Attack for each Stack of Ooze on the enemy.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Chunky Mixture</h4>
+                            <p>Ooze can now stack up to 6 / 8 / 10 time(s).</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-ooze>
+                            <h4>Goo</h4>
+                            <p>+60% / +120% / +180% Ooze damage per second.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-ooze>
+                            <h4>Goo'dbye</h4>
+                            <p>Enemies affected by Ooze now explode on defeat, dealing 50 / 100 / 150 Ooze damage to nearby enemies.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Living Ingredients</h4>
+                            <p>When Ooze expires, it is reapplied to 1 / 2 / 3 nearby unaffected enemies.</p>
+                        </div>
+
+                        <div class="power-wrapper" data-ooze>
+                            <h4>Potency</h4>
+                            <p>Ooze is now applied with an additional 1 / 2 / 3 stack(s).</p>
+                        </div>
+
+                        <div class="power-wrapper">
+                            <h4>Unfortunate Odor</h4>
+                            <p>Deal 10 / 45 / 80 Ooze damage and Stun enemies for 1s when applying Ooze. Bosses are not stunned.</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- <div class="power-wrapper">
                         <h4>Catalytic Consequence</h4>
                         <p>Deal +15 / 25 / 35 damage with your Dash Attack for each Stack of Ooze on the enemy.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Chunky Mixture</h4>
                         <p>Ooze can now stack up to 6 / 8 / 10 time(s).</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-ooze>
+                    <!-- <div class="power-wrapper" data-ooze>
                         <h4>Goo</h4>
                         <p>+60% / +120% / +180% Ooze damage per second.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-ooze>
+                    <!-- <div class="power-wrapper" data-ooze>
                         <h4>Goo'dbye</h4>
                         <p>Enemies affected by Ooze now explode on defeat, dealing 50 / 100 / 150 Ooze damage to nearby enemies.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Living Ingredients</h4>
                         <p>When Ooze expires, it is reapplied to 1 / 2 / 3 nearby unaffected enemies.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Ooze Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
                         <p>Special and Tool applies 1 / 2 / 3 stack(s) of Ooze.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Ooze Attack</h4>
                         <p>Attacks hace a 25% / 33% / 50% chance to apply 1 stack of Ooze.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Ooze Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
                         <p>Apply 1 / 2 / 3 stack(s) of Ooze to enemies hit by your Dash.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Ooze Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
                         <p>Final Strike applies 2 / 4 / 6 stack(s) of Ooze.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-ooze>
+                    <!-- <div class="power-wrapper" data-ooze>
                         <h4>Potency</h4>
                         <p>Ooze is now applied with an additional 1 / 2 / 3 stack(s).</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Shelf Life</h4>
                         <p>Boosts last for an additional 2 / 4 / 6 rooms.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Special Spice</h4>
                         <p>50% / 75% / 100% increased effectiveness of Boosts.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Unfortunate Odor</h4>
                         <p>Deal 10 / 45 / 80 Ooze damage and Stun enemies for 1s when applying Ooze. Bosses are not stunned.</p>
-                    </div>
+                    </div> -->
 
                     <div class="power-wrapper">
                         <h4>*SECRET OF THE OOZE* (Utrom & Ooze)</h4>
@@ -960,70 +1326,151 @@
                 <details class="power-utrom">
                     <summary>Utrom</summary>
 
-                    <div class="power-wrapper">
+                    <div class="border-utrom power-utrom-initial">
+                        <p class="section-title">Initial Offerings</p>
+                        <div class="power-wrapper" data-one>
+                            <h4>Utrom Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                            <p>Special and Tools deal 20 / 30 / 40 Utrom damage.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Utrom Attacks</h4>
+                            <p>Attacks have a 30% / 45% / 60% chance to deal 10 / 20 / 30 Utrom damage.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Utrom Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
+                            <p>Dash deals 10 / 20 / 30 Utrom damage to 2 enemies near where you end up.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Utrom Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
+                            <p>Final Strike calls lightning to hit 2 nearby enemies for 10 / 20 / 30 Utrom damage.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="border-utrom power-utrom-damage">
+                        <p class="section-title">After Dealing Utrom Damage</p>
+                        <div class="power-wrapper">
+                            <h4>Chain Lightning</h4>
+                            <p>Utrom damage will strike again and chain out to two nearby enemies for 7 / 14 / 21 Utrom damage.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Electrifying</h4>
+                            <p>Utrom damage applies Electrifed to enemies for 3s. Electrified deals 7 / 15 / 22  Utrom damage per second. Max of 3 stacks.</p>
+                        </div>
+
+                        <div class="power-wrapper" data-two>
+                            <h4>Shocking</h4>
+                            <p>Gain Static Charge. Once full, your Special triggers a shockwave which deals 20 / 40 / 60 Utrom damage and Stuns enemies for 0.8s / 1s / 1.2s.</p>
+                        </div>
+
+                        <div class="power-wrapper" data-two>
+                            <h4>Stormy Weather</h4>
+                            <p>Periodically deal 7 / 15 / 25 Utrom damage to 1 / 2 / 3 nearby enemies.</p>
+                        </div>
+
+                        <div class="power-wrapper">
+                            <h4>Techno-Organic Interface</h4>
+                            <p>+10 / 20 / 30% Max Health. +30 / 40 / 50% Move Speed.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="border-utrom power-ninja-dodge">
+                        <p class="section-title">After Electrifying</p>
+                        <div class="power-wrapper">
+                            <h4>Alternating Current</h4>
+                            <p>Electrified additionally increases damage received by 30% / 50% / 70%</p>
+                        </div>
+                    </div>
+
+                    <div class="border-utrom power-ninja-dodge">
+                        <p class="section-title">After Shocking</p>
+                        <div class="power-wrapper">
+                            <h4>Aftershock</h4>
+                            <p>After releasing your Static Charge hit nearby enemies for 10 / 15 / 20 Utrom damage per second for 5s / 6s / 7s.</p>
+                        </div>
+
+                        <div class="power-wrapper">
+                            <h4>Biomechanical Speed</h4>
+                            <p>Special can be used freely for 2s / 3s / 4s upon exhausting Static Charge.</p>
+                        </div>
+
+                        <div class="power-wrapper">
+                            <h4>Quick Study</h4>
+                            <p>Static Charge fills 75% / 125% / 200% faster.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div class="power-wrapper">
                         <h4>Aftershock</h4>
                         <p>After releasing your Static Charge hit nearby enemies for 10 / 15 / 20 Utrom damage per second for 5s / 6s / 7s.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Alternating Current</h4>
                         <p>Electrified additionally increases damage received by 30% / 50% / 70%</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Biomechanical Speed</h4>
                         <p>Special can be used freely for 2s / 3s / 4s upon exhausting Static Charge.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Chain Lightning</h4>
                         <p>Utrom damage will strike again and chain out to two nearby enemies for 7 / 14 / 21 Utrom damage.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Electrifying</h4>
                         <p>Utrom damage applies Electrifed to enemies for 3s. Electrified deals 7 / 15 / 22  Utrom damage per second. Max of 3 stacks.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Quick Study</h4>
                         <p>Static Charge fills 75% / 125% / 200% faster.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-two="">
+                    <!-- <div class="power-wrapper" data-two>
                         <h4>Shocking</h4>
                         <p>Gain Static Charge. Once full, your Special triggers a shockwave which deals 20 / 40 / 60 Utrom damage and Stuns enemies for 0.8s / 1s / 1.2s.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-two>
+                    <!-- <div class="power-wrapper" data-two>
                         <h4>Stormy Weather</h4>
                         <p>Periodically deal 7 / 15 / 25 Utrom damage to 1 / 2 / 3 nearby enemies.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Techno-Organic Interface</h4>
                         <p>+10 / 20 / 30% Max Health. +30 / 40 / 50% Move Speed.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Utrom Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
                         <p>Special and Tools deal 20 / 30 / 40 Utrom damage.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Utrom Attacks</h4>
                         <p>Attacks have a 30% / 45% / 60% chance to deal 10 / 20 / 30 Utrom damage.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Utrom Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
                         <p>Dash deals 10 / 20 / 30 Utrom damage to 2 enemies near where you end up.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Utrom Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
                         <p>Final Strike calls lightning to hit 2 nearby enemies for 10 / 20 / 30 Utrom damage.</p>
-                    </div>
+                    </div> -->
 
                     <div class="power-wrapper">
                         <h4>*LIGHT HAMMER* (Utrom & Astral Light)</h4>
@@ -1050,80 +1497,166 @@
                 <details class="power-water">
                     <summary>Water</summary>
 
-                    <div class="power-wrapper" data-one>
+                    <div class="border-water power-water-initial">
+                        <p class="section-title">Initial Offerings</p>
+                        <div class="power-wrapper" data-one>
+                            <h4>Dilution</h4>
+                            <p>+20% / 30% / 40% Attack and Special damage area.</p>
+                        </div>
+
+                        <div class="power-wrapper" data-one>
+                            <h4>Still Waters</h4>
+                            <p>If you have not used your Attack for at least 2s gain +80% / 100% / 120% damage and your next attack is a Final Strike. Still Waters is lost upon Attack.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Torrential Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
+                            <p>Final Strike grants a stack of Torrent for 4s. torrent increases Multi-Hit chance by 5% / 7% / 10%. Max 5 stacks</p>
+                        </div>
+
+                        <div class="power-wrapper" data-one>
+                            <h4>Water Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                            <p>Special and Tool has a 60% / 80% / 100% chance to deal 30 / 45 / 60 Water damage.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Water Attacks</h4>
+                            <p>Attacks deal 15 / 20 / 25 Water damage.</p>
+                        </div>
+    
+                        <div class="power-wrapper" data-one>
+                            <h4>Water Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
+                            <p>Deal 35 / 45 / 60 Water damage to nearby enemies at the end of a Dash.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-water power-water-damage">
+                        <p class="section-title">After Dealing Water Damage</p>
+                        <div class="power-wrapper">
+                            <h4>Freeze</h4>
+                            <p>Apply Frost to nearby enemies every 5s / 4s / 3s.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Frost</h4>
+                            <p>Water damage applies Frost for 2.5s, slowing the enemy by 20% / 35% / 50%.</p>
+                        </div>
+    
+                        <div class="power-wrapper">
+                            <h4>Heavy Rain</h4>
+                            <p>Deal +40% / +60 / +80 increased Water damage. The increase is doubled during heavy rain.</p>
+                        </div>
+
+                        <div class="power-wrapper">
+                            <h4>Splash Damage</h4>
+                            <p>30% / 45% / 60% of Water damage is also dealt to nearby enemies.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-water power-water-still">
+                        <p class="section-title">After Still Waters</p>
+                        <div class="power-wrapper">
+                            <h4>High Tide</h4>
+                            <p>While Still Waters is active, Final Strike causes +70 / 100 / 130 Water damage and you have +15% Movement Speed.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-water power-water-torrential">
+                        <p class="section-title">After Torrential Strike</p>
+
+                        <div class="power-wrapper">
+                            <h4>Torrential Rain</h4>
+                            <p>Whenever you use Special or Tool, gain a Torrent Stack. Your attacks deal +4 / 7 / 10 Water damage per torrent stack.</p>
+                        </div>
+
+                        <div class="power-wrapper">
+                            <h4>When It Rains</h4>
+                            <p>Mulit-Hits deal 24 / 38 / 52 Water damge.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-water power-water-still">
+                        <p class="section-title">After Frost</p>
+                        <div class="power-wrapper">
+                            <h4>Flash Freeze</h4>
+                            <p>Frost Stuns enemies for 0.7s / 1.2s / 1.5s when first applied. Stun does not affect bosses.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Dilution</h4>
                         <p>+20% / 30% / 40% Attack and Special damage area.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Flash Freeze</h4>
                         <p>Frost Stuns enemies for 0.7s / 1.2s / 1.5s when first applied. Stun does not affect bosses.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Freeze</h4>
                         <p>Apply Frost to nearby enemies every 5s / 4s / 3s.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Frost</h4>
-                        <p>Water damage applies Forst for 2.5s, slowing the enemy by 20% / 35% / 50%.</p>
-                    </div>
+                        <p>Water damage applies Frost for 2.5s, slowing the enemy by 20% / 35% / 50%.</p>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Heavy Rain</h4>
                         <p>Deal +40% / +60 / +80 increased Water damage. The increase is doubled during heavy rain.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>High Tide</h4>
                         <p>While Still Waters is active, Final Strike causes +70 / 100 / 130 Water damage and you have +15% Movement Speed.</p>
-                    </div>
+                    </div> -->
 
                     <div class="power-wrapper">
                         <h4>Pressure Nozzle</h4>
                         <p>+15% / 20% / 30% damage dealt against Bosses.</p>
                     </div>
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Splash Damage</h4>
                         <p>30% / 45% / 60% of Water damage is also dealt to nearby enemies.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Still Waters</h4>
                         <p>If you have not used your Attack for at least 2s gain +80% / 100% / 120% damage and your next attack is a Final Strike. Still Waters is lost upon Attack.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Torrential Strike<img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
                         <p>Final Strike grants a stack of Torrent for 4s. torrent increases Multi-Hit chance by 5% / 7% / 10%. Max 5 stacks</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>Torrential Rain</h4>
                         <p>Whenever you use Special or Tool, gain a Torrent Stack. Your attacks deal +4 / 7 / 10 Water damage per torrent stack.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Water Abilities<img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
                         <p>Special and Tool has a 60% / 80% / 100% chance to deal 30 / 45 / 60 Water damage.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Water Attacks</h4>
                         <p>Attacks deal 15 / 20 / 25 Water damage.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper" data-one>
+                    <!-- <div class="power-wrapper" data-one>
                         <h4>Water Dash<img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
                         <p>Deal 35 / 45 / 60 Water damage to nearby enemies at the end of a Dash.</p>
-                    </div>
+                    </div> -->
 
-                    <div class="power-wrapper">
+                    <!-- <div class="power-wrapper">
                         <h4>When It Rains</h4>
                         <p>Mulit-Hits deal 24 / 38 / 52 Water damge.</p>
-                    </div>
+                    </div> -->
 
                     <div class="power-wrapper">
                         <h4>*BRIGHT SPRING* (Astral Light & Water)</h4>
@@ -1241,7 +1774,7 @@
                         <img src="assets/Tool-ShurikenStorm.webp" class="tool-image">
                         <h4>Shuriken Storm<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Throw 8 / 8 / 10 Shuriken at nearby targets. Each Shuriken deals 15 / 30 / 45 Physical damage.</p>
-                        <p>Charge Rate: per attack.</p>
+                        <p>Charge Rate: 4.2%? per attack.</p>
                     </li>
                     <li>
                         <img src="assets/Tool-SmokeBomb.webp" class="tool-image">
@@ -1259,7 +1792,7 @@
                         <img src="assets/Tool-TurtleLine.webp" class="tool-image">
                         <h4>Turtle Line<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
                         <p>Throw a Turtle Line dealing 30 / 60 / 90 Physical damage. On hit, pull yourself towards Bosses, and pull other enemies towards you.</p>
-                        <p>Charge Rate: per attack.</p>
+                        <p>Charge Rate: 9.5%? per attack.</p>
                     </li>
                     <li>
                         <img src="assets/Tool-UnstableCanister.webp" class="tool-image">
@@ -1289,7 +1822,7 @@
                 <p>*Shuriken, Shuriken Storm, Ooze Shuriken, and Utrom Shuriken are all affected by the Ninja Power upgrades dealing with shuriken.</p>
             </div>
             <div id="upgrades" class="tab-content upgrades">
-                <h3><img class="coin-large" src="assets/TMNT-DragonCoin.webp"/> Dragon Coins</h3>
+                <h3><img class="coin-large" src="assets/TMNT-DragonCoin.webp"/> Dragon Upgrades</h3>
                 <div class="table-wrapper upgrade-astral-rejuvenation">
                     <table>
                         <thead>
@@ -2576,7 +3109,7 @@
                     </table>
                 </div>
 
-                <h3 id="dreamer-upgrades"><img class="coin-large" src="assets/TMNT-DreamerCoin.webp"/> Dreamer Coins</h3>
+                <h3 id="dreamer-upgrades"><img class="coin-large" src="assets/TMNT-DreamerCoin.webp"/> Dreamer Upgrades</h3>
                 <div class="table-wrapper upgrade-perchance">
                     <table>
                         <thead>
@@ -3216,8 +3749,6 @@
 
             </div>
             <div id="artifacts" class="tab-content artifacts">
-
-
                 <div class="artifact artifact-manhole-cover" >
 
                     <div class="artifact-header">
@@ -3639,7 +4170,6 @@
                 </div>
 
                 <div class="artifact artifact-war-staff" >
-
                     <div class="artifact-header">
                         <img src="assets/Artifact-WarStaff.webp" class="artifact-image">
                         <p class="artifact-name">War Staff</p>
@@ -3660,7 +4190,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div id="glossary" class="tab-content glossary">
                 <h4>Adrenaline</h4>
@@ -3695,6 +4224,9 @@
                 <h4>Master Strike</h4>
                 <p>Extra Physical damage on your Final Strike. Granted by Leonardo's Inspiration 1. Starts at 35 damage and can be upgraded to 50.</p>
                 <p>Several of Leonardo's Masteries increase this damage or add it to other attacks.</p>
+
+                <h4>Ooze</h4>
+                <p>Takes 10 Ooze damage per second for 3s. Max of 4 stacks.</p>
 
                 <h4>Shuriken</h4>
                 <p>Shuriken granted from Ninja Power uprades do 15 damage. However if you have one of the Shuriken tools, the shuriken from the upgrades will have the same damage amount/type of the current tool level. Ninja Powers like Quick Hands and Ricochet will also affect your shuriken tools.</p>
