@@ -644,6 +644,10 @@ img.coin-large {
         margin: 0 0 2rem 0;
     }
 
+    #inspirations .insp-row .insp-name .insp-image {
+        height: 5rem;
+    }
+
     #artifacts .artifact {
         gap: 2rem;
         grid-template-columns: 1fr;
