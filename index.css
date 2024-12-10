@@ -297,15 +297,27 @@ footer {
     border: 2px solid #9622C4;
 }
 
-#powers,
 #tools {
     text-align: left;
 }
 
+#powers {
+    margin-left: 3vw;
+    text-align: left;
+}
+
 #powers summary {
-    /* list-style: none; */
+    cursor: pointer;
+    list-style: none;
     font-size: 1.5rem;
     margin: 2rem 0;
+}
+
+#powers .p-icon {
+    position: relative;
+    top: 2rem;
+    width: 6rem;
+    margin: 0 1rem 0 0;
 }
 
 #powers h4,
@@ -323,6 +335,7 @@ footer {
     position: relative;
     bottom: 2.25rem;
     background-color: #f1f1f1;
+    border-radius: 2rem;
     margin: 0 0 -3rem 0;
     padding: 0.25rem 2rem 0.25rem 1rem;
     width: fit-content;
@@ -646,6 +659,10 @@ img.coin-large {
 
     #inspirations .insp-row .insp-name .insp-image {
         height: 5rem;
+    }
+
+    #powers {
+        margin: 0;
     }
 
     #artifacts .artifact {
