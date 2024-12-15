@@ -706,7 +706,17 @@ tr th:first-of-type {
 /*
     Map
 */
+#map h4 {
+    margin: 0;
+}
 
+#map .map-room {
+    margin: 0 0 2rem 0;
+}
+
+#map .map-title {
+    height: 10rem;
+}
 
 /*
     Glossary
@@ -843,6 +853,10 @@ tr th:first-of-type {
 
     #boosts .boost-wrapper h4 {
         margin: 0;
+    }
+
+    #map .map-title {
+        height: 5rem;
     }
     
 }
