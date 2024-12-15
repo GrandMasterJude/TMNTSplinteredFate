@@ -1,8 +1,8 @@
 function showContent(sectionId) {
     // Hide all content sections
-    // document.querySelectorAll('.tab-content').forEach(content => {
-    //     content.classList.remove('active');
-    // });
+    document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+    });
 
     // Remove active class from all tabs
     document.querySelectorAll('.tab, .mobile-menu a').forEach(tab => {
@@ -10,7 +10,7 @@ function showContent(sectionId) {
     });
 
     // Show selected content
-    // document.getElementById(sectionId).classList.add('active');
+    document.getElementById(sectionId).classList.add('active');
 
     // Highlight selected tab
     document.querySelectorAll(`.tab, .mobile-menu a`).forEach(tab => {

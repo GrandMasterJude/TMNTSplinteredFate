@@ -25,7 +25,7 @@
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
-            <a href="powers.html">Powers</a>
+            <a class="tab active" href="powers.html">Powers</a>
             <a href="tools.html">Tools</a>
             <a href="upgrades.html">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
@@ -38,7 +38,7 @@
         <div class="content">
             <div id="powers" class="tab-content">
                 <p class="power-intro">All Powers start out giving you an initial selection of options. After you meet certain prerequisites other options will become available. For example you won't be offered Focus Fire to deal more Flame damage to bosses until after you have chosen a skill that deals Flame damage.</p>
-                <p class="power-intro">Mixed Powers require certain</p>
+                <p class="power-intro">Legendary Powers require certain prerequisites.</p>
                 <details class="power-astral-d">
                     <summary><img class="p-icon" src="assets/Icon-Power-D.webp"/>Astral Dark</summary>
 
@@ -46,12 +46,12 @@
                         <p class="section-title">Initial Offerings</p>
                         <div class="power-wrapper" data-one>
                             <h4>Cloak of Shadow</h4>
-                            <p>Special or Tool grants Dark Shell for 1.8s / 2.4s / 3.2s, dealing 10 / 25 / 40 Dark damage and applying 1 stack of Darkness to neaby enemies</p>
+                            <p>Special or Tool grants <a href="glossary.html#glossary-dark-shell">Dark Shell</a> for 1.8s / 2.4s / 3.2s, dealing 10 / 25 / 40 Dark damage and applying 1 stack of <a href="glossary.html#glossary-darkness">Darkness</a> to neaby enemies</p>
                         </div>
     
                         <div class="power-wrapper" data-one>
                             <h4>Nightfall</h4>
-                            <p>Final Strike applies 1 stack of Darkness for 3 / 4 / 5s and deals 10 / 15 / 25 Dark damage.</p>
+                            <p><a href="glossary.html#glossary-final-strike">Final Strike</a> applies 1 stack of <a href="glossary.html#glossary-darkness">Darkness</a> for 3 / 4 / 5s and deals 10 / 15 / 25 Dark damage.</p>
                         </div>
                     </div>
 
@@ -59,17 +59,17 @@
                         <p class="section-title">Secondary Offerings</p>
                         <div class="power-wrapper">
                             <h4>Call of the Void</h4>
-                            <p>Deal 10 / 15 / 20 Dark damage and pull in nearby enemies upon defeating an enemy affected by Darkness.</p>
+                            <p>Deal 10 / 15 / 20 Dark damage and pull in nearby enemies upon defeating an enemy affected by <a href="glossary.html#glossary-darkness">Darkness</a>.</p>
                         </div>
     
                         <div class="power-wrapper">
                             <h4>Core Collapse</h4>
-                            <p>Stun nearby enemies for 0.5s / 1s / 1.5s upon defeating an enemy affected by Darkness</p>
+                            <p>Stun nearby enemies for 0.5s / 1s / 1.5s upon defeating an enemy affected by <a href="glossary.html#glossary-darkness">Darkness</a></p>
                         </div>
                         
                         <div class="power-wrapper">
                             <h4>Dark Attakcs</h4>
-                            <p>+25% / 40% / 60% Attack damage against enemies affected by Darkness.</p>
+                            <p>+25% / 40% / 60% Attack damage against enemies affected by <a href="glossary.html#glossary-darkness">Darkness</a>.</p>
                         </div>
     
                         <div class="power-wrapper">
@@ -99,12 +99,12 @@
     
                         <div class="power-wrapper">
                             <h4>Lingering Darkness</h4>
-                            <p>Darkness deals 10 / 15 / 25 Dark damage per second to affected enemies.</p>
+                            <p><a href="glossary.html#glossary-darkness">Darkness</a> deals 10 / 15 / 25 Dark damage per second to affected enemies.</p>
                         </div>
     
                         <div class="power-wrapper">
                             <h4>Shifting Shadow</h4>
-                            <p>Dash deals 15 / 25 / 35 Dark damage, increased by 300% to targets affected by Darkness.</p>
+                            <p>Dash deals 15 / 25 / 35 Dark damage, increased by 300% to targets affected by <a href="glossary.html#glossary-darkness">Darkness</a>.</p>
                         </div>
                     </div>
                     <!-- <div class="power-wrapper" data-one>
@@ -171,15 +171,15 @@
                         <p class="section-title">After Darkness Stacks? and Flame Damage</p>
                         <div class="power-wrapper">
                             <h4>*DARK FLAME* (Dark & Flame)</h4>
-                            <p>+40% Flame Damage against targets affected by Darkness.</p>        
+                            <p>+40% Flame Damage against targets affected by <a href="glossary.html#glossary-darkness">Darkness</a>.</p>        
                         </div>
                     </div>
 
                     <div class="border-astral-d power-astral-d-finisher">
-                        <p class="section-title">After Dark Damage? and Shuriken Breaker</p>
+                        <p class="section-title">After Dark Damage? and <a href="#power-shuriken-breaker">Shuriken Breaker</a></p>
                         <div class="power-wrapper">
                             <h4>*FINISHER* (Astral Dark & Ninja)</h4>
-                            <p>Attacks and Specials instantly defeat enemies affected by Guard Break that are below 25% health.</p>
+                            <p>Attacks and Specials instantly defeat enemies affected by <a href="glossary.html#glossary-guard-break">Guard Break</a> that are below 25% health.</p>
                         </div>
                     </div>
 
@@ -195,9 +195,9 @@
                             <p>Attack damage increased by 4% / 7% / 10% of Max Health.</p>
                         </div>
     
-                        <div class="power-wrapper" data-one>
+                        <div id="power-shimmering-shield" class="power-wrapper" data-one>
                             <h4>Shimmering Shield</h4>
-                            <p>Grant Light Shell for 1.2s / 1.8s / 2.4s at the start of your Dash.</p> 
+                            <p>Grant <a href="glossary.html#glossary-light-shell">Light Shell</a> for 1.2s / 1.8s / 2.4s at the start of your Dash.</p> 
                         </div>
                     </div>
 
@@ -205,7 +205,7 @@
                         <p class="section-title">Secondary Offerings</p>
                         <div class="power-wrapper">
                             <h4>Ancestral Guardian</h4>
-                            <p>Gain Light Shell for 15s / 20s / 25s after the start of combat.</p>
+                            <p>Gain <a href="glossary.html#glossary-light-shell">Light Shell</a> for 15s / 20s / 25s after the start of combat.</p>
                         </div>
 
                         <div class="power-wrapper">
@@ -225,7 +225,7 @@
     
                         <div class="power-wrapper">
                             <h4>Radiant Warrior</h4>
-                            <p>Special and Tool grants Light Shell for 1.2s / 1.8s / 2.4s</p>
+                            <p>Special and Tool grants <a href="glossary.html#glossary-light-shell">Light Shell</a> for 1.2s / 1.8s / 2.4s</p>
                         </div>
     
                         <div class="power-wrapper">
@@ -235,7 +235,7 @@
                     </div>
 
                     <div class="border-astral-l power-astral-l-shell">
-                        <p class="section-title">After Light Shell</p>
+                        <p class="section-title">After <a href="#power-shimmering-shield">Shimmering Shield</a></p>
                         <div class="power-wrapper">
                             <h4>Astral Insight</h4>
                             <p>Increase damage by 30% / 40% / 60% while Light Shell is active.</p>
@@ -243,7 +243,7 @@
 
                         <div class="power-wrapper">
                             <h4>Illumination</h4>
-                            <p>Light Shell reflects projectiles. Reflected projectiles deal 30% / 45% / 60% of your Max Health as Light damage.</p>
+                            <p><a href="glossary.html#glossary-light-shell">Light Shell</a> reflects projectiles. Reflected projectiles deal 30% / 45% / 60% of your Max Health as Light damage.</p>
                         </div>
 
                     </div>
@@ -568,7 +568,7 @@
 
                     <div class="border-ninja power-ninja-adrenaline">
                         <p class="section-title">After Throwing Shuriken</p>
-                        <div class="power-wrapper">
+                        <div id="power-shuriken-breaker" class="power-wrapper">
                             <h4>Shuriken Breaker</h4>
                             <p>Shuriken apply Guard Break to enemy targets for 2s. Guard Break increases damage received by 15% / 25% / 35%.</p>
                         </div>
@@ -1333,8 +1333,8 @@
                     </div> -->
 
                 </details>
-                <details class="power-mixed">
-                    <summary><img class="p-icon" src="assets/Icon-Power-M.webp"/>Mixed</summary>
+                <details class="power-legendary">
+                    <summary><img class="p-icon" src="assets/Icon-Power-M.webp"/>Legendary</summary>
                     <div class="power-wrapper">
                         <h4>DarkFlame (Astral Dark & Flame)</h4>
                         <p>+40% Flame Damage against targets affected by Darkness.</p>        

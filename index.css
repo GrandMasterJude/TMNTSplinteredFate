@@ -9,11 +9,15 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* background-color: #005299;*/    
 }
 
 body p {
     margin: 0;
+}
+
+body a,
+body a:visited {
+    color: #333333;
 }
 
 body .mobile-yep {
@@ -30,22 +34,20 @@ body .tiny-mobile-yep {
     min-height: 3rem;
     overflow: hidden;
 }
-.navbar a {
-    /* flex: 1; */
+body .navbar a {
     color: white;
     text-align: center;
     padding: 1rem 0.8rem;
     text-decoration: none;
-    transition: 0.3s;
 }
-.navbar a:hover {
+body .navbar a:hover {
     background-color: #ddd;
     color: black;
     padding: 1rem 2rem;
+    transition: 0.3s;
 
 }
 .content {
-    /* height: 100%; */
     padding: 1.25rem;
     text-align: left;
 }
@@ -58,9 +60,6 @@ body .tiny-mobile-yep {
     padding: 1rem 2rem;
 }
 
-/* .tab-content {
-    display: none;
-} */
 .tab-content.active {
     display: block;
     flex-grow: 1;
@@ -251,14 +250,14 @@ footer {
     display: none;
     background-color: #333;
 }
-.mobile-menu a {
+body .mobile-menu a {
     display: block;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
     text-align: center;
 }
-.mobile-menu a:hover {
+body .mobile-menu a:hover {
     background-color: #ddd;
     color: black;
 }
@@ -292,6 +291,10 @@ img.coin-large {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 3rem 0;
+}
+
+#inspirations .insp-intro {
+    padding: 1rem;
 }
 
 #inspirations .insp-row {
@@ -449,7 +452,7 @@ img.coin-large {
 }
 
 #powers .border-astral-d {
-    border: 2px solid darkgray;
+    border: 2px solid #C860FF;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 2rem;
     margin: 0 0 2rem 0;
@@ -465,7 +468,7 @@ img.coin-large {
 }
 
 #powers .border-flame {
-    border: 2px solid orange;
+    border: 2px solid #FF8000;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 2rem;
     margin: 0 0 2rem 0;
@@ -481,7 +484,7 @@ img.coin-large {
 }
 
 #powers .border-ooze {
-    border: 2px solid purple;
+    border: 2px solid #Eb1464;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 2rem;
     margin: 0 0 2rem 0;
@@ -489,7 +492,7 @@ img.coin-large {
 }
 
 #powers .border-utrom {
-    border: 2px solid lightblue;
+    border: 2px solid #32E6FF;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 2rem;
     margin: 0 0 2rem 0;
@@ -497,7 +500,7 @@ img.coin-large {
 }
 
 #powers .border-water {
-    border: 2px solid blue;
+    border: 2px solid #1EA2FF;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 2rem;
     margin: 0 0 2rem 0;
@@ -533,6 +536,52 @@ img.coin-large {
 /*
     Upgrades
 */
+
+.upgrade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    /* grid-template-columns: 1fr; */
+    /* border: 2px solid darkgray; */
+    padding: 1rem;
+    /* border-radius: 2rem; */
+    margin: 0 0 2rem 0;
+    overflow-x: scroll;
+    width: 95vw;
+}
+
+.upgrade h4 {
+    margin: 0;
+    width: 100%;
+}
+
+.upgrade-header {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    /* grid-column: 1 / 1;
+    grid-row: 1 / 3; */
+    text-align: center;
+}
+
+.upgrade-level {
+    border: 2px solid darkgray;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: max-content;
+}
+
+.upgrade-row {
+    display: flex;
+
+    /* flex-wrap: wrap; */
+
+    gap: 0.5rem;
+}
+
+
+
 
 #upgrades th {
     padding-left: 1rem;
@@ -726,6 +775,10 @@ tr th:first-of-type {
         padding: 0;
     }
 
+    #inspirations .insp-intro {
+        padding: 1rem 0;
+    }
+
     /* mastery no left margin */
 
     #mastery ul li p {
@@ -745,6 +798,19 @@ tr th:first-of-type {
 
     #powers {
         margin: 0;
+    }
+
+    #upgrades .upgrade {
+        padding: 0;
+        width: unset;
+    }
+
+    #upgrades .upgrade-row {
+        flex-direction: column;
+    }
+
+    .upgrade-level {
+        width: unset;
     }
 
     #artifacts .artifact {
