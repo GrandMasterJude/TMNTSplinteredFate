@@ -15,6 +15,10 @@ body p {
     margin: 0;
 }
 
+body p.note {
+    font-size: 1rem;
+}
+
 body a,
 body a:visited {
     color: #333333;
@@ -47,6 +51,34 @@ body .navbar a:hover {
     transition: 0.3s;
 
 }
+
+:target {
+	-webkit-animation: target-fade 1s;
+	-moz-animation: target-fade 1s;
+	-o-animation: target-fade 1s;
+	animation: target-fade 1s;
+}
+
+@-webkit-keyframes target-fade {
+	from { background-color: red; } /* [1] */
+	to { background-color: transparent; }
+}
+
+@-moz-keyframes target-fade {
+	from { background-color: red; } /* [1] */
+	to { background-color: transparent; }
+}
+
+@-o-keyframes target-fade {
+	from { background-color: red; } /* [1] */
+	to { background-color: transparent; }
+}
+
+@keyframes target-fade {
+	from { background-color: red; } /* [1] */
+	to { background-color: transparent; }
+}
+
 .content {
     padding: 1.25rem;
     text-align: left;
@@ -336,6 +368,21 @@ img.coin-large {
     border-radius: 1rem;
 }
 
+#inspirations th {
+    padding: 0 2rem;
+    text-align: left;
+}
+
+#inspirations td {
+    padding: 1rem 2rem;
+    /* border: 1px solid rgb(160 160 160); */
+}
+
+#inspirations td p {
+    margin: 0;
+    /* white-space: nowrap; */
+}
+
 .power-wrapper h4 {
     margin: 2rem 0 0 0;
 }
@@ -399,10 +446,6 @@ img.coin-large {
     border: 2px solid #9622C4;
 }
 
-#tools {
-    text-align: left;
-}
-
 /*
     Powers
 */
@@ -430,14 +473,12 @@ img.coin-large {
     margin: 0 1rem 0 0;
 }
 
-#powers h4,
-#tools h4 {
+#powers h4 {
     margin-bottom: 0;
     text-decoration: underline;
 }
 
-#powers p,
-#tools p {
+#powers p {
     margin: 0.4rem;
 }
 
@@ -514,23 +555,39 @@ img.coin-large {
     width: 1.75rem;
 }
 
+#powers .thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#powers .legendary-thumbnail {
+    width: 10rem;
+}
+
 /*
     Tools
 */
 
-#inspirations th {
-    padding: 0 2rem;
+#tools {
     text-align: left;
 }
 
-#inspirations td {
-    padding: 1rem 2rem;
-    /* border: 1px solid rgb(160 160 160); */
+#tools h4 {
+    margin-bottom: 0;
+    text-decoration: underline;
 }
 
-#inspirations td p {
-    margin: 0;
-    /* white-space: nowrap; */
+#tools p {
+    margin: 0.4rem;
+}
+
+#tools ul li {
+    border: 2px solid darkgray;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+    width: fit-content;
 }
 
 /*
@@ -708,6 +765,10 @@ tr th:first-of-type {
 */
 #map h4 {
     margin: 0;
+}
+
+#map p {
+    margin: 0 0 0 1rem;
 }
 
 #map .map-room {
