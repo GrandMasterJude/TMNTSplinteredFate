@@ -15,7 +15,7 @@ body p {
     margin: 0;
 }
 
-body p.note {
+body .note {
     font-size: 1rem;
 }
 
@@ -60,22 +60,22 @@ body .navbar a:hover {
 }
 
 @-webkit-keyframes target-fade {
-	from { background-color: red; } /* [1] */
+	from { background-color: #4CAF50; } /* [1] */
 	to { background-color: transparent; }
 }
 
 @-moz-keyframes target-fade {
-	from { background-color: red; } /* [1] */
+	from { background-color: #4CAF50; } /* [1] */
 	to { background-color: transparent; }
 }
 
 @-o-keyframes target-fade {
-	from { background-color: red; } /* [1] */
+	from { background-color: #4CAF50; } /* [1] */
 	to { background-color: transparent; }
 }
 
 @keyframes target-fade {
-	from { background-color: red; } /* [1] */
+	from { background-color: #4CAF50; } /* [1] */
 	to { background-color: transparent; }
 }
 
