@@ -53,10 +53,10 @@ body .navbar a:hover {
 }
 
 :target {
-	-webkit-animation: target-fade 1s;
-	-moz-animation: target-fade 1s;
-	-o-animation: target-fade 1s;
-	animation: target-fade 1s;
+	-webkit-animation: target-fade 2s;
+	-moz-animation: target-fade 2s;
+	-o-animation: target-fade 2s;
+	animation: target-fade 2s;
 }
 
 @-webkit-keyframes target-fade {
@@ -267,6 +267,15 @@ footer {
 
 #basic-info .basic-insp h4 {
     margin: 0 0 1rem 0;
+}
+
+#basic-info .max-label {
+    position: relative;
+    background-color: #f1f1f1;
+    bottom: 2rem;
+    margin-bottom: -0.5rem;
+    width: fit-content;
+    padding: 0 1rem;
 }
 
 .hamburger {
@@ -782,7 +791,9 @@ tr th:first-of-type {
 /*
     Glossary
 */
-
+#glossary h4 {
+    margin-bottom: 0;
+}
 
 
 
