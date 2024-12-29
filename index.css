@@ -53,10 +53,10 @@ body .navbar a:hover {
 }
 
 :target {
-	-webkit-animation: target-fade 2s;
-	-moz-animation: target-fade 2s;
-	-o-animation: target-fade 2s;
-	animation: target-fade 2s;
+	-webkit-animation: target-fade 3s;
+	-moz-animation: target-fade 3s;
+	-o-animation: target-fade 3s;
+	animation: target-fade 3s;
 }
 
 @-webkit-keyframes target-fade {
@@ -155,6 +155,10 @@ footer {
 
 .color-confidence {
     color: #BF2125;
+}
+
+.no-deco {
+    text-decoration: none;
 }
 
 /*
@@ -472,7 +476,8 @@ img.coin-large {
     cursor: pointer;
     list-style: none;
     font-size: 1.5rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    transition: 0.5s;
 }
 
 #powers .p-icon {
@@ -480,6 +485,16 @@ img.coin-large {
     top: 2rem;
     width: 6rem;
     margin: 0 1rem 0 0;
+    transition: 0.5s;
+}
+
+#powers summary:hover {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+#powers summary:hover .p-icon {
+    width: 8rem;
 }
 
 #powers h4 {
