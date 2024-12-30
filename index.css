@@ -493,8 +493,14 @@ img.coin-large {
     margin: 2rem 0;
 }
 
+#powers details[open] summary .p-icon,
 #powers summary:hover .p-icon {
     width: 8rem;
+}
+
+#powers details[open] summary {
+    font-size: 2.5rem;
+    margin: 2rem 0 3rem;
 }
 
 #powers h4 {
