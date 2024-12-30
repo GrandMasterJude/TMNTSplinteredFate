@@ -476,7 +476,7 @@ img.coin-large {
     cursor: pointer;
     list-style: none;
     font-size: 1.5rem;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     transition: 0.5s;
 }
 
@@ -488,18 +488,23 @@ img.coin-large {
     transition: 0.5s;
 }
 
-#powers summary:hover {
-    font-size: 2.5rem;
-    margin: 2rem 0;
+@media (pointer: fine) {
+    #powers summary:hover {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+    
+    #powers summary:hover .p-icon {
+        width: 8rem;
+    }
 }
 
-#powers details[open] summary .p-icon,
-#powers summary:hover .p-icon {
-    width: 8rem;
+#powers details[open] summary .p-icon {
+    width: 7rem;
 }
 
 #powers details[open] summary {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 2rem 0 3rem;
 }
 
