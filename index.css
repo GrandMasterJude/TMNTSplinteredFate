@@ -161,6 +161,14 @@ footer {
     text-decoration: none;
 }
 
+.margin-top {
+    margin-top: 2rem;
+}
+
+.margin-left {
+    margin-left: 2rem;
+}
+
 /*
     Basic Info
 */

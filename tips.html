@@ -38,17 +38,32 @@
         <div class="content">
             <div>
                 <p>How the math in the game works isn't necessaryily intuitive. If you find yourself wondering why your damage numbers aren't adding up the way you think, this might help explain it.</p>
+                <p>Percent increases are additive and work off of your base damage. You don't multiply the result of your +% increase by your next +% increase.</p>
 
-                <h4 id="damage-formula">Damage Formulas</h4>
-                <p><span>Attack:</span> Base Damage + Upgrade Bonus + Crit Bonus = Total damage</p>
-                <p>So for example, Raphael's basic attack deals 24 damge. When he does a Critical Hit it will do 49 damage</p>
+                <p class="margin-top">So for example, Raphael's basic attack deals 24 damage. Critical Hits do +100% damage, so when he does a crit it will do 49 damage.</p>
+                <p>*Raph gets the extra 6% crit damage from his inspiration, so it's +25 instead of 24.</p>
+                <p class="margin-top margin-left">24 base damage + 25 crit damage = 49</p>
+                <p>After he buys some upgrades and has +50% attack, his first attack will do 36 damage but his crits will only do 61, not 74 like you might expect.</p>
+                <p class="margin-top margin-left">24 base damage + 12 upgrade damage + 25 crit damage (24 base * 1.06 crit)</p>
+                <p class="margin-top">Or another way of looking at that is</p>
+                <p class="margin-top margin-left">24 x 256% (100% + 50% + 106%) = 61.44</p>
+                <p class="margin-top"></p>
+                <p class="margin-top">Let's look at another example with several bonuses.</p>
+                <p>Leonardo has his attack damage upgraded to +60% and Dash Attack damage to +25%.</p>
+                <p>On this run he picked up the <a href="mastery.html#mastery-l-4" target="_blank">+30% Dash Attack Damage Mastery</a> and just got the <a href="boosts.html#boost-attack-damage" target="_blank">+50% Attack Damage Boost</a>.</p>
+                <p>His base Dash Attack damage is 25. So now when he hits an enemy he will deal 66.25 damage</p>
+                <p class="margin-top margin-left">25 Base + 15 Upgrade + 6.25 Dash Attack + 7.5 Mastery + 12.5 Boost = 66.25</p>
+                <p class="margin-top">Or another way of looking at that is</p>
+                <p class="margin-top margin-left">25 x 265% (100% + 60% + 25% + 30% + 50%) = 66.25</p>
+
+                <!-- <p><span>Attack:</span> Base Damage + Upgrade Bonus + Crit Bonus = Total damage</p> -->
+                <!-- <p>So for example, Raphael's basic attack deals 24 damge. When he does a Critical Hit it will do 49 damage</p>
                 <p>24 base damage + 25 crit damage (24 base * 1.06) *Raph gets the extra 6% from his inspiration.</p>
                 <p>After he buys some upgrades and has +50% attack though, his first attack will do 36 damage but his crits will only do 61.</p>
                 <p>Your total damage with the attack upgrade doesn't get multiplied by 1.06 like you might assume.</p>
-                <p>24 base damage + 12 upgrade damage + 25 crit damage (24 base * 1.06 crit)</p>
+                <p>24 base damage + 12 upgrade damage + 25 crit damage (24 base * 1.06 crit)</p> -->
 
-                <h4>Other Bonuses</h4>
-                <p>I believe every other bonus from powers and boosts is also it's own column in the equation.</p>
+
                 
             </div>
 
