@@ -157,6 +157,10 @@ footer {
     color: #BF2125;
 }
 
+.keep-spaces {
+    white-space: pre;
+}
+
 .no-deco {
     text-decoration: none;
 }
