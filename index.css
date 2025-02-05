@@ -52,6 +52,18 @@ body .navbar a:hover {
 
 }
 
+.shimmer {
+    color: grey;
+    mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/350% 100%;
+    animation: shimmer 2.5s;
+  }
+  
+  @keyframes shimmer {
+    100% {
+      mask-position: left;
+    }
+  }
+
 :target {
 	-webkit-animation: target-fade 3s;
 	-moz-animation: target-fade 3s;
@@ -257,6 +269,12 @@ footer {
     border-radius: 2rem;
 }
 
+.border-c {
+    border: #5DCCB9  2px solid;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
 .color-m {
     background-color: #EB8248;
     color: white;
@@ -274,6 +292,11 @@ footer {
 
 .color-d {
     background-color: #9622C4;
+    color: white;
+}
+
+.color-c {
+    background-color: #5DCCB9;
     color: white;
 }
 
@@ -416,10 +439,12 @@ img.coin-large {
 .basic-donatello,
 .basic-michelangelo,
 .basic-raphael,
+.basic-casey,
 .mastery-leonardo,
 .mastery-donatello,
 .mastery-michelangelo,
-.mastery-raphael {
+.mastery-raphael,
+.mastery-casey {
     margin-left: 1rem;
     text-align: left;
 }
@@ -469,6 +494,11 @@ img.coin-large {
 #mastery .mastery-donatello ul li p {
     /* background-color: #9622C4; */
     border: 2px solid #9622C4;
+}
+
+#mastery .mastery-casey ul li p {
+    /* background-color: #5DCCB9; */
+    border: 2px solid #5DCCB9;
 }
 
 /*
@@ -872,10 +902,12 @@ tr th:first-of-type {
     .basic-donatello,
     .basic-michelangelo,
     .basic-raphael,
+    .basic-casey,
     .mastery-leonardo,
     .mastery-donatello,
     .mastery-michelangelo,
-    .mastery-raphael {
+    .mastery-raphael,
+    .mastery-casey {
         margin-left: 0;
     }
     
@@ -887,7 +919,8 @@ tr th:first-of-type {
     .basic-michelangelo-content,
     .basic-leonardo-content,
     .basic-raphael-content,
-    .basic-donatello-content {
+    .basic-donatello-content,
+    .basic-casey-content {
         /* background: no-repeat url("assets/TMNT-Background.webp");
         background-size: 100% 100%;
         color: white; */
