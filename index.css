@@ -270,7 +270,7 @@ footer {
 }
 
 .border-c {
-    border: #5DCCB9  2px solid;
+    border: #1EC2C7  2px solid;
     padding: 1rem;
     border-radius: 2rem;
 }
@@ -296,7 +296,7 @@ footer {
 }
 
 .color-c {
-    background-color: #5DCCB9;
+    background-color: #1EC2C7;
     color: white;
 }
 
@@ -497,8 +497,8 @@ img.coin-large {
 }
 
 #mastery .mastery-casey ul li p {
-    /* background-color: #5DCCB9; */
-    border: 2px solid #5DCCB9;
+    /* background-color: #1EC2C7; */
+    border: 2px solid #1EC2C7;
 }
 
 /*
