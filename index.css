@@ -836,6 +836,24 @@ tr th:first-of-type {
     height: 5rem;
 }
 
+/*
+    Portals
+*/
+#portals .portal-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0 0;
+}
+
+#portals .portal-wrapper h4 {
+    margin: 0 0 0.5rem;
+}
+
+#portals .portal-image {
+    height: 5rem;
+}
+
 
 /*
     Map
@@ -995,6 +1013,17 @@ tr th:first-of-type {
     }
 
     #boosts .boost-wrapper h4 {
+        margin: 0;
+    }
+
+    #portals .portal-wrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 0 0 3rem 0;
+        text-align: center;
+    }
+
+    #portals .portal-wrapper h4 {
         margin: 0;
     }
 
