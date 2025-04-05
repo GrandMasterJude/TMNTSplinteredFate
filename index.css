@@ -533,7 +533,6 @@ img.coin-large {
 @media (pointer: fine) {
     #powers summary:hover {
         font-size: 2.5rem;
-        margin: 2rem 0;
     }
     
     #powers summary:hover .p-icon {
