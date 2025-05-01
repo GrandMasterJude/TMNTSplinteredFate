@@ -72,22 +72,22 @@ body .navbar a:hover {
 }
 
 @-webkit-keyframes target-fade {
-	from { background-color: #4CAF50; } /* [1] */
+	from { background-color: #2E7D32; } /* [1] */
 	to { background-color: transparent; }
 }
 
 @-moz-keyframes target-fade {
-	from { background-color: #4CAF50; } /* [1] */
+	from { background-color: #2E7D32; } /* [1] */
 	to { background-color: transparent; }
 }
 
 @-o-keyframes target-fade {
-	from { background-color: #4CAF50; } /* [1] */
+	from { background-color: #2E7D32; } /* [1] */
 	to { background-color: transparent; }
 }
 
 @keyframes target-fade {
-	from { background-color: #4CAF50; } /* [1] */
+	from { background-color: #2E7D32; } /* [1] */
 	to { background-color: transparent; }
 }
 
@@ -100,7 +100,7 @@ body .navbar a:hover {
 }
 
 .tab.active {
-    background-color: #4CAF50;
+    background-color: #2E7D32;
     padding: 1rem 2rem;
 }
 
