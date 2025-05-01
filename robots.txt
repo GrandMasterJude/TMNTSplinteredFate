@@ -1,0 +1,8 @@
+# robots.txt for TMNT: Splintered Fate website
+# Created on May 1, 2025
+
+User-agent: *
+Allow: /
+
+# Sitemap location (uncomment and modify if you have a sitemap)
+# Sitemap: https://yourwebsite.com/sitemap.xml
