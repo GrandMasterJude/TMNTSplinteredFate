@@ -191,7 +191,7 @@ footer {
 .basic-info-container,
 .mastery-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(500px, 1fr) minmax(500px, 1fr);
 }
 
 .basic-info-container img {
