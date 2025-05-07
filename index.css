@@ -874,6 +874,13 @@ tr th:first-of-type {
 }
 
 /*
+    Tips
+*/
+#tips .tips-list {
+    list-style: inside square;
+}
+
+/*
     Glossary
 */
 #glossary h4 {
