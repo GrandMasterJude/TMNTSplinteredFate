@@ -161,6 +161,10 @@ footer {
     color: #1EA2FF;
 }
 
+.color-robotics {
+    color: gray;
+}
+
 .color-master-strike {
     color: #8080FF;
 }
@@ -206,7 +210,8 @@ footer {
 .basic-michelangelo-content,
 .basic-leonardo-content,
 .basic-raphael-content,
-.basic-donatello-content {
+.basic-donatello-content,
+.basic-metalhead-content {
     /* background: no-repeat url("assets/TMNT-Background.webp"); */
     /* background-size: 100% 100%; */
     /* color: white; */
@@ -275,6 +280,12 @@ footer {
     border-radius: 2rem;
 }
 
+.border-mh {
+    border: gray 2px solid;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
 .color-m {
     background-color: #EB8248;
     color: white;
@@ -297,6 +308,11 @@ footer {
 
 .color-c {
     background-color: #1EC2C7;
+    color: white;
+}
+
+.color-mh {
+    background-color: gray;
     color: white;
 }
 
@@ -440,11 +456,13 @@ img.coin-large {
 .basic-michelangelo,
 .basic-raphael,
 .basic-casey,
+.basic-metalhead,
 .mastery-leonardo,
 .mastery-donatello,
 .mastery-michelangelo,
 .mastery-raphael,
-.mastery-casey {
+.mastery-casey,
+.mastery-metalhead {
     margin-left: 1rem;
     text-align: left;
 }
@@ -499,6 +517,11 @@ img.coin-large {
 #mastery .mastery-casey ul li p {
     /* background-color: #1EC2C7; */
     border: 2px solid #1EC2C7;
+}
+
+#mastery .mastery-metalhead ul li p {
+    /* background-color: gray; */
+    border: 2px solid gray;
 }
 
 /*
@@ -602,6 +625,14 @@ img.coin-large {
 
 #powers .border-ooze {
     border: 2px solid #Eb1464;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+    width: fit-content;
+}
+
+#powers .border-robotics {
+    border: 2px solid gray;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 2rem;
     margin: 0 0 2rem 0;
@@ -927,11 +958,13 @@ tr th:first-of-type {
     .basic-michelangelo,
     .basic-raphael,
     .basic-casey,
+    .basic-metalhead,
     .mastery-leonardo,
     .mastery-donatello,
     .mastery-michelangelo,
     .mastery-raphael,
-    .mastery-casey {
+    .mastery-casey,
+    .mastery-metalhead {
         margin-left: 0;
     }
     
@@ -944,7 +977,8 @@ tr th:first-of-type {
     .basic-leonardo-content,
     .basic-raphael-content,
     .basic-donatello-content,
-    .basic-casey-content {
+    .basic-casey-content,
+    .basic-metalhead-content {
         /* background: no-repeat url("assets/TMNT-Background.webp");
         background-size: 100% 100%;
         color: white; */
