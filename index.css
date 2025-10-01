@@ -281,7 +281,7 @@ footer {
 }
 
 .border-mh {
-    border: gray 2px solid;
+    border: #FFFF64 2px solid;
     padding: 1rem;
     border-radius: 2rem;
 }
@@ -312,7 +312,7 @@ footer {
 }
 
 .color-mh {
-    background-color: gray;
+    background-color: #FFFF64;
     color: white;
 }
 
@@ -521,7 +521,7 @@ img.coin-large {
 
 #mastery .mastery-metalhead ul li p {
     /* background-color: gray; */
-    border: 2px solid gray;
+    border: 2px solid #FFFF64;
 }
 
 /*
