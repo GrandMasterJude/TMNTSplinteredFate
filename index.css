@@ -286,6 +286,12 @@ footer {
     border-radius: 2rem;
 }
 
+.border-a {
+    border: #2FD071 2px solid;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
 .color-m {
     background-color: #EB8248;
     color: white;
@@ -313,6 +319,11 @@ footer {
 
 .color-mh {
     background-color: #FFFF64;
+    color: white;
+}
+
+.color-a {
+    background-color: #2FD071;
     color: white;
 }
 
@@ -457,12 +468,14 @@ img.coin-large {
 .basic-raphael,
 .basic-casey,
 .basic-metalhead,
+.basic-alopex,
 .mastery-leonardo,
 .mastery-donatello,
 .mastery-michelangelo,
 .mastery-raphael,
 .mastery-casey,
-.mastery-metalhead {
+.mastery-metalhead,
+.mastery-alopex {
     margin-left: 1rem;
     text-align: left;
 }
@@ -522,6 +535,11 @@ img.coin-large {
 #mastery .mastery-metalhead ul li p {
     /* background-color: gray; */
     border: 2px solid #FFFF64;
+}
+
+#mastery .mastery-alopex ul li p {
+    /* background-color: gray; */
+    border: 2px solid #2FD071;
 }
 
 /*
@@ -959,12 +977,14 @@ tr th:first-of-type {
     .basic-raphael,
     .basic-casey,
     .basic-metalhead,
+    .basic-alopex,
     .mastery-leonardo,
     .mastery-donatello,
     .mastery-michelangelo,
     .mastery-raphael,
     .mastery-casey,
-    .mastery-metalhead {
+    .mastery-metalhead,
+    .mastery-alopex {
         margin-left: 0;
     }
     
@@ -978,7 +998,8 @@ tr th:first-of-type {
     .basic-raphael-content,
     .basic-donatello-content,
     .basic-casey-content,
-    .basic-metalhead-content {
+    .basic-metalhead-content,
+    .basic-alopex-content {
         /* background: no-repeat url("assets/TMNT-Background.webp");
         background-size: 100% 100%;
         color: white; */
