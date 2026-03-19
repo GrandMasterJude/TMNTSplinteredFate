@@ -43,7 +43,7 @@
             <div id="powers" class="tab-content">
                 <p class="power-intro">All Powers start out giving you an initial selection of options. After you meet certain prerequisites other options will become available. For example you won't be offered Focus Fire to deal more Flame damage to bosses until after you have chosen a skill that deals Flame damage.</p>
                 <p class="power-intro">Legendary Powers require certain prerequisites. That I discuss in the Legendary section at the bottom.</p>
-                <details class="power-astral-d">
+                <details id="power-astral-d" class="power-astral-d">
                     <summary><img class="p-icon" src="assets/Icon-Power-D.webp"/>Astral Dark</summary>
 
                     <div class="border-astral-d power-astral-d-initial">
@@ -132,7 +132,7 @@
 
 
                 </details>
-                <details class="power-astral-l">
+                <details id="power-astral-l" class="power-astral-l">
                     <summary><img class="p-icon" src="assets/Icon-Power-L.webp"/>Astral Light</summary>
 
                     <div class="border-astral-l power-astral-l-initial">
@@ -205,7 +205,7 @@
                     </div>
 
                     <div class="border-astral-l power-astral-l-initial">
-                        <p class="section-title">After <a href="powers.html#power-astral-l-light-attacks">Light Attacks</a> and Water Damage</p>
+                        <p class="section-title">After <a href="powers.html#power-astral-l-daybreak">Daybreak</a> or <a href="powers.html#power-astral-l-light-embrace">Light Embrace</a> AND <a href="powers.html#power-water-splash-damage">Splash Damage</a> or <a href="powers.html#power-water-when-it-rains">When It Rains</a></p>
                         <div id="power-astral-l-bright-spring" class="power-wrapper">
                             <h4><a href="powers.html#power-astral-l-bright-spring">*BRIGHT SPRING* (Water & Light)</a></h4>
                             <p>Attacks restore 2 health.</p>
@@ -221,7 +221,7 @@
                     </div>
 
                 </details>
-                <details class="power-flame">
+                <details id="power-flame" class="power-flame">
                     <summary><img class="p-icon" src="assets/Icon-Power-F.webp"/>Flame</summary>
                         <div class="border-flame power-flame-initial">
                             <p class="section-title">Initial Offerings</p>
@@ -337,7 +337,7 @@
                             </div>
                         </div>
                 </details>
-                <details class="power-ninja">
+                <details id="power-ninja" class="power-ninja">
                     <summary><img class="p-icon" src="assets/Icon-Power-N.webp"/>Ninja</summary>
                     <div class="border-ninja power-ninja-initial">
                         <p class="section-title">Initial Offerings</p>
@@ -466,7 +466,7 @@
                         </div>
                     </div>
                 </details>
-                <details class="power-ooze">
+                <details id="power-ooze" class="power-ooze">
                     <summary><img class="p-icon" src="assets/Icon-Power-O.webp"/>Ooze</summary>
                     <div class="border-ooze power-ooze-initial">
                         <p class="section-title">Initial Offerings</p>
@@ -571,7 +571,7 @@
                         </div>
                     </div>
                 </details>
-                <details class="power-robotics">
+                <details id="power-robotics" class="power-robotics">
                     <summary><img class="p-icon" src="assets/Icon-Power-R.webp"/>Robotics</summary>
                         <div class="border-robotics power-robotics-initial">
                             <p class="section-title">Initial Offerings</p>
@@ -710,7 +710,7 @@
                             </div>
                         </div>
                 </details>
-                <details class="power-utrom">
+                <details id="power-utrom" class="power-utrom">
                     <summary><img class="p-icon" src="assets/Icon-Power-U.webp"/>Utrom</summary>
 
                     <div class="border-utrom power-utrom-initial">
@@ -847,7 +847,7 @@
                     </div>
                 </details>
 
-                <details class="power-water">
+                <details id="power-water" class="power-water">
                     <summary><img class="p-icon" src="assets/Icon-Power-W.webp"/>Water</summary>
 
                     <div class="border-water power-water-initial">
@@ -928,7 +928,7 @@
                         </div>
                     </div>
 
-                    <div class="border-water power-water-still">
+                    <div class="border-water power-water-flash-freeze">
                         <p class="section-title">After <a href="powers.html#power-water-frost">Frost</a></p>
                         <div id="power-water-flash-freeze" class="power-wrapper">
                             <h4><a href="powers.html#power-water-flash-freeze">Flash Freeze</a></h4>
@@ -941,8 +941,8 @@
                         </div>
                     </div>
 
-                    <div class="border-water power-water-still">
-                        <p class="section-title">After Water Damage and <a href="powers.html#power-astral-l-light-attacks">Light Attacks</a></p>
+                    <div class="border-water power-water-bright-spring">
+                        <p class="section-title">After <a href="powers.html#power-astral-l-daybreak">Daybreak</a> or <a href="powers.html#power-astral-l-light-embrace">Light Embrace</a> AND <a href="powers.html#power-water-splash-damage">Splash Damage</a> or <a href="powers.html#power-water-when-it-rains">When It Rains</a></p>
                         <div id="power-water-bright-spring" class="power-wrapper">
                             <h4><a href="powers.html#power-water-bright-spring">*BRIGHT SPRING* (Astral Light & Water)</a></h4>
                             <p>Attacks restore 2 health.</p>
@@ -982,7 +982,7 @@
                         </div>
                     </div>
                 </details>
-                <details class="power-legendary">
+                <details id="power-legendary" class="power-legendary">
                     <summary><img class="p-icon" src="assets/Icon-Power-M.webp"/>Legendary</summary>
                     <p class="note">I say what I believe the requirements are for each power but we can't be 100% sure until the devs confirm.</p>
                     <p class="note">I've included screenshots where I've obtained the legendary power with a low number of other powers to help narrow down what is really necessary. If you have screenshots that can help narrow them down further please mention them in the official discord.</p>
@@ -1029,8 +1029,7 @@
                     <div id="power-legendary-brightspring" class="power-wrapper">
                         <h4><a href="powers.html#power-legendary-brightspring">Bright Spring (Astral Light & Water)</a></h4>
                         <p>Attacks restore 2 health.</p>
-                        <p class="note"><a href="powers.html#power-astral-l-light-attacks">Light Attacks</a> and Water damage. </p>
-                        <p class="note">This power feels more rare than the others but we don't know the percent chance of any of them showing up.</p>
+                        <p class="note">After <a href="powers.html#power-astral-l-daybreak">Daybreak</a> or <a href="powers.html#power-astral-l-light-embrace">Light Embrace</a> AND <a href="powers.html#power-water-splash-damage">Splash Damage</a> or <a href="powers.html#power-water-when-it-rains">When It Rains</a></p>
                         <div class="thumbnail-container">
                             <a href="legendaries/BrightSpring.webp" target="_blank">
                                 <img class="legendary-thumbnail" src="legendaries/BrightSpring.webp">

@@ -27,3 +27,15 @@ function toggleMobileMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
     mobileMenu.classList.toggle('show');
 }
+
+const wrapper = document.querySelector('.content');
+const allDetails = document.querySelectorAll('.character-select details');
+
+allDetails.forEach(detail => {
+  detail.addEventListener('toggle', () => {
+    const openPanel = document.querySelector('.character-select details[open] .character-summary');
+    wrapper.style.paddingBottom = openPanel
+      ? openPanel.offsetHeight + 'px'
+      : '0px';
+  });
+});

@@ -319,12 +319,39 @@ footer {
 
 .color-mh {
     background-color: #FFFF64;
-    color: white;
 }
 
 .color-a {
     background-color: #2FD071;
     color: white;
+}
+
+.text-color-m {
+    color: #EB8248;
+}
+
+.text-color-l {
+    color: #1F61B8;
+}
+
+.text-color-r {
+    color: #C02D2A;
+}
+
+.text-color-d {
+    color: #9622C4;
+}
+
+.text-color-c {
+    color: #1EC2C7;
+}
+
+.text-color-mh {
+    color: #FFFF64;
+}
+
+.text-color-a {
+    color: #2FD071;
 }
 
 #basic-info ul {
@@ -335,7 +362,7 @@ footer {
     margin: 0 0 1rem 0;
 }
 
-#basic-info .max-label {
+#basic-info .label {
     position: relative;
     background-color: #f1f1f1;
     bottom: 2rem;
@@ -388,6 +415,59 @@ img.coin-large {
     position: relative;
     top: 0.75rem;
     width: 3rem;
+}
+
+.character-select {
+    cursor: grab;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.character-select summary {
+    cursor: pointer;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.character-select-michelangelo,
+.character-select-leonardo,
+.character-select-raphael,
+.character-select-donatello,
+.character-select-casey,
+.character-select-metalhead,
+.character-select-alopex,
+.character-select img.portrait {
+    width: 7rem;
+}
+
+.character-summary {
+    border-radius: 2rem;
+    max-width: 60rem;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    margin: auto;
+    right: 0;
+}
+
+/* .character-select details:open {
+    width: 10rem;
+} */
+
+.character-select details:not(:open) img.portrait {
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.character-select details:open img.portrait {
+    transition: 0.5s;
+    /* width: 10rem; */
+}
+
+.character-text {
+    margin-bottom: 1rem;
 }
 
 /*
@@ -969,6 +1049,11 @@ tr th:first-of-type {
     .mastery-container {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .character-select {
+        gap: 0.2rem;
+        justify-content: unset;
     }
 
     .basic-leonardo,
