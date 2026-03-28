@@ -529,6 +529,30 @@ img.coin-large {
     width: 7rem;
 }
 
+.character-select-leonardo {
+    margin-left: -1.25rem;
+}
+
+.character-select-raphael {
+    margin-left: -0.6rem;
+}
+
+.character-select-donatello {
+    margin-left: -1.25rem;
+}
+
+.character-select-casey {
+    margin-left: -0.6rem;
+}
+
+.character-select-metalhead {
+    margin-left: -1.25rem;
+}
+
+.character-select-alopex {
+    margin-left: -0.6rem;
+}
+
 .character-summary {
     border-radius: 2rem;
     max-width: 60rem;
