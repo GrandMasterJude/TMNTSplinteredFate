@@ -133,12 +133,84 @@ footer {
     margin: 2rem 0 0 2rem;
 }
 
+.bg-color-astral-dark {
+    background-color: #C860FF;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem 0.5rem 0;
+}
+
+.bg-color-astral-light {
+    background-color: #D9B790;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem 0;
+}
+
+.bg-color-astral-light-2 {
+    background-color: #D9B790;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem 0.5rem 0;
+}
+
+.bg-color-flame {
+    background-color: #FF8000;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem 0;
+}
+
+.bg-color-ninja {
+    background-color: #018E53;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem 0.5rem 0;
+}
+
+.bg-color-poison {
+    background-color: #Eb1464;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem 0.5rem 0;
+}
+
+.bg-color-utrom {
+    background-color: #32E6FF;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem 0;
+}
+
+.bg-color-water {
+    background-color: #1EA2FF;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem 0;
+}
+
+.bg-color-robotics {
+    background-color: gray;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem 0;
+}
+
+.bg-color-master-strike {
+    background-color: #8080FF;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem 0.5rem 0;
+}
+
+.bg-color-confidence {
+    background-color: #BF2125;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem 0.5rem 0;
+}
+
 .color-astral-dark {
     color: #C860FF;
 }
 
 .color-astral-light {
-    color: yellow;
+    color: #D9B790;
 }
 
 .color-flame {
@@ -146,7 +218,7 @@ footer {
 }
 
 .color-ninja {
-    color: green;
+    color: #018E53;
 }
 
 .color-poison {
@@ -729,7 +801,7 @@ img.coin-large {
 }
 
 #powers .border-ninja {
-    border: 2px solid green;
+    border: 2px solid #018E53;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 2rem;
     margin: 0 0 2rem 0;
