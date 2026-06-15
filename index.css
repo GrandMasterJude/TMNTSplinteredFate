@@ -522,6 +522,10 @@ img.coin-large {
     transition: 0.5s;
 }
 
+.character-select .character-summary {
+    cursor: default;
+}
+
 .character-select-michelangelo,
 .character-select-leonardo,
 .character-select-raphael,
