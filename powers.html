@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="The ultimate resource for Teenage Mutant Ninja Turtles: Splintered Fate players. Find comprehensive guides on all powers, upgrades, and abilities to master the game and perfect your turtle strategy." />
         <title>TMNT Splintered Fate</title>
+        <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu">
             ☰ Menu
-        </div>
+        </button>
     
-        <div class="mobile-menu">
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
-            <a href="powers.html">Powers</a>
+            <a href="powers.html" aria-current="page">Powers</a>
             <a href="tools.html">Tools</a>
             <a href="upgrades.html">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
@@ -23,12 +27,12 @@
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
-        <div class="navbar">
+        </nav>
+        <nav class="navbar" aria-label="Primary">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
-            <a class="tab active" href="powers.html">Powers</a>
+            <a class="tab active" href="powers.html" aria-current="page">Powers</a>
             <a href="tools.html">Tools</a>
             <a href="upgrades.html">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
@@ -37,18 +41,20 @@
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
+        </nav>
 
+        <main id="main">
         <div class="content">
+            <h1 class="visually-hidden">TMNT: Splintered Fate &ndash; Powers</h1>
             <div id="powers" class="tab-content">
                 <p class="power-intro">When you start a run four flavors of powers are chosen for you. Two come from your character's affinity and the other two are chosen at random. These are the only flavors of powers you have the possibilty of being offered during your run. Artifacts forcing other flavors of powers to appear can make more than four available. If you start a run with an artifact equipped that is not one of your character's affinities only one flavor of power will be randomized.</p>
                 <p class="power-intro">All Powers start out giving you an initial selection of options. After you meet certain prerequisites other options will become available. For example you won't be offered <a href="powers.html#power-flame-focus-fire">Focus Fire</a> to deal more Flame damage to bosses until after you have chosen a power that deals Flame damage.</p>
                 <p class="power-intro">Legendary Powers require prerequisites from two different flavors of powers. I discuss in the Legendary Powers more in depth in their own section at the bottom.</p>
                 <details id="power-astral-d" class="power-astral-d">
-                    <summary><img class="p-icon" src="assets/Icon-Power-D.webp"/>Astral Dark</summary>
+                    <summary><h2><img class="p-icon" src="assets/Icon-Power-D.webp" alt=""/>Astral Dark</h2></summary>
 
                     <div class="border-astral-d power-astral-d-initial">
-                        <p class="section-title">Initial Offerings</p>
+                        <h3 class="section-title">Initial Offerings</h3>
                         <div id="power-astral-d-nightfall" class="power-wrapper" data-one>
                             <h4><a href="powers.html#power-astral-d-nightfall">Nightfall</a></h4>
                             <p><a href="glossary.html#glossary-final-strike">Final Strike</a> applies 1 stack of <a href="glossary.html#glossary-darkness">Darkness</a> for 3 / 4 / 5s and deals 10 / 15 / 25 Dark damage.</p>
@@ -61,7 +67,7 @@
                     </div>
 
                     <div class="border-astral-d power-astral-d-secondary">
-                        <p class="section-title">Secondary Offerings</p>
+                        <h3 class="section-title">Secondary Offerings</h3>
                         <div id="power-astral-d-call-of-the-void" class="power-wrapper">
                             <h4><a href="powers.html#power-astral-d-call-of-the-void">Call of the Void</a></h4>
                             <p>Deal 10 / 15 / 20 Dark damage and pull in nearby enemies upon defeating an enemy affected by <a href="glossary.html#glossary-darkness">Darkness</a>.</p>
@@ -116,7 +122,7 @@
                     </div>
 
                     <div class="border-astral-d power-astral-d-shadow-abilities">
-                        <p class="section-title">After <a href="powers.html#power-astral-d-shadow-abilities">Shadow Abilites</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-astral-d-shadow-abilities">Shadow Abilites</a></h3>
                         <div id="power-astral-d-dark-shroud" class="power-wrapper">
                             <h4><a href="powers.html#power-astral-d-dark-shroud">Dark Shroud</a></h4>
                             <p>Dark Shell affects a 3m / 4m / 5m wider area, but you move 30% / 20% / 10% slower while you have it.</p>    
@@ -129,7 +135,7 @@
                     </div>
 
                     <div class="border-astral-d power-astral-d-flame">
-                        <p class="section-title">After Darkness and Flame Damage</p>
+                        <h3 class="section-title">After Darkness and Flame Damage</h3>
                         <div id="power-astral-d-dark-flame" class="power-wrapper">
                             <h4><a href="powers.html#power-astral-d-dark-flame">*DARK FLAME* (Dark & Flame)</a></h4>
                             <p>+40% Flame Damage against targets affected by <a href="glossary.html#glossary-darkness">Darkness</a>.</p>        
@@ -137,7 +143,7 @@
                     </div>
 
                     <div class="border-astral-d power-astral-d-finisher">
-                        <p class="section-title">After Darkness and <a href="powers.html#power-ninja-shuriken-breaker">Shuriken Breaker</a></p>
+                        <h3 class="section-title">After Darkness and <a href="powers.html#power-ninja-shuriken-breaker">Shuriken Breaker</a></h3>
                         <div id="power-astral-d-finisher" class="power-wrapper">
                             <h4><a href="powers.html#power-astral-d-finisher">*FINISHER* (Astral Dark & Ninja)</a></h4>
                             <p>Attacks and Specials instantly defeat enemies that are below 15% health.</p>
@@ -147,10 +153,10 @@
 
                 </details>
                 <details id="power-astral-l" class="power-astral-l">
-                    <summary><img class="p-icon" src="assets/Icon-Power-L.webp"/>Astral Light</summary>
+                    <summary><h2><img class="p-icon" src="assets/Icon-Power-L.webp" alt=""/>Astral Light</h2></summary>
 
                     <div class="border-astral-l power-astral-l-initial">
-                        <p class="section-title">Initial Offerings</p>
+                        <h3 class="section-title">Initial Offerings</h3>
                         <div id="power-astral-l-light-attacks" class="power-wrapper" data-one>
                             <h4><a href="powers.html#power-astral-l-light-attacks">Light Attacks</a></h4>
                             <p>Attack damage increased by 4% / 7% / 10% of Max Health.</p>
@@ -163,7 +169,7 @@
                     </div>
 
                     <div class="border-astral-l power-astral-l-secondary">
-                        <p class="section-title">Secondary Offerings</p>
+                        <h3 class="section-title">Secondary Offerings</h3>
                         <div id="power-astral-l-daybreak" class="power-wrapper">
                             <h4><a href="powers.html#power-astral-l-daybreak">Daybreak</a></h4>
                             <p>Attacks apply 1 / 2 / 3 stack(s) of <a href="glossary.html#glossary-blinding-light">Blinding Light</a> for 3s / 4s / 5s. Each stack reduces damage dealt by 4% / 6% / 8%. Max 5 Stacks.</p>
@@ -198,7 +204,7 @@
                     </div>
 
                     <div class="border-astral-l power-astral-l-shell">
-                        <p class="section-title">After <a href="powers.html#power-astral-l-shimmering-shield">Shimmering Shield</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-astral-l-shimmering-shield">Shimmering Shield</a></h3>
 
                         <div id="power-astral-l-ancestral-guardian" class="power-wrapper">
                             <h4><a class="bg-color-astral-light" href="powers.html#power-astral-l-ancestral-guardian">Ancestral Guardian*</a></h4>
@@ -231,7 +237,7 @@
                     </div>
 
                     <div class="border-astral-l power-astral-l-daybreak">
-                        <p class="section-title">After <a href="powers.html#power-astral-l-daybreak">Daybreak</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-astral-l-daybreak">Daybreak</a></h3>
                         <div id="power-astral-l-piercing-light" class="power-wrapper">
                             <h4><a href="powers.html#power-astral-l-light-embrace">Piercing Light</a></h4>
                             <p>Attacking enemies affected by <a href="glossary.html#glossary-blinding-light">Blinding Light</a> deals +15 / 20 / 25 Light Damage.</p>    
@@ -244,7 +250,7 @@
                     </div>
 
                     <div class="border-astral-l power-astral-l-initial">
-                        <p class="section-title">After <a href="powers.html#power-astral-l-daybreak">Daybreak</a> or <a href="powers.html#power-astral-l-light-embrace">Light Embrace</a> AND <a href="powers.html#power-water-splash-damage">Splash Damage</a> or <a href="powers.html#power-water-when-it-rains">When It Rains</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-astral-l-daybreak">Daybreak</a> or <a href="powers.html#power-astral-l-light-embrace">Light Embrace</a> AND <a href="powers.html#power-water-splash-damage">Splash Damage</a> or <a href="powers.html#power-water-when-it-rains">When It Rains</a></h3>
                         <div id="power-astral-l-bright-spring" class="power-wrapper">
                             <h4><a href="powers.html#power-astral-l-bright-spring">*BRIGHT SPRING* (Water & Light)</a></h4>
                             <p>Attacks restore 2 health.</p>
@@ -252,7 +258,7 @@
                     </div>
 
                     <div class="border-astral-l power-astral-l-initial">
-                        <p class="section-title">After <a href="powers.html#power-astral-l-light-attacks">Light Attacks</a> and Utrom Damage</p>
+                        <h3 class="section-title">After <a href="powers.html#power-astral-l-light-attacks">Light Attacks</a> and Utrom Damage</h3>
                         <div id="power-astral-l-light-hammer" class="power-wrapper">
                             <h4><a href="powers.html#power-astral-l-light-hammer">*LIGHT HAMMER* (Utrom & Light)</a></h4>
                             <p>Utrom damage is increased by 10% of your Max Health.</p>
@@ -261,21 +267,21 @@
 
                 </details>
                 <details id="power-flame" class="power-flame">
-                    <summary><img class="p-icon" src="assets/Icon-Power-F.webp"/>Flame</summary>
+                    <summary><h2><img class="p-icon" src="assets/Icon-Power-F.webp" alt=""/>Flame</h2></summary>
                         <div class="border-flame power-flame-initial">
-                            <p class="section-title">Initial Offerings</p>
+                            <h3 class="section-title">Initial Offerings</h3>
                             <div id="power-flame-flame-abilities" class="power-wrapper" data-one>
-                                <h4><a href="powers.html#power-flame-flame-abilities">Flame Abilities</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-flame-abilities">Flame Abilities</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp" alt=""/></h4>
                                 <p>Special and Tool deals 15 / 25 / 40 Flame damage.</p>
                             </div>
     
                             <div id="power-flame-flame-dash" class="power-wrapper" data-one>
-                                <h4><a href="powers.html#power-flame-flame-dash">Flame Dash</a><img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-flame-dash">Flame Dash</a><img class="icon-power" src="assets/TMNT-Icon-Dash.webp" alt=""/></h4>
                                 <p>Deal 30 / 50 / 70 Flame damage to nearby enemies at the start of a Dash.</p>
                             </div>
     
                             <div id="power-flame-flame-strike" class="power-wrapper" data-one>
-                                <h4><a href="powers.html#power-flame-flame-strike">Flame Strike</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-flame-strike">Flame Strike</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp" alt=""/></h4>
                                 <p>Final Strike causes an explosion, dealing 25 / 35 / 45 Flame damage to nearby enemies.</p>
                             </div>
                             <div id="power-flame-furious-attacks" class="power-wrapper" data-one>
@@ -293,7 +299,7 @@
                             </div>
                         </div>
                         <div class="border-flame power-flame-fire">
-                            <p class="section-title">After Dealing Flame damage</p>
+                            <h3 class="section-title">After Dealing Flame damage</h3>
                             <div id="power-flame-focus-fire" class="power-wrapper">
                                 <h4><a href="powers.html#power-flame-focus-fire">Focus Fire</a></h4>
                                 <p>+15% / 20% / 30% Flame damage against Bosses.</p>
@@ -306,7 +312,7 @@
 
                         </div>
                         <div class="border-flame power-flame-fire">
-                            <p class="section-title">After <a href="powers.html#power-flame-furious-attacks">Furious Attacks</a></p>
+                            <h3 class="section-title">After <a href="powers.html#power-flame-furious-attacks">Furious Attacks</a></h3>
                             <div id="power-flame-precision" class="power-wrapper">
                                 <h4><a href="powers.html#power-flame-precision">Precision</a></h4>
                                 <p>+60% / 120% / 180% Critical Hit damage.</p>
@@ -317,7 +323,7 @@
                             </div>
                         </div>
                         <div class="border-flame power-flame-inferno">
-                            <p class="section-title">After <a href="powers.html#power-flame-inferno">Inferno</a></p>
+                            <h3 class="section-title">After <a href="powers.html#power-flame-inferno">Inferno</a></h3>
                             <div id="power-flame-blazing-inferno" class="power-wrapper">
                                 <h4><a href="powers.html#power-flame-blazing-inferno">Blazing Inferno</a></h4>
                                 <p>+3s / 4s / 5s Inferno duration.</p>
@@ -329,7 +335,7 @@
 
                         </div>
                         <div class="border-flame power-flame-fire">
-                            <p class="section-title">After <a href="powers.html#power-flame-rapid-fire">Rapid Fire</a></p>
+                            <h3 class="section-title">After <a href="powers.html#power-flame-rapid-fire">Rapid Fire</a></h3>
                             <div id="power-flame-trailblazer" class="power-wrapper">
                                 <h4><a href="powers.html#power-flame-trailblazer">Trailblazer</a></h4>
                                 <p>+15s duration of <a href="powers.html#power-flame-rapid-fire">Rapid Fire</a>. Whilst <a href="powers.html#power-flame-rapid-fire">Rapid Fire</a> is active defeating an enemy grants +1 / 2 / 3s duration and +5 / 10 / 15% damage.</p>
@@ -337,7 +343,7 @@
                         </div>
 
                         <div class="border-robotics power-robotics">
-                            <p class="section-title">After Charge and <a href="powers.html#power-flame">Fire Damage</a></p>
+                            <h3 class="section-title">After Charge and <a href="powers.html#power-flame">Fire Damage</a></h3>
                             <div id="power-robotics-critical-flow" class="power-wrapper">
                                 <h4><a href="powers.html#power-robotics-critical-flow">*CRITICAL FLOW* (FLAME & Robotics)</a></h4>
                                 <p>Whenever your Charge Effect activates, gain 3% Critical Hit Chance for this room.</p>
@@ -345,7 +351,7 @@
                         </div>
 
                         <div class="border-flame power-flame-fire">
-                            <p class="section-title">After Flame Damage and <a href="glossary.html#glossary-darkness">Darkness</a></p>
+                            <h3 class="section-title">After Flame Damage and <a href="glossary.html#glossary-darkness">Darkness</a></h3>
                             <div id="power-flame-dark-flame" class="power-wrapper">
                                 <h4><a href="powers.html#power-flame-dark-flame">*DARK FLAME* (Dark & Flame)</a></h4>
                                 <p>+40% Flame Damage against targets affected by Darkness.</p>
@@ -353,7 +359,7 @@
                         </div>
 
                         <div class="border-flame power-flame-fire">
-                            <p class="section-title">After Flame Damage and <a href="powers.html#power-water-frost">Frost</a></p>
+                            <h3 class="section-title">After Flame Damage and <a href="powers.html#power-water-frost">Frost</a></h3>
                             <div id="power-flame-frost-fire" class="power-wrapper">
                                 <h4><a href="powers.html#power-flame-frost-fire">*FROSTFIRE* (Flame & Water)</a></h4>
                                 <p>Dealing Flame or Water damage with your Attack, Special, or Tool deals 30% damage of the opposite element.</p>
@@ -361,7 +367,7 @@
                         </div>
                         
                         <div class="border-flame power-flame-fire">
-                            <p class="section-title">After Flame Damage and applying <a href="glossary.html#glossary-ooze">Ooze</a></p>
+                            <h3 class="section-title">After Flame Damage and applying <a href="glossary.html#glossary-ooze">Ooze</a></h3>
                             <div id="power-flame-spontaneous-combustion" class="power-wrapper">
                                 <h4><a href="powers.html#power-flame-spontaneous-combustion">*SPONTANEOUS COMBUSTION* (Flame & Ooze)</a></h4>
                                 <p>Gain a 30% chance to deal 100 Flame damage when applying <a href="glossary.html#glossary-ooze">Ooze</a>.</p> 
@@ -369,7 +375,7 @@
                         </div>
 
                         <div class="border-flame power-flame-fire">
-                            <p class="section-title">After <a href="powers.html#power-flame-furious-attacks">Furious Attacks</a> and Shurikens</p>
+                            <h3 class="section-title">After <a href="powers.html#power-flame-furious-attacks">Furious Attacks</a> and Shurikens</h3>
                             <div id="power-flame-tempered-shuriken" class="power-wrapper">
                                 <h4><a href="powers.html#power-flame-tempered-shuriken">*TEMPERED SHURIKEN* (Ninja & Flame)</a></h4>
                                 <p>+40% Critical Hit chance with Shuriken.</p> 
@@ -377,9 +383,9 @@
                         </div>
                 </details>
                 <details id="power-ninja" class="power-ninja">
-                    <summary><img class="p-icon" src="assets/Icon-Power-N.webp"/>Ninja</summary>
+                    <summary><h2><img class="p-icon" src="assets/Icon-Power-N.webp" alt=""/>Ninja</h2></summary>
                     <div class="border-ninja power-ninja-initial">
-                        <p class="section-title">Initial Offerings</p>
+                        <h3 class="section-title">Initial Offerings</h3>
                         <div id="power-ninja-adrenaline" class="power-wrapper" data-one>
                             <h4><a href="powers.html#power-ninja-adrenaline">Adrenaline</a></h4>
                             <p>Gain a stack of Adrenaline upon defeating an enemy. Adrenaline increases Physical damage by 5% / 10% / 15%. 5 stacks max.</p>
@@ -408,7 +414,7 @@
                     </div>
 
                     <div class="border-ninja power-ninja-adrenaline">
-                        <p class="section-title">After <a href="powers.html#power-ninja-adrenaline">Adrenaline</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-ninja-adrenaline">Adrenaline</a></h3>
                         <div id="power-ninja-art-of-darkness" class="power-wrapper">
                             <h4><a href="powers.html#power-ninja-art-of-darkness">Art of Darkness</a></h4>
                             <p>Adrenaline now also increases Elemental damage by 15% / 20% / 25%.</p>
@@ -421,7 +427,7 @@
                     </div>
 
                     <div class="border-ninja power-ninja-adrenaline">
-                        <p class="section-title">After <a href="powers.html#power-ninja-shuriken-attacks">Shuriken Attacks</a> or any Shuriken Tool</p>
+                        <h3 class="section-title">After <a href="powers.html#power-ninja-shuriken-attacks">Shuriken Attacks</a> or any Shuriken Tool</h3>
                         <div id="power-ninja-quick-hands" class="power-wrapper" data-one>
                             <h4><a href="powers.html#power-ninja-quick-hands">Quick Hands</a></h4>
                             <p>+1 / 2 / 3 Shuriken and Kunai thrown.</p>
@@ -456,7 +462,7 @@
                     </div>
 
                     <div id="power-ninja-ninjutsu-tactics" class="border-ninja power-ninja-ninjutsu-tactics">
-                        <p class="section-title">After <a href="powers.html#power-ninja-shinobi-supremacy">Shinobi Supremacy</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-ninja-shinobi-supremacy">Shinobi Supremacy</a></h3>
                         <div id="power-ninja-ninjutsu-tactics" class="power-wrapper">
                             <h4><a href="powers.html#power-ninja-ninjutsu-tactics">Ninjutsu Tactics</a></h4>
                             <p>+15% / 25% / 25% Global Critical Hit chance for 2s / 2.5s / 3s upon Dodge.</p>
@@ -465,7 +471,7 @@
                     </div>
 
                     <div id="power-ninja-ninjutsu-tactics" class="border-ninja power-ninja-ninjutsu-tactics">
-                        <p class="section-title">After <a href="powers.html#power-ninja-shuriken-attacks">Shuriken Attacks</a> or any Shuriken Tool, <br class="mobile-yep">and <a href="powers.html#power-ninja-ricochet">Ricochet</a> or <a href="powers.html#power-ninja-chakram">Chakram</a>, <br class="mobile-yep">and <a href="powers.html#power-ninja-quick-feet">Quick Feet</a> or <a href="powers.html#power-ninja-first-strike">First Strike</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-ninja-shuriken-attacks">Shuriken Attacks</a> or any Shuriken Tool, <br class="mobile-yep">and <a href="powers.html#power-ninja-ricochet">Ricochet</a> or <a href="powers.html#power-ninja-chakram">Chakram</a>, <br class="mobile-yep">and <a href="powers.html#power-ninja-quick-feet">Quick Feet</a> or <a href="powers.html#power-ninja-first-strike">First Strike</a></h3>
                         <div id="power-ninja-extended-assault" class="power-wrapper" data-one>
                             <h4><a href="powers.html#power-ninja-extended-assault">Extended Assault</a></h4>
                             <p>Throw 1 / 2 / 3 Shuriken forward at the start of your Dash.</p>
@@ -474,7 +480,7 @@
                     </div>
 
                     <div class="border-ninja power-ninja-finisher">
-                        <p class="section-title">After <a href="powers.html#power-ninja-shuriken-breaker">Shuriken Breaker</a> and <a href="glossary.html#glossary-darkness">Darkness</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-ninja-shuriken-breaker">Shuriken Breaker</a> and <a href="glossary.html#glossary-darkness">Darkness</a></h3>
                         <div id="power-ninja-finisher" class="power-wrapper">
                             <h4><a href="powers.html#power-ninja-finisher">*FINISHER* (Astral Dark & Ninja)</a></h4>
                             <p>Attacks and Specials instantly defeat enemies that are below 15% health.</p>
@@ -482,7 +488,7 @@
                     </div>
 
                     <div class="border-ninja power-ninja-utrom">
-                        <p class="section-title">After <a href="powers.html#power-ninja-quick-feet">Quick Feet</a> and Dealing Utrom damage</p>
+                        <h3 class="section-title">After <a href="powers.html#power-ninja-quick-feet">Quick Feet</a> and Dealing Utrom damage</h3>
                         <div id="power-ninja-revolution" class="power-wrapper">
                             <h4><a href="powers.html#power-ninja-revolution">*REVOLUTION* (Utrom & Ninja)</a></h4>
                             <p>Dash Attack's damage is increased by 1% of the enemies' Max Health.</p>
@@ -490,7 +496,7 @@
                     </div>
 
                     <div class="border-ninja power-ninja-ooze">
-                        <p class="section-title">After <a href="powers.html#power-ninja-adrenaline">Adrenaline</a> and applying <a href="glossary.html#glossary-ooze">Ooze</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-ninja-adrenaline">Adrenaline</a> and applying <a href="glossary.html#glossary-ooze">Ooze</a></h3>
                         <div id="power-ninja-slippery" class="power-wrapper">
                             <h4><a href="powers.html#power-ninja-slippery">*SLIPPERY* (Ooze & Ninja)</a></h4>
                             <p>Gain 20% Move Speed and charge Tool and Special 100% faster while at maximum <a href="powers.html#power-ninja-adrenaline">Adrenaline</a>.</p>
@@ -498,7 +504,7 @@
                     </div>
 
                     <div class="border-ninja power-ninja-flame">
-                        <p class="section-title">After Shurikens and <a href="powers.html#power-flame-furious-attacks">Furious Attacks</a></p>
+                        <h3 class="section-title">After Shurikens and <a href="powers.html#power-flame-furious-attacks">Furious Attacks</a></h3>
                         <div id="power-ninja-tempered-shuriken" class="power-wrapper">
                             <h4><a href="powers.html#power-ninja-tempered-shuriken">*TEMPERED SHURIKEN* (Flame & Ninja)</a></h4>
                             <p>+40% Critical Hit chance with Shuriken.</p> 
@@ -506,11 +512,11 @@
                     </div>
                 </details>
                 <details id="power-ooze" class="power-ooze">
-                    <summary><img class="p-icon" src="assets/Icon-Power-O.webp"/>Ooze</summary>
+                    <summary><h2><img class="p-icon" src="assets/Icon-Power-O.webp" alt=""/>Ooze</h2></summary>
                     <div class="border-ooze power-ooze-initial">
-                        <p class="section-title">Initial Offerings</p>
+                        <h3 class="section-title">Initial Offerings</h3>
                         <div id="power-ooze-ooze-abilities" class="power-wrapper" data-one>
-                            <h4><a href="powers.html#power-ooze-ooze-abilities">Ooze Abilities</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                            <h4><a href="powers.html#power-ooze-ooze-abilities">Ooze Abilities</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp" alt=""/></h4>
                             <p>Special and Tool applies 1 / 2 / 3 stack(s) of Ooze.</p>
                         </div>
     
@@ -520,12 +526,12 @@
                         </div>
     
                         <div id="power-ooze-ooze-dash" class="power-wrapper" data-one>
-                            <h4><a href="powers.html#power-ooze-ooze-dash">Ooze Dash</a><img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
+                            <h4><a href="powers.html#power-ooze-ooze-dash">Ooze Dash</a><img class="icon-power" src="assets/TMNT-Icon-Dash.webp" alt=""/></h4>
                             <p>Apply 1 / 2 / 3 stack(s) of Ooze to enemies hit by your Dash.</p>
                         </div>
     
                         <div id="power-ooze-ooze-strike" class="power-wrapper" data-one>
-                            <h4><a href="powers.html#power-ooze-ooze-strike">Ooze Strike</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
+                            <h4><a href="powers.html#power-ooze-ooze-strike">Ooze Strike</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp" alt=""/></h4>
                             <p>Final Strike applies 2 / 4 / 6 stack(s) of Ooze.</p>
                         </div>
 
@@ -541,7 +547,7 @@
                     </div>
 
                     <div class="border-ooze power-ooze-stacks">
-                        <p class="section-title">After applying <a href="glossary.html#glossary-ooze">Ooze</a></p>
+                        <h3 class="section-title">After applying <a href="glossary.html#glossary-ooze">Ooze</a></h3>
                         <div id="power-ooze-catalytic-consequence" class="power-wrapper">
                             <h4><a href="powers.html#power-ooze-catalytic-consequence">Catalytic Consequence</a></h4>
                             <p>Deal +15 / 25 / 35 damage with your Dash Attack for each Stack of Ooze on the enemy.</p>
@@ -579,7 +585,7 @@
                     </div>
 
                     <div class="border-ooze power-ooze-utrom">
-                        <p class="section-title">After applying <a href="glossary.html#glossary-ooze">Ooze</a> and Utrom Damage.</p>
+                        <h3 class="section-title">After applying <a href="glossary.html#glossary-ooze">Ooze</a> and Utrom Damage.</h3>
                         <div id="power-ooze-secret-of-the-ooze" class="power-wrapper">
                             <h4><a href="powers.html#power-ooze-secret-of-the-ooze">*SECRET OF THE OOZE* (Utrom & Ooze)</a></h4>
                             <p>Reduce damage received by 30%</p>
@@ -587,7 +593,7 @@
                     </div>
 
                     <div class="border-ooze power-ooze-ninja">
-                        <p class="section-title">After applying <a href="glossary.html#glossary-ooze">Ooze</a> and <a href="powers.html#power-ninja-adrenaline">Adrenaline</a></p>
+                        <h3 class="section-title">After applying <a href="glossary.html#glossary-ooze">Ooze</a> and <a href="powers.html#power-ninja-adrenaline">Adrenaline</a></h3>
                         <div id="power-ooze-slippery" class="power-wrapper">
                             <h4><a href="powers.html#power-ooze-slippery">*SLIPPERY* (Ninja & Ooze)</a></h4>
                             <p>Gain 20% Move Speed and charge Tool and Special 100% faster while at maximum <a href="powers.html#power-ninja-adrenaline">Adrenaline</a>.</p>
@@ -595,7 +601,7 @@
                     </div>
 
                     <div class="border-ooze power-ooze-water">
-                        <p class="section-title"><a href="powers.html#power-ooze-potency">Potency</a> and Water Damage</p>
+                        <h3 class="section-title"><a href="powers.html#power-ooze-potency">Potency</a> and Water Damage</h3>
                         <div id="power-ooze-solution-to-pollution" class="power-wrapper">
                             <h4><a href="powers.html#power-ooze-solution-to-pollution">*SOLUTION TO POLLUTION* (Water & Ooze)</a></h4>
                             <p>+3s Ooze duration. Enemies affected by Ooze gain 1 stack(s) of that effect every second.</p>
@@ -603,7 +609,7 @@
                     </div>
 
                     <div class="border-ooze power-ooze-flame">
-                        <p class="section-title">After applying <a href="glossary.html#glossary-ooze">Ooze</a> and Flame Damage</p>
+                        <h3 class="section-title">After applying <a href="glossary.html#glossary-ooze">Ooze</a> and Flame Damage</h3>
                         <div id="power-ooze-spontaneous-combustion" class="power-wrapper">
                             <h4><a href="powers.html#power-ooze-spontaneous-combustion">*SPONTANEOUS COMBUSTION* (Flame & Ooze)</a></h4>
                             <p>Gain a 30% chance to deal 100 Flame damage when applying <a href="glossary.html#glossary-ooze">Ooze</a>.</p>
@@ -611,9 +617,9 @@
                     </div>
                 </details>
                 <details id="power-robotics" class="power-robotics">
-                    <summary><img class="p-icon" src="assets/Icon-Power-R.webp"/>Robotics</summary>
+                    <summary><h2><img class="p-icon" src="assets/Icon-Power-R.webp" alt=""/>Robotics</h2></summary>
                         <div class="border-robotics power-robotics-initial">
-                            <p class="section-title">Initial Offerings</p>
+                            <h3 class="section-title">Initial Offerings</h3>
 
                             <div id="power-robotics-aggressive-savings" class="power-wrapper" data-one>
                                 <h4><a href="powers.html#power-flame-rapid-fire">Aggressive Savings</a></h4>
@@ -621,12 +627,12 @@
                             </div>
 
                             <div id="power-robotics-ascendancy" class="power-wrapper" data-one>
-                                <h4><a href="powers.html#power-flame-flame-abilities">Ascendancy</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-flame-abilities">Ascendancy</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp" alt=""/></h4>
                                 <p>Whenever you trigger a Splinter's Revive, refresh your Cooldowns and gain +25% / 50% / 80% Elemental Damage.</p>
                             </div>
 
                             <div id="power-robotics-blade-matrix" class="power-wrapper" data-one>
-                                <h4><a href="powers.html#power-flame-flame-strike">Blade Matrix</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-flame-strike">Blade Matrix</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp" alt=""/></h4>
                                 <p>After reaching full charge, attack to deal 25 / 35 / 50 in an area around you.</p>
                             </div>
 
@@ -641,7 +647,7 @@
                             </div>
 
                             <div id="power-robotics-laser-strike" class="power-wrapper" data-one>
-                                <h4><a href="powers.html#power-flame-furious-attacks">Laser Strike</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-furious-attacks">Laser Strike</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp" alt=""/></h4>
                                 <p>After reaching full charge, attack to shoot a laser that deals 15 / 25 / 35 damage. Ricochets 2 time(s).</p>
                             </div>
 
@@ -651,7 +657,7 @@
                             </div>
 
                             <div id="power-robotics-overdrive" class="power-wrapper" data-one>
-                                <h4><a href="powers.html#power-flame-flame-abilities">Overdrive</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-flame-abilities">Overdrive</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp" alt=""/></h4>
                                 <p>After reaching full charge, attack to enhance your all your attacks with 15 / 20 / 30 Utrom damage for 5s seconds.</p>
                             </div>
     
@@ -671,12 +677,12 @@
                             </div>
 
                             <div id="power-robotics-wireless-charging" class="power-wrapper" data-one>
-                                <h4><a href="powers.html#power-flame-rapid-fire">Wireless Charging</a><img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-rapid-fire">Wireless Charging</a><img class="icon-power" src="assets/TMNT-Icon-Dash.webp" alt=""/></h4>
                                 <p>Dashing through an enemy fills your Special by +15% / 25% / 35% over 2s (does not stack).</p>
                             </div>
                         </div>
                         <div class="border-robotics power-robotics">
-                            <p class="section-title">After Charge</p>
+                            <h3 class="section-title">After Charge</h3>
 
                             <div id="power-flame-inferno" class="power-wrapper">
                                 <h4><a href="powers.html#power-flame-inferno">Biomechanical Speed</a></h4>
@@ -684,17 +690,17 @@
                             </div>
 
                             <div id="power-flame-inferno" class="power-wrapper">
-                                <h4><a href="powers.html#power-flame-inferno">Charge Attacks</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-inferno">Charge Attacks</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp" alt=""/></h4>
                                 <p>Whenever you Attack, gain + 10% / 12% / 15% Charge.</p>
                             </div>
 
                             <div id="power-flame-inferno" class="power-wrapper">
-                                <h4><a href="powers.html#power-flame-inferno">Empowerment</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-inferno">Empowerment</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp" alt=""/></h4>
                                 <p>Whenever your Charge Effect activates, gain +5% / 10% / 15% elemtental damage for all attacks for that Room.</p>
                             </div>
 
                             <div id="power-robotics" class="power-wrapper">
-                                <h4><a href="powers.html#power-flame-focus-fire">Photon Lance</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                                <h4><a href="powers.html#power-flame-focus-fire">Photon Lance</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp" alt=""/></h4>
                                 <p>After reaching full charge, attack to cause a lightning bolt to fall dealing 90 / 120 / 150 damage.</p>
                             </div>
 
@@ -726,7 +732,7 @@
                         </div>
 
                         <div class="border-robotics power-robotics">
-                            <p class="section-title">After Charge and <a href="powers.html#power-flame">Fire Damage</a></p>
+                            <h3 class="section-title">After Charge and <a href="powers.html#power-flame">Fire Damage</a></h3>
                             <div id="power-robotics-critical-flow" class="power-wrapper">
                                 <h4><a href="powers.html#power-robotics-critical-flow">*CRITICAL FLOW* (FLAME & Robotics)</a></h4>
                                 <p>Whenever your Charge Effect activates, gain 3% Critical Hit Chance for this room.</p>
@@ -734,7 +740,7 @@
                         </div>
 
                         <div class="border-robotics power-robotics">
-                            <p class="section-title">After Charge and <a href="glossary.html#glossary-torrent">Water Damage</a></p>
+                            <h3 class="section-title">After Charge and <a href="glossary.html#glossary-torrent">Water Damage</a></h3>
                             <div id="power-robotics-cascade-drive" class="power-wrapper">
                                 <h4><a href="powers.html#power-robotics-cascade-drive">*CASCADE DRIVE* (Water & Robotics)</a></h4>
                                 <p>Whenever your Charge Effect activates, gain 3% Multihit Chance for this room.</p> 
@@ -742,7 +748,7 @@
                         </div>
 
                         <div class="border-robotics power-robotics">
-                            <p class="section-title">After Robotics and Utrom</p>
+                            <h3 class="section-title">After Robotics and Utrom</h3>
                             <div id="power-robotics-shocking" class="power-wrapper">
                                 <h4><a href="powers.html#power-robotics-shocking">*SHOCKING* (Utrom & Robotics)</a></h4>
                                 <p>After reaching full charge, attack to deal 20 Utrom damage and Stun nearby enemies for 0.8s.</p> 
@@ -750,12 +756,12 @@
                         </div>
                 </details>
                 <details id="power-utrom" class="power-utrom">
-                    <summary><img class="p-icon" src="assets/Icon-Power-U.webp"/>Utrom</summary>
+                    <summary><h2><img class="p-icon" src="assets/Icon-Power-U.webp" alt=""/>Utrom</h2></summary>
 
                     <div class="border-utrom power-utrom-initial">
-                        <p class="section-title">Initial Offerings</p>
+                        <h3 class="section-title">Initial Offerings</h3>
                         <div id="power-utrom-utrom-abilities" class="power-wrapper" data-one>
-                            <h4><a href="powers.html#power-utrom-utrom-abilities">Utrom Abilities</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                            <h4><a href="powers.html#power-utrom-utrom-abilities">Utrom Abilities</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp" alt=""/></h4>
                             <p>Special and Tools deal 20 / 30 / 40 Utrom damage.</p>
                         </div>
     
@@ -770,18 +776,18 @@
                         </div>
     
                         <div id="power-utrom-utrom-dash" class="power-wrapper" data-one>
-                            <h4><a href="powers.html#power-utrom-utrom-dash">Utrom Dash</a><img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
+                            <h4><a href="powers.html#power-utrom-utrom-dash">Utrom Dash</a><img class="icon-power" src="assets/TMNT-Icon-Dash.webp" alt=""/></h4>
                             <p>Dash deals 15 Utrom damage to 3 / 4 / 5 enemies near where you end up.</p>
                         </div>
     
                         <div id="power-utrom-utrom-strike" class="power-wrapper" data-one>
-                            <h4><a href="powers.html#power-utrom-utrom-strike">Utrom Strike</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
+                            <h4><a href="powers.html#power-utrom-utrom-strike">Utrom Strike</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp" alt=""/></h4>
                             <p>Final Strike calls lightning to hit 2 nearby enemies for 20 / 25 / 30 Utrom damage.</p>
                         </div>
                     </div>
 
                     <div class="border-utrom power-utrom-damage">
-                        <p class="section-title">After Dealing Utrom Damage</p>
+                        <h3 class="section-title">After Dealing Utrom Damage</h3>
                         <div id="power-utrom-chain-lightning" class="power-wrapper">
                             <h4><a href="powers.html#power-utrom-chain-lightning">Chain Lightning</a></h4>
                             <p>Utrom damage will strike again and chain out to two nearby enemies for 10 / 15 / 20 Utrom damage.</p>
@@ -820,7 +826,7 @@
                     </div>
 
                     <div class="border-utrom power-utrom-electrifying">
-                        <p class="section-title">After <a href="powers.html#power-utrom-electrifying">Electrifying</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-utrom-electrifying">Electrifying</a></h3>
                         <div id="power-utrom-alternating-current" class="power-wrapper">
                             <h4><a href="powers.html#power-utrom-alternating-current">Alternating Current</a></h4>
                             <p>Electrified additionally increases damage received by 30% / 50% / 70%</p>
@@ -828,7 +834,7 @@
                     </div>
 
                     <!-- <div class="border-utrom power-utrom-shocking">
-                        <p class="section-title">After <a href="powers.html#power-utrom-shocking">Shocking</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-utrom-shocking">Shocking</a></h3>
                         <div id="power-utrom-aftershock" class="power-wrapper">
                             <h4><a href="powers.html#power-utrom-aftershock">Aftershock</a></h4>
                             <p>After releasing your Static Charge hit nearby enemies for 10 / 15 / 20 Utrom damage per second for 5s / 6s / 7s.</p>
@@ -846,7 +852,7 @@
                     </div> -->
 
                     <div class="border-utrom power-ninja-light-hammer">
-                        <p class="section-title">After Dealing Utrom Damage and <a href="powers.html#power-astral-l-light-hammer">Light Hammer</a></p>
+                        <h3 class="section-title">After Dealing Utrom Damage and <a href="powers.html#power-astral-l-light-hammer">Light Hammer</a></h3>
                         <div id="power-utrom-light-hammer" class="power-wrapper">
                             <h4><a href="powers.html#power-utrom-light-hammer">*LIGHT HAMMER* (Utrom & Astral Light)</a></h4>
                             <p>Utrom damage is increased by 10% of your Max Health.</p>
@@ -854,7 +860,7 @@
                     </div>
 
                     <div class="border-utrom power-ninja-revolution">
-                        <p class="section-title">After Dealing Utrom Damage and <a href="powers.html#power-ninja-quick-feet">Quick Feet</a></p>
+                        <h3 class="section-title">After Dealing Utrom Damage and <a href="powers.html#power-ninja-quick-feet">Quick Feet</a></h3>
                         <div id="power-utrom-revolution" class="power-wrapper">
                             <h4><a href="powers.html#power-utrom-revolution">*REVOLUTION* (Utrom & Ninja)</a></h4>
                             <p>Dash Attack's damage is increased by 1% of the enemies' Max Health.</p>
@@ -862,7 +868,7 @@
                     </div>
 
                     <div class="border-utrom power-ninja-secret-ooze">
-                        <p class="section-title">After Dealing Utrom Damage and applying <a href="glossary.html#glossary-ooze">Ooze</a></p>
+                        <h3 class="section-title">After Dealing Utrom Damage and applying <a href="glossary.html#glossary-ooze">Ooze</a></h3>
                         <div id="power-utrom-secret-of-the-ooze" class="power-wrapper">
                             <h4><a href="powers.html#power-utrom-secret-of-the-ooze">*SECRET OF THE OOZE* (Utrom & Ooze)</a></h4>
                             <p>Reduce damage received by 30%</p>
@@ -870,7 +876,7 @@
                     </div>
 
                     <div class="border-utrom power-ninja-shatter">
-                        <p class="section-title">After <a href="powers.html#power-water-frost">Frost</a> and Utrom Damage</p>
+                        <h3 class="section-title">After <a href="powers.html#power-water-frost">Frost</a> and Utrom Damage</h3>
                         <div id="power-utrom-shatter" class="power-wrapper">
                             <h4><a href="powers.html#power-utrom-shatter">*SHATTER* (Utrom & Water)</a></h4>
                             <p>Deal 200 Water and Utrom damage when applying a Stun effect to an enemy. Enemies are no longer Stunned.</p>
@@ -878,7 +884,7 @@
                     </div>
 
                     <div class="border-robotics power-robotics">
-                        <p class="section-title">After Robotics and Utrom</p>
+                        <h3 class="section-title">After Robotics and Utrom</h3>
                         <div id="power-robotics-shocking" class="power-wrapper">
                             <h4><a href="powers.html#power-robotics-shocking">*SHOCKING* (Utrom & Robotics)</a></h4>
                             <p>After reaching full charge, attack to deal 20 Utrom damage and Stun nearby enemies for 0.8s.</p> 
@@ -887,10 +893,10 @@
                 </details>
 
                 <details id="power-water" class="power-water">
-                    <summary><img class="p-icon" src="assets/Icon-Power-W.webp"/>Water</summary>
+                    <summary><h2><img class="p-icon" src="assets/Icon-Power-W.webp" alt=""/>Water</h2></summary>
 
                     <div class="border-water power-water-initial">
-                        <p class="section-title">Initial Offerings</p>
+                        <h3 class="section-title">Initial Offerings</h3>
                         <div id="power-water-dilution" class="power-wrapper" data-one>
                             <h4><a href="powers.html#power-water-dilution">Dilution</a></h4>
                             <p>+20% / 30% / 40% Attack and Special damage area.</p>
@@ -902,12 +908,12 @@
                         </div>
     
                         <div id="power-water-torrential-strike" class="power-wrapper" data-one>
-                            <h4><a href="powers.html#power-water-torrential-strike">Torrential Strike</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp"/></h4>
+                            <h4><a href="powers.html#power-water-torrential-strike">Torrential Strike</a><img class="icon-power" src="assets/TMNT-Icon-Strike.webp" alt=""/></h4>
                             <p>Final Strike grants a stack of Torrent for 4s. torrent increases Multi-Hit chance by 8% / 10% / 12%. Max 5 stacks</p>
                         </div>
 
                         <div id="power-water-water-abilities" class="power-wrapper" data-one>
-                            <h4><a href="powers.html#power-water-water-abilities">Water Abilities</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp"/></h4>
+                            <h4><a href="powers.html#power-water-water-abilities">Water Abilities</a><img class="icon-power" src="assets/TMNT-Icon-Ability.webp" alt=""/></h4>
                             <p>Special and Tool has a 60% / 80% / 100% chance to deal 55 / 70 / 85 Water damage.</p>
                         </div>
     
@@ -917,13 +923,13 @@
                         </div>
     
                         <div id="power-water-water-dash" class="power-wrapper" data-one>
-                            <h4><a href="powers.html#power-water-water-dash">Water Dash</a><img class="icon-power" src="assets/TMNT-Icon-Dash.webp"/></h4>
+                            <h4><a href="powers.html#power-water-water-dash">Water Dash</a><img class="icon-power" src="assets/TMNT-Icon-Dash.webp" alt=""/></h4>
                             <p>Deal 45 / 60 / 75 Water damage to nearby enemies at the end of a Dash.</p>
                         </div>
                     </div>
 
                     <div class="border-water power-water-damage">
-                        <p class="section-title">After Dealing Water Damage</p>    
+                        <h3 class="section-title">After Dealing Water Damage</h3>    
                         <div id="power-water-frost" class="power-wrapper">
                             <h4><a href="powers.html#power-water-frost">Frost</a></h4>
                             <p>Water damage applies Frost for 5s, slowing the enemy by 50% / 60% / 70%.</p>
@@ -946,7 +952,7 @@
                     </div>
 
                     <div class="border-water power-water-still">
-                        <p class="section-title">After <a href="powers.html#power-water-still-waters">Still Waters</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-water-still-waters">Still Waters</a></h3>
                         <div id="power-water-high-tide" class="power-wrapper">
                             <h4><a href="powers.html#power-water-high-tide">High Tide</a></h4>
                             <p>While Still Waters is active, Final Strike causes +70 / 100 / 130 Water damage and you have +15% Movement Speed.</p>
@@ -954,7 +960,7 @@
                     </div>
 
                     <div class="border-water power-water-torrential">
-                        <p class="section-title">After <a href="powers.html#power-water-torrential-strike">Torrential Strike</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-water-torrential-strike">Torrential Strike</a></h3>
 
                         <div id="power-water-torrential-rain" class="power-wrapper">
                             <h4><a href="powers.html#power-water-torrential-rain">Torrential Rain</a></h4>
@@ -968,7 +974,7 @@
                     </div>
 
                     <div class="border-water power-water-flash-freeze">
-                        <p class="section-title">After <a href="powers.html#power-water-frost">Frost</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-water-frost">Frost</a></h3>
                         <div id="power-water-flash-freeze" class="power-wrapper">
                             <h4><a href="powers.html#power-water-flash-freeze">Flash Freeze</a></h4>
                             <p>Frost Stuns enemies for 0.7s / 1.2s / 1.5s when first applied. Stun does not affect bosses.</p>
@@ -981,7 +987,7 @@
                     </div>
 
                     <div class="border-water power-water-bright-spring">
-                        <p class="section-title">After <a href="powers.html#power-astral-l-daybreak">Daybreak</a> or <a href="powers.html#power-astral-l-light-embrace">Light Embrace</a> AND <a href="powers.html#power-water-splash-damage">Splash Damage</a> or <a href="powers.html#power-water-when-it-rains">When It Rains</a></p>
+                        <h3 class="section-title">After <a href="powers.html#power-astral-l-daybreak">Daybreak</a> or <a href="powers.html#power-astral-l-light-embrace">Light Embrace</a> AND <a href="powers.html#power-water-splash-damage">Splash Damage</a> or <a href="powers.html#power-water-when-it-rains">When It Rains</a></h3>
                         <div id="power-water-bright-spring" class="power-wrapper">
                             <h4><a href="powers.html#power-water-bright-spring">*BRIGHT SPRING* (Astral Light & Water)</a></h4>
                             <p>Attacks restore 2 health.</p>
@@ -989,7 +995,7 @@
                     </div>
 
                     <div class="border-robotics power-robotics">
-                        <p class="section-title">After Charge and <a href="glossary.html#glossary-torrent">Water Damage</a></p>
+                        <h3 class="section-title">After Charge and <a href="glossary.html#glossary-torrent">Water Damage</a></h3>
                         <div id="power-robotics-cascade-drive" class="power-wrapper">
                             <h4><a href="powers.html#power-robotics-cascade-drive">*CASCADE DRIVE* (Water & Robotics)</a></h4>
                             <p>Whenever your Charge Effect activates, gain 3% Multihit Chance for this room.</p> 
@@ -997,7 +1003,7 @@
                     </div>
 
                     <div class="border-water power-water-still">
-                        <p class="section-title">After <a href="powers.html#power-water-frost">Frost</a> and Flame Damage</p>
+                        <h3 class="section-title">After <a href="powers.html#power-water-frost">Frost</a> and Flame Damage</h3>
                         <div id="power-water-frostfire" class="power-wrapper">
                             <h4><a href="powers.html#power-water-frostfire">*FROSTFIRE* (Flame & Water)</a></h4>
                             <p>Dealing Flame or Water damage with your Attack, Special, or Tool deals 30% damage of the opposite element.</p>
@@ -1005,7 +1011,7 @@
                     </div>
 
                     <div class="border-water power-water-still">
-                        <p class="section-title">After Water Damage and <a href="powers.html#powers-ooze-potency">Potency</a></p>
+                        <h3 class="section-title">After Water Damage and <a href="powers.html#powers-ooze-potency">Potency</a></h3>
                         <div id="power-water-solution-to-pollution" class="power-wrapper">
                             <h4><a href="powers.html#power-water-solution-to-pollution">*SOLUTION TO POLLUTION* (Water & Ooze)</a></h4>
                             <p>+3s Ooze duration. Enemies affected by Ooze gain 1 stack(s) of that effect every second.</p>
@@ -1013,7 +1019,7 @@
                     </div>
 
                     <div class="border-water power-water-still">
-                        <p class="section-title">After <a href="powers.html#power-water-frost">Frost</a> and Utrom Damage.</p>
+                        <h3 class="section-title">After <a href="powers.html#power-water-frost">Frost</a> and Utrom Damage.</h3>
                         <div id="power-water-shatter" class="power-wrapper">
                             <h4><a href="powers.html#power-water-shatter">*SHATTER* (Utrom & Water)</a></h4>
                             <p>Deal 200 Water and Utrom damage when applying a Stun effect to an enemy. Enemies are no longer Stunned.</p>
@@ -1022,7 +1028,7 @@
                     </div>
                 </details>
                 <details id="power-legendary" class="power-legendary">
-                    <summary><img class="p-icon" src="assets/Icon-Power-M.webp"/>Legendary</summary>
+                    <summary><h2><img class="p-icon" src="assets/Icon-Power-M.webp" alt=""/>Legendary</h2></summary>
                     <p class="note">Most of these requirements have been confirmed by the devs. Any that are not 100% confirmed will have screenshots.</p>
                     <p class="note">I've included screenshots where I've obtained the legendary power with a low number of other powers to help narrow down what is really necessary. If you have screenshots that can help narrow them down further please mention them in the official discord.</p>
                     <p class="note">Many of the prerequisites mention a way to do damage. This can be from a power or a tool. I show an example of Frostfire with only Fireball and Water powers.</p>
@@ -1030,136 +1036,136 @@
                     <!-- <p>The chart below shows the combinations.</p>
                     <div class="thumbnail-container">
                         <a href="legendaries/TMNT_Legendary_Power_Chart.webp" target="_blank">
-                            <img class="legendary-thumbnail" src="legendaries/TMNT_Legendary_Power_Chart.webp">
+                            <img class="legendary-thumbnail" src="legendaries/TMNT_Legendary_Power_Chart.webp" alt="Legendary power combinations chart">
                         </a>
                     </div> -->
 
                     <div id="power-legendary-darkflame" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-darkflame">DarkFlame (Astral Dark & Flame)</a></h4>
+                        <h3><a href="powers.html#power-legendary-darkflame">DarkFlame (Astral Dark & Flame)</a></h3>
                         <p>+40% Flame Damage against targets affected by <a href="glossary.html#glossary-darkness">Darkness</a>.</p>
                         <p class="note">Both of the starting Dark powers apply <a href="glossary.html#glossary-darkness">Darkness</a>, so all this needs is any Dark power and any way to do Flame damage.</p>
                         <div class="thumbnail-container">
                             <a href="legendaries/Darkflame.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/Darkflame.webp">
+                                <img class="legendary-thumbnail" src="legendaries/Darkflame.webp" alt="DarkFlame legendary power">
                             </a>
                             <a href="legendaries/Darkflame-meteor.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/Darkflame-meteor.webp">
+                                <img class="legendary-thumbnail" src="legendaries/Darkflame-meteor.webp" alt="DarkFlame legendary power, meteor">
                             </a>
                         </div>
                     </div>
                     <div id="power-legendary-finisher" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-finisher">Finisher (Astral Dark & Ninja)</a></h4>
+                        <h3><a href="powers.html#power-legendary-finisher">Finisher (Astral Dark & Ninja)</a></h3>
                         <p>Attacks and Specials instantly defeat enemies that are below 15% health.</p>
                         <div class="thumbnail-container">
                             <a href="legendaries/Finisher-0.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/Finisher-0.webp">
+                                <img class="legendary-thumbnail" src="legendaries/Finisher-0.webp" alt="Finisher legendary power">
                             </a>
                             <a href="legendaries/Finisher-Double-Select.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/Finisher-Double-Select.webp">
+                                <img class="legendary-thumbnail" src="legendaries/Finisher-Double-Select.webp" alt="Finisher legendary power, double select">
                             </a>
                         </div>
                     </div>
                     <div id="power-legendary-lighthammer" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-lighthammer">Lighthammer (Astral Light & Utrom)</a></h4>
+                        <h3><a href="powers.html#power-legendary-lighthammer">Lighthammer (Astral Light & Utrom)</a></h3>
                         <p>Utrom damage is increased by 10% of your Max Health.</p>
                         <p class="note">You need <a href="powers.html#power-astral-l-light-attacks">Light Attacks</a> and any way to do Utrom damage.</p>
                     </div>
                     <div id="power-legendary-brightspring" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-brightspring">Bright Spring (Astral Light & Water)</a></h4>
+                        <h3><a href="powers.html#power-legendary-brightspring">Bright Spring (Astral Light & Water)</a></h3>
                         <p>Attacks restore 2 health.</p>
                         <p class="note">After <a href="powers.html#power-astral-l-daybreak">Daybreak</a> or <a href="powers.html#power-astral-l-light-embrace">Light Embrace</a> AND <a href="powers.html#power-water-splash-damage">Splash Damage</a> or <a href="powers.html#power-water-when-it-rains">When It Rains</a></p>
                         <!-- <div class="thumbnail-container">
                             <a href="legendaries/BrightSpring.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/BrightSpring.webp">
+                                <img class="legendary-thumbnail" src="legendaries/BrightSpring.webp" alt="Bright Spring legendary power">
                             </a>
                         </div> -->
                     </div>
                     <div id="power-legendary-tempered-shuriken" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-tempered-shuriken">Tempered Shuriken (Flame & Ninja)</a></h4>
+                        <h3><a href="powers.html#power-legendary-tempered-shuriken">Tempered Shuriken (Flame & Ninja)</a></h3>
                         <p>+40% Critical Hit chance with Shuriken.</p>
                         <p class="note">Any way to throw shuriken, and <a href="powers.html#power-flame-furious-attacks">Furious Attacks</a>. Maybe it's <a href="powers.html#power-flame-precision">Precision</a> instead but I haven't been able to confirm yet.</p>
                         <div class="thumbnail-container">
                             <a href="legendaries/TemperedShuriken.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/TemperedShuriken.webp">
+                                <img class="legendary-thumbnail" src="legendaries/TemperedShuriken.webp" alt="Tempered Shuriken legendary power">
                             </a>
                         </div>
                     </div>
                     <div id="power-legendary-spontaneous-combustion" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-spontaneous-combustion">Spontaneous Combustion (Flame & Ooze)</a></h4>
+                        <h3><a href="powers.html#power-legendary-spontaneous-combustion">Spontaneous Combustion (Flame & Ooze)</a></h3>
                         <p>Gain a 30% chance to deal 100 Flame damage when applying <a href="glossary.html#glossary-ooze">Ooze</a>.</p>
                         <p class="note">A way to apply stacks of <a href="glossary.html#glossary-ooze">Ooze</a> and Flame damage, maybe <a href="powers.html#power-flame-inferno">Inferno</a>?</p>
                         <div class="thumbnail-container">
                             <a href="legendaries/SpontaneousCombustion-0.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/SpontaneousCombustion-0.webp">
+                                <img class="legendary-thumbnail" src="legendaries/SpontaneousCombustion-0.webp" alt="Spontaneous Combustion legendary power, screenshot 1">
                             </a>
                             <a href="legendaries/SpontaneousCombustion.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/SpontaneousCombustion.webp">
+                                <img class="legendary-thumbnail" src="legendaries/SpontaneousCombustion.webp" alt="Spontaneous Combustion legendary power, screenshot 2">
                             </a>
                         </div>
                     </div>
                     <div id="power-legendary-frostfire" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-frostfire">Frostfire (Flame & Water)</a></h4>
+                        <h3><a href="powers.html#power-legendary-frostfire">Frostfire (Flame & Water)</a></h3>
                         <p>Dealing Flame or Water damage with your Attack, Special, or Tool deals 30% damage of the opposite element.</p>
                         <p class="note">Fire damage and <a href="powers.html#power-water-frost">Frost</a></p>
                         <div class="thumbnail-container">
                             <a href="legendaries/FrostFire.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/FrostFire.webp">
+                                <img class="legendary-thumbnail" src="legendaries/FrostFire.webp" alt="Frostfire legendary power, screenshot 1">
                             </a>
                             <a href="legendaries/FrostFire-1.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/FrostFire-1.webp">
+                                <img class="legendary-thumbnail" src="legendaries/FrostFire-1.webp" alt="Frostfire legendary power, screenshot 2">
                             </a>
                         </div>
                     </div>
                     <div id="power-legendary-slippery" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-slippery">Slippery (Ninja & Ooze)</a></h4>
+                        <h3><a href="powers.html#power-legendary-slippery">Slippery (Ninja & Ooze)</a></h3>
                         <p>Gain 20% Move Speed and charge Tool and Special 100% faster while at maximum <a href="powers.html#power-ninja-adrenaline">Adrenaline</a>.</p>
                         <p class="note">Need <a href="powers.html#power-ninja-adrenaline">Adrenaline</a> and any way of applying <a href="glossary.html#glossary-ooze">Ooze</a>.</p>
                         <div class="thumbnail-container">
                             <a href="legendaries/Slippery.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/Slippery.webp">
+                                <img class="legendary-thumbnail" src="legendaries/Slippery.webp" alt="Slippery legendary power">
                             </a>
                         </div>
                     </div>
                     <div id="power-legendary-revolution" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-revolution">Revolution (Ninja & Utrom)</a></h4>
+                        <h3><a href="powers.html#power-legendary-revolution">Revolution (Ninja & Utrom)</a></h3>
                         <p>Dash Attack's damage is increased by 1% of the enemies' Max Health.</p>
                         <p class="note">Need Quick Feet and Utrom damage.</p>
                         <div class="thumbnail-container">
                             <a href="legendaries/Revolution.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/Revolution.webp">
+                                <img class="legendary-thumbnail" src="legendaries/Revolution.webp" alt="Revolution legendary power, screenshot 1">
                             </a>
                             <a href="legendaries/Revolution-1.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/Revolution-1.webp">
+                                <img class="legendary-thumbnail" src="legendaries/Revolution-1.webp" alt="Revolution legendary power, screenshot 2">
                             </a>
                         </div>
                     </div>
                     <div id="power-legendary-secret-of-the-ooze" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-secret-of-the-ooze">Secret of the Ooze (Ooze & Utrom)</a></h4>
+                        <h3><a href="powers.html#power-legendary-secret-of-the-ooze">Secret of the Ooze (Ooze & Utrom)</a></h3>
                         <p>Reduce damage received by 30%</p>
                         <p class="note">A way to apply <a href="glossary.html#glossary-ooze">Ooze</a> and Utrom damage. Maybe this needs <a href="powers.html#power-utrom-techno-organic-interface">Techno-Organic Interface</a>, need to do more testing.</p>
                         <div class="thumbnail-container">
                             <a href="legendaries/SecretotOoze.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/SecretotOoze.webp">
+                                <img class="legendary-thumbnail" src="legendaries/SecretotOoze.webp" alt="Secret of the Ooze legendary power">
                             </a>
                         </div>
                     </div>
                     <div id="power-legendary-solution-to-pollution" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-solution-to-pollution">Solution to Pollution (Water & Ooze)</a></h4>
+                        <h3><a href="powers.html#power-legendary-solution-to-pollution">Solution to Pollution (Water & Ooze)</a></h3>
                         <p>+3s Ooze duration. Enemies affected by Ooze gain 1 stack(s) of that effect every second.</p>
                         <p class="note">Any Water Damage and <a href="powers.html#power-ooze-potency">Potency</a></p>
                         <div class="thumbnail-container">
                             <a href="legendaries/SolutionToPollution.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/SolutionToPollution.webp">
+                                <img class="legendary-thumbnail" src="legendaries/SolutionToPollution.webp" alt="Solution to Pollution legendary power">
                             </a>
                         </div>
                     </div>
                     <div id="power-legendary-shatter" class="power-wrapper">
-                        <h4><a href="powers.html#power-legendary-shatter">Shatter (Utrom & Water)</a></h4>
+                        <h3><a href="powers.html#power-legendary-shatter">Shatter (Utrom & Water)</a></h3>
                         <p>Deal 200 Water and Utrom damage when applying a Stun effect to an enemy. Enemies are no longer Stunned.</p>
                         <p class="note">Obviously you need stun for this to be effective. <a href="tools.html#tool-taunt">Taunt</a>, <a href="tools.html#tool-turtle-line">Turtle Line</a>, <a href="powers.html#power-water-flash-freeze">Flash Freeze</a>, <a href="powers.html#power-robotics-shocking">Shocking</a>, <a href="powers.html#power-astral-d-core-collapse">Core Collapse</a>, <a href="powers.html#power-ooze-unfortunate-odor">Unfortate Odor</a> are all the possible ways to apply stun.</p>
                         <div class="thumbnail-container">
                             <a href="legendaries/Shatter-No-Utrom.webp" target="_blank">
-                                <img class="legendary-thumbnail" src="legendaries/Shatter-No-Utrom.webp">
+                                <img class="legendary-thumbnail" src="legendaries/Shatter-No-Utrom.webp" alt="Shatter legendary power">
                             </a>
                         </div>
                     </div>
@@ -1168,11 +1174,11 @@
 
 
         </div>
+        </main>
         <footer>
             <p>All images copyright Viacom.</p>
             <p>This is just a fansite. Thanks to Super Evil Megacorp for making a great game.</p>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
 </html>

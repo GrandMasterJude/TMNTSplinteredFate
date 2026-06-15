@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="The ultimate resource for Teenage Mutant Ninja Turtles: Splintered Fate players. Find comprehensive guides on all powers, upgrades, and abilities to master the game and perfect your turtle strategy." />
         <title>TMNT Splintered Fate</title>
+        <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu">
             ☰ Menu
-        </div>
+        </button>
     
-        <div class="mobile-menu">
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
             <a href="powers.html">Powers</a>
-            <a href="tools.html">Tools</a>
+            <a href="tools.html" aria-current="page">Tools</a>
             <a href="upgrades.html">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
             <a href="boosts.html">Boosts</a>
@@ -23,13 +27,13 @@
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
-        <div class="navbar">
+        </nav>
+        <nav class="navbar" aria-label="Primary">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
             <a href="powers.html">Powers</a>
-            <a class="tab active" href="tools.html">Tools</a>
+            <a class="tab active" href="tools.html" aria-current="page">Tools</a>
             <a href="upgrades.html">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
             <a href="boosts.html">Boosts</a>
@@ -37,160 +41,162 @@
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
+        </nav>
 
+        <main id="main">
         <div class="content">
+            <h1 class="visually-hidden">TMNT: Splintered Fate &ndash; Tools</h1>
             <div id="tools" class="tab-content">
                 <p>The listed charge rates do not round their decimals, but only the whole numbers are displayed.</p>
                 <ul>
                     <a href="tools.html#tool-attack-drone" class="no-deco">
                         <li id="tool-attack-drone">
-                            <img src="assets/Tool-AttackDrone.webp" class="tool-image">
-                            <h4>Attack Drone<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-AttackDrone.webp" class="tool-image" alt="">
+                            <h2>Attack Drone<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Fires a missile on Final Strike that deals 15 / 20 / 25 damage. When Activated, fires 10 / 12 / 15 Missiles over 2s.</p>
                             <p>Charge Rate: <br class="mobile-yep">~??% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-fireball" class="no-deco">
                         <li id="tool-fireball">
-                            <img src="assets/Tool-Fireball.webp" class="tool-image">
-                            <h4>Fireball<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-Fireball.webp" class="tool-image" alt="">
+                            <h2>Fireball<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Fire 4 seeking fireballs towards nearby enemies. Each fireball deals 30 / 50 / 100 Flame damage in an area upon impact.</p>
                             <p>Charge Rate: <br class="mobile-yep">10% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-hardened-shell" class="no-deco">
                         <li id="tool-hardened-shell">
-                            <img src="assets/Tool-HardenedShell.webp" class="tool-image">
-                            <h4>Hardened Shell<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-HardenedShell.webp" class="tool-image" alt="">
+                            <h2>Hardened Shell<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Deal 20 / 40 / 60 Physical damage to nearby enemies. For the next 1.4s / 1.8s / 2.2s, become immune to all damage.</p>
                             <p>Charge Rate: <br class="mobile-yep">5.5% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-kunai" class="no-deco">
                         <li id="tool-kunai">
-                            <img src="assets/Tool-Kunai.webp" class="tool-image">
-                            <h4>Kunai<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-Kunai.webp" class="tool-image" alt="">
+                            <h2>Kunai<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Throw 5 Kunai in a cone, each dealing 15 / 30 / 45 Damage.</p>
                             <p>Charge Rate: <br class="mobile-yep">12% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-landmines" class="no-deco">
                         <li id="tool-landmines">
-                            <img src="assets/Tool-Landmines.webp" class="tool-image">
-                            <h4>Landmines<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-Landmines.webp" class="tool-image" alt="">
+                            <h2>Landmines<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Deploy 3 mines, each dealing 30 / 45 / 60 damage.</p>
                             <p>Charge Rate: <br class="mobile-yep">??% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-meteor-storm" class="no-deco">
                         <li id="tool-meteor-storm">
-                            <img src="assets/Tool-MeteorStorm.webp" class="tool-image">
-                            <h4>Meteor Storm<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-MeteorStorm.webp" class="tool-image" alt="">
+                            <h2>Meteor Storm<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Call upon a meteor storm that lasts 6.5s / 8.5s / 10.5s. Meteors will fall towards enemies and deal 20 / 40 / 60 Flame damage upon impact.</p>
                             <p>Charge Rate: <br class="mobile-yep">4.2% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-ooze-shuriken" class="no-deco">
                         <li id="tool-ooze-shuriken">
-                            <img src="assets/Tool-OozeShuriken.webp" class="tool-image">
-                            <h4>Ooze Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-OozeShuriken.webp" class="tool-image" alt="">
+                            <h2>Ooze Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Throw 4 Ooze Shuiken at the nearest enemy. Each Shuriken deals 15 / 25 / 35 Ooze damage.</p>
                             <p>Charge Rate: <br class="mobile-yep">11.2% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-ride-the-wave" class="no-deco">
                         <li id="tool-ride-the-wave">
-                            <img src="assets/Tool-RideTheWave.webp" class="tool-image">
-                            <h4>Ride the Wave<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-RideTheWave.webp" class="tool-image" alt="">
+                            <h2>Ride the Wave<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>+30% /40% / 50% ove Speed for 5s. During that time, deal 40 / 50 / 60 Water damage per second to nearby enemies.</p>
                             <p>Charge Rate: <br class="mobile-yep">~4% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-shuriken" class="no-deco">
                         <li id="tool-shuriken">
-                            <img src="assets/Tool-Shuriken.webp" class="tool-image">
-                            <h4>Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-Shuriken.webp" class="tool-image" alt="">
+                            <h2>Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Throw three Shuriken in a cone. Each Shuriken deals 15 / 30 / 45 damage.</p>
                             <p>Charge Rate: <br class="mobile-yep">~12% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-shuriken-storm" class="no-deco">
                         <li id="tool-shuriken-storm">
-                            <img src="assets/Tool-ShurikenStorm.webp" class="tool-image">
-                            <h4>Shuriken Storm<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-ShurikenStorm.webp" class="tool-image" alt="">
+                            <h2>Shuriken Storm<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Throw 6 / 8 / 10 Shuriken at nearby targets. Each Shuriken deals 15 / 30 / 45 Physical damage.</p>
                             <p>Charge Rate: <br class="mobile-yep">4.2% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-smoke-bomb" class="no-deco">
                         <li id="tool-smoke-bomb">
-                            <img src="assets/Tool-SmokeBomb.webp" class="tool-image">
-                            <h4>Smoke Bomb<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-SmokeBomb.webp" class="tool-image" alt="">
+                            <h2>Smoke Bomb<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Teleport forwards, dealing 50 / 60 / 70 Physical damage to nearby enemies where you end up. Gain 15% / 25% / 35% Dodge Chance for ?? / 5 / ??s.</p>
                             <p>Charge Rate: <br class="mobile-yep">?? per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-taunt" class="no-deco">
                         <li id="tool-taunt">
-                            <img src="assets/Tool-Taunt.webp" class="tool-image">
-                            <h4>Taunt<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-Taunt.webp" class="tool-image" alt="">
+                            <h2>Taunt<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Taunt nearby enemies for 8s. Taunted enemies take 60 / 90 / 120 damage and are stunned for 0.5s when hit.</p>
                             <p>Charge Rate: <br class="mobile-yep">6.7% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-the-juice" class="no-deco">
                         <li id="tool-the-juice">
-                            <img src="assets/Tool-TheJuice.webp" class="tool-image">
-                            <h4>The Juice<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-TheJuice.webp" class="tool-image" alt="">
+                            <h2>The Juice<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>For 6s / 8s / 10s, deal +30% / 40% / 50% damage and quickly recover Special charges.</p>
                             <p>Charge Rate: <br class="mobile-yep">3.5% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-turtle-line" class="no-deco">
                         <li id="tool-turtle-line">
-                            <img src="assets/Tool-TurtleLine.webp" class="tool-image">
-                            <h4>Turtle Line<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-TurtleLine.webp" class="tool-image" alt="">
+                            <h2>Turtle Line<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Throw a Turtle Line dealing 30 / 60 / 90 Physical damage. On hit, pull yourself towards Bosses, and pull other enemies towards you.</p>
                             <p>Charge Rate: <br class="mobile-yep">9.6% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-unstable-canister" class="no-deco">
                         <li id="tool-unstable-canister">
-                            <img src="assets/Tool-UnstableCanister.webp" class="tool-image">
-                            <h4>Unstable Canister<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-UnstableCanister.webp" class="tool-image" alt="">
+                            <h2>Unstable Canister<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Deal 30 / 60 / 90 Ooze damage and apply 2 / 3 / 4 stack(s) of Ooze to all nearby enemies.</p>
                             <p>Charge Rate: <br class="mobile-yep">?? per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-utrom-drone" class="no-deco">
                         <li id="tool-utrom-drone">
-                            <img src="assets/Tool-UtromDrone.webp" class="tool-image">
-                            <h4>Utrom Drone<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-UtromDrone.webp" class="tool-image" alt="">
+                            <h2>Utrom Drone<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Fires chain lightning on Final Strike that deals 10 / 15 / 20 damage to each target. When Activated, fires 5 / 6 / 7 chain lightnings over 5s.</p>
                             <p>Charge Rate: <br class="mobile-yep">~??% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-utrom-rod" class="no-deco">
                         <li id="tool-utrom-rod">
-                            <img src="assets/Tool-UtromRod.webp" class="tool-image">
-                            <h4>Utrom Rod<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-UtromRod.webp" class="tool-image" alt="">
+                            <h2>Utrom Rod<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>A nearby enemy is struck by lightning 6 / 8 / 10 times for 15 / 25 / 35 Utrom damage.</p>
                             <p>Charge Rate: <br class="mobile-yep">~6% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-utrom-shuriken" class="no-deco">
                         <li id="tool-utrom-shuriken">
-                            <img src="assets/Tool-UtromShuriken.webp" class="tool-image">
-                            <h4>Utrom Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-UtromShuriken.webp" class="tool-image" alt="">
+                            <h2>Utrom Shuriken<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Throw 4 Electric Shuriken at the nearest enemy. Each Shuriken deals 15 / 25 / 35 Utrom damage.</p>
                             <p>Charge Rate: <br class="mobile-yep">11.2% per attack.</p>
                         </li>
                     </a>
                     <a href="tools.html#tool-water-sweep" class="no-deco">
                         <li id="tool-water-sweep">
-                            <img src="assets/Tool-WaterSweep.webp" class="tool-image">
-                            <h4>Water Sweep<img class="icon-power" src="assets/TMNT-Icon-Tool.webp"/></h4>
+                            <img src="assets/Tool-WaterSweep.webp" class="tool-image" alt="">
+                            <h2>Water Sweep<img class="icon-power" src="assets/TMNT-Icon-Tool.webp" alt=""/></h2>
                             <p>Deal 80 / 100 / 120  Water damage to nearby enemies. Enemies hit are knocked back.</p>
                             <p>Charge Rate: <br class="mobile-yep">~12% per attack.</p>
                         </li>
@@ -201,11 +207,11 @@
 
             
         </div>
+        </main>
         <footer>
             <p>All images copyright Viacom.</p>
             <p>This is just a fansite. Thanks to Super Evil Megacorp for making a great game.</p>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
 </html>

@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="The ultimate resource for Teenage Mutant Ninja Turtles: Splintered Fate players. Find comprehensive guides on all powers, upgrades, and abilities to master the game and perfect your turtle strategy." />
         <title>TMNT Splintered Fate</title>
+        <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu">
             ☰ Menu
-        </div>
+        </button>
     
-        <div class="mobile-menu">
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
             <a href="powers.html">Powers</a>
             <a href="tools.html">Tools</a>
             <a href="upgrades.html">Upgrades</a>
-            <a href="artifacts.html">Artifacts</a>
+            <a href="artifacts.html" aria-current="page">Artifacts</a>
             <a href="boosts.html">Boosts</a>
             <a href="portals.html">Portals</a>
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
-        <div class="navbar">
+        </nav>
+        <nav class="navbar" aria-label="Primary">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
             <a href="powers.html">Powers</a>
             <a href="tools.html">Tools</a>
             <a href="upgrades.html">Upgrades</a>
-            <a class="tab active" href="artifacts.html">Artifacts</a>
+            <a class="tab active" href="artifacts.html" aria-current="page">Artifacts</a>
             <a href="boosts.html">Boosts</a>
             <a href="portals.html">Portals</a>
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
+        </nav>
 
+        <main id="main">
         <div class="content">
+            <h1 class="visually-hidden">TMNT: Splintered Fate &ndash; Artifacts</h1>
             <div id="artifacts" class="tab-content artifacts">
 
                 <a href="artifacts.html#artifact-manhole-cover" class="no-deco">
                     <div id="artifact-manhole-cover" class="artifact artifact-manhole-cover" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-Manhole-Cover.webp" class="artifact-image">
-                            <p class="artifact-name">Manhole Cover</p>
+                            <img src="assets/Artifact-Manhole-Cover.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Manhole Cover</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -57,23 +63,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                         </div>
                     </div>
@@ -83,8 +89,8 @@
                     <div id="artifact-foot-clan" class="artifact artifact-foot-clan" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-Foot-Medalion.webp" class="artifact-image">
-                            <p class="artifact-name">Foot Clan Medallion</p>
+                            <img src="assets/Artifact-Foot-Medalion.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Foot Clan Medallion</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -94,23 +100,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                         </div>
                     </div>
@@ -120,8 +126,8 @@
                     <div id="artifact-broken-ooze-canister" class="artifact artifact-broken-ooze" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-Broken-Ooze.webp" class="artifact-image">
-                            <p class="artifact-name">Broken Ooze Canister</p>
+                            <img src="assets/Artifact-Broken-Ooze.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Broken Ooze Canister</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -131,23 +137,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                         </div>
                     </div>
@@ -157,8 +163,8 @@
                     <div id="artifact-sword-of-tengu" class="artifact artifact-sword-of-tengu" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-SwordOfTengu.webp" class="artifact-image">
-                            <p class="artifact-name">Sword of Tengu</p>
+                            <img src="assets/Artifact-SwordOfTengu.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Sword of Tengu</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -168,23 +174,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                         </div>
                     </div>
@@ -194,8 +200,8 @@
                     <div id="artifact-tessen" class="artifact artifact-tessen" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-Tessen.webp" class="artifact-image">
-                            <p class="artifact-name">Tessen</p>
+                            <img src="assets/Artifact-Tessen.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Tessen</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -205,23 +211,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                         </div>
                     </div>
@@ -231,8 +237,8 @@
                     <div id="artifact-mystical-seal" class="artifact artifact-mystical-seal" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-MysticSeal.webp" class="artifact-image">
-                            <p class="artifact-name">Mystical Seal <br class="mobile-nope">of Protection</p>
+                            <img src="assets/Artifact-MysticSeal.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Mystical Seal <br class="mobile-nope">of Protection</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -242,23 +248,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                         </div>
                     </div>
@@ -268,8 +274,8 @@
                     <div id="artifact-positronic-motherboard" class="artifact artifact-positronic-motherboard" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-PositronicMotherboard.webp" class="artifact-image">
-                            <p class="artifact-name">Positronic Motherboard</p>
+                            <img src="assets/Artifact-PositronicMotherboard.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Positronic Motherboard</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -279,23 +285,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                         </div>
                     </div>
@@ -305,8 +311,8 @@
                     <div id="artifact-stockgen-id" class="artifact artifact-stockgen-id" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-StockgenID.webp" class="artifact-image">
-                            <p class="artifact-name">Stockgen ID Card</p>
+                            <img src="assets/Artifact-StockgenID.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Stockgen ID Card</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -316,23 +322,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                         </div>
                     </div>
@@ -342,8 +348,8 @@
                     <div id="artifact-turnstone" class="artifact artifact-turnstone" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-Turnstone.webp" class="artifact-image">
-                            <p class="artifact-name">Turnstone</p>
+                            <img src="assets/Artifact-Turnstone.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Turnstone</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -353,23 +359,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                         </div>
                     </div>
@@ -379,8 +385,8 @@
                     <div id="artifact-fuzzy-dice" class="artifact artifact-fuzzy-dice" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-FuzzyDice.webp" class="artifact-image">
-                            <p class="artifact-name">Battle Shell Fuzzy Dice</p>
+                            <img src="assets/Artifact-FuzzyDice.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Battle Shell Fuzzy Dice</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -390,23 +396,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                         </div>
                     </div>
@@ -416,8 +422,8 @@
                     <div id="artifact-pizza-box" class="artifact artifact-pizza-box" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-PizzaBox.webp" class="artifact-image">
-                            <p class="artifact-name">Insulated Pizza Box</p>
+                            <img src="assets/Artifact-PizzaBox.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Insulated Pizza Box</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -427,23 +433,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                         </div>
                     </div>
@@ -453,8 +459,8 @@
                     <div id="artifact-heart-of-tengu" class="artifact artifact-heart-of-tengu" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-HeartOfTengu.webp" class="artifact-image">
-                            <p class="artifact-name">Heart of Tengu</p>
+                            <img src="assets/Artifact-HeartOfTengu.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Heart of Tengu</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -464,23 +470,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                         </div>
                     </div>
@@ -490,8 +496,8 @@
                     <div id="artifact-astral-charm" class="artifact artifact-astral-charm" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-AstralCharm.webp" class="artifact-image">
-                            <p class="artifact-name">Astral Charm</p>
+                            <img src="assets/Artifact-AstralCharm.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Astral Charm</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -501,23 +507,23 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 4</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 2 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 5</p>
-                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 6</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 6 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                             </div>
                         </div>
                     </div>
@@ -526,8 +532,8 @@
                 <a href="artifacts.html#artifact-war-staff" class="no-deco">
                     <div id="artifact-war-staff" class="artifact artifact-war-staff" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-WarStaff.webp" class="artifact-image">
-                            <p class="artifact-name">War Staff</p>
+                            <img src="assets/Artifact-WarStaff.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">War Staff</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -537,11 +543,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -549,8 +555,8 @@
                 <a href="artifacts.html#artifact-untuned-guitar" class="no-deco">
                     <div id="artifact-untuned-guitar" class="artifact artifact-untuned-guitar" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-UntunedGuitar.webp" class="artifact-image">
-                            <p class="artifact-name">Untuned Guitar</p>
+                            <img src="assets/Artifact-UntunedGuitar.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Untuned Guitar</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -560,11 +566,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -572,8 +578,8 @@
                 <a href="artifacts.html#artifact-vintage-blowtorch" class="no-deco">
                     <div id="artifact-vintage-blowtorch" class="artifact artifact-vintage-blowtorch" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-VintageBlowtorch.webp" class="artifact-image">
-                            <p class="artifact-name">Vintage Blowtorch</p>
+                            <img src="assets/Artifact-VintageBlowtorch.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Vintage Blowtorch</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -583,11 +589,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -595,8 +601,8 @@
                 <a href="artifacts.html#artifact-busted-snare" class="no-deco">
                     <div id="artifact-busted-snare" class="artifact artifact-busted-snare" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-BustedSnare.webp" class="artifact-image">
-                            <p class="artifact-name">Busted Snare</p>
+                            <img src="assets/Artifact-BustedSnare.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Busted Snare</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -606,11 +612,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -618,8 +624,8 @@
                 <a href="artifacts.html#artifact-splintered-drumsticks" class="no-deco">
                     <div id="artifact-splintered-drumsticks" class="artifact artifact-splintered-drumsticks" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-SplinteredDrumsticks.webp" class="artifact-image">
-                            <p class="artifact-name">Splintered Drumsticks</p>
+                            <img src="assets/Artifact-SplinteredDrumsticks.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Splintered Drumsticks</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -629,11 +635,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -641,8 +647,8 @@
                 <a href="artifacts.html#artifact-caseys-portrait" class="no-deco">
                     <div id="artifact-caseys-portrait" class="artifact artifact-caseys-portrait" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-CaseysPortrait.webp" class="artifact-image">
-                            <p class="artifact-name">Casey's Portrait</p>
+                            <img src="assets/Artifact-CaseysPortrait.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Casey's Portrait</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -652,11 +658,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -665,8 +671,8 @@
                     <div id="artifact-mysterious-gofu" class="artifact artifact-mysterious-gofu" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-MysteriousGofu.webp" class="artifact-image">
-                            <p class="artifact-name">Mysterious Gofu</p>
+                            <img src="assets/Artifact-MysteriousGofu.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Mysterious Gofu</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -676,11 +682,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -689,8 +695,8 @@
                     <div id="artifact-clan-hamato-seal" class="artifact artifact-clan-hamato-seal" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-ClanHamatoSeal.webp" class="artifact-image">
-                            <p class="artifact-name">Clan Hamato Seal</p>
+                            <img src="assets/Artifact-ClanHamatoSeal.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Clan Hamato Seal</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -700,11 +706,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -713,8 +719,8 @@
                     <div id="artifact-cracked-stasis-beacon" class="artifact artifact-cracked-stasis-beacon" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-CrackedStasisBeacon.webp" class="artifact-image">
-                            <p class="artifact-name">Cracked Stasis Beacon</p>
+                            <img src="assets/Artifact-CrackedStasisBeacon.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Cracked Stasis Beacon</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -724,11 +730,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -737,8 +743,8 @@
                     <div id="artifact-kitsunes-cup" class="artifact artifact-kitsunes-cup" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-KitsunesCup.webp" class="artifact-image">
-                            <p class="artifact-name">Kitsune's Cup</p>
+                            <img src="assets/Artifact-KitsunesCup.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Kitsune's Cup</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -748,11 +754,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -761,8 +767,8 @@
                     <div id="artifact-giant-tusk-fragment" class="artifact artifact-giant-tusk-fragment" >
 
                         <div class="artifact-header">
-                            <img src="assets/Artifact-GiantTuskFragment.webp" class="artifact-image">
-                            <p class="artifact-name">Giant Tusk Fragment</p>
+                            <img src="assets/Artifact-GiantTuskFragment.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Giant Tusk Fragment</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -772,11 +778,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> <br class="mobile-nope">need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -784,8 +790,8 @@
                 <a href="artifacts.html#artifact-buddy-the-wraith" class="no-deco">
                     <div id="artifact-buddy-the-wraith" class="artifact artifact-buddy-the-wraith" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-BuddyTheWraith.webp" class="artifact-image">
-                            <p class="artifact-name">Buddy The Wraith</p>
+                            <img src="assets/Artifact-BuddyTheWraith.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Buddy The Wraith</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -795,11 +801,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -807,8 +813,8 @@
                 <a href="artifacts.html#artifact-the-maltese-hamster" class="no-deco">
                     <div id="artifact-the-maltese-hamster" class="artifact artifact-the-maltese-hamster" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-TheMalteseHamster.webp" class="artifact-image">
-                            <p class="artifact-name">The Maltese Hamster</p>
+                            <img src="assets/Artifact-TheMalteseHamster.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">The Maltese Hamster</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -818,11 +824,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -830,8 +836,8 @@
                 <a href="artifacts.html#artifact-channel-six-mini-camera" class="no-deco">
                     <div id="artifact-channel-six-mini-camera" class="artifact artifact-channel-six-mini-camera" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-ChannelSixMiniCamera.webp" class="artifact-image">
-                            <p class="artifact-name">Channel Six Mini Camera</p>
+                            <img src="assets/Artifact-ChannelSixMiniCamera.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Channel Six Mini Camera</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -841,11 +847,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -853,8 +859,8 @@
                 <a href="artifacts.html#artifact-hot-coco-with-marshmallows" class="no-deco">
                     <div id="artifact-hot-coco-with-marshmallows" class="artifact artifact-hot-coco-with-marshmallows" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-HotCocoWithMarshmallows.webp" class="artifact-image">
-                            <p class="artifact-name">Hot Coco With Marshmallows</p>
+                            <img src="assets/Artifact-HotCocoWithMarshmallows.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Hot Coco With Marshmallows</p>
                         </div>
     
                         <div class="artifact-details-container">
@@ -864,11 +870,11 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
@@ -876,8 +882,8 @@
                 <a href="artifacts.html#artifact-polar-bear-netsuke" class="no-deco">
                     <div id="artifact-polar-bear-netsuke" class="artifact artifact-polar-bear-netsuke" >
                         <div class="artifact-header">
-                            <img src="assets/Artifact-PolarBearNetsuke.webp" class="artifact-image">
-                            <p class="artifact-name">Polar Bear Netsuke</p>
+                            <img src="assets/Artifact-PolarBearNetsuke.webp" class="artifact-image" alt="">
+                            <p class="artifact-name" role="heading" aria-level="2">Polar Bear Netsuke</p>
                         </div>
         
                         <div class="artifact-details-container">
@@ -887,22 +893,22 @@
                         <div class="artifact-cost-container">
                             <div class="cost">
                                 <p class="level">Level 2</p>
-                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                             <div class="cost">
                                 <p class="level">Level 3</p>
-                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                <p class="level">Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
+        </main>
         <footer>
             <p>All images copyright Viacom.</p>
             <p>This is just a fansite. Thanks to Super Evil Megacorp for making a great game.</p>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
 </html>

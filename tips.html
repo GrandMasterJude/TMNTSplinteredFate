@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="The ultimate resource for Teenage Mutant Ninja Turtles: Splintered Fate players. Find comprehensive guides on all powers, upgrades, and abilities to master the game and perfect your turtle strategy." />
         <title>TMNT Splintered Fate</title>
+        <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu">
             ☰ Menu
-        </div>
+        </button>
     
-        <div class="mobile-menu">
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
@@ -21,10 +25,10 @@
             <a href="boosts.html">Boosts</a>
             <a href="portals.html">Portals</a>
             <a href="map.html">Map</a>
-            <a href="tips.html">Tips</a>
+            <a href="tips.html" aria-current="page">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
-        <div class="navbar">
+        </nav>
+        <nav class="navbar" aria-label="Primary">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
@@ -35,11 +39,13 @@
             <a href="boosts.html">Boosts</a>
             <a href="portals.html">Portals</a>
             <a href="map.html">Map</a>
-            <a class="tab active" href="tips.html">Tips</a>
+            <a class="tab active" href="tips.html" aria-current="page">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
+        </nav>
 
+        <main id="main">
         <div class="content">
+            <h1 class="visually-hidden">TMNT: Splintered Fate &ndash; Tips</h1>
             <div id="tips">
                 <ul class="tips-list">
                     <li>If you're just starting out make sure to get a second <a href="upgrades.html#upgrade-dash-charge" target="_blank">dash</a> and <a href="upgrades.html#upgrade-splinters-revive" target="_blank">Splinter's Revive.</a></li>
@@ -53,7 +59,7 @@
                     <li>None of these are hard and fast rules, the more you play the game the more you'll know when to break them.</li>
                 </ul>
 
-                <h3>Donatello's Math Nerd Section</h3>
+                <h2>Donatello's Math Nerd Section</h2>
                 <p>Math in this game is additive not multiplicative.</p>
                 <p>This means percent increases are additive and work off of your base damage. You don't multiply the result of your +% increase by your next +% increase.</p>
 
@@ -76,11 +82,11 @@
             </div>
             
         </div>
+        </main>
         <footer>
             <p>All images copyright Viacom.</p>
             <p>This is just a fansite. Thanks to Super Evil Megacorp for making a great game.</p>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
 </html>

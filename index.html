@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="The ultimate resource for Teenage Mutant Ninja Turtles: Splintered Fate players. Find comprehensive guides on all powers, upgrades, and abilities to master the game and perfect your turtle strategy." />
         <title>TMNT Splintered Fate</title>
+        <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu">
             ☰ Menu
-        </div>
-    
-        <div class="mobile-menu">
-            <a href="index.html">Basic Info</a>
-            <a href="inspirations.html">Inspirations</a>
-            <a href="mastery.html">Mastery</a>
-            <a href="powers.html">Powers</a>
-            <a href="tools.html">Tools</a>
-            <a href="upgrades.html">Upgrades</a>
-            <a href="artifacts.html">Artifacts</a>
-            <a href="boosts.html">Boosts</a>
-            <a href="portals.html">Portals</a>
-            <a href="map.html">Map</a>
-            <a href="tips.html">Tips</a>
-            <a href="glossary.html">Glossary</a>
-        </div>
-        <div class="navbar">
-            <a class="tab active" href="index.html">Basic Info</a>
-            <a href="inspirations.html">Inspirations</a>
-            <a href="mastery.html">Mastery</a>
-            <a href="powers.html">Powers</a>
-            <a href="tools.html">Tools</a>
-            <a href="upgrades.html">Upgrades</a>
-            <a href="artifacts.html">Artifacts</a>
-            <a href="boosts.html">Boosts</a>
-            <a href="portals.html">Portals</a>
-            <a href="map.html">Map</a>
-            <a href="tips.html">Tips</a>
-            <a href="glossary.html">Glossary</a>
-        </div>
+        </button>
 
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+            <a href="index.html" aria-current="page">Basic Info</a>
+            <a href="inspirations.html">Inspirations</a>
+            <a href="mastery.html">Mastery</a>
+            <a href="powers.html">Powers</a>
+            <a href="tools.html">Tools</a>
+            <a href="upgrades.html">Upgrades</a>
+            <a href="artifacts.html">Artifacts</a>
+            <a href="boosts.html">Boosts</a>
+            <a href="portals.html">Portals</a>
+            <a href="map.html">Map</a>
+            <a href="tips.html">Tips</a>
+            <a href="glossary.html">Glossary</a>
+        </nav>
+        <nav class="navbar" aria-label="Primary">
+            <a class="tab active" href="index.html" aria-current="page">Basic Info</a>
+            <a href="inspirations.html">Inspirations</a>
+            <a href="mastery.html">Mastery</a>
+            <a href="powers.html">Powers</a>
+            <a href="tools.html">Tools</a>
+            <a href="upgrades.html">Upgrades</a>
+            <a href="artifacts.html">Artifacts</a>
+            <a href="boosts.html">Boosts</a>
+            <a href="portals.html">Portals</a>
+            <a href="map.html">Map</a>
+            <a href="tips.html">Tips</a>
+            <a href="glossary.html">Glossary</a>
+        </nav>
+
+        <main id="main">
         <div class="content">
+            <h1 class="visually-hidden">TMNT: Splintered Fate &ndash; Character Basics</h1>
             <p class="version-statement">All of the information in this guide is up to date as of the v1.14.0 - Power Rebalance update.</p>
 
             <div class="character-select" id="basic-info">
                 <details name="character-select" class="character-select-michelangelo">
-                    <summary><img class="portrait" src="assets/Portrait-Michelangelo.webp"/></summary>
+                    <summary><img class="portrait" src="assets/Portrait-Michelangelo.webp" alt="Michelangelo"/></summary>
                     <div class="character-summary character-summary-michelangelo ">
-                        <img src="assets/Name-Mikey.webp" alt="Michelangelo's name plate" height="64" width="235"/>
+                        <img src="assets/Name-Mikey.webp" alt="Michelangelo's name plate" height="64" width="235" role="heading" aria-level="2"/>
 
                         <div id="basic-michelangelo" class="basic-michelangelo">
                             <div class="basic-michelangelo-content">
@@ -90,9 +96,9 @@
                     </div>
                 </details>
                 <details name="character-select" class="character-select-leonardo">
-                    <summary><img class="portrait" src="assets/Portrait-Leonardo.webp"/></summary>
+                    <summary><img class="portrait" src="assets/Portrait-Leonardo.webp" alt="Leonardo"/></summary>
                     <div class="character-summary character-summary-leonardo ">
-                        <img src="assets/Name-Leo.webp" alt="Leonarodo's name plate" height="64" width="182"/>
+                        <img src="assets/Name-Leo.webp" alt="Leonardo's name plate" height="64" width="182" role="heading" aria-level="2"/>
 
                         <div id="basic-leonardo" class="basic-leonardo">
                             <div class="basic-leonardo-content">
@@ -133,9 +139,9 @@
                     </div>
                 </details>
                 <details name="character-select" class="character-select-raphael">
-                    <summary><img class="portrait" src="assets/Portrait-Raphael.webp"/></summary>
+                    <summary><img class="portrait" src="assets/Portrait-Raphael.webp" alt="Raphael"/></summary>
                     <div class="character-summary character-summary-raphael ">
-                        <img src="assets/Name-Raph.webp" alt="Raphael's name plate" height="64" width="161"/>
+                        <img src="assets/Name-Raph.webp" alt="Raphael's name plate" height="64" width="161" role="heading" aria-level="2"/>
 
 
                         <div id="basic-raphael" class="basic-raphael">
@@ -164,11 +170,11 @@
                                 </ul>
                                 <ul>
                                     <li class="basic-insp border-r">
-                                        <h4>Inspiration 1</h4>
+                                        <h3>Inspiration 1</h3>
                                         <p>+15% / 20% / 25% / 30% Special Critical Hit chance.</p>
                                     </li>
                                     <li class="basic-insp border-r">
-                                        <h4>Inspiration 2</h4>
+                                        <h3>Inspiration 2</h3>
                                         <p class="wrap"><span class="">+6% / 9% / 12% / 15% Attack Critical Hit chance. </span><span class="">+6% / 9% / 12% / 15% Attack Critical Hit damage.</span></p>
                                     </li>
                                 </ul>
@@ -177,9 +183,9 @@
                     </div>
                 </details>
                 <details name="character-select" class="character-select-donatello">
-                    <summary><img class="portrait" src="assets/Portrait-Donatello.webp"/></summary>
+                    <summary><img class="portrait" src="assets/Portrait-Donatello.webp" alt="Donatello"/></summary>
                     <div class="character-summary character-summary-donatello ">
-                        <img src="assets/Name-Don.webp" alt="Donatello's name plate" height="64" width="191"/>
+                        <img src="assets/Name-Don.webp" alt="Donatello's name plate" height="64" width="191" role="heading" aria-level="2"/>
 
 
                         <div id="basic-donatello" class="basic-donatello">
@@ -208,12 +214,12 @@
                                 </ul>
                                 <ul>
                                     <li class="basic-insp border-d">
-                                        <h4>Inspiration 1</h4>
+                                        <h3>Inspiration 1</h3>
                                         <p><span class="">Restore 5 / 6 / 7 / 8 </span>health upon starting an encounter.</p>
                                         <p class="note">*This is affected by the <a href="upgrades.html#upgrade-savor-the-flavor">Savor the Flavor</a> upgrade.</p>
                                     </li>
                                     <li class="basic-insp border-d">
-                                        <h4>Inspiration 2</h4>
+                                        <h3>Inspiration 2</h3>
                                         <p>Tool charges 80% / 100% / 120% faster.</p>
                                     </li>
                                 </ul>
@@ -222,9 +228,9 @@
                     </div>
                 </details>
                 <details name="character-select" class="character-select-casey">
-                    <summary><img class="portrait" src="assets/Portrait-Casey.webp"/></summary>
+                    <summary><img class="portrait" src="assets/Portrait-Casey.webp" alt="Casey"/></summary>
                     <div class="character-summary character-summary-casey ">
-                        <img src="assets/Name-Casey.webp" alt="Casey Jone's name plate" height="64" width="308"/>
+                        <img src="assets/Name-Casey.webp" alt="Casey Jones's name plate" height="64" width="308" role="heading" aria-level="2"/>
 
 
                         <div id="basic-casey" class="basic-casey">
@@ -253,11 +259,11 @@
                                 </ul>
                                 <ul>
                                     <li class="basic-insp border-c">
-                                        <h4>Inspiration 1</h4>
+                                        <h3>Inspiration 1</h3>
                                         <p>Special applies Guard Break for 3s / 4s / 5s / 6s to enemies hit.</p>
                                     </li>
                                     <li class="basic-insp border-c">
-                                        <h4>Inspiration 2</h4>
+                                        <h3>Inspiration 2</h3>
                                         <p>After a Special, your next attack is a Final Strike and has 33% / 33% / 66% / 100% Critical Chance</p>
                                     </li>
                                 </ul>
@@ -266,9 +272,9 @@
                     </div>
                 </details>
                 <details name="character-select" class="character-select-metalhead">
-                    <summary><img class="portrait" src="assets/Portrait-Metalhead.webp"/></summary>
+                    <summary><img class="portrait" src="assets/Portrait-Metalhead.webp" alt="Metalhead"/></summary>
                     <div class="character-summary character-summary-metalhead ">
-                        <img src="assets/Name-Metalhead.webp" alt="Metalhead's name plate" height="64" width="191"/>
+                        <img src="assets/Name-Metalhead.webp" alt="Metalhead's name plate" height="64" width="191" role="heading" aria-level="2"/>
 
                         <div id="basic-metalhead" class="basic-metalhead">
                             <div class="basic-metalhead-content">
@@ -296,11 +302,11 @@
                                 </ul>
                                 <ul>
                                     <li class="basic-insp border-mh">
-                                        <h4>Inspiration 1</h4>
+                                        <h3>Inspiration 1</h3>
                                         <p>On Boss defeat, upgrade a random enhancement and gain 25 / 25 / 50 / 75 Scrap.</p>
                                     </li>
                                     <li class="basic-insp border-mh">
-                                        <h4>Inspiration 2</h4>
+                                        <h3>Inspiration 2</h3>
                                         <p>Tool applies Guard Break to enemies hit for 3s / 3s / 6s / 9s.</p>
                                     </li>
                                 </ul>
@@ -309,11 +315,11 @@
                     </div>
                 </details>
                 <details name="character-select" class="character-select-alopex">
-                    <summary><img class="portrait" src="assets/Portrait-Alopex.webp"/></summary>
+                    <summary><img class="portrait" src="assets/Portrait-Alopex.webp" alt="Alopex"/></summary>
                     <div class="character-summary character-summary-alopex ">
 
                         <div id="basic-alopex" class="basic-alopex">
-                            <img src="assets/Name-Alopex.webp" alt="Alopex's name plate" height="64" width="308"/>
+                            <img src="assets/Name-Alopex.webp" alt="Alopex's name plate" height="64" width="308" role="heading" aria-level="2"/>
                             <div class="basic-alopex-content">
                                 <p class="character-text border-a">Once a Foot assassin, now firm friend of the Turtles. Highly-trained and disciplined, her attacks and movements are fast and precise.</p>
 
@@ -338,11 +344,11 @@
                                 </ul>
                                 <ul>
                                     <li class="basic-insp border-a">
-                                        <h4>Inspiration 1</h4>
+                                        <h3>Inspiration 1</h3>
                                         <p>+6% / 8% / 10% / 12% Critical Hit chance. +6% / 8% / 10% / 12% Movement Speed.</p>
                                     </li>
                                     <li class="basic-insp border-a">
-                                        <h4>Inspiration 2</h4>
+                                        <h3>Inspiration 2</h3>
                                         <p>+6% / 8% / 10% / 12% Dodge chance, double against projectiles.</p>
                                     </li>
                                 </ul>
@@ -351,7 +357,7 @@
                     </div>
                 </details>
             </div>
-            <div id="basic-info" class="tab-content active basic-info">
+            <div class="tab-content active basic-info">
                 <div class="basic-info-container">
                     <!-- <div id="basic-michelangelo" class="basic-michelangelo">
                         <img src="assets/Name-Mikey.webp" alt="Michelangelo's name plate" height="64" width="235"/>
@@ -387,7 +393,7 @@
                         </div>
                     </div> -->
                         <!-- <div id="basic-leonardo" class="basic-leonardo">
-                            <img src="assets/Name-Leo.webp" alt="Leonarodo's name plate" height="64" width="182"/>
+                            <img src="assets/Name-Leo.webp" alt="Leonardo's name plate" height="64" width="182"/>
                             <div class="basic-leonardo-content">
                                 <ul class="basic-content border-l">
                                     <li>Health: 100</li>
@@ -478,7 +484,7 @@
                             </div>
                         </div> -->
                         <!-- <div id="basic-casey" class="basic-casey">
-                            <img src="assets/Name-Casey.webp" alt="Casey Jone's name plate" height="64" width="308"/>
+                            <img src="assets/Name-Casey.webp" alt="Casey Jones's name plate" height="64" width="308"/>
                             <div class="basic-casey-content">
                                 <ul class="basic-content border-c">
                                     <li>Health: 100</li>
@@ -592,11 +598,11 @@
                 <p class="build-planner">There is a nice build planner made by HeikaBlade you can check out <a href="https://tmnt.boardpandas.com/">here</a>.</p>
             </div>
         </div>
+        </main>
         <footer>
             <p>All images copyright Viacom and or Super Evil Megacorp.</p>
             <p>This is just a fansite. Thanks to Super Evil Megacorp for making a great game.</p>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
 </html>

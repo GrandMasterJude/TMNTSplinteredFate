@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="The ultimate resource for Teenage Mutant Ninja Turtles: Splintered Fate players. Find comprehensive guides on all powers, upgrades, and abilities to master the game and perfect your turtle strategy." />
         <title>TMNT Splintered Fate</title>
+        <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu">
             ☰ Menu
-        </div>
+        </button>
     
-        <div class="mobile-menu">
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
@@ -20,11 +24,11 @@
             <a href="artifacts.html">Artifacts</a>
             <a href="boosts.html">Boosts</a>
             <a href="portals.html">Portals</a>
-            <a href="map.html">Map</a>
+            <a href="map.html" aria-current="page">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
-        <div class="navbar">
+        </nav>
+        <nav class="navbar" aria-label="Primary">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
@@ -34,93 +38,95 @@
             <a href="artifacts.html">Artifacts</a>
             <a href="boosts.html">Boosts</a>
             <a href="portals.html">Portals</a>
-            <a class="tab active" href="map.html">Map</a>
+            <a class="tab active" href="map.html" aria-current="page">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
+        </nav>
 
+        <main id="main">
         <div class="content" id="map">
+            <h1 class="visually-hidden">TMNT: Splintered Fate &ndash; Map</h1>
             <p class="map-itro">
                 
             </p>
 
             <div>
-                <img class="map-title" src="assets/Title-TheSewers.webp" />
+                <img class="map-title" src="assets/Title-TheSewers.webp" alt="The Sewers" role="heading" aria-level="2"/>
                 <div class="map-room">
-                    <h4>Room 1:</h4>
+                    <h3>Room 1:</h3>
                     <p>Empty Room: Free Power</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 2</h4>
+                    <h3>Room 2</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 3</h4>
+                    <h3>Room 3</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 4</h4>
+                    <h3>Room 4</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 5:</h4>
+                    <h3>Room 5:</h3>
                     <p>Mini-boss. Gauntlet version gives <a href="inspirations.html">Inspiration</a> as a reward option.</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 6</h4>
+                    <h3>Room 6</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 7:</h4>
+                    <h3>Room 7:</h3>
                     <p><a href="mastery.html">Mastery</a> always offered as a reward option.</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 8</h4>
+                    <h3>Room 8</h3>
                     <p>Shop</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 9:</h4>
+                    <h3>Room 9:</h3>
                     <p>Leatherhead</p>
                 </div>
 
             </div>
 
             <div>
-                <img class="map-title" src="assets/Title-TheDocks.webp" />
+                <img class="map-title" src="assets/Title-TheDocks.webp" alt="The Docks" role="heading" aria-level="2"/>
                 <div class="map-room">
-                    <h4>Room 1:</h4>
+                    <h3>Room 1:</h3>
                     <p>Empty Room: <a href="inspirations.html">Inspiration</a> always offered as a reward option.</p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 2</h4>
+                    <h3>Room 2</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 3</h4>
+                    <h3>Room 3</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 4</h4>
+                    <h3>Room 4</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 5:</h4>
+                    <h3>Room 5:</h3>
                     <p>Mini-boss. Gauntlet version gives <a href="mastery.html">Mastery</a> as a reward option.</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 6</h4>
+                    <h3>Room 6</h3>
                     <p>Shop</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 7</h4>
+                    <h3>Room 7</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 8:</h4>
+                    <h3>Room 8:</h3>
                     <p>Room Reward is always an Upgrade.</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 9:</h4>
+                    <h3>Room 9:</h3>
                     <p>Karai</p>
                 </div>
 
@@ -128,132 +134,132 @@
 
             <div>
                 <div>
-                    <img class="map-title" src="assets/Title-TheStreets.webp" />
+                    <img class="map-title" src="assets/Title-TheStreets.webp" alt="The Streets" role="heading" aria-level="2"/>
                 </div>
                 <div class="map-room">
-                    <h4>Room 1:</h4>
+                    <h3>Room 1:</h3>
                     <p>Empty Room: <a href="mastery.html">Mastery</a></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 2</h4>
+                    <h3>Room 2</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 3</h4>
+                    <h3>Room 3</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 4:</h4>
+                    <h3>Room 4:</h3>
                     <p>Shop</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 5</h4>
+                    <h3>Room 5</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 6:</h4>
+                    <h3>Room 6:</h3>
                     <p>Mini-boss. Gauntlet version gives <a href="inspirations.html">Inspiration</a> as a reward option.</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 7</h4>
+                    <h3>Room 7</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 8</h4>
+                    <h3>Room 8</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 9:</h4>
+                    <h3>Room 9:</h3>
                     <p>Shop</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 10:</h4>
+                    <h3>Room 10:</h3>
                     <p>Bebop & Rocksteady</p>
                 </div>
             </div>
 
             <div>
                 <div>
-                    <img class="map-title" src="assets/Title-TheJunkyard.webp" />
+                    <img class="map-title" src="assets/Title-TheJunkyard.webp" alt="The Junkyard" role="heading" aria-level="2"/>
                 </div>
                 <div class="map-room">
-                    <h4>Room 1:</h4>
+                    <h3>Room 1:</h3>
                     <p>Empty Room: <a href="mastery.html">Mastery</a></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 2</h4>
+                    <h3>Room 2</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 3</h4>
+                    <h3>Room 3</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 4</h4>
+                    <h3>Room 4</h3>
                 </div>
                 <div class="map-room">
-                    <h4>Room 5:</h4>
+                    <h3>Room 5:</h3>
                     <p>Shop</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 6:</h4>
+                    <h3>Room 6:</h3>
                     <p>Mini-boss. Gauntlet version gives <a href="inspirations.html">Inspiration</a> as a reward option.</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 7</h4>
+                    <h3>Room 7</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 8</h4>
+                    <h3>Room 8</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 9:</h4>
+                    <h3>Room 9:</h3>
                     <p>Shop</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 10:</h4>
+                    <h3>Room 10:</h3>
                     <p>Junkinator</p>
                 </div>
             </div>
 
             <div>
-                <img class="map-title" src="assets/Title-TheRooftops.webp" />
+                <img class="map-title" src="assets/Title-TheRooftops.webp" alt="The Rooftops" role="heading" aria-level="2"/>
                 <div class="map-room">
-                    <h4>Room 1:</h4>
+                    <h3>Room 1:</h3>
                     <p>Empty Room: Upgrade</p>
                     <p><a href="upgrades.html#upgrade-dojo">Dojo</a> upgrade offers a chance for this to be a <a href="mastery.html">Mastery</a>.</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 2</h4>
+                    <h3>Room 2</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 3</h4>
+                    <h3>Room 3</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 4</h4>
+                    <h3>Room 4</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 5</h4>
+                    <h3>Room 5</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 6</h4>
+                    <h3>Room 6</h3>
                     <p></p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 7:</h4>
+                    <h3>Room 7:</h3>
                     <p>Mini-boss. Gauntlet version gives <a href="mastery.html">Mastery</a> as a reward option.</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 8</h4>
+                    <h3>Room 8</h3>
                     <p>Shop</p>
                 </div>
                 <div class="map-room">
-                    <h4>Room 9:</h4>
+                    <h3>Room 9:</h3>
                     <p>Shredder</p>
                 </div>
 
@@ -301,11 +307,11 @@ power-up 1 2 3 4 5 mini-boss(G power) Store Shredder
 -->
             
         </div>
+        </main>
         <footer>
             <p>All images copyright Viacom.</p>
             <p>This is just a fansite. Thanks to Super Evil Megacorp for making a great game.</p>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
 </html>

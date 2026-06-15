@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="The ultimate resource for Teenage Mutant Ninja Turtles: Splintered Fate players. Find comprehensive guides on all powers, upgrades, and abilities to master the game and perfect your turtle strategy." />
         <title>TMNT Splintered Fate</title>
+        <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu">
             ☰ Menu
-        </div>
+        </button>
     
-        <div class="mobile-menu">
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
@@ -18,13 +22,13 @@
             <a href="tools.html">Tools</a>
             <a href="upgrades.html">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
-            <a href="boosts.html">Boosts</a>
+            <a href="boosts.html" aria-current="page">Boosts</a>
             <a href="portals.html">Portals</a>
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
-        <div class="navbar">
+        </nav>
+        <nav class="navbar" aria-label="Primary">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
@@ -32,14 +36,16 @@
             <a href="tools.html">Tools</a>
             <a href="upgrades.html">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
-            <a class="tab active" href="boosts.html">Boosts</a>
+            <a class="tab active" href="boosts.html" aria-current="page">Boosts</a>
             <a href="portals.html">Portals</a>
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
+        </nav>
 
+        <main id="main">
         <div class="content">
+            <h1 class="visually-hidden">TMNT: Splintered Fate &ndash; Boosts</h1>
             <div id="boosts" class="tab-content boosts">
 
                 <p>Boosts are strong bonuses that only last a limited amount of rooms.</p>
@@ -48,85 +54,85 @@
 
                 <a href="boosts.html#boost-attack-damage" class="no-deco">
                     <div id="boost-attack-damage" class="boost-wrapper">
-                        <img src="assets/Boost-Attack-Damage.webp" class="boost-image">
-                        <h4>Attack Damage</h4>
+                        <img src="assets/Boost-Attack-Damage.webp" class="boost-image" alt="">
+                        <h2>Attack Damage</h2>
                         <p>+50% Attack damage. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-barrier-damage" class="no-deco">
                     <div id="boost-barrier-damage" class="boost-wrapper">
-                        <img src="assets/Boost-Barrier-Damage.webp" class="boost-image">
-                        <h4>Barrier Damage</h4>
+                        <img src="assets/Boost-Barrier-Damage.webp" class="boost-image" alt="">
+                        <h2>Barrier Damage</h2>
                         <p>+30% damage to enemies with a Barrier. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-bonus-damage" class="no-deco">
                     <div id="boost-bonus-damage" class="boost-wrapper">
-                        <img src="assets/Boost-Bonus-Damage.webp" class="boost-image">
-                        <h4>Bonus Damage</h4>
+                        <img src="assets/Boost-Bonus-Damage.webp" class="boost-image" alt="">
+                        <h2>Bonus Damage</h2>
                         <p>+30% Damage dealt. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-critical-chance" class="no-deco">
                     <div id="boost-critical-chance" class="boost-wrapper">
-                        <img src="assets/Boost-Critical-Chance.webp" class="boost-image">
-                        <h4>Critical Chance</h4>
+                        <img src="assets/Boost-Critical-Chance.webp" class="boost-image" alt="">
+                        <h2>Critical Chance</h2>
                         <p>+30% Global Critical Hit chance. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-critical-damage" class="no-deco">
                     <div id="boost-critical-damage" class="boost-wrapper">
-                        <img src="assets/Boost-Critical-Damage.webp" class="boost-image">
-                        <h4>Critical Damage</h4>
+                        <img src="assets/Boost-Critical-Damage.webp" class="boost-image" alt="">
+                        <h2>Critical Damage</h2>
                         <p>+100% Critical Hit damage. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-dash-attack-damage" class="no-deco">
                     <div id="boost-dash-attack-damage" class="boost-wrapper">
-                        <img src="assets/Boost-Dash-Attack-Damage.webp" class="boost-image">
-                        <h4>Dash Attack Damage</h4>
+                        <img src="assets/Boost-Dash-Attack-Damage.webp" class="boost-image" alt="">
+                        <h2>Dash Attack Damage</h2>
                         <p>+100% Dash Attack damage. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-elemental-damage" class="no-deco">
                     <div id="boost-elemental-damage" class="boost-wrapper">
-                        <img src="assets/Boost-Elemental-Damage.webp" class="boost-image">
-                        <h4>Elemental Damage</h4>
+                        <img src="assets/Boost-Elemental-Damage.webp" class="boost-image" alt="">
+                        <h2>Elemental Damage</h2>
                         <p>+50% Elemental damage. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-move-speed" class="no-deco">
                     <div id="boost-move-speed" class="boost-wrapper">
-                        <img src="assets/Boost-Move-Speed.webp" class="boost-image">
-                        <h4>Move Speed</h4>
+                        <img src="assets/Boost-Move-Speed.webp" class="boost-image" alt="">
+                        <h2>Move Speed</h2>
                         <p>+40% Move Speed. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-special-charge" class="no-deco">
                     <div id="boost-special-charge" class="boost-wrapper">
-                        <img src="assets/Boost-Special-Charge.webp" class="boost-image">
-                        <h4>Special Charge</h4>
+                        <img src="assets/Boost-Special-Charge.webp" class="boost-image" alt="">
+                        <h2>Special Charge</h2>
                         <p>Special charges 50% faster. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-special-damage" class="no-deco">
                     <div id="boost-special-damage" class="boost-wrapper">
-                        <img src="assets/Boost-Special-Damage.webp" class="boost-image">
-                        <h4>Special Damage</h4>
+                        <img src="assets/Boost-Special-Damage.webp" class="boost-image" alt="">
+                        <h2>Special Damage</h2>
                         <p>+100% Special damage. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-tool-charge" class="no-deco">
                     <div id="boost-tool-charge" class="boost-wrapper">
-                        <img src="assets/Boost-Tool-charge.webp" class="boost-image">
-                        <h4>Tool Charge</h4>
+                        <img src="assets/Boost-Tool-charge.webp" class="boost-image" alt="">
+                        <h2>Tool Charge</h2>
                         <p>Tool charges 50% faster. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
                 <a href="boosts.html#boost-tool-damage" class="no-deco">
                     <div id="boost-tool-damage" class="boost-wrapper">
-                        <img src="assets/Boost-Tool-damage.webp" class="boost-image">
-                        <h4>Tool Damage</h4>
+                        <img src="assets/Boost-Tool-damage.webp" class="boost-image" alt="">
+                        <h2>Tool Damage</h2>
                         <p>+100% Tool damage. <br class="mobile-yep">Lasts 4 rooms.</p>
                     </div>
                 </a>
@@ -134,11 +140,11 @@
 
             
         </div>
+        </main>
         <footer>
             <p>All images copyright Viacom.</p>
             <p>This is just a fansite. Thanks to Super Evil Megacorp for making a great game.</p>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
 </html>

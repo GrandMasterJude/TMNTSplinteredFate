@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="The ultimate resource for Teenage Mutant Ninja Turtles: Splintered Fate players. Find comprehensive guides on all powers, upgrades, and abilities to master the game and perfect your turtle strategy." />
         <title>TMNT Splintered Fate</title>
+        <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu">
             ☰ Menu
-        </div>
+        </button>
     
-        <div class="mobile-menu">
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
-            <a href="mastery.html">Mastery</a>
+            <a href="mastery.html" aria-current="page">Mastery</a>
             <a href="powers.html">Powers</a>
             <a href="tools.html">Tools</a>
             <a href="upgrades.html">Upgrades</a>
@@ -23,11 +27,11 @@
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
-        <div class="navbar">
+        </nav>
+        <nav class="navbar" aria-label="Primary">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
-            <a class="tab active" href="mastery.html">Mastery</a>
+            <a class="tab active" href="mastery.html" aria-current="page">Mastery</a>
             <a href="powers.html">Powers</a>
             <a href="tools.html">Tools</a>
             <a href="upgrades.html">Upgrades</a>
@@ -37,13 +41,15 @@
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
+        </nav>
 
+        <main id="main">
         <div class="content">
+            <h1 class="visually-hidden">TMNT: Splintered Fate &ndash; Mastery</h1>
             <div id="mastery" class="tab-content mastery">
                 <div class="mastery-container">
                     <div class="mastery-michelangelo">
-                        <img src="assets/Name-Mikey.webp" alt="Michelangelo's name plate." />
+                        <img src="assets/Name-Mikey.webp" alt="Michelangelo's name plate." role="heading" aria-level="2"/>
                         <ul>
                             <a href="mastery.html#mastery-m-1" class="no-deco">
                                 <li id="mastery-m-1">
@@ -120,7 +126,7 @@
                         </ul>
                     </div>
                     <div class="mastery-leonardo">
-                        <img src="assets/Name-Leo.webp" alt="Leonardo's name plate." />
+                        <img src="assets/Name-Leo.webp" alt="Leonardo's name plate." role="heading" aria-level="2"/>
                         <ul>
                             <a href="mastery.html#mastery-l-1" class="no-deco">
                                 <li id="mastery-l-1">
@@ -196,7 +202,7 @@
                         </ul>
                     </div>
                     <div class="mastery-raphael">
-                        <img src="assets/Name-Raph.webp" alt="Raphael's name plate." />
+                        <img src="assets/Name-Raph.webp" alt="Raphael's name plate." role="heading" aria-level="2"/>
                         <ul>
                             <a href="mastery.html#mastery-r-1" class="no-deco">
                                 <li id="mastery-r-1">
@@ -271,7 +277,7 @@
                         </ul>
                     </div>
                     <div class="mastery-donatello">
-                        <img src="assets/Name-Don.webp" alt="Donatello's name plate." />
+                        <img src="assets/Name-Don.webp" alt="Donatello's name plate." role="heading" aria-level="2"/>
                         <ul>
                             <a href="mastery.html#mastery-d-1" class="no-deco">
                                 <li id="mastery-d-1">
@@ -346,7 +352,7 @@
                         </ul>
                     </div>
                     <div class="mastery-casey">
-                        <img src="assets/Name-Casey.webp" alt="Casey's name plate." />
+                        <img src="assets/Name-Casey.webp" alt="Casey's name plate." role="heading" aria-level="2"/>
                         <ul>
                             <a href="mastery.html#mastery-c-1" class="no-deco">
                                 <li id="mastery-c-1">
@@ -437,7 +443,7 @@
                         </ul>
                     </div>
                     <div class="mastery-metalhead">
-                        <img src="assets/Name-Metalhead.webp" alt="Metalhead's name plate." />
+                        <img src="assets/Name-Metalhead.webp" alt="Metalhead's name plate." role="heading" aria-level="2"/>
                         <ul>
                             <a href="mastery.html#mastery-mh-1" class="no-deco">
                                 <li id="mastery-mh-1">
@@ -517,7 +523,7 @@
                         </ul>
                     </div>
                     <div class="mastery-alopex">
-                        <img src="assets/Name-Alopex.webp" alt="Alopex's name plate." />
+                        <img src="assets/Name-Alopex.webp" alt="Alopex's name plate." role="heading" aria-level="2"/>
                         <ul>
                             <a href="mastery.html#mastery-a-1" class="no-deco">
                                 <li id="mastery-a-1">
@@ -602,11 +608,11 @@
                 </div>
             </div>
         </div>
+        </main>
         <footer>
             <p>All images copyright Viacom.</p>
             <p>This is just a fansite. Thanks to Super Evil Megacorp for making a great game.</p>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
 </html>

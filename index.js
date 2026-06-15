@@ -25,7 +25,9 @@ function showContent(sectionId) {
 
 function toggleMobileMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
-    mobileMenu.classList.toggle('show');
+    const isOpen = mobileMenu.classList.toggle('show');
+    const button = document.querySelector('.hamburger');
+    if (button) button.setAttribute('aria-expanded', String(isOpen));
 }
 
 const wrapper = document.querySelector('.content');

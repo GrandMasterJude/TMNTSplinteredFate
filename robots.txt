@@ -4,5 +4,5 @@
 User-agent: *
 Allow: /
 
-# Sitemap location (uncomment and modify if you have a sitemap)
-# Sitemap: https://yourwebsite.com/sitemap.xml
+# Sitemap location
+Sitemap: https://tmntsplinteredfate.pages.dev/sitemap.xml

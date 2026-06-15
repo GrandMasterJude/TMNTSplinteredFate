@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="The ultimate resource for Teenage Mutant Ninja Turtles: Splintered Fate players. Find comprehensive guides on all powers, upgrades, and abilities to master the game and perfect your turtle strategy." />
         <title>TMNT Splintered Fate</title>
+        <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu">
             ☰ Menu
-        </div>
+        </button>
     
-        <div class="mobile-menu">
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
             <a href="powers.html">Powers</a>
             <a href="tools.html">Tools</a>
-            <a href="upgrades.html">Upgrades</a>
+            <a href="upgrades.html" aria-current="page">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
             <a href="boosts.html">Boosts</a>
             <a href="portals.html">Portals</a>
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
-        <div class="navbar">
+        </nav>
+        <nav class="navbar" aria-label="Primary">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
             <a href="powers.html">Powers</a>
             <a href="tools.html">Tools</a>
-            <a class="tab active" href="upgrades.html">Upgrades</a>
+            <a class="tab active" href="upgrades.html" aria-current="page">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
             <a href="boosts.html">Boosts</a>
             <a href="portals.html">Portals</a>
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
+        </nav>
 
+        <main id="main">
         <div class="content">
+            <h1 class="visually-hidden">TMNT: Splintered Fate &ndash; Upgrades</h1>
             <div id="upgrades" class="tab-content upgrades">
-                <h3><img class="coin-large" src="assets/TMNT-DragonCoin.webp"/> Dragon Upgrades</h3>
+                <h2><img class="coin-large" src="assets/TMNT-DragonCoin.webp" alt=""/> Dragon Upgrades</h2>
 
                 <a href="upgrades.html#upgrade-astral-rejuvenation" class="no-deco">
                     <div id="upgrade-astral-rejuvenation" class="upgrade upgrade-astral-rejuvenation" >
-                        <h4>Astral Rejuvenation</h4>
+                        <h3>Astral Rejuvenation</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Karai.webp"/></p>
+                                    <p class="level">Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>Splinter's Revive restores 10% additional Health.</p>
                             </div>
@@ -59,7 +65,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p class="level">Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>Splinter's Revive restores 20% additional Health.</p>
                             </div>
@@ -67,7 +73,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p class="level">Cost: 800 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p class="level">Cost: 800 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>Splinter's Revive restores 30% additional Health.</p>
                             </div>
@@ -77,13 +83,13 @@
 
                 <a href="upgrades.html#upgrade-attack-damage" class="no-deco">
                     <div id="upgrade-attack-damage" class="upgrade upgrade-attack-damage" >
-                        <h4>Attack Damage</h4>
+                        <h3>Attack Damage</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 10 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 10 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+10% Attack damage.</p>
                             </div>
@@ -91,7 +97,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 20 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 20 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+20% Attack damage.</p>
                             </div>
@@ -99,7 +105,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+30% Attack damage.</p>
                             </div>
@@ -107,7 +113,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+40% Attack damage.</p>
                             </div>
@@ -115,7 +121,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 90 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 90 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+50% Attack damage.</p>
                             </div>
@@ -123,7 +129,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+60% Attack damage.</p>
                             </div>
@@ -131,7 +137,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+70% Attack damage.</p>
                             </div>
@@ -139,7 +145,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+80% Attack damage.</p>
                             </div>
@@ -147,7 +153,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+90% Attack damage.</p>
                             </div>
@@ -155,7 +161,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+100% Attack damage.</p>
                             </div>
@@ -163,7 +169,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 11</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+110% Attack damage.</p>
                             </div>
@@ -171,7 +177,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 12</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+120% Attack damage.</p>
                             </div>
@@ -179,7 +185,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 13</p>
-                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+130% Attack damage.</p>
                             </div>
@@ -187,7 +193,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 14</p>
-                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+140% Attack damage.</p>
                             </div>
@@ -195,7 +201,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 15</p>
-                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+150% Attack damage.</p>
                             </div>
@@ -203,7 +209,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 16</p>
-                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 4 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+160% Attack damage.</p>
                             </div>
@@ -214,13 +220,13 @@
 
                 <a href="upgrades.html#upgrade-confidence" class="no-deco">
                     <div id="upgrade-confidence" class="upgrade upgrade-confidence" >
-                        <h4>Confidence</h4>
+                        <h3>Confidence</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 3 <img class="coin" src="assets/Icon-Charm-R.webp"/></p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 3 <img class="coin" src="assets/Icon-Charm-R.webp" alt="Raphael Charm"/></p>
                                 </div>
                                 <p>Clearing a room without taking damage grants +1% Special damage.</p>
                             </div>
@@ -228,7 +234,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin band" src="assets/Icon-Band-R.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin band" src="assets/Icon-Band-R.webp" alt="Raphael Band"/></p>
                                 </div>
                                 <p>Clearing a room without taking damage grants +2% Special damage.</p>
                             </div>
@@ -236,7 +242,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4 <img class="coin band" src="assets/Icon-Band-R.webp"/></p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 4 <img class="coin band" src="assets/Icon-Band-R.webp" alt="Raphael Band"/></p>
                                 </div>
                                 <p>Clearing a room without taking damage grants +3% Special damage.</p>
                             </div>
@@ -246,13 +252,13 @@
 
                 <a href="upgrades.html#upgrade-critical-chance" class="no-deco">
                     <div id="upgrade-critical-chance" class="upgrade upgrade-critical-chance" >
-                        <h4>Critical Chance</h4>
+                        <h3>Critical Chance</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 15 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 15 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+2% Attack Critical Hit chance.</p>
                             </div>
@@ -260,7 +266,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+4% Attack Critical Hit chance.</p>
                             </div>
@@ -268,7 +274,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+6% Attack Critical Hit chance.</p>
                             </div>
@@ -276,7 +282,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+8% Attack Critical Hit chance.</p>
                             </div>
@@ -284,7 +290,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+10% Attack Critical Hit chance.</p>
                             </div>
@@ -292,7 +298,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+12% Attack Critical Hit chance.</p>
                             </div>
@@ -300,7 +306,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+14% Attack Critical Hit chance.</p>
                             </div>
@@ -308,7 +314,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+16% Attack Critical Hit chance.</p>
                             </div>
@@ -316,7 +322,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin " src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin " src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+18% Attack Critical Hit chance.</p>
                             </div>
@@ -324,7 +330,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+20% Attack Critical Hit chance.</p>
                             </div>
@@ -334,13 +340,13 @@
 
                 <a href="upgrades.html#upgrade-critical-damage" class="no-deco">
                     <div id="upgrade-critical-damage" class="upgrade upgrade-critical-damage" >
-                        <h4>Critical Damage</h4>
+                        <h3>Critical Damage</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Charm-R.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Charm-R.webp" alt="Raphael Charm"/></p>
                                 </div>
                                 <p>+5% Critical Damage.</p>
                             </div>
@@ -348,7 +354,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+10% Critical Damage.</p>
                             </div>
@@ -356,7 +362,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 140 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 140 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+15% Critical Damage.</p>
                             </div>
@@ -364,7 +370,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+20% Critical Damage.</p>
                             </div>
@@ -372,7 +378,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin band" src="assets/Icon-Band-R.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin band" src="assets/Icon-Band-R.webp" alt="Raphael Band"/></p>
                                 </div>
                                 <p>+25% Critical Damage.</p>
                             </div>
@@ -380,7 +386,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin band" src="assets/Icon-Band-R.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin band" src="assets/Icon-Band-R.webp" alt="Raphael Band"/></p>
                                 </div>
                                 <p>+30% Critical Damage.</p>
                             </div>
@@ -388,7 +394,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 450 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 3 <img class="coin band" src="assets/Icon-Band-R.webp"/></p>
+                                    <p>Cost: 450 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 3 <img class="coin band" src="assets/Icon-Band-R.webp" alt="Raphael Band"/></p>
                                 </div>
                                 <p>+35% Critical Damage.</p>
                             </div>
@@ -396,7 +402,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4 <img class="coin band" src="assets/Icon-Band-R.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 4 <img class="coin band" src="assets/Icon-Band-R.webp" alt="Raphael Band"/></p>
                                 </div>
                                 <p>+40% Critical Damage.</p>
                             </div>
@@ -404,7 +410,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+45% Critical Damage.</p>
                             </div>
@@ -412,7 +418,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+50% Critical Damage.</p>
                             </div>
@@ -422,13 +428,13 @@
 
                 <a href="upgrades.html#upgrade-dash-charge" class="no-deco">
                     <div id="upgrade-dash-charge" class="upgrade upgrade-dash-charge" >
-                        <h4>Dash Charge</h4>
+                        <h3>Dash Charge</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+1 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
                             </div>
@@ -436,7 +442,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 1 <img class="coin" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+2 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
                             </div>
@@ -444,7 +450,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>+3 Dash Charge(s). Each charge allows another Dash before triggering a cooldown.</p>
                             </div>
@@ -454,13 +460,13 @@
 
                 <a href="upgrades.html#upgrade-enduring-effects" class="no-deco">
                     <div id="upgrade-enduring-effects" class="upgrade upgrade-enduring-effects" >
-                        <h4>Enduring Effect</h4>
+                        <h3>Enduring Effect</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+10% duration of Negative Effects you apply.</p>
                             </div>
@@ -468,7 +474,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+20% duration of Negative Effects you apply.</p>
                             </div>
@@ -476,7 +482,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 1 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>+30% duration of Negative Effects you apply.</p>
                             </div>
@@ -484,7 +490,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 3 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 3 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>+40% duration of Negative Effects you apply.</p>
                             </div>
@@ -492,7 +498,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>+50% duration of Negative Effects you apply.</p>
                             </div>
@@ -502,13 +508,13 @@
 
                 <a href="upgrades.html#upgrade-fast-abilities" class="no-deco">
                     <div id="upgrade-fast-abilities" class="upgrade upgrade-fast-abilities" >
-                        <h4>Fast Abilities</h4>
+                        <h3>Fast Abilities</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Charm-D.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Charm-D.webp" alt="Donatello Charm"/></p>
                                 </div>
                                 <p>Special charges 5% faster.</p>
                             </div>
@@ -516,7 +522,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Special charges 10% faster.</p>
                             </div>
@@ -524,7 +530,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 140 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 140 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Special charges 15% faster.</p>
                             </div>
@@ -532,7 +538,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Special charges 20% faster.</p>
                             </div>
@@ -540,7 +546,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin band" src="assets/Icon-Band-D.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin band" src="assets/Icon-Band-D.webp" alt="Donatello Band"/></p>
                                 </div>
                                 <p>Special charges 25% faster.</p>
                             </div>
@@ -548,7 +554,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin band" src="assets/Icon-Band-D.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin band" src="assets/Icon-Band-D.webp" alt="Donatello Band"/></p>
                                 </div>
                                 <p>Special charges 30% faster.</p>
                             </div>
@@ -556,7 +562,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 560 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 3 <img class="coin band" src="assets/Icon-Band-D.webp"/></p>
+                                    <p>Cost: 560 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 3 <img class="coin band" src="assets/Icon-Band-D.webp" alt="Donatello Band"/></p>
                                 </div>
                                 <p>Special charges 35% faster.</p>
                             </div>
@@ -564,7 +570,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 720 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4 <img class="coin band" src="assets/Icon-Band-D.webp"/></p>
+                                    <p>Cost: 720 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 4 <img class="coin band" src="assets/Icon-Band-D.webp" alt="Donatello Band"/></p>
                                 </div>
                                 <p>Special charges 40% faster.</p>
                             </div>
@@ -572,7 +578,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Special charges 45% faster.</p>
                             </div>
@@ -580,7 +586,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 1100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 1100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Special charges 50% faster.</p>
                             </div>
@@ -590,13 +596,13 @@
                 
                 <a href="upgrades.html#upgrade-fast-attacks" class="no-deco">
                     <div id="upgrade-fast-attacks" class="upgrade upgrade-fast-attacks" >
-                        <h4>Fast Attacks</h4>
+                        <h3>Fast Attacks</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Charm-L.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Charm-L.webp" alt="Leonardo Charm"/></p>
                                 </div>
                                 <p>+10% Dash Attack damage.</p>
                             </div>
@@ -604,7 +610,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+20% Dash Attack damage.</p>
                             </div>
@@ -612,7 +618,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 140 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 140 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+30% Dash Attack damage.</p>
                             </div>
@@ -620,7 +626,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+40% Dash Attack damage.</p>
                             </div>
@@ -628,7 +634,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 1 <img class="coin band" src="assets/Icon-Band-L.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 1 <img class="coin band" src="assets/Icon-Band-L.webp" alt="Leonardo Band"/></p>
                                 </div>
                                 <p>+50% Dash Attack damage.</p>
                             </div>
@@ -636,7 +642,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 2 <img class="coin band" src="assets/Icon-Band-L.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 2 <img class="coin band" src="assets/Icon-Band-L.webp" alt="Leonardo Band"/></p>
                                 </div>
                                 <p>+60% Dash Attack damage.</p>
                             </div>
@@ -644,7 +650,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 560 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 3 <img class="coin band" src="assets/Icon-Band-L.webp"/></p>
+                                    <p>Cost: 560 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 3 <img class="coin band" src="assets/Icon-Band-L.webp" alt="Leonardo Band"/></p>
                                 </div>
                                 <p>+70% Dash Attack damage.</p>
                             </div>
@@ -652,7 +658,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 720 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 4 <img class="coin band" src="assets/Icon-Band-L.webp"/></p>
+                                    <p>Cost: 720 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 4 <img class="coin band" src="assets/Icon-Band-L.webp" alt="Leonardo Band"/></p>
                                 </div>
                                 <p>+80% Dash Attack damage.</p>
                             </div>
@@ -660,7 +666,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+90% Dash Attack damage.</p>
                             </div>
@@ -668,7 +674,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 1100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 1100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+100% Dash Attack damage.</p>
                             </div>
@@ -678,13 +684,13 @@
 
                 <a href="upgrades.html#upgrade-focused-forces" class="no-deco">
                     <div id="upgrade-focused-forces" class="upgrade upgrade-focused-forces" >
-                        <h4>Focused Forces</h4>
+                        <h3>Focused Forces</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 20 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 20 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+7.5% Elemental damage.</p>
                             </div>
@@ -692,7 +698,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 40 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 40 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+15% Elemental damage.</p>
                             </div>
@@ -700,7 +706,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+22.5% Elemental damage.</p>
                             </div>
@@ -708,7 +714,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+30% Elemental damage.</p>
                             </div>
@@ -716,7 +722,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+37.5% Elemental damage.</p>
                             </div>
@@ -724,7 +730,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+45% Elemental damage.</p>
                             </div>
@@ -732,7 +738,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+52.5% Elemental damage.</p>
                             </div>
@@ -740,7 +746,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+60% Elemental damage.</p>
                             </div>
@@ -748,7 +754,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+67.5% Elemental damage.</p>
                             </div>
@@ -756,7 +762,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+75% Elemental damage.</p>
                             </div>
@@ -766,13 +772,13 @@
 
                 <a href="upgrades.html#upgrade-hammertime" class="no-deco">
                     <div id="upgrade-hammertime" class="upgrade upgrade-hammertime" >
-                        <h4>Hammertime</h4>
+                        <h3>Hammertime</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 3 <img class="coin" src="assets/Icon-Charm-L.webp"/></p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 3 <img class="coin" src="assets/Icon-Charm-L.webp" alt="Leonardo Charm"/></p>
                                 </div>
                                 <p>+4% Dodge chance.</p>
                             </div>
@@ -780,7 +786,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 1 <img class="coin band" src="assets/Icon-Band-L.webp"/></p>
+                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 1 <img class="coin band" src="assets/Icon-Band-L.webp" alt="Leonardo Band"/></p>
                                 </div>
                                 <p>+8% Dodge chance.</p>
                             </div>
@@ -788,7 +794,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 2 <img class="coin band" src="assets/Icon-Band-L.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 2 <img class="coin band" src="assets/Icon-Band-L.webp" alt="Leonardo Band"/></p>
                                 </div>
                                 <p>+12% Dodge chance.</p>
                             </div>
@@ -796,7 +802,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 4 <img class="coin band" src="assets/Icon-Band-L.webp"/></p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 4 <img class="coin band" src="assets/Icon-Band-L.webp" alt="Leonardo Band"/></p>
                                 </div>
                                 <p>+16% Dodge chance.</p>
                             </div>
@@ -804,7 +810,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+20% Dodge chance.</p>
                             </div>
@@ -814,13 +820,13 @@
 
                 <a href="upgrades.html#upgrade-health" class="no-deco">
                     <div id="upgrade-health" class="upgrade upgrade-health" >
-                        <h4>Health</h4>
+                        <h3>Health</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 10 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 10 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+10% Max Health.</p>
                             </div>
@@ -828,7 +834,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 20 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 20 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+20% Max Health.</p>
                             </div>
@@ -836,7 +842,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+30% Max Health.</p>
                             </div>
@@ -844,7 +850,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+40% Max Health.</p>
                             </div>
@@ -852,7 +858,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 70 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 70 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+50% Max Health.</p>
                             </div>
@@ -860,7 +866,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 90 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 90 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+60% Max Health.</p>
                             </div>
@@ -868,7 +874,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 110 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 110 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+70% Max Health.</p>
                             </div>
@@ -876,7 +882,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 130 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 130 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+80% Max Health.</p>
                             </div>
@@ -884,7 +890,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+90% Max Health.</p>
                             </div>
@@ -892,7 +898,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 190 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 190 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+100% Max Health.</p>
                             </div>
@@ -900,7 +906,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 11</p>
-                                    <p>Cost: 210 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 210 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+110% Max Health.</p>
                             </div>
@@ -908,7 +914,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 12</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+120% Max Health.</p>
                             </div>
@@ -916,7 +922,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 13</p>
-                                    <p>Cost: 270 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 270 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+130% Max Health.</p>
                             </div>
@@ -924,7 +930,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 14</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+140% Max Health.</p>
                             </div>
@@ -932,7 +938,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 15</p>
-                                    <p>Cost: 330 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 330 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+150% Max Health.</p>
                             </div>
@@ -940,7 +946,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 16</p>
-                                    <p>Cost: 360 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 3 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 360 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 3 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+160% Max Health.</p>
                             </div>
@@ -948,7 +954,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 17</p>
-                                    <p>Cost: 390 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 390 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+170% Max Health.</p>
                             </div>
@@ -956,7 +962,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 18</p>
-                                    <p>Cost: 420 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 420 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 4 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+180% Max Health.</p>
                             </div>
@@ -964,7 +970,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 19</p>
-                                    <p>Cost: 450 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 450 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+190% Max Health.</p>
                             </div>
@@ -972,7 +978,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 20</p>
-                                    <p>Cost: 480 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 480 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+200% Max Health.</p>
                             </div>
@@ -980,7 +986,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 21</p>
-                                    <p>Cost: 510 <img class="coin" src="assets/TMNT-DragonCoin.webp"/>  need: 2 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 510 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/>  need: 2 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+210% Max Health.</p>
                             </div>
@@ -988,7 +994,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 22</p>
-                                    <p>Cost: 540 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 540 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+220% Max Health.</p>
                             </div>
@@ -996,7 +1002,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 23</p>
-                                    <p>Cost: 570 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 570 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 4 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+230% Max Health.</p>
                             </div>
@@ -1004,7 +1010,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 24</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+240% Max Health.</p>
                             </div>
@@ -1012,7 +1018,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 25</p>
-                                    <p>Cost: 630 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 630 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+250% Max Health.</p>
                             </div>
@@ -1022,13 +1028,13 @@
 
                 <a href="upgrades.html#upgrade-mechanical-genius" class="no-deco">
                     <div id="upgrade-mechanical-genius" class="upgrade upgrade-mechanical-genius" >
-                        <h4>Mechanical Genius</h4>
+                        <h3>Mechanical Genius</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>Tool charges 10% faster.</p>
                             </div>
@@ -1036,7 +1042,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Tool charges 20% faster.</p>
                             </div>
@@ -1044,7 +1050,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>Tool charges 30% faster.</p>
                             </div>
@@ -1052,7 +1058,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>Tool charges 40% faster.</p>
                             </div>
@@ -1060,7 +1066,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 6 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 6 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>Tool charges 50% faster.</p>
                             </div>
@@ -1070,13 +1076,13 @@
 
                 <a href="upgrades.html#upgrade-multi-hit" class="no-deco">
                     <div id="upgrade-multi-hit" class="upgrade upgrade-multi-hit" >
-                        <h4>Multi-Hit</h4>
+                        <h3>Multi-Hit</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Charm-M.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Charm-M.webp" alt="Michelangelo Charm"/></p>
                                 </div>
                                 <p>+2% Multi-Hit chance.</p>
                             </div>
@@ -1084,7 +1090,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+4% Multi-Hit chance.</p>
                             </div>
@@ -1092,7 +1098,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 140 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 140 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+6% Multi-Hit chance.</p>
                             </div>
@@ -1100,7 +1106,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+8% Multi-Hit chance.</p>
                             </div>
@@ -1108,7 +1114,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 1 <img class="coin band" src="assets/Icon-Band-M.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 1 <img class="coin band" src="assets/Icon-Band-M.webp" alt="Michelangelo Band"/></p>
                                 </div>
                                 <p>+10% Multi-Hit chance.</p>
                             </div>
@@ -1116,7 +1122,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 2 <img class="coin band" src="assets/Icon-Band-M.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 2 <img class="coin band" src="assets/Icon-Band-M.webp" alt="Michelangelo Band"/></p>
                                 </div>
                                 <p>+12% Multi-Hit chance.</p>
                             </div>
@@ -1124,7 +1130,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 560 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 3 <img class="coin band" src="assets/Icon-Band-M.webp"/></p>
+                                    <p>Cost: 560 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 3 <img class="coin band" src="assets/Icon-Band-M.webp" alt="Michelangelo Band"/></p>
                                 </div>
                                 <p>+14% Multi-Hit chance.</p>
                             </div>
@@ -1132,7 +1138,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 720 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 4 <img class="coin band" src="assets/Icon-Band-M.webp"/></p>
+                                    <p>Cost: 720 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 4 <img class="coin band" src="assets/Icon-Band-M.webp" alt="Michelangelo Band"/></p>
                                 </div>
                                 <p>+16% Multi-Hit chance.</p>
                             </div>
@@ -1140,7 +1146,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+18% Multi-Hit chance.</p>
                             </div>
@@ -1148,7 +1154,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 1100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 1100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+20% Multi-Hit chance.</p>
                             </div>
@@ -1158,13 +1164,13 @@
 
                 <a href="upgrades.html#upgrade-pizza-entree" class="no-deco">
                     <div id="upgrade-pizza-entree" class="upgrade upgrade-pizza-entree" >
-                        <h4>Pizza Entree</h4>
+                        <h3>Pizza Entree</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 3 <img class="coin" src="assets/Icon-Charm-M.webp"/></p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 3 <img class="coin" src="assets/Icon-Charm-M.webp" alt="Michelangelo Charm"/></p>
                                 </div>
                                 <p>+3% health restored upon entering the Shop.<br>Does not stack with Savor the Flavor.</p>
                             </div>
@@ -1172,7 +1178,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin band" src="assets/Icon-Band-M.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin band" src="assets/Icon-Band-M.webp" alt="Michelangelo Band"/></p>
                                 </div>
                                 <p>+6% health restored upon entering the Shop.<br>Does not stack with Savor the Flavor.</p>
                             </div>
@@ -1180,7 +1186,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin band" src="assets/Icon-Band-M.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin band" src="assets/Icon-Band-M.webp" alt="Michelangelo Band"/></p>
                                 </div>
                                 <p>+9% health restored upon entering the Shop.<br>Does not stack with Savor the Flavor.</p>
                             </div>
@@ -1188,7 +1194,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 4 <img class="coin band" src="assets/Icon-Band-M.webp"/></p>
+                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 4 <img class="coin band" src="assets/Icon-Band-M.webp" alt="Michelangelo Band"/></p>
                                 </div>
                                 <p>+12% health restored upon entering the Shop.<br>Does not stack with Savor the Flavor.</p>
                             </div>
@@ -1196,7 +1202,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+15% health restored upon entering the Shop.<br>Does not stack with Savor the Flavor.</p>
                             </div>
@@ -1206,13 +1212,13 @@
 
                 <a href="upgrades.html#upgrade-reliable-allies" class="no-deco">
                     <div id="upgrade-reliable-allies" class="upgrade upgrade-reliable-allies" >
-                        <h4>Reliable Allies</h4>
+                        <h3>Reliable Allies</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 3 <img class="coin" src="assets/Icon-Charm-D.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 3 <img class="coin" src="assets/Icon-Charm-D.webp" alt="Donatello Charm"/></p>
                                 </div>
                                 <p>Support units are twice more likely to spawn during an encounter.<br>Support units gain +20% Max Health. Upgrades increase chance of an elite ally appearing.</p>
                             </div>
@@ -1220,7 +1226,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 1 <img class="coin band" src="assets/Icon-Band-D.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 1 <img class="coin band" src="assets/Icon-Band-D.webp" alt="Donatello Band"/></p>
                                 </div>
                                 <p>Support units are twice more likely to spawn during an encounter.<br>Support units gain +40% Max Health. Upgrades increase chance of an elite ally appearing.</p>
                             </div>
@@ -1228,7 +1234,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 2 <img class="coin band" src="assets/Icon-Band-D.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 2 <img class="coin band" src="assets/Icon-Band-D.webp" alt="Donatello Band"/></p>
                                 </div>
                                 <p>Support units are twice more likely to spawn during an encounter.<br>Support units gain +60% Max Health. Upgrades increase chance of an elite ally appearing.</p>
                             </div>
@@ -1236,7 +1242,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 4 <img class="coin band" src="assets/Icon-Band-D.webp"/></p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 4 <img class="coin band" src="assets/Icon-Band-D.webp" alt="Donatello Band"/></p>
                                 </div>
                                 <p>Support units are twice more likely to spawn during an encounter.<br>Support units gain +80% Max Health. Upgrades increase chance of an elite ally appearing.</p>
                             </div>
@@ -1244,7 +1250,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 950 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 950 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Support units are twice more likely to spawn during an encounter.<br>Support units gain +100% Max Health. Upgrades increase chance of an elite ally appearing.</p>
                             </div>
@@ -1254,13 +1260,13 @@
 
                 <a href="upgrades.html#upgrade-savor-the-flavor" class="no-deco">
                     <div id="upgrade-savor-the-flavor" class="upgrade upgrade-savor-the-flavor" >
-                        <h4>Savor the Flavor</h4>
+                        <h3>Savor the Flavor</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 25 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 25 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Health recovery is 20% more effective.</p>
                             </div>
@@ -1268,7 +1274,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>Health recovery is 40% more effective.</p>
                             </div>
@@ -1276,7 +1282,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Health recovery is 60% more effective.</p>
                             </div>
@@ -1284,7 +1290,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>Health recovery is 80% more effective.</p>
                             </div>
@@ -1292,7 +1298,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Health recovery is 100% more effective.</p>
                             </div>
@@ -1302,13 +1308,13 @@
 
                 <a href="upgrades.html#upgrade-slice-of-life" class="no-deco">
                     <div id="upgrade-slice-of-life" class="upgrade upgrade-slice-of-life" >
-                        <h4>Slice of Life</h4>
+                        <h3>Slice of Life</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 75 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 75 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>4% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                             </div>
@@ -1316,7 +1322,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>8% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                             </div>
@@ -1324,7 +1330,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>12% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                             </div>
@@ -1332,7 +1338,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>16% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                             </div>
@@ -1340,7 +1346,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>20% chance to spawn a Pizza Slice upon defeating a Foot Clan enemy.</p>
                             </div>
@@ -1350,13 +1356,13 @@
 
                 <a href="upgrades.html#upgrade-special-damage" class="no-deco">
                     <div id="upgrade-special-damage" class="upgrade upgrade-special-damage" >
-                        <h4>Special Damage</h4>
+                        <h3>Special Damage</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 10 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 10 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+10% Special damage.</p>
                             </div>
@@ -1364,7 +1370,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 20 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 20 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+20% Special damage.</p>
                             </div>
@@ -1372,7 +1378,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+30% Special damage.</p>
                             </div>
@@ -1380,7 +1386,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+40% Special damage.</p>
                             </div>
@@ -1388,7 +1394,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 90 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 90 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+50% Special damage.</p>
                             </div>
@@ -1396,7 +1402,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+60% Special damage.</p>
                             </div>
@@ -1404,7 +1410,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+70% Special damage.</p>
                             </div>
@@ -1412,7 +1418,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+80% Special damage.</p>
                             </div>
@@ -1420,7 +1426,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 210 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 3 <img class="coin" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 210 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 3 <img class="coin" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+90% Special damage.</p>
                             </div>
@@ -1428,7 +1434,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+100% Special damage.</p>
                             </div>
@@ -1436,7 +1442,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 11</p>
-                                    <p>Cost: 270 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 270 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+110% Special damage.</p>
                             </div>
@@ -1444,7 +1450,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 12</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+120% Special damage.</p>
                             </div>
@@ -1452,7 +1458,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 13</p>
-                                    <p>Cost: 330 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 330 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+130% Special damage.</p>
                             </div>
@@ -1460,7 +1466,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 14</p>
-                                    <p>Cost: 360 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 360 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+140% Special damage.</p>
                             </div>
@@ -1468,7 +1474,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 15</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+150% Special damage.</p>
                             </div>
@@ -1476,7 +1482,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 16</p>
-                                    <p>Cost: 440 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 440 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+160% Special damage.</p>
                             </div>
@@ -1484,7 +1490,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 17</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+170% Special damage.</p>
                             </div>
@@ -1494,13 +1500,13 @@
 
                 <a href="upgrades.html#upgrade-splinters-revive" class="no-deco">
                     <div id="upgrade-splinters-revive" class="upgrade upgrade-splinters-revive" >
-                        <h4>Splinter's Revive</h4>
+                        <h3>Splinter's Revive</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Start each run with 1 Splinter's Revive(s).<br>Splinter's Revive restores 25% of your Max Health when your Health is depleted.</p>
                             </div>
@@ -1508,7 +1514,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>Start each run with 2 Splinter's Revive(s).<br>Splinter's Revive restores 25% of your Max Health when your Health is depleted.</p>
                             </div>
@@ -1516,7 +1522,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 1000 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>Start each run with 3 Splinter's Revive(s).<br>Splinter's Revive restores 25% of your Max Health when your Health is depleted.</p>
                             </div>
@@ -1526,13 +1532,13 @@
 
                 <a href="upgrades.html#upgrade-stronger-stuff" class="no-deco">
                     <div id="upgrade-stronger-stuff" class="upgrade upgrade-stronger-stuff" >
-                        <h4>Stronger Stuff</h4>
+                        <h3>Stronger Stuff</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 3 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 3 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+5% Negative Effect damage.</p>
                             </div>
@@ -1540,7 +1546,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+10% Negative Effect damage.</p>
                             </div>
@@ -1548,7 +1554,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need:2 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need:2 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>+15% Negative Effect damage.</p>
                             </div>
@@ -1556,7 +1562,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 3 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 3 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>+20% Negative Effect damage.</p>
                             </div>
@@ -1564,7 +1570,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>+25% Negative Effect damage.</p>
                             </div>
@@ -1574,13 +1580,13 @@
 
                 <a href="upgrades.html#upgrade-swiftness" class="no-deco">
                     <div id="upgrade-swiftness" class="upgrade upgrade-swiftness" >
-                        <h4>Swiftness</h4>
+                        <h3>Swiftness</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+5% Move Speed.</p>
                             </div>
@@ -1588,7 +1594,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+10% Move Speed.</p>
                             </div>
@@ -1596,7 +1602,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 1 <img class="coin" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+15% Move Speed.</p>
                             </div>
@@ -1604,7 +1610,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+20% Move Speed.</p>
                             </div>
@@ -1612,7 +1618,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+25% Move Speed.</p>
                             </div>
@@ -1620,7 +1626,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+30% Move Speed.</p>
                             </div>
@@ -1628,7 +1634,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+35% Move Speed.</p>
                             </div>
@@ -1636,7 +1642,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+40% Move Speed.</p>
                             </div>
@@ -1644,7 +1650,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 650 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 3 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 650 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 3 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+45% Move Speed.</p>
                             </div>
@@ -1652,7 +1658,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 850 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 850 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+50% Move Speed.</p>
                             </div>
@@ -1662,13 +1668,13 @@
 
                 <a href="upgrades.html#upgrade-tool-damage" class="no-deco">
                     <div id="upgrade-tool-damage" class="upgrade upgrade-tool-damage" >
-                        <h4>Tool Damage</h4>
+                        <h3>Tool Damage</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 15 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 15 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+15% Tool Damage.</p>
                             </div>
@@ -1676,7 +1682,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+30% Tool Damage.</p>
                             </div>
@@ -1684,7 +1690,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+45% Tool Damage.</p>
                             </div>
@@ -1692,7 +1698,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+60% Tool Damage.</p>
                             </div>
@@ -1700,7 +1706,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+75% Tool Damage.</p>
                             </div>
@@ -1708,7 +1714,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 300 Dragon Coins <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 300 Dragon Coins <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+90% Tool Damage.</p>
                             </div>
@@ -1716,7 +1722,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 420 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 420 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+105% Tool Damage.</p>
                             </div>
@@ -1724,7 +1730,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 540 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 2 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 540 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 2 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+120% Tool Damage.</p>
                             </div>
@@ -1732,7 +1738,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp"/> need 2 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/> need 2 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+135% Tool Damage.</p>
                             </div>
@@ -1740,7 +1746,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp"/></p>
+                                    <p>Cost: 900 <img class="coin" src="assets/TMNT-DragonCoin.webp" alt="Dragon Coin"/></p>
                                 </div>
                                 <p>+150% Tool Damage.</p>
                             </div>
@@ -1748,17 +1754,17 @@
                     </div>
                 </a>
 
-                <h3 id="dreamer-upgrades"><img class="coin-large" src="assets/TMNT-DreamerCoin.webp"/> Dreamer Upgrades</h3>
+                <h2 id="dreamer-upgrades"><img class="coin-large" src="assets/TMNT-DreamerCoin.webp" alt=""/> Dreamer Upgrades</h2>
 
                 <a href="upgrades.html#upgrade-arcade-fixer" class="no-deco">
                     <div id="upgrade-arcade-fixer" class="upgrade upgrade-arcade-fixer" >
-                        <h4>Arcade Fixer</h4>
+                        <h3>Arcade Fixer</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 3 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 3 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+25% chance that a Bonus Currency will apply to all Room Reward options.</p>
                             </div>
@@ -1766,7 +1772,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 3 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 3 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>+50% chance that a Bonus Currency will apply to all Room Reward options.</p>
                             </div>
@@ -1777,13 +1783,13 @@
 
                 <a href="upgrades.html#upgrade-busted-coin-slot" class="no-deco">
                     <div id="upgrade-busted-coin-slot" class="upgrade upgrade-busted-coin-slot" >
-                        <h4>Busted Coin Slot</h4>
+                        <h3>Busted Coin Slot</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 2 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>Dragon Coins are always granted as Bonus Currency Room Rewards for Masteries and Inspirations.</p>
                             </div>
@@ -1793,13 +1799,13 @@
 
                 <a href="upgrades.html#upgrade-dojo" class="no-deco">
                     <div id="upgrade-dojo" class="upgrade upgrade-dojo" >
-                        <h4>Dojo</h4>
+                        <h3>Dojo</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 3 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 3 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>Gain 25% chance to upgrade your Turtle Power to a Mastery in the entry room in Rooftops.</p>
                             </div>
@@ -1807,7 +1813,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 4 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 4 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>Gain 50% chance to upgrade your Turtle Power to a Mastery in the entry room in Rooftops.</p>
                             </div>
@@ -1815,7 +1821,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 5 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 5 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>Gain 75% chance to upgrade your Turtle Power to a Mastery in the entry room in Rooftops.</p>
                             </div>
@@ -1823,7 +1829,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 650 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 6 <img class="coin" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 650 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 6 <img class="coin" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>Gain 100% chance to upgrade your Turtle Power to a Mastery in the entry room in Rooftops.</p>
                             </div>
@@ -1833,13 +1839,13 @@
 
                 <a href="upgrades.html#upgrade-double-trouble" class="no-deco">
                     <div id="upgrade-double-trouble" class="upgrade upgrade-double-trouble" >
-                        <h4>Double Trouble</h4>
+                        <h3>Double Trouble</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 75 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 75 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>3% Double Select chance during any Turtle Power selection.</p>
                             </div>
@@ -1847,7 +1853,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>6% Double Select chance during any Turtle Power selection.</p>
                             </div>
@@ -1855,7 +1861,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 3 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 3 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>9% Double Select chance during any Turtle Power selection.</p>
                             </div>
@@ -1863,7 +1869,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 450 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 450 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>12% Double Select chance during any Turtle Power selection.</p>
                             </div>
@@ -1871,7 +1877,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>15% Double Select chance during any Turtle Power selection.</p>
                             </div>
@@ -1881,13 +1887,13 @@
 
                 <a href="upgrades.html#upgrade-double-double" class="no-deco">
                     <div id="upgrade-double-double" class="upgrade upgrade-double-double" >
-                        <h4>Double Double</h4>
+                        <h3>Double Double</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>10% chance that a Double Select will offer Turtle Powers at level 2.</p>
                             </div>
@@ -1895,7 +1901,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>20% chance that a Double Select will offer Turtle Powers at level 2.</p>
                             </div>
@@ -1903,7 +1909,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 5 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 5 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>30% chance that a Double Select will offer Turtle Powers at level 2.</p>
                             </div>
@@ -1913,13 +1919,13 @@
 
                 <a href="upgrades.html#upgrade-do-over" class="no-deco">
                     <div id="upgrade-do-over" class="upgrade upgrade-do-over" >
-                        <h4>Do Over</h4>
+                        <h3>Do Over</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>Start each run with 1 Lucky Dice. Lucky Dice can be used to rereoll Room Rewards or Shop offers.</p>
                             </div>
@@ -1927,7 +1933,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 4 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 250 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 4 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>Start each run with 2 Lucky Dice. Lucky Dice can be used to rereoll Room Rewards or Shop offers.</p>
                             </div>
@@ -1935,7 +1941,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 4 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 4 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>Start each run with 3 Lucky Dice. Lucky Dice can be used to rereoll Room Rewards or Shop offers.</p>
                             </div>
@@ -1945,13 +1951,13 @@
 
                 <a href="upgrades.html#upgrade-fortune-favors" class="no-deco">
                     <div id="upgrade-fortune-favors" class="upgrade upgrade-fortune-favors" >
-                        <h4>Fortune Favors the Bold</h4>
+                        <h3>Fortune Favors the Bold</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+1 Dragon and Dreamer Coins upon defeating Veteran and Champion enemies.</p>
                             </div>
@@ -1959,7 +1965,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 3 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 3 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+2 Dragon and Dreamer Coins upon defeating Veteran and Champion enemies.</p>
                             </div>
@@ -1967,7 +1973,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 4 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 4 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+3 Dragon and Dreamer Coins upon defeating Veteran and Champion enemies.</p>
                             </div>
@@ -1977,13 +1983,13 @@
 
                 <a href="upgrades.html#upgrade-lucky-spoils" class="no-deco">
                     <div id="upgrade-lucky-spoils" class="upgrade upgrade-lucky-spoils" >
-                        <h4>Lucky Spoils</h4>
+                        <h3>Lucky Spoils</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>Chance to gain up to 1 Lucky Dice from Bosses.</p>
                             </div>
@@ -1991,7 +1997,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>Chance to gain up to 2 Lucky Dice from Bosses.</p>
                             </div>
@@ -1999,7 +2005,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 2 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>Chance to gain up to 4 Lucky Dice from Bosses.</p>
                             </div>
@@ -2009,13 +2015,13 @@
 
                 <a href="upgrades.html#upgrade-mouse-scrap" class="no-deco">
                     <div id="upgrade-mouse-scrap" class="upgrade upgrade-mouse-scrap" >
-                        <h4>Mouse Scrap</h4>
+                        <h3>Mouse Scrap</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 100 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+15% chance for a MOUSER to drop triple Scrap upon defeat.</p>
                             </div>
@@ -2023,7 +2029,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+30% chance for a MOUSER to drop triple Scrap upon defeat.</p>
                             </div>
@@ -2031,7 +2037,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Gauntlet.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Gauntlet.webp" alt="Gauntlet Medallion"/></p>
                                 </div>
                                 <p>+45% chance for a MOUSER to drop triple Scrap upon defeat.</p>
                             </div>
@@ -2041,13 +2047,13 @@
 
                 <a href="upgrades.html#upgrade-pantheons-blessing" class="no-deco">
                     <div id="upgrade-pantheons-blessing" class="upgrade upgrade-pantheons-blessing" >
-                        <h4>Pantheon's Blessing</h4>
+                        <h3>Pantheon's Blessing</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 40 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 40 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+10% Dragon and Dreamer Coins from Room Rewards.</p>
                             </div>
@@ -2055,7 +2061,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+20% Dragon and Dreamer Coins from Room Rewards.</p>
                             </div>
@@ -2063,7 +2069,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 4 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 4 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+30% Dragon and Dreamer Coins from Room Rewards.</p>
                             </div>
@@ -2071,7 +2077,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+40% Dragon and Dreamer Coins from Room Rewards.</p>
                             </div>
@@ -2079,7 +2085,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 2 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+50% Dragon and Dreamer Coins from Room Rewards.</p>
                             </div>
@@ -2089,13 +2095,13 @@
 
                 <a href="upgrades.html#upgrade-perchance" class="no-deco">
                     <div id="upgrade-perchance" class="upgrade upgrade-perchance" >
-                        <h4>Perchance</h4>
+                        <h3>Perchance</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 20 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 20 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+2% chance to draw Turtle Powers in Room Rewards.</p>
                             </div>
@@ -2103,7 +2109,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 40 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 40 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+4% chance to draw Turtle Powers in Room Rewards.</p>
                             </div>
@@ -2111,7 +2117,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+6% chance to draw Turtle Powers in Room Rewards.</p>
                             </div>
@@ -2119,7 +2125,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+8% chance to draw Turtle Powers in Room Rewards.</p>
                             </div>
@@ -2127,7 +2133,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 4 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 4 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+10% chance to draw Turtle Powers in Room Rewards.</p>
                             </div>
@@ -2135,7 +2141,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+12% chance to draw Turtle Powers in Room Rewards.</p>
                             </div>
@@ -2143,7 +2149,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 2 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 2 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+14% chance to draw Turtle Powers in Room Rewards.</p>
                             </div>
@@ -2151,7 +2157,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+16% chance to draw Turtle Powers in Room Rewards.</p>
                             </div>
@@ -2159,7 +2165,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+18% chance to draw Turtle Powers in Room Rewards.</p>
                             </div>
@@ -2167,7 +2173,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+20% chance to draw Turtle Powers in Room Rewards.</p>
                             </div>
@@ -2177,13 +2183,13 @@
 
                 <a href="upgrades.html#upgrade-polish" class="no-deco">
                     <div id="upgrade-polish" class="upgrade upgrade-polish" >
-                        <h4>Polish</h4>
+                        <h3>Polish</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 40 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 40 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>2% chance that Turtle Powers are offered at level 2.</p>
                             </div>
@@ -2191,7 +2197,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>4% chance that Turtle Powers are offered at level 2.</p>
                             </div>
@@ -2199,7 +2205,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+6% chance that Turtle Powers are offered at level 2.</p>
                             </div>
@@ -2207,7 +2213,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 200 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+8% chance that Turtle Powers are offered at level 2.</p>
                             </div>
@@ -2215,7 +2221,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+10% chance that Turtle Powers are offered at level 2.</p>
                             </div>
@@ -2223,7 +2229,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+12% chance that Turtle Powers are offered at level 2.</p>
                             </div>
@@ -2231,7 +2237,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+14% chance that Turtle Powers are offered at level 2.</p>
                             </div>
@@ -2239,7 +2245,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 3 <img class="coin" src="assets/Icon-Astral.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 3 <img class="coin" src="assets/Icon-Astral.webp" alt="Astral Heart"/></p>
                                 </div>
                                 <p>+16% chance that Turtle Powers are offered at level 2.</p>
                             </div>
@@ -2247,7 +2253,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 700 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+18% chance that Turtle Powers are offered at level 2.</p>
                             </div>
@@ -2255,7 +2261,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 800 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+20% chance that Turtle Powers are offered at level 2.</p>
                             </div>
@@ -2265,13 +2271,13 @@
 
                 <a href="upgrades.html#upgrade-recycling" class="no-deco">
                     <div id="upgrade-recycling" class="upgrade upgrade-recycling" >
-                        <h4>Recycling</h4>
+                        <h3>Recycling</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+5% chance for Bonus Currency Room Rewards.</p>
                             </div>
@@ -2279,7 +2285,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+10% chance for Bonus Currency Room Rewards.</p>
                             </div>
@@ -2287,7 +2293,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+15% chance for Bonus Currency Room Rewards.</p>
                             </div>
@@ -2295,7 +2301,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+20% chance for Bonus Currency Room Rewards.</p>
                             </div>
@@ -2303,7 +2309,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 600 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+25% chance for Bonus Currency Room Rewards.</p>
                             </div>
@@ -2313,13 +2319,13 @@
 
                 <a href="upgrades.html#upgrade-running-start" class="no-deco">
                     <div id="upgrade-running-start" class="upgrade upgrade-running-start" >
-                        <h4>Running Start</h4>
+                        <h3>Running Start</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 30 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+25 Scrap upon starting a run.</p>
                             </div>
@@ -2327,7 +2333,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 60 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+50 Scrap upon starting a run.</p>
                             </div>
@@ -2335,7 +2341,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 90 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 90 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+75 Scrap upon starting a run.</p>
                             </div>
@@ -2343,7 +2349,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+100 Scrap upon starting a run.</p>
                             </div>
@@ -2351,7 +2357,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+125 Scrap upon starting a run.</p>
                             </div>
@@ -2359,7 +2365,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 6</p>
-                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 180 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+150 Scrap upon starting a run.</p>
                             </div>
@@ -2367,7 +2373,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 7</p>
-                                    <p>Cost: 210 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 210 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+175 Scrap upon starting a run.</p>
                             </div>
@@ -2375,7 +2381,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 8</p>
-                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 5 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 300 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 5 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+200 Scrap upon starting a run.</p>
                             </div>
@@ -2383,7 +2389,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 9</p>
-                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 400 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+225 Scrap upon starting a run.</p>
                             </div>
@@ -2391,7 +2397,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 10</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 7 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 7 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+250 Scrap upon starting a run.</p>
                             </div>
@@ -2401,13 +2407,13 @@
 
                 <a href="upgrades.html#upgrade-scavenger" class="no-deco">
                     <div id="upgrade-scavenger" class="upgrade upgrade-scavenger" >
-                        <h4>Scavenger</h4>
+                        <h3>Scavenger</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 50 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+100% Scrap gained from destroying crates.</p>
                             </div>
@@ -2415,7 +2421,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 150 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 2 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+200% Scrap gained from destroying crates.</p>
                             </div>
@@ -2423,7 +2429,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 350 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+300% Scrap gained from destroying crates.</p>
                             </div>
@@ -2433,13 +2439,13 @@
 
                 <a href="upgrades.html#upgrade-scrappy-bosses" class="no-deco">
                     <div id="upgrade-scrappy-bosses" class="upgrade upgrade-scrappy-bosses" >
-                        <h4>Scrappy Bosses</h4>
+                        <h3>Scrappy Bosses</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+20% Scrap granted by Bosses.</p>
                             </div>
@@ -2447,7 +2453,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+40% Scrap granted by Bosses.</p>
                             </div>
@@ -2455,7 +2461,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+60% Scrap granted by Bosses.</p>
                             </div>
@@ -2463,7 +2469,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 320 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 320 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+80% Scrap granted by Bosses.</p>
                             </div>
@@ -2471,7 +2477,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 3 <img class="coin" src="assets/Icon-Shredder.webp"/></p>
+                                    <p>Cost: 500 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 3 <img class="coin" src="assets/Icon-Shredder.webp" alt="Shredder's Blades"/></p>
                                 </div>
                                 <p>+100% Scrap granted by Bosses.</p>
                             </div>
@@ -2481,13 +2487,13 @@
 
                 <a href="upgrades.html#upgrade-scrap-king" class="no-deco">
                     <div id="upgrade-scrap-king" class="upgrade upgrade-scrap-king" >
-                        <h4>Scrap King</h4>
+                        <h3>Scrap King</h3>
     
                         <div class="upgrade-row">
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 1</p>
-                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 80 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 1 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+10% Scrap from Room Rewards.</p>
                             </div>
@@ -2495,7 +2501,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 2</p>
-                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 120 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+20% Scrap from Room Rewards.</p>
                             </div>
@@ -2503,7 +2509,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 3</p>
-                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/></p>
+                                    <p>Cost: 160 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/></p>
                                 </div>
                                 <p>+30% Scrap from Room Rewards.</p>
                             </div>
@@ -2511,7 +2517,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 4</p>
-                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 6 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 240 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 6 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+40% Scrap from Room Rewards.</p>
                             </div>
@@ -2519,7 +2525,7 @@
                             <div class="upgrade-level">
                                 <div class="cost">
                                     <p class="level">Level 5</p>
-                                    <p>Cost: 360 <img class="coin" src="assets/TMNT-DreamerCoin.webp"/> need: 8 <img class="coin karai" src="assets/Icon-Karai.webp"/></p>
+                                    <p>Cost: 360 <img class="coin" src="assets/TMNT-DreamerCoin.webp" alt="Dreamer Coin"/> need: 8 <img class="coin karai" src="assets/Icon-Karai.webp" alt="Karai's Pauldron"/></p>
                                 </div>
                                 <p>+50% Scrap from Room Rewards.</p>
                             </div>
@@ -2529,11 +2535,11 @@
 
             </div>
         </div>
+        </main>
         <footer>
             <p>All images copyright Viacom.</p>
             <p>This is just a fansite. Thanks to Super Evil Megacorp for making a great game.</p>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
 </html>

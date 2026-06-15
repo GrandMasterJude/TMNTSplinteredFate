@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="The ultimate resource for Teenage Mutant Ninja Turtles: Splintered Fate players. Find comprehensive guides on all powers, upgrades, and abilities to master the game and perfect your turtle strategy." />
         <title>TMNT Splintered Fate</title>
+        <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
-        <div class="hamburger" onclick="toggleMobileMenu()">
+        <a class="skip-link" href="#main">Skip to main content</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-expanded="false" aria-controls="mobile-menu">
             ☰ Menu
-        </div>
+        </button>
     
-        <div class="mobile-menu">
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
@@ -19,12 +23,12 @@
             <a href="upgrades.html">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
             <a href="boosts.html">Boosts</a>
-            <a href="portals.html">Portals</a>
+            <a href="portals.html" aria-current="page">Portals</a>
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
-        <div class="navbar">
+        </nav>
+        <nav class="navbar" aria-label="Primary">
             <a href="index.html">Basic Info</a>
             <a href="inspirations.html">Inspirations</a>
             <a href="mastery.html">Mastery</a>
@@ -33,184 +37,186 @@
             <a href="upgrades.html">Upgrades</a>
             <a href="artifacts.html">Artifacts</a>
             <a href="boosts.html">Boosts</a>
-            <a class="tab active" href="portals.html">Portals</a>
+            <a class="tab active" href="portals.html" aria-current="page">Portals</a>
             <a href="map.html">Map</a>
             <a href="tips.html">Tips</a>
             <a href="glossary.html">Glossary</a>
-        </div>
+        </nav>
 
+        <main id="main">
         <div class="content">
+            <h1 class="visually-hidden">TMNT: Splintered Fate &ndash; Portals</h1>
             <div id="portals" class="tab-content portals">
 
                 <p>The Portals of Power are always offered in the first rooms of each level. Other portals offered during the run are random.</p>
 
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-ofMice.webp" class="portal-image">
+                        <img src="assets/Portal-ofMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Power</h4>
+                            <h2>Portal of Power</h2>
                             <p>Increased veteran and champion enemies. <br class="mobile-yep">+15% increased Enemy damage and Health.<br>+10% Dragon and Dreamer Coins this run. <br class="mobile-yep">Declining a Portal will stop more from appearing this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Greater Power</h4>
+                            <h2>Portal of Greater Power</h2>
                             <p>Increased veteran and champion enemies. <br class="mobile-yep">+15% increased Enemy damage and health. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Immense Power</h4>
+                            <h2>Portal of Immense Power</h2>
                             <p>Increased veteran and champion enemies. <br class="mobile-yep">+15% increased Enemy damage and health.<br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Ultimate Power</h4>
+                            <h2>Portal of Ultimate Power</h2>
                             <p>Increased veteran and champion enemies. <br class="mobile-yep">+15% increased Enemy damage and health.<br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Lead Feet</h4>
+                            <h2>Portal of Lead Feet</h2>
                             <p>Dash count reduced by 1 (1 dash minimum). 50% longer dash cooldown <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Mediocrity</h4>
+                            <h2>Portal of Mediocrity</h2>
                             <p>-50% Special recharge rate <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Mice</h4>
+                            <h2>Portal of Mice</h2>
                             <p>All MOUSERs self destruct. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Pacing</h4>
+                            <h2>Portal of Pacing</h2>
                             <p>Enemies move and strike faster. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Paupers</h4>
+                            <h2>Portal of Paupers</h2>
                             <p>Shops are twice as expensive. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Perforated Pockets</h4>
+                            <h2>Portal of Perforated Pockets</h2>
                             <p>Lose 5 Scrap whenever you take damage <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Plundered Pizza</h4>
+                            <h2>Portal of Plundered Pizza</h2>
                             <p>Healing is half as effective. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Pocket Change</h4>
+                            <h2>Portal of Pocket Change</h2>
                             <p>Carry a max of 500 Scrap. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Projection</h4>
+                            <h2>Portal of Projection</h2>
                             <p>Hostile attacks and area effects are larger. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Protection</h4>
+                            <h2>Portal of Protection</h2>
                             <p>Enemy health is fully converted to shielding. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Rust</h4>
+                            <h2>Portal of Rust</h2>
                             <p>-50% Tool recharge rate <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Scarcity</h4>
+                            <h2>Portal of Scarcity</h2>
                             <p>Reduce the number of Turtle Power and Upgrade options by 2. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfStolenSlices.webp" class="portal-image">
+                        <img src="assets/Portal-OfStolenSlices.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Stolen Slices</h4>
+                            <h2>Portal of Stolen Slices</h2>
                             <p>Pizza no longer appears after bosses <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>   
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of Storms</h4>
+                            <h2>Portal of Storms</h2>
                             <p>Lightning Storms are more frequent and more dangerous. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>   
                         </div>
                     </div>
                 </a>
                 <a href="portals.html#" class="no-deco">
                     <div id="portal-of-power" class="portal-wrapper">
-                        <img src="assets/Portal-OfMice.webp" class="portal-image">
+                        <img src="assets/Portal-OfMice.webp" class="portal-image" alt="">
                         <div>
-                            <h4>Portal of the Foot</h4>
+                            <h2>Portal of the Foot</h2>
                             <p>Foot Clan enemies deal 35% increased damage. <br class="mobile-yep">+10% Dragon and Dreamer Coins this run.</p>   
                         </div>
                     </div>
@@ -221,11 +227,11 @@
 
             
         </div>
+        </main>
         <footer>
             <p>All images copyright Viacom.</p>
             <p>This is just a fansite. Thanks to Super Evil Megacorp for making a great game.</p>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
 </html>

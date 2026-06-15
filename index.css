@@ -430,7 +430,7 @@ footer {
     margin: 0 0 1rem 0;
 }
 
-#basic-info .basic-insp h4 {
+#basic-info .basic-insp h3 {
     margin: 0 0 1rem 0;
 }
 
@@ -445,6 +445,10 @@ footer {
 
 .hamburger {
     display: none;
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    box-sizing: border-box;
     background-color: #333;
     color: white;
     font-size: 2.5rem;
@@ -889,7 +893,7 @@ img.coin-large {
     text-align: left;
 }
 
-#tools h4 {
+#tools h2 {
     margin-bottom: 0;
     text-decoration: underline;
 }
@@ -923,7 +927,7 @@ img.coin-large {
     width: 95vw;
 }
 
-.upgrade h4 {
+.upgrade h3 {
     margin: 0;
     width: 100%;
 }
@@ -1085,7 +1089,7 @@ tr th:first-of-type {
     margin: 2rem 0 0;
 }
 
-#portals .portal-wrapper h4 {
+#portals .portal-wrapper h2 {
     margin: 0 0 0.5rem;
 }
 
@@ -1097,7 +1101,7 @@ tr th:first-of-type {
 /*
     Map
 */
-#map h4 {
+#map h3 {
     margin: 0;
 }
 
@@ -1123,7 +1127,7 @@ tr th:first-of-type {
 /*
     Glossary
 */
-#glossary h4 {
+#glossary h2 {
     margin-bottom: 0;
 }
 
@@ -1269,7 +1273,7 @@ tr th:first-of-type {
         margin: 0 0 3rem 0;
     }
 
-    #boosts .boost-wrapper h4 {
+    #boosts .boost-wrapper h2 {
         margin: 0;
     }
 
@@ -1280,7 +1284,7 @@ tr th:first-of-type {
         text-align: center;
     }
 
-    #portals .portal-wrapper h4 {
+    #portals .portal-wrapper h2 {
         margin: 0;
     }
 
@@ -1294,4 +1298,86 @@ tr th:first-of-type {
     body .tiny-mobile-yep {
         display: inline-block;
     }
+}
+
+/* ---- Accessibility utilities ---- */
+
+/* Visually hide content but keep it available to screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Skip link: off-screen until focused via keyboard */
+.skip-link {
+    position: absolute;
+    left: 8px;
+    top: -100px;
+    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 0 0 6px 6px;
+    text-decoration: none;
+    transition: top 0.15s ease-in;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* Visible keyboard focus indicator */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+.hamburger:focus-visible {
+    outline: 3px solid #ffd400;
+    outline-offset: 2px;
+}
+
+/* ---- Heading re-leveling: keep promoted tags visually identical ---- */
+/* Baseline: content headings carry the old <h4> metrics (size/weight/margin)
+   regardless of their level, so re-leveling a tag never changes how it looks.
+   Zero specificity (:where) means every scoped heading rule below still wins. */
+main :where(h1, h2, h3, h4, h5, h6) {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1.33em 0;
+}
+/* upgrades: "Dragon/Dreamer Upgrades" were <h3>, now <h2>; keep the old h3 size. */
+#upgrades h2 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+/* tips: "Math Nerd Section" was <h3>, now <h2>; keep the old h3 size. */
+#tips h2 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+/* powers: <summary> label is now an <h2>; render it inline, inheriting the
+   summary's font so size/weight are unchanged. */
+#powers summary h2 {
+    display: inline;
+    font: inherit;
+    margin: 0;
+}
+/* powers: sub-section pill is now an <h3>; neutralize the default h3 size/weight
+   so it matches the old <p class="section-title"> (everything else is in the
+   existing #powers .section-title rule). */
+#powers h3.section-title {
+    font: inherit;
+}
+/* powers: legendary power names are <h3> (no section-title above them) but must
+   look identical to the <h4> power names in the other categories. */
+#powers .power-wrapper h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 2rem 0 0 0;
+    text-decoration: underline;
 }
