@@ -4,7 +4,7 @@
 body {
     background-color: #f1f1f1;
     font-family: Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0;
     padding: 0;
     display: flex;
@@ -35,7 +35,7 @@ body .tiny-mobile-yep {
 .navbar {
     display: flex;
     background-color: #333;
-    height: 3.75rem;
+    height: 3.5rem;
     overflow: hidden;
 }
 body .navbar a {
@@ -96,7 +96,7 @@ body .navbar a:hover {
     text-align: left;
 }
 .tab {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .tab.active {
@@ -1139,6 +1139,10 @@ tr th:first-of-type {
 
 
 @media screen and (max-width: 1200px) {
+    body {
+        font-size: 1.5rem;
+    }
+
     body .content {
         padding: 0.75rem;
     }
