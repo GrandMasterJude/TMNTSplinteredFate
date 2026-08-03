@@ -364,6 +364,12 @@ footer {
     border-radius: 2rem;
 }
 
+.border-s {
+    border: #282335  2px solid;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
 .color-m {
     background-color: #EB8248;
     color: white;
@@ -398,6 +404,11 @@ footer {
     color: white;
 }
 
+.color-s {
+    background-color: #282335;
+    color: white;
+}
+
 .text-color-m {
     color: #EB8248;
 }
@@ -424,6 +435,10 @@ footer {
 
 .text-color-a {
     color: #2FD071;
+}
+
+.text-color-s {
+    color: #282335;
 }
 
 #basic-info ul {
@@ -533,6 +548,7 @@ img.coin-large {
 .character-select-casey,
 .character-select-metalhead,
 .character-select-alopex,
+.character-select-slash,
 .character-select img.portrait {
     width: 7rem;
 }
@@ -559,6 +575,10 @@ img.coin-large {
 
 .character-select-alopex {
     margin-left: -0.6rem;
+}
+
+.character-select-slash {
+    margin-left: 0.5rem;
 }
 
 .character-summary {
@@ -668,13 +688,15 @@ img.coin-large {
 .basic-casey,
 .basic-metalhead,
 .basic-alopex,
+.basic-slash,
 .mastery-leonardo,
 .mastery-donatello,
 .mastery-michelangelo,
 .mastery-raphael,
 .mastery-casey,
 .mastery-metalhead,
-.mastery-alopex {
+.mastery-alopex,
+.mastery-slash {
     margin-left: 1rem;
     text-align: left;
 }
@@ -739,6 +761,11 @@ img.coin-large {
 #mastery .mastery-alopex ul li p {
     /* background-color: gray; */
     border: 2px solid #2FD071;
+}
+
+#mastery .mastery-slash ul li p {
+    /* background-color: gray; */
+    border: 2px solid #282335;
 }
 
 /*
@@ -1186,13 +1213,15 @@ tr th:first-of-type {
     .basic-casey,
     .basic-metalhead,
     .basic-alopex,
+    .basic-slash,
     .mastery-leonardo,
     .mastery-donatello,
     .mastery-michelangelo,
     .mastery-raphael,
     .mastery-casey,
     .mastery-metalhead,
-    .mastery-alopex {
+    .mastery-alopex,
+    .mastery-slash {
         margin-left: 0;
     }
     
@@ -1207,7 +1236,8 @@ tr th:first-of-type {
     .basic-donatello-content,
     .basic-casey-content,
     .basic-metalhead-content,
-    .basic-alopex-content {
+    .basic-alopex-content,
+    .basic-slash-content {
         /* background: no-repeat url("assets/TMNT-Background.webp");
         background-size: 100% 100%;
         color: white; */
