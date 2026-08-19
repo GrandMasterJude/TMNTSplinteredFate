@@ -550,35 +550,8 @@ img.coin-large {
 .character-select-alopex,
 .character-select-slash,
 .character-select img.portrait {
-    width: 7rem;
-}
-
-.character-select-leonardo {
-    margin-left: -1.25rem;
-}
-
-.character-select-raphael {
-    margin-left: -0.6rem;
-}
-
-.character-select-donatello {
-    margin-left: -1.25rem;
-}
-
-.character-select-casey {
-    margin-left: -0.6rem;
-}
-
-.character-select-metalhead {
-    margin-left: -1.25rem;
-}
-
-.character-select-alopex {
-    margin-left: -0.6rem;
-}
-
-.character-select-slash {
-    margin-left: 0.5rem;
+    margin-left: -1rem;
+    width: 6rem;
 }
 
 .character-summary {
@@ -607,6 +580,14 @@ img.coin-large {
 
 .character-text {
     margin-bottom: 1rem;
+}
+
+.special-icon {
+    width: 5rem;
+}
+
+.character-summary .special {
+    
 }
 
 /*
