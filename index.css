@@ -550,7 +550,7 @@ img.coin-large {
 .character-select-alopex,
 .character-select-slash,
 .character-select img.portrait {
-    margin-left: -1rem;
+    /* margin-left: -1rem; */
     width: 6rem;
 }
 
@@ -586,9 +586,9 @@ img.coin-large {
     width: 5rem;
 }
 
-.character-summary .special {
+/* .character-summary .special {
     
-}
+} */
 
 /*
     Inspirations
@@ -1224,6 +1224,10 @@ tr th:first-of-type {
         color: white; */
         margin: 0 0 3rem 0;
         padding: 0;
+    }
+
+    .character-select {
+        margin-left: -0.5rem;
     }
 
     #inspirations .insp-intro {
