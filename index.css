@@ -279,49 +279,6 @@ footer {
     height: 4rem;
 }
 
-.basic-michelangelo-content,
-.basic-leonardo-content,
-.basic-raphael-content,
-.basic-donatello-content,
-.basic-metalhead-content {
-    /* background: no-repeat url("assets/TMNT-Background.webp"); */
-    /* background-size: 100% 100%; */
-    /* color: white; */
-    /* margin: 0 5rem 3rem 0; */
-    /* padding: 2rem 4rem; */
-}
-
-/* .power-wrapper {
-    background: no-repeat url("assets/TMNT-Background.webp");
-    background-size: 100% 100%;
-    color: white;
-    margin: 0 2rem 2rem 0;
-    padding: 2rem 4rem;
-} */
-
-/* .power-wrapper {
-    background-color: royalblue;
-    color: white;
-    border-radius: 3rem;
-    margin: 0.5rem;
-    padding: 0.5rem 2rem;
-    width: fit-content;
-} */
-
-/* #basic-info .basic-insp,
-#basic-info .basic-content {
-    color: white;
-    margin: 0;
-    padding: 0.5rem 1rem;
-    border-radius: 3rem;
-    width: fit-content;
-} */
-
-/* #basic-info .basic-content {
-    padding: 1rem;
-    border-radius: 2rem;
-} */
-
 .border-m {
     border: #EB8248  2px solid;
     padding: 1rem;
@@ -456,6 +413,14 @@ footer {
     margin-bottom: -0.5rem;
     width: fit-content;
     padding: 0 1rem;
+}
+
+.basic-content .special-container {
+    display: flex;
+}
+
+.basic-content .special-container .special-content {
+    margin-left: 1rem;
 }
 
 .hamburger {
